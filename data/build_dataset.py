@@ -175,14 +175,16 @@ def get_debut_year(aid):
     return None
 
 
-def get_title_bouts(aid):
-    """Ordered list of a fighter's completed UFC championship bouts.
+def get_ufc_bouts(aid):
+    """Every completed UFC bout for a fighter, across all weight classes.
 
-    A bout is a title fight when its competition `types[].text` contains "Title"
-    (ESPN's gold-belt marker). Only completed bouts (item `played` is True) are
-    kept. Each entry is event-name-free so the game clue never leaks the answer:
-        {year, division, opponent, result}
-    result is "Won" / "Lost" / "Draw".
+    Each entry is event-name-free so a game clue never leaks the answer:
+        {year, weightClass, opponent, result, isTitle, titleDivision}
+    - weightClass: the bout's division (competition `type.text`).
+    - isTitle: True when competition `types[].text` contains "Title"
+      (ESPN's gold-belt marker); titleDivision then holds the full title label
+      (e.g. "Interim Heavyweight"), else None.
+    - result: "Won" / "Lost" / "Draw".
     """
     # Phase 1: page the event log (cheap) and collect the competition ref of every
     # completed UFC bout.
@@ -205,7 +207,7 @@ def get_title_bouts(aid):
             break
         page += 1
 
-    # Phase 2: fetch all competitions in parallel (the bottleneck), keep title bouts.
+    # Phase 2: fetch all competitions in parallel (the bottleneck).
     comps = fetch_many(comp_refs)
     bouts = []
     opp_refs = []
@@ -213,15 +215,14 @@ def get_title_bouts(aid):
         comp = comps.get(cref)
         if not comp:
             continue
-        division = next((t.get("text") for t in comp.get("types", [])
-                         if "title" in (t.get("text", "").lower())), None)
-        if not division:
-            continue
         competitors = comp.get("competitors", [])
         mine = next((c for c in competitors if c.get("id") == aid), None)
         opp = next((c for c in competitors if c.get("id") != aid), None)
         if not mine or not opp:
             continue
+        title_label = next((t.get("text") for t in comp.get("types", [])
+                            if "title" in (t.get("text", "").lower())), None)
+        weight_class = (comp.get("type") or {}).get("text") or "Catchweight"
         if mine.get("winner"):
             result = "Won"
         elif opp.get("winner"):
@@ -238,12 +239,15 @@ def get_title_bouts(aid):
             opp_refs.append(oref)
         bouts.append({
             "year": year,
-            "division": division.replace("UFC ", "").replace(" Title", ""),
+            "weightClass": weight_class,
             "opponent_ref": oref,
             "result": result,
+            "isTitle": bool(title_label),
+            "titleDivision": (title_label.replace("UFC ", "").replace(" Title", "")
+                              if title_label else None),
         })
 
-    # Phase 3: resolve opponent names in parallel (only for title bouts, few).
+    # Phase 3: resolve opponent names in parallel.
     opps = fetch_many(opp_refs)
     for b in bouts:
         oref = b.pop("opponent_ref", None)
@@ -326,6 +330,12 @@ def build(limit=None, refresh=False):
 
         name = d.get("displayName") or d.get("fullName")
         is_champ = norm_name(name) in champ_norm
+        # Champions get their full UFC fight log (for the Title Defense reveal) and
+        # the title-only subset (for the clue panel / résumé summary).
+        ufc_fights = get_ufc_bouts(aid) if is_champ else []
+        title_bouts = [{"year": b["year"], "division": b["titleDivision"],
+                        "opponent": b["opponent"], "result": b["result"]}
+                       for b in ufc_fights if b["isTitle"]]
         fighters.append({
             "id": aid,
             "name": name,
@@ -345,8 +355,10 @@ def build(limit=None, refresh=False):
             "isChampion": is_champ,
             "topTen": aid in top10,
             "rank": top10.get(aid),
-            # title-bout history only needed for champions (Title Defense mode)
-            "titleBouts": get_title_bouts(aid) if is_champ else [],
+            # Title Defense mode: title-only bouts (clue panel + résumé summary)
+            # and the full UFC fight log across all weight classes (reveal log).
+            "titleBouts": title_bouts,
+            "ufcFights": ufc_fights,
             "headshot": f"https://a.espncdn.com/i/headshots/mma/players/full/{aid}.png",
         })
         kept += 1
@@ -371,8 +383,10 @@ def build(limit=None, refresh=False):
     champs = sum(1 for f in fighters if f["isChampion"])
     ranked = sum(1 for f in fighters if f["topTen"])
     tbouts = sum(len(f["titleBouts"]) for f in fighters)
+    afights = sum(len(f["ufcFights"]) for f in fighters)
     print(f"[done] {len(fighters)} fighters -> {OUT_PATH} "
-          f"({champs} champions, {ranked} top-10 ranked, {tbouts} title bouts)", file=sys.stderr)
+          f"({champs} champions, {ranked} top-10 ranked, "
+          f"{tbouts} title bouts, {afights} total UFC fights)", file=sys.stderr)
 
 
 if __name__ == "__main__":

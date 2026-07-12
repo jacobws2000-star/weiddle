@@ -210,6 +210,7 @@ body{
 .log-result.draw{background:var(--yellow);}
 .log-opp{font-weight:bold;}
 .log-div{color:#4a4658;font-size:12px;text-align:right;}
+.log-belt{margin-right:3px;}
 
 /* ---------- Game mode modal ---------- */
 .mode-modal{

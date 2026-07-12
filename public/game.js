@@ -342,13 +342,17 @@ function renderTitleReveal(){
   el("title-belts").innerHTML = belts
     .map(d => `<span class="belt-chip">🏆 ${d}</span>`).join("");
 
-  el("title-log").innerHTML = bouts.map(b => {
+  // Full UFC fight log, across ALL weight classes; title fights get a belt.
+  const fights = (target.ufcFights && target.ufcFights.length) ? target.ufcFights : bouts;
+  el("title-log").innerHTML = fights.map(b => {
     const cls = b.result === "Won" ? "won" : b.result === "Lost" ? "lost" : "draw";
+    const div = b.weightClass || b.division || "";
+    const belt = b.isTitle ? '<span class="log-belt">🏆</span>' : "";
     return `<div class="log-row">
       <span class="log-year">${b.year ?? ""}</span>
       <span class="log-result ${cls}">${b.result}</span>
       <span class="log-opp">vs ${b.opponent}</span>
-      <span class="log-div">${b.division}</span>
+      <span class="log-div">${belt}${div}</span>
     </div>`;
   }).join("");
 }
