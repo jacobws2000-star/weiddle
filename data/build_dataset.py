@@ -109,20 +109,36 @@ def get_record(aid):
 
 
 def get_debut_year(aid):
-    """UFC debut year = date of the earliest event in the athlete's event log.
+    """UFC debut year = date of the athlete's earliest *UFC* event.
 
-    The eventlog is ordered newest-first and each item's `event` is a $ref, so
-    the debut is the last item; we fetch just that one event to read its date.
+    The event log mixes UFC bouts with fights from other promotions and is
+    paginated (newest-first). We page through all of it, keep only UFC bouts
+    (identified by `/leagues/ufc/` in each item's competition ref), then fetch
+    the single earliest UFC event to read its year. This avoids returning an
+    MMA/regional debut (e.g. a Brazilian Predador FC fight) instead of the UFC
+    debut, and avoids the truncated-first-page bug for high-volume fighters.
     """
-    try:
-        d = fetch(f"{API}/athletes/{aid}/eventlog?lang=en&region=us")
-    except RuntimeError:
+    ufc_items = []
+    page = 1
+    while True:
+        try:
+            d = fetch(f"{API}/athletes/{aid}/eventlog?lang=en&region=us&page={page}")
+        except RuntimeError:
+            break
+        ev = d.get("events", {})
+        items = ev.get("items", []) if isinstance(ev, dict) else []
+        for it in items:
+            comp_ref = (it.get("competition") or {}).get("$ref", "")
+            if "/leagues/ufc/" in comp_ref:
+                ufc_items.append(it)
+        if page >= ev.get("pageCount", 1):
+            break
+        page += 1
+
+    if not ufc_items:
         return None
-    ev = d.get("events", {})
-    items = ev.get("items", []) if isinstance(ev, dict) else []
-    if not items:
-        return None
-    ref = (items[-1].get("event") or {}).get("$ref")
+    # newest-first => earliest UFC bout is the last UFC item
+    ref = (ufc_items[-1].get("event") or {}).get("$ref")
     if not ref:
         return None
     try:
