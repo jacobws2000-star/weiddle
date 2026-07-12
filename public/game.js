@@ -87,10 +87,14 @@ async function load(){
 
 // Target selection is weighted, not uniform, so familiar (higher-win) names and
 // champions come up more often.
-const WIN_EXP = 1.5;        // superlinear bias toward higher win totals
+// Each boost's "effect" (distance from the neutral baseline) was made 50% stronger:
+//   win exponent  1.5  -> 1.0 + 0.5*1.5  = 1.75
+//   champion      1.25 -> 1.0 + 0.25*1.5 = 1.375
+//   top-10        1.75 -> 1.0 + 0.75*1.5 = 2.125
+const WIN_EXP = 1.75;       // superlinear bias toward higher win totals
 const WIN_CAP = 30;         // wins above this don't add weight (avoid journeymen skew)
-const CHAMP_BOOST = 1.25;   // champions (current or former) 25% more likely
-const TOP10_BOOST = 1.75;   // top-10 ranked fighters 75% more likely (stacks w/ champ)
+const CHAMP_BOOST = 1.375;  // champions (current or former) more likely
+const TOP10_BOOST = 2.125;  // top-10 ranked fighters more likely (stacks w/ champ)
 
 function fighterWeight(f){
   // floor of 1 so nobody is impossible; cap at WIN_CAP so 40 wins == 30 wins
