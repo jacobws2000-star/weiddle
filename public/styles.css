@@ -180,6 +180,37 @@ body{
 .result-guesses{font-size:26px;}
 .result-streak{font-size:26px;}
 
+/* ---------- Title Defense reveal résumé ---------- */
+.reveal-title{display:flex;flex-direction:column;gap:12px;}
+.title-summary{display:flex;gap:10px;flex-wrap:wrap;}
+.title-summary .ts-item{
+  flex:1 1 90px;
+  background:var(--cream);border:3px solid var(--ink);border-radius:8px;
+  padding:8px 10px;text-align:center;
+}
+.title-summary .k{color:var(--gray);font-size:11px;text-transform:uppercase;}
+.title-summary .v{font-size:22px;}
+.title-belts{display:flex;gap:8px;flex-wrap:wrap;}
+.belt-chip{
+  background:var(--yellow);border:3px solid var(--ink);border-radius:8px;
+  padding:4px 10px;font-size:14px;
+}
+.title-log{display:flex;flex-direction:column;gap:6px;max-height:230px;overflow-y:auto;}
+.log-row{
+  display:grid;grid-template-columns:auto auto 1fr auto;gap:10px;align-items:center;
+  border-bottom:2px dashed rgba(0,0,0,.18);padding:4px 2px;
+  font-family:Arial,sans-serif;font-size:14px;
+}
+.log-year{color:var(--gray);font-weight:bold;}
+.log-result{
+  border:2px solid var(--ink);border-radius:6px;padding:2px 7px;font-weight:bold;font-size:12px;
+}
+.log-result.won{background:var(--green);}
+.log-result.lost{background:#ff6b6b;}
+.log-result.draw{background:var(--yellow);}
+.log-opp{font-weight:bold;}
+.log-div{color:#4a4658;font-size:12px;text-align:right;}
+
 /* ---------- Game mode modal ---------- */
 .mode-modal{
   position:fixed;inset:0;background:rgba(0,0,0,.55);

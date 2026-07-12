@@ -43,10 +43,17 @@
     <div class="reveal-card">
       <img id="reveal-img" class="reveal-img" alt="fighter">
       <div class="reveal-info">
-        <div class="reveal-label">Today's Fighter is…</div>
+        <div id="reveal-label" class="reveal-label">Today's Fighter is…</div>
         <div id="reveal-name" class="reveal-name">—</div>
         <hr>
+        <!-- Classic mode: attribute stats -->
         <div class="reveal-stats" id="reveal-stats"></div>
+        <!-- Title Defense mode: championship résumé -->
+        <div id="reveal-title" class="reveal-title hidden">
+          <div class="title-summary" id="title-summary"></div>
+          <div class="title-belts" id="title-belts"></div>
+          <div class="title-log" id="title-log"></div>
+        </div>
       </div>
     </div>
     <div class="reveal-side">

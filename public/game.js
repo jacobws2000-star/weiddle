@@ -296,19 +296,61 @@ function showReveal(won, streak){
     : `The answer was ${target.name}`;
   el("result-streak").textContent = won ? String(streak) : "0";
   if (!won) localStorage.setItem("octagonle_streak", "0");
-  const stats = [
-    ["Division", target.weightClass],
-    ["Nation", target.nationality],
-    ["Record", target.record],
-    ["Height", target.displayHeight],
-    ["Age", ageFromDob(target.dob)],
-    ["Stance", target.stance || "—"],
-    ["Debut", target.debutYear],
-    ["Champ", target.isChampion ? "Yes" : "No"],
-  ];
-  el("reveal-stats").innerHTML = stats
-    .map(([k,v]) => `<div><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");
+
+  if (isTitleMode()){
+    renderTitleReveal();
+  } else {
+    el("reveal-label").textContent = "Today's Fighter is…";
+    el("reveal-stats").classList.remove("hidden");
+    el("reveal-title").classList.add("hidden");
+    const stats = [
+      ["Division", target.weightClass],
+      ["Nation", target.nationality],
+      ["Record", target.record],
+      ["Height", target.displayHeight],
+      ["Age", ageFromDob(target.dob)],
+      ["Stance", target.stance || "—"],
+      ["Debut", target.debutYear],
+      ["Champ", target.isChampion ? "Yes" : "No"],
+    ];
+    el("reveal-stats").innerHTML = stats
+      .map(([k,v]) => `<div><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");
+  }
   el("reveal").classList.remove("hidden");
+}
+
+// Championship résumé for the Title Defense reveal.
+function renderTitleReveal(){
+  el("reveal-label").textContent = "The Champion is…";
+  el("reveal-stats").classList.add("hidden");
+  el("reveal-title").classList.remove("hidden");
+
+  const bouts = target.titleBouts || [];
+  const wins = bouts.filter(b => b.result === "Won").length;
+  const losses = bouts.filter(b => b.result === "Lost").length;
+  const draws = bouts.filter(b => b.result === "Draw").length;
+  // Distinct divisions a title was contested in, kept in first-appearance order.
+  const belts = [];
+  for (const b of bouts) if (!belts.includes(b.division)) belts.push(b.division);
+  const rec = `${wins}-${losses}${draws ? "-" + draws : ""}`;
+
+  el("title-summary").innerHTML =
+    `<div class="ts-item"><div class="k">Title Bouts</div><div class="v">${bouts.length}</div></div>` +
+    `<div class="ts-item"><div class="k">Title Record</div><div class="v">${rec}</div></div>` +
+    `<div class="ts-item"><div class="k">Divisions</div><div class="v">${belts.length}</div></div>`;
+
+  el("title-belts").innerHTML = belts
+    .map(d => `<span class="belt-chip">🏆 ${d}</span>`).join("");
+
+  el("title-log").innerHTML = bouts.map(b => {
+    const cls = b.result === "Won" ? "won" : b.result === "Lost" ? "lost" : "draw";
+    return `<div class="log-row">
+      <span class="log-year">${b.year ?? ""}</span>
+      <span class="log-result ${cls}">${b.result}</span>
+      <span class="log-opp">vs ${b.opponent}</span>
+      <span class="log-div">${b.division}</span>
+    </div>`;
+  }).join("");
 }
 
 // ---------- Events ----------
