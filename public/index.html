@@ -13,8 +13,30 @@
       <input id="guess-input" type="text" autocomplete="off" placeholder="Guess a fighter…" list="fighter-list">
       <datalist id="fighter-list"></datalist>
     </div>
+    <button id="mode-btn" class="btn"><span class="ico">🎮</span> Game Mode</button>
     <div id="timer" class="timer">00:00</div>
   </header>
+
+  <!-- Game mode picker modal -->
+  <div id="mode-modal" class="mode-modal hidden">
+    <div class="mode-card">
+      <div class="mode-title">Choose a Game Mode</div>
+      <hr>
+      <button class="mode-option" data-mode="classic">
+        <div class="mode-name">Classic</div>
+        <div class="mode-desc">Guess the fighter. Green = exact, yellow = close, arrows point to the answer.</div>
+      </button>
+      <button class="mode-option" data-mode="title-normal">
+        <div class="mode-name">Title Defense — Normal</div>
+        <div class="mode-desc">Name the champion from their full UFC championship-bout history.</div>
+      </button>
+      <button class="mode-option" data-mode="title-hard">
+        <div class="mode-name">Title Defense — Hard</div>
+        <div class="mode-desc">Only their first UFC title bout is shown. 6 guesses.</div>
+      </button>
+      <button id="mode-close" class="btn">Close</button>
+    </div>
+  </div>
 
   <!-- Win / reveal banner (hidden until solved) -->
   <section id="reveal" class="reveal hidden">
@@ -43,19 +65,32 @@
   </section>
 
   <main>
-    <div class="grid-header">
-      <div class="col col-name">Name</div>
-      <div class="col">Div</div>
-      <div class="col">Nation</div>
-      <div class="col">Wins</div>
-      <div class="col">Losses</div>
-      <div class="col">Height</div>
-      <div class="col">Age</div>
-      <div class="col">Stance</div>
-      <div class="col">Debut</div>
-      <div class="col">Champ</div>
+    <!-- Classic mode: attribute grid -->
+    <div id="classic-view">
+      <div class="grid-header">
+        <div class="col col-name">Name</div>
+        <div class="col">Div</div>
+        <div class="col">Nation</div>
+        <div class="col">Wins</div>
+        <div class="col">Losses</div>
+        <div class="col">Height</div>
+        <div class="col">Age</div>
+        <div class="col">Stance</div>
+        <div class="col">Debut</div>
+        <div class="col">Champ</div>
+      </div>
+      <div id="rows"></div>
     </div>
-    <div id="rows"></div>
+
+    <!-- Title Defense mode: championship-bout clue panel -->
+    <div id="title-view" class="hidden">
+      <div class="clue-header">
+        <span id="clue-caption">Championship-bout history</span>
+        <span id="attempts" class="attempts"></span>
+      </div>
+      <div id="clue-rows"></div>
+      <div id="title-guesses"></div>
+    </div>
   </main>
 
   <script src="game.js"></script>

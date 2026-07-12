@@ -63,7 +63,12 @@ let solved = false;
 let startTime = null;
 let timerInterval = null;
 
+// Game mode: "classic" | "title-normal" | "title-hard"
+let mode = localStorage.getItem("octagonle_mode") || "classic";
+const TITLE_MAX_ATTEMPTS = 6;
+
 const el = (id) => document.getElementById(id);
+const isTitleMode = () => mode === "title-normal" || mode === "title-hard";
 
 function ageFromDob(dob){
   if (!dob) return null;
@@ -115,17 +120,54 @@ function pickTarget(){
   return DATA[DATA.length - 1];
 }
 
+// Title Defense targets: any champion with at least one completed title bout.
+function pickChampion(){
+  const pool = DATA.filter(f => f.isChampion && f.titleBouts && f.titleBouts.length);
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+
 function newGame(){
-  target = pickTarget();
   guessed = new Set();
   guessCount = 0;
   solved = false;
-  el("rows").innerHTML = "";
   el("reveal").classList.add("hidden");
   el("guess-input").value = "";
   el("guess-input").disabled = false;
+
+  if (isTitleMode()){
+    el("classic-view").classList.add("hidden");
+    el("title-view").classList.remove("hidden");
+    target = pickChampion();
+    renderCluePanel();
+  } else {
+    el("title-view").classList.add("hidden");
+    el("classic-view").classList.remove("hidden");
+    target = pickTarget();
+    el("rows").innerHTML = "";
+  }
   el("guess-input").focus();
   startTimer();
+}
+
+function renderCluePanel(){
+  const bouts = mode === "title-hard" ? target.titleBouts.slice(0, 1) : target.titleBouts;
+  el("clue-caption").textContent = mode === "title-hard"
+    ? "First UFC title bout" : "Championship-bout history";
+  el("clue-rows").innerHTML = bouts.map(b => {
+    const cls = b.result === "Won" ? "won" : b.result === "Lost" ? "lost" : "draw";
+    return `<div class="clue-row">
+      <span class="clue-result ${cls}">${b.result}</span>
+      <span class="clue-opp">vs ${b.opponent}</span>
+      <span class="clue-div">${b.division} Title</span>
+      <span class="clue-year">${b.year ?? ""}</span>
+    </div>`;
+  }).join("");
+  el("title-guesses").innerHTML = "";
+  updateAttempts();
+}
+
+function updateAttempts(){
+  el("attempts").textContent = `Guesses: ${guessCount} / ${TITLE_MAX_ATTEMPTS}`;
 }
 
 function startTimer(){
@@ -210,24 +252,50 @@ function submitGuess(name){
   if (guessed.has(f.name)) { el("guess-input").value=""; return; }
   guessed.add(f.name);
   guessCount++;
-  renderGuess(f);
   el("guess-input").value = "";
+
+  if (isTitleMode()){
+    const correct = f.name === target.name;
+    const row = document.createElement("div");
+    row.className = "title-guess-row" + (correct ? "" : " wrong");
+    row.innerHTML = `<span>${f.name}</span><span>${correct ? "✓" : "✗"}</span>`;
+    el("title-guesses").appendChild(row);
+    updateAttempts();
+    if (correct) win();
+    else if (guessCount >= TITLE_MAX_ATTEMPTS) lose();
+    return;
+  }
+
+  renderGuess(f);
   if (f.name === target.name) win();
 }
 
-function win(){
+function lose(){
   solved = true;
   clearInterval(timerInterval);
   el("guess-input").disabled = true;
+  showReveal(false);
+}
 
+function win(){
   // Streak (session-persistent via localStorage)
   let streak = parseInt(localStorage.getItem("octagonle_streak") || "0", 10) + 1;
   localStorage.setItem("octagonle_streak", String(streak));
+  solved = true;
+  clearInterval(timerInterval);
+  el("guess-input").disabled = true;
+  showReveal(true, streak);
+}
 
+function showReveal(won, streak){
+  el("result-title").textContent = won ? "You won!" : "Out of guesses!";
   el("reveal-img").src = target.headshot;
   el("reveal-name").textContent = target.name;
-  el("result-guesses").textContent = `${guessCount} guess${guessCount===1?"":"es"}`;
-  el("result-streak").textContent = String(streak);
+  el("result-guesses").textContent = won
+    ? `${guessCount} guess${guessCount===1?"":"es"}`
+    : `The answer was ${target.name}`;
+  el("result-streak").textContent = won ? String(streak) : "0";
+  if (!won) localStorage.setItem("octagonle_streak", "0");
   const stats = [
     ["Division", target.weightClass],
     ["Nation", target.nationality],
@@ -253,10 +321,33 @@ el("guess-input").addEventListener("change", (e) => {
 });
 el("play-again-btn").addEventListener("click", newGame);
 el("share-btn").addEventListener("click", () => {
-  const line = `Octagonle — solved in ${guessCount} guesses ⏱`;
+  const label = mode === "classic" ? "Octagonle" : "Octagonle Title Defense";
+  const line = `${label} — solved in ${guessCount} guesses ⏱`;
   if (navigator.clipboard) navigator.clipboard.writeText(line);
   el("share-btn").textContent = "Copied!";
   setTimeout(() => el("share-btn").textContent = "↗ Share", 1500);
+});
+
+// ---------- Game mode modal ----------
+function markSelectedMode(){
+  document.querySelectorAll(".mode-option").forEach(b =>
+    b.classList.toggle("selected", b.dataset.mode === mode));
+}
+el("mode-btn").addEventListener("click", () => {
+  markSelectedMode();
+  el("mode-modal").classList.remove("hidden");
+});
+el("mode-close").addEventListener("click", () => el("mode-modal").classList.add("hidden"));
+el("mode-modal").addEventListener("click", (e) => {
+  if (e.target.id === "mode-modal") el("mode-modal").classList.add("hidden");
+});
+document.querySelectorAll(".mode-option").forEach(btn => {
+  btn.addEventListener("click", () => {
+    mode = btn.dataset.mode;
+    localStorage.setItem("octagonle_mode", mode);
+    el("mode-modal").classList.add("hidden");
+    newGame();
+  });
 });
 
 load();

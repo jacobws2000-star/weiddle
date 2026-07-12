@@ -180,6 +180,67 @@ body{
 .result-guesses{font-size:26px;}
 .result-streak{font-size:26px;}
 
+/* ---------- Game mode modal ---------- */
+.mode-modal{
+  position:fixed;inset:0;background:rgba(0,0,0,.55);
+  display:flex;align-items:center;justify-content:center;z-index:60;padding:16px;
+}
+.mode-card{
+  background:var(--cream);
+  border:4px solid var(--ink);border-radius:12px;
+  box-shadow:6px 8px 0 var(--ink);
+  padding:22px;width:min(520px,94vw);
+  display:flex;flex-direction:column;gap:14px;
+}
+.mode-title{font-size:26px;}
+.mode-card hr{border:none;border-top:3px dashed var(--ink);margin:2px 0 6px;width:100%;}
+.mode-option{
+  text-align:left;font-family:inherit;cursor:pointer;
+  background:var(--white);
+  border:4px solid var(--ink);border-radius:10px;
+  box-shadow:4px 5px 0 var(--ink);
+  padding:14px 16px;
+}
+.mode-option:active{transform:translate(2px,2px);box-shadow:2px 3px 0 var(--ink);}
+.mode-option.selected{background:var(--green);}
+.mode-name{font-size:20px;}
+.mode-desc{font-size:14px;font-weight:normal;font-family:Arial,sans-serif;color:#4a4658;margin-top:4px;}
+#mode-close{align-self:flex-end;}
+
+/* ---------- Title Defense clue panel ---------- */
+.clue-header{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:6px 12px 14px;border-bottom:3px dashed var(--ink);margin-bottom:16px;
+  font-size:clamp(14px,1.4vw,20px);
+}
+.attempts{font-size:clamp(13px,1.3vw,18px);}
+#clue-rows{display:flex;flex-direction:column;gap:12px;margin-bottom:18px;}
+.clue-row{
+  display:grid;grid-template-columns:auto 1fr auto auto;gap:14px;align-items:center;
+  background:var(--white);
+  border:4px solid var(--ink);border-radius:8px;
+  box-shadow:5px 7px 0 var(--gold);
+  padding:14px 18px;
+  font-size:clamp(13px,1.3vw,19px);
+}
+.clue-result{
+  border:3px solid var(--ink);border-radius:8px;padding:4px 10px;font-size:clamp(12px,1.2vw,17px);
+}
+.clue-result.won{background:var(--green);}
+.clue-result.lost{background:#ff6b6b;}
+.clue-result.draw{background:var(--yellow);}
+.clue-opp{font-size:clamp(14px,1.4vw,20px);}
+.clue-div{font-family:Arial,sans-serif;font-weight:normal;color:#4a4658;}
+.clue-year{color:var(--gray);}
+#title-guesses{display:flex;flex-direction:column;gap:10px;}
+.title-guess-row{
+  background:var(--white);border:4px solid var(--ink);border-radius:8px;
+  box-shadow:4px 5px 0 var(--gold);padding:12px 18px;
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:clamp(14px,1.4vw,20px);
+}
+.title-guess-row.wrong{background:#ffe1e1;}
+
 .hidden{display:none !important;}
 
 @media(max-width:820px){

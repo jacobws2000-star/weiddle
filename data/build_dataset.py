@@ -24,6 +24,7 @@ import time
 import unicodedata
 import urllib.request
 import urllib.error
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -61,6 +62,27 @@ def fetch(url, refresh=False):
             last_err = e
             time.sleep(0.5 * (attempt + 1))
     raise RuntimeError(f"failed to fetch {url}: {last_err}")
+
+
+def fetch_many(urls, workers=8):
+    """Fetch several URLs concurrently. Returns {url: data_or_None}, order-independent.
+
+    Used to parallelize the per-bout competition/opponent lookups, which dominate
+    the title-bout build. Cached URLs return near-instantly; the pool mainly helps
+    on first (uncached) runs.
+    """
+    def _one(u):
+        try:
+            return u, fetch(u)
+        except RuntimeError:
+            return u, None
+    out = {}
+    if not urls:
+        return out
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        for u, data in ex.map(_one, urls):
+            out[u] = data
+    return out
 
 
 def norm_name(name):
@@ -120,7 +142,7 @@ def get_debut_year(aid):
     """
     ufc_items = []
     page = 1
-    while True:
+    while page <= 8:  # safety cap against pathological pagination
         try:
             d = fetch(f"{API}/athletes/{aid}/eventlog?lang=en&region=us&page={page}")
         except RuntimeError:
@@ -151,6 +173,85 @@ def get_debut_year(aid):
         if m:
             return int(m.group(1))
     return None
+
+
+def get_title_bouts(aid):
+    """Ordered list of a fighter's completed UFC championship bouts.
+
+    A bout is a title fight when its competition `types[].text` contains "Title"
+    (ESPN's gold-belt marker). Only completed bouts (item `played` is True) are
+    kept. Each entry is event-name-free so the game clue never leaks the answer:
+        {year, division, opponent, result}
+    result is "Won" / "Lost" / "Draw".
+    """
+    # Phase 1: page the event log (cheap) and collect the competition ref of every
+    # completed UFC bout.
+    comp_refs = []
+    page = 1
+    while page <= 8:  # safety cap: 8 * 25 = 200 bouts, more than any career
+        try:
+            d = fetch(f"{API}/athletes/{aid}/eventlog?lang=en&region=us&page={page}")
+        except RuntimeError:
+            break
+        ev = d.get("events", {})
+        items = ev.get("items", []) if isinstance(ev, dict) else []
+        for it in items:
+            if not it.get("played"):
+                continue  # skip scheduled/upcoming
+            cref = (it.get("competition") or {}).get("$ref", "")
+            if "/leagues/ufc/" in cref:
+                comp_refs.append(cref)
+        if page >= ev.get("pageCount", 1):
+            break
+        page += 1
+
+    # Phase 2: fetch all competitions in parallel (the bottleneck), keep title bouts.
+    comps = fetch_many(comp_refs)
+    bouts = []
+    opp_refs = []
+    for cref in comp_refs:
+        comp = comps.get(cref)
+        if not comp:
+            continue
+        division = next((t.get("text") for t in comp.get("types", [])
+                         if "title" in (t.get("text", "").lower())), None)
+        if not division:
+            continue
+        competitors = comp.get("competitors", [])
+        mine = next((c for c in competitors if c.get("id") == aid), None)
+        opp = next((c for c in competitors if c.get("id") != aid), None)
+        if not mine or not opp:
+            continue
+        if mine.get("winner"):
+            result = "Won"
+        elif opp.get("winner"):
+            result = "Lost"
+        else:
+            result = "Draw"
+        # Year straight from the competition date (no extra event fetch).
+        year = None
+        mo = re.match(r"(\d{4})", comp.get("date", "") or "")
+        if mo:
+            year = int(mo.group(1))
+        oref = (opp.get("athlete") or {}).get("$ref")
+        if oref:
+            opp_refs.append(oref)
+        bouts.append({
+            "year": year,
+            "division": division.replace("UFC ", "").replace(" Title", ""),
+            "opponent_ref": oref,
+            "result": result,
+        })
+
+    # Phase 3: resolve opponent names in parallel (only for title bouts, few).
+    opps = fetch_many(opp_refs)
+    for b in bouts:
+        oref = b.pop("opponent_ref", None)
+        adata = opps.get(oref) if oref else None
+        b["opponent"] = (adata or {}).get("displayName", "Unknown") if adata else "Unknown"
+
+    bouts.sort(key=lambda b: (b["year"] or 0))
+    return bouts
 
 
 def top_ten_ids(refresh=False):
@@ -224,6 +325,7 @@ def build(limit=None, refresh=False):
             continue
 
         name = d.get("displayName") or d.get("fullName")
+        is_champ = norm_name(name) in champ_norm
         fighters.append({
             "id": aid,
             "name": name,
@@ -240,9 +342,11 @@ def build(limit=None, refresh=False):
             "draws": rec["draws"],
             "record": rec["summary"],
             "debutYear": get_debut_year(aid),
-            "isChampion": norm_name(name) in champ_norm,
+            "isChampion": is_champ,
             "topTen": aid in top10,
             "rank": top10.get(aid),
+            # title-bout history only needed for champions (Title Defense mode)
+            "titleBouts": get_title_bouts(aid) if is_champ else [],
             "headshot": f"https://a.espncdn.com/i/headshots/mma/players/full/{aid}.png",
         })
         kept += 1
@@ -266,7 +370,9 @@ def build(limit=None, refresh=False):
         json.dump(out, f, ensure_ascii=False, indent=1)
     champs = sum(1 for f in fighters if f["isChampion"])
     ranked = sum(1 for f in fighters if f["topTen"])
-    print(f"[done] {len(fighters)} fighters -> {OUT_PATH} ({champs} champions, {ranked} top-10 ranked)", file=sys.stderr)
+    tbouts = sum(len(f["titleBouts"]) for f in fighters)
+    print(f"[done] {len(fighters)} fighters -> {OUT_PATH} "
+          f"({champs} champions, {ranked} top-10 ranked, {tbouts} title bouts)", file=sys.stderr)
 
 
 if __name__ == "__main__":
