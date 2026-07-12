@@ -264,14 +264,9 @@ body{
 .clue-opp{font-size:clamp(14px,1.4vw,20px);}
 .clue-div{font-family:Arial,sans-serif;font-weight:normal;color:#4a4658;}
 .clue-year{color:var(--gray);}
-#title-guesses{display:flex;flex-direction:column;gap:10px;}
-.title-guess-row{
-  background:var(--white);border:4px solid var(--ink);border-radius:8px;
-  box-shadow:4px 5px 0 var(--gold);padding:12px 18px;
-  display:flex;justify-content:space-between;align-items:center;
-  font-size:clamp(14px,1.4vw,20px);
-}
-.title-guess-row.wrong{background:#ffe1e1;}
+#title-grid{margin-top:20px;}
+#title-grid .grid-header{margin-bottom:12px;}
+#title-rows{display:flex;flex-direction:column;gap:14px;}
 
 .hidden{display:none !important;}
 

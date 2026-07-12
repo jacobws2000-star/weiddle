@@ -166,7 +166,8 @@ function renderCluePanel(){
       <span class="clue-year">${b.year ?? ""}</span>
     </div>`;
   }).join("");
-  el("title-guesses").innerHTML = "";
+  el("title-rows").innerHTML = "";
+  el("title-grid").classList.add("hidden");  // shown after first guess
   updateAttempts();
 }
 
@@ -246,7 +247,7 @@ function renderGuess(f){
     cell(f.debutYear, debut.status, debut.arrow) +
     cell(champTxt, champStatus, "");
 
-  el("rows").appendChild(row);
+  el(isTitleMode() ? "title-rows" : "rows").appendChild(row);
 }
 
 function submitGuess(name){
@@ -259,13 +260,10 @@ function submitGuess(name){
   el("guess-input").value = "";
 
   if (isTitleMode()){
-    const correct = f.name === target.name;
-    const row = document.createElement("div");
-    row.className = "title-guess-row" + (correct ? "" : " wrong");
-    row.innerHTML = `<span>${f.name}</span><span>${correct ? "✓" : "✗"}</span>`;
-    el("title-guesses").appendChild(row);
+    renderGuess(f);              // same classic comparison columns vs the champion
+    el("title-grid").classList.remove("hidden");
     updateAttempts();
-    if (correct) win();
+    if (f.name === target.name) win();
     else if (guessCount >= TITLE_MAX_ATTEMPTS) lose();
     return;
   }
@@ -278,6 +276,11 @@ function lose(){
   solved = true;
   clearInterval(timerInterval);
   el("guess-input").disabled = true;
+  // Reveal the answer as a comparison row so its columns are shown (all green).
+  if (isTitleMode() && !guessed.has(target.name)){
+    renderGuess(target);
+    el("title-grid").classList.remove("hidden");
+  }
   showReveal(false);
 }
 
