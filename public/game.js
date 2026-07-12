@@ -150,9 +150,13 @@ function newGame(){
 }
 
 function renderCluePanel(){
-  const bouts = mode === "title-hard" ? target.titleBouts.slice(0, 1) : target.titleBouts;
+  // Hard: only the first UFC title bout. Normal: the first three (1st/2nd/3rd),
+  // chronological (titleBouts is oldest-first).
+  const bouts = mode === "title-hard"
+    ? target.titleBouts.slice(0, 1)
+    : target.titleBouts.slice(0, 3);
   el("clue-caption").textContent = mode === "title-hard"
-    ? "First UFC title bout" : "Championship-bout history";
+    ? "First UFC title bout" : "First three UFC title bouts";
   el("clue-rows").innerHTML = bouts.map(b => {
     const cls = b.result === "Won" ? "won" : b.result === "Lost" ? "lost" : "draw";
     return `<div class="clue-row">
