@@ -24,7 +24,7 @@ function wcIndex(wc) {
 const CONTINENT = {
   // North America
   "USA":"NA","Canada":"NA","Mexico":"NA","Cuba":"NA","Jamaica":"NA","Haiti":"NA",
-  "Dominican Republic":"NA","Puerto Rico":"NA","Panama":"NA","Aruba":"NA",
+  "Dominican Republic":"NA","Puerto Rico":"NA","Panama":"NA","Aruba":"NA","Guam":"NA",
   // South America
   "Brazil":"SA","Argentina":"SA","Ecuador":"SA","Peru":"SA","Chile":"SA","Suriname":"SA",
   "Venezuela":"SA","Colombia":"SA","Bolivia":"SA","Paraguay":"SA","Guyana":"SA",
@@ -44,7 +44,7 @@ const CONTINENT = {
   "Indonesia":"AS","Iraq":"AS","Israel":"AS","Lebanon":"AS","Myanmar":"AS","Palestine":"AS",
   "United Arab Emirates":"AS","Vietnam":"AS",
   // Oceania
-  "Australia":"OC","New Zealand":"OC","Tonga":"OC","Samoa":"OC","Guam":"OC",
+  "Australia":"OC","New Zealand":"OC","Tonga":"OC","Samoa":"OC",
   // Africa
   "Nigeria":"AF","Cameroon":"AF","South Africa":"AF","Morocco":"AF","Angola":"AF",
   "Congo":"AF","Democratic Republic of Congo":"AF","Egypt":"AF","Ghana":"AF","Niger":"AF",
