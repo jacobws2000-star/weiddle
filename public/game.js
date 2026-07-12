@@ -125,7 +125,6 @@ function newGame(){
   el("guess-input").value = "";
   el("guess-input").disabled = false;
   el("guess-input").focus();
-  el("silhouette-img").src = target.headshot;
   startTimer();
 }
 
@@ -251,12 +250,6 @@ el("guess-input").addEventListener("keydown", (e) => {
 el("guess-input").addEventListener("change", (e) => {
   // Fires when a datalist option is picked
   if (DATA.some(x => x.name === e.target.value)) submitGuess(e.target.value);
-});
-el("silhouette-btn").addEventListener("click", () => {
-  el("silhouette-modal").classList.remove("hidden");
-});
-el("silhouette-modal").addEventListener("click", () => {
-  el("silhouette-modal").classList.add("hidden");
 });
 el("play-again-btn").addEventListener("click", newGame);
 el("share-btn").addEventListener("click", () => {

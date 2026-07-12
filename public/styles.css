@@ -180,17 +180,6 @@ body{
 .result-guesses{font-size:26px;}
 .result-streak{font-size:26px;}
 
-/* ---------- Silhouette ---------- */
-.silhouette-modal{
-  position:fixed;inset:0;background:rgba(0,0,0,.55);
-  display:flex;align-items:center;justify-content:center;z-index:50;
-  cursor:pointer;
-}
-.silhouette-img{
-  width:min(360px,80vw);border:5px solid var(--ink);border-radius:10px;
-  background:#000;filter:brightness(0);
-}
-
 .hidden{display:none !important;}
 
 @media(max-width:820px){
