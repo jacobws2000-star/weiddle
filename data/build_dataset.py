@@ -229,15 +229,17 @@ def get_ufc_bouts(aid):
             result = "Lost"
         else:
             result = "Draw"
-        # Year straight from the competition date (no extra event fetch).
+        # Full ISO date (for correct chronological sort) + year (for display).
+        date = comp.get("date", "") or ""
         year = None
-        mo = re.match(r"(\d{4})", comp.get("date", "") or "")
+        mo = re.match(r"(\d{4})", date)
         if mo:
             year = int(mo.group(1))
         oref = (opp.get("athlete") or {}).get("$ref")
         if oref:
             opp_refs.append(oref)
         bouts.append({
+            "_date": date,
             "year": year,
             "weightClass": weight_class,
             "opponent_ref": oref,
@@ -254,7 +256,11 @@ def get_ufc_bouts(aid):
         adata = opps.get(oref) if oref else None
         b["opponent"] = (adata or {}).get("displayName", "Unknown") if adata else "Unknown"
 
-    bouts.sort(key=lambda b: (b["year"] or 0))
+    # Chronological by full date so same-year bouts are ordered correctly, then
+    # drop the sort-only date key.
+    bouts.sort(key=lambda b: b["_date"] or "")
+    for b in bouts:
+        b.pop("_date", None)
     return bouts
 
 
