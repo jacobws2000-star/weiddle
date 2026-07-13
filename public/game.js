@@ -133,12 +133,25 @@ const WIN_CAP = 30;         // wins above this don't add weight (avoid journeyme
 const CHAMP_BOOST = 1.375;  // champions (current or former) more likely
 const TOP10_BOOST = 2.125;  // top-10 ranked fighters more likely (stacks w/ champ)
 
+// Classic Extreme only: slightly favor earlier-era targets, by UFC debut year.
+// The earliest bracket gets a marginally bigger boost.
+const ERA_BOOST_EARLY = 1.45;   // debut 1993–2004
+const ERA_BOOST_MID   = 1.40;   // debut 2005–2015
+function eraBoost(f){
+  if (mode !== "classic-extreme") return 1;
+  const y = f.debutYear || 0;
+  if (y >= 1993 && y <= 2004) return ERA_BOOST_EARLY;
+  if (y >= 2005 && y <= 2015) return ERA_BOOST_MID;
+  return 1;
+}
+
 function fighterWeight(f){
   // floor of 1 so nobody is impossible; cap at WIN_CAP so 40 wins == 30 wins
   const wins = Math.min(Math.max(f.wins || 0, 1), WIN_CAP);
   let w = Math.pow(wins, WIN_EXP);
   if (f.isChampion) w *= CHAMP_BOOST;
   if (f.topTen) w *= TOP10_BOOST;   // stacks: a top-10 champ gets 1.25 * 1.75
+  w *= eraBoost(f);                 // Extreme: nudge toward earlier debut years
   return w;
 }
 
