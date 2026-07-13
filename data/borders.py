@@ -56,7 +56,7 @@ NATIONALITY_TO_ISO2 = {
     "Bulgaria": "BG", "Thailand": "TH", "Hungary": "HU", "Niger": "NE",
     "Tunisia": "TN", "Haiti": "HT", "Paraguay": "PY", "Hong Kong": "HK",
     "Singapore": "SG", "Finland": "FI", "Belarus": "BY",
-    "Dominican Republic": "DO", "Senegal": "SN",
+    "Dominican Republic": "DO", "Senegal": "SN", "El Salvador": "SV",
 }
 
 # Manual adjacencies GeoNames can't express, added on top of the raw neighbours.

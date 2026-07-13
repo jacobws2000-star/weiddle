@@ -71,4 +71,10 @@ NATIONALITIES = {
     "Jorgen Kruth": "Sweden", "Eiji Mitsuoka": "Japan",
     "Jianping Yang": "China", "Tina Lahdemaki": "Finland",
     "Tony DeSouza": "Peru",
+
+    # --- Resolutions for Wikidata dual-citizenship / unmapped cases ---
+    "Igor Zinoviev": "Russia",        # born USSR (Leningrad)
+    "Krzysztof Soszynski": "Canada",  # Polish-born, competed for Canada
+    "Farid Basharat": "England",      # born Birmingham, England
+    "Ivan Menjivar": "El Salvador",   # Salvadoran-Canadian
 }

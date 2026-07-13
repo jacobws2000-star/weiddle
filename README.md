@@ -14,7 +14,9 @@ Endless mode: a new random active-roster fighter every game.
 data/
   build_dataset.py   # ESPN public API -> public/fighters.json
   champions.py       # curated champion name set (isChampion flag)
-  nationalities.py   # curated nationalities for fighters ESPN leaves blank
+  nationalities.py   # hand-verified nationalities for fighters ESPN leaves blank
+  wikidata_enrich.py # Wikidata lookup -> nationalities_auto.py + dobs.py
+  nationalities_auto.py / dobs.py  # generated: Wikidata nationality + DOB fills
   borders.py         # GeoNames country-border adjacency (orange nationality)
   .cache/            # cached API responses (gitignore)
 public/
@@ -34,8 +36,11 @@ All fighter data comes from **ESPN's public MMA API** (no key/auth, JSON):
 - Debut:    `.../athletes/{id}/eventlog` — earliest event year
 
 Champion status is merged from `data/champions.py`. ESPN leaves many older
-fighters' nationality blank, so `data/nationalities.py` supplies curated
-nationalities that let the all-time **Classic — Extreme** pool include them. Age
+fighters' nationality (and some DOBs) blank, so they're filled from two sources so
+the all-time **Classic — Extreme** pool can include them: hand-verified entries in
+`data/nationalities.py`, and **Wikidata** (CC0) via `data/wikidata_enrich.py`,
+which writes `data/nationalities_auto.py` (citizenship, P27) and `data/dobs.py`
+(date of birth, P569). Hand-verified data overrides the Wikidata-derived data. Age
 is computed client-side from DOB so it never goes stale. Fetching happens only at
 build time and is cached; the live game hits no network API.
 

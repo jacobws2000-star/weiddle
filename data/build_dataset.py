@@ -304,13 +304,27 @@ def build(limit=None, refresh=False):
         CHAMPION_NAMES = set()
     champ_norm = {norm_name(n) for n in CHAMPION_NAMES}
 
-    # Curated nationalities for fighters ESPN leaves blank (fills the all-time
-    # / Extreme cohort). Keyed by normalized name.
+    # Nationalities for fighters ESPN leaves blank (fills the all-time / Extreme
+    # cohort). Wikidata-derived auto data is the base; hand-verified
+    # nationalities.py overrides it. Keyed by normalized name.
+    curated_nat = {}
+    try:
+        from nationalities_auto import NATIONALITIES_AUTO
+        curated_nat.update({norm_name(k): v for k, v in NATIONALITIES_AUTO.items()})
+    except ImportError:
+        pass
     try:
         from nationalities import NATIONALITIES
+        curated_nat.update({norm_name(k): v for k, v in NATIONALITIES.items()})
     except ImportError:
-        NATIONALITIES = {}
-    curated_nat = {norm_name(k): v for k, v in NATIONALITIES.items()}
+        pass
+
+    # Wikidata-derived DOBs for fighters ESPN leaves without one.
+    try:
+        from dobs import DOBS
+        curated_dob = {norm_name(k): v for k, v in DOBS.items()}
+    except ImportError:
+        curated_dob = {}
 
     top10 = top_ten_ids(refresh=refresh)
     print(f"[rankings] {len(top10)} top-10 ranked athletes", file=sys.stderr)
@@ -337,11 +351,16 @@ def build(limit=None, refresh=False):
         nationality = flag.get("alt")
         dob = d.get("dateOfBirth")
         name = d.get("displayName") or d.get("fullName")
-        # ESPN leaves many older fighters' nationality blank ("default"); fall back
-        # to the curated map so the all-time (Extreme) pool can include them.
+        # ESPN leaves many older fighters' nationality/DOB blank; fall back to the
+        # curated + Wikidata-enriched maps so the all-time (Extreme) pool can
+        # include them.
         if not nationality or nationality == "default":
             nationality = curated_nat.get(norm_name(name))
-        if not wc or not nationality or not dob:
+        if not dob:
+            dob = curated_dob.get(norm_name(name))
+        # Height is required too: the game filters on heightIn/debutYear client-side,
+        # so a fighter without it can never appear — don't ship dead entries.
+        if not wc or not nationality or not dob or not d.get("height"):
             continue
 
         rec = get_record(aid)
@@ -351,8 +370,16 @@ def build(limit=None, refresh=False):
         # Keep anyone with a datable UFC career; the era pools (Normal / Hard /
         # Extreme) are all derived client-side from lastUfcYear.
         debut_year, last_year = get_ufc_year_range(aid)
-        if not last_year:
+        if not last_year or not debut_year:
             continue
+
+        # Sanity gate: reject implausible DOB/debut combos (guards against a bad
+        # external nationality/DOB match, e.g. a wrong-person Wikidata hit).
+        try:
+            if dob and debut_year and (debut_year - int(str(dob)[:4])) < 15:
+                continue
+        except (ValueError, TypeError):
+            pass
         is_champ = norm_name(name) in champ_norm
         # Champions get their full UFC fight log (for the Title Defense reveal) and
         # the title-only subset (for the clue panel / résumé summary).
