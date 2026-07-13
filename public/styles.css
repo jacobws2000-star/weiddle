@@ -73,7 +73,7 @@ body{
   white-space:nowrap;
 }
 .btn:active{transform:translate(2px,2px);box-shadow:3px 4px 0 var(--ink);}
-.btn-accent{background:var(--accent);color:var(--white);}
+.btn-accent{background:var(--yellow);color:var(--ink);}  /* Play Again — yellow */
 .ico{filter:grayscale(0);}
 
 .timer{
