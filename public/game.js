@@ -64,7 +64,8 @@ let solved = false;
 let startTime = null;
 let timerInterval = null;
 
-// Game mode: "classic-normal" | "classic-hard" | "title-normal" | "title-hard"
+// Game mode: "classic-normal" | "classic-hard" | "classic-extreme"
+//          | "title-normal" | "title-hard" | "title-extreme"
 let mode = localStorage.getItem("octagonle_mode") || "classic-normal";
 if (mode === "classic") mode = "classic-normal";   // migrate old saved value
 
@@ -84,12 +85,14 @@ function maxAttempts(){
     case "classic-extreme": return 13;
     case "title-normal":   return 5;
     case "title-hard":     return 6;
+    case "title-extreme":  return 6;
     default:               return 10;
   }
 }
 
 const el = (id) => document.getElementById(id);
-const isTitleMode = () => mode === "title-normal" || mode === "title-hard";
+const isTitleMode = () =>
+  mode === "title-normal" || mode === "title-hard" || mode === "title-extreme";
 
 function ageFromDob(dob){
   if (!dob) return null;
@@ -184,14 +187,30 @@ function newGame(){
   startTimer();
 }
 
+// Extreme clue: pick ONE title bout with a linear lean toward the least-recent
+// (earliest) one. titleBouts is oldest-first, so weight[i] = n - i favors index 0.
+function weightedEarliestBoutIndex(n){
+  const total = n * (n + 1) / 2;            // sum of weights n..1
+  let r = Math.random() * total;
+  for (let i = 0; i < n; i++){ r -= (n - i); if (r <= 0) return i; }
+  return 0;
+}
+
 function renderCluePanel(){
-  // Hard: only the first UFC title bout. Normal: the first three (1st/2nd/3rd),
-  // chronological (titleBouts is oldest-first).
-  const bouts = mode === "title-hard"
-    ? target.titleBouts.slice(0, 1)
-    : target.titleBouts.slice(0, 3);
-  el("clue-caption").textContent = mode === "title-hard"
-    ? "First UFC title bout" : "First three UFC title bouts";
+  // Hard: first UFC title bout. Normal: first three (chronological). Extreme: one
+  // random bout, weighted toward the earliest (titleBouts is oldest-first).
+  let bouts, caption;
+  if (mode === "title-extreme"){
+    bouts = [target.titleBouts[weightedEarliestBoutIndex(target.titleBouts.length)]];
+    caption = "A random UFC title bout";   // don't reveal which number it is
+  } else if (mode === "title-hard"){
+    bouts = target.titleBouts.slice(0, 1);
+    caption = "First UFC title bout";
+  } else {
+    bouts = target.titleBouts.slice(0, 3);
+    caption = "First three UFC title bouts";
+  }
+  el("clue-caption").textContent = caption;
   el("clue-rows").innerHTML = bouts.map(b => {
     const cls = b.result === "Won" ? "won" : b.result === "Lost" ? "lost" : "draw";
     return `<div class="clue-row">
