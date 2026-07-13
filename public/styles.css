@@ -17,7 +17,8 @@
 *{box-sizing:border-box;}
 html,body{margin:0;padding:0;}
 body{
-  font-family:"Arial Black","Arial",system-ui,sans-serif;
+  font-family:"Open Sans",system-ui,sans-serif;
+  font-weight:500;   /* medium; explicit .bold spots below stay 700 */
   background-color:var(--bg);
   background-image:radial-gradient(rgba(0,0,0,0.14) 1.2px, transparent 1.2px);
   background-size:14px 14px;
@@ -205,7 +206,7 @@ body{
 .log-row{
   display:grid;grid-template-columns:auto auto 1fr auto;gap:10px;align-items:center;
   border-bottom:2px dashed rgba(0,0,0,.18);padding:4px 2px;
-  font-family:Arial,sans-serif;font-size:14px;
+  font-size:14px;
 }
 .log-year{color:var(--gray);font-weight:bold;}
 .log-result{
@@ -242,7 +243,7 @@ body{
 .mode-option:active{transform:translate(2px,2px);box-shadow:2px 3px 0 var(--ink);}
 .mode-option.selected{background:var(--green);}
 .mode-name{font-size:20px;}
-.mode-desc{font-size:14px;font-weight:normal;font-family:Arial,sans-serif;color:#4a4658;margin-top:4px;}
+.mode-desc{font-size:14px;color:#4a4658;margin-top:4px;}
 #mode-close{align-self:flex-end;}
 
 /* ---------- Title Defense clue panel ---------- */
@@ -269,7 +270,7 @@ body{
 .clue-result.lost{background:#ff6b6b;}
 .clue-result.draw{background:var(--yellow);}
 .clue-opp{font-size:clamp(14px,1.4vw,20px);}
-.clue-div{font-family:Arial,sans-serif;font-weight:normal;color:#4a4658;}
+.clue-div{color:#4a4658;}
 .clue-year{color:var(--gray);}
 #title-grid{margin-top:20px;}
 #title-grid .grid-header{margin-bottom:12px;}
