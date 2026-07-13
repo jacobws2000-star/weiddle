@@ -24,15 +24,15 @@
       <hr>
       <button class="mode-option" data-mode="classic-normal">
         <div class="mode-name">Classic — Normal</div>
-        <div class="mode-desc">Guess the fighter. Fighters who have competed in the UFC in the last 3 years.</div>
+        <div class="mode-desc">Guess the fighter. Fighters who have competed in the UFC in the last 3 years. 10 guesses.</div>
       </button>
       <button class="mode-option" data-mode="classic-hard">
         <div class="mode-name">Classic — Hard</div>
-        <div class="mode-desc">Guess the fighter. Anyone who has fought in the UFC since 2010.</div>
+        <div class="mode-desc">Guess the fighter. Anyone who has fought in the UFC since 2010. 12 guesses.</div>
       </button>
       <button class="mode-option" data-mode="title-normal">
         <div class="mode-name">Title Defense — Normal</div>
-        <div class="mode-desc">Name the champion from their 1st, 2nd, and 3rd UFC title bouts.</div>
+        <div class="mode-desc">Name the champion from their 1st, 2nd, and 3rd UFC title bouts. 5 guesses.</div>
       </button>
       <button class="mode-option" data-mode="title-hard">
         <div class="mode-name">Title Defense — Hard</div>
@@ -78,6 +78,10 @@
   <main>
     <!-- Classic mode: attribute grid -->
     <div id="classic-view">
+      <div class="clue-header">
+        <span>Guess the fighter</span>
+        <span id="attempts-classic" class="attempts"></span>
+      </div>
       <div class="grid-header">
         <div class="col col-name">Name</div>
         <div class="col">Div</div>

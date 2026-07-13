@@ -75,7 +75,16 @@ function inClassicPool(f){
   const since = mode === "classic-hard" ? HARD_SINCE : NORMAL_SINCE;
   return (f.lastUfcYear || 0) >= since;
 }
-const TITLE_MAX_ATTEMPTS = 6;
+// Per-mode guess limit. Reaching it (without solving) ends the game.
+function maxAttempts(){
+  switch (mode){
+    case "classic-normal": return 10;
+    case "classic-hard":   return 12;
+    case "title-normal":   return 5;
+    case "title-hard":     return 6;
+    default:               return 10;
+  }
+}
 
 const el = (id) => document.getElementById(id);
 const isTitleMode = () => mode === "title-normal" || mode === "title-hard";
@@ -164,6 +173,7 @@ function newGame(){
     el("classic-view").classList.remove("hidden");
     target = pickTarget();
     el("rows").innerHTML = "";
+    updateAttempts();
   }
   el("guess-input").focus();
   startTimer();
@@ -192,7 +202,8 @@ function renderCluePanel(){
 }
 
 function updateAttempts(){
-  el("attempts").textContent = `Guesses: ${guessCount} / ${TITLE_MAX_ATTEMPTS}`;
+  const id = isTitleMode() ? "attempts" : "attempts-classic";
+  el(id).textContent = `Guesses: ${guessCount} / ${maxAttempts()}`;
 }
 
 function startTimer(){
@@ -288,12 +299,14 @@ function submitGuess(name){
     el("title-grid").classList.remove("hidden");
     updateAttempts();
     if (f.name === target.name) win();
-    else if (guessCount >= TITLE_MAX_ATTEMPTS) lose();
+    else if (guessCount >= maxAttempts()) lose();
     return;
   }
 
   renderGuess(f);
+  updateAttempts();
   if (f.name === target.name) win();
+  else if (guessCount >= maxAttempts()) lose();
 }
 
 function lose(){
