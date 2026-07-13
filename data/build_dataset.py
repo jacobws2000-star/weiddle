@@ -130,15 +130,27 @@ def get_record(aid):
     return None
 
 
-def get_debut_year(aid):
-    """UFC debut year = date of the athlete's earliest *UFC* event.
+def _event_year(item):
+    """Year of an event-log item's event, via its $ref."""
+    ref = (item.get("event") or {}).get("$ref")
+    if not ref:
+        return None
+    try:
+        dt = fetch(ref).get("date", "")
+    except RuntimeError:
+        return None
+    m = re.match(r"(\d{4})", dt or "")
+    return int(m.group(1)) if m else None
 
-    The event log mixes UFC bouts with fights from other promotions and is
-    paginated (newest-first). We page through all of it, keep only UFC bouts
-    (identified by `/leagues/ufc/` in each item's competition ref), then fetch
-    the single earliest UFC event to read its year. This avoids returning an
-    MMA/regional debut (e.g. a Brazilian Predador FC fight) instead of the UFC
-    debut, and avoids the truncated-first-page bug for high-volume fighters.
+
+def get_ufc_year_range(aid):
+    """(debut_year, last_year) of the athlete's *UFC* career.
+
+    The event log mixes UFC bouts with other promotions and is paginated
+    (newest-first). We page it, keep only UFC bouts (identified by `/leagues/ufc/`
+    in each item's competition ref), then read the earliest (debut) and latest
+    (most recent) UFC event years. Using only UFC bouts avoids counting an
+    MMA/regional fight, and paging avoids the truncated-first-page bug.
     """
     ufc_items = []
     page = 1
@@ -158,21 +170,11 @@ def get_debut_year(aid):
         page += 1
 
     if not ufc_items:
-        return None
-    # newest-first => earliest UFC bout is the last UFC item
-    ref = (ufc_items[-1].get("event") or {}).get("$ref")
-    if not ref:
-        return None
-    try:
-        edata = fetch(ref)
-    except RuntimeError:
-        return None
-    dt = edata.get("date")
-    if dt:
-        m = re.match(r"(\d{4})", dt)
-        if m:
-            return int(m.group(1))
-    return None
+        return (None, None)
+    # newest-first => last item is the debut, first item is the most recent bout.
+    debut = _event_year(ufc_items[-1])
+    last = _event_year(ufc_items[0])
+    return (debut, last)
 
 
 def get_ufc_bouts(aid):
@@ -320,9 +322,8 @@ def build(limit=None, refresh=False):
         except RuntimeError:
             continue
 
-        # Active-roster filter
-        if not d.get("active"):
-            continue
+        # Required comparison fields must be present (retired profiles are often
+        # incomplete; those fighters can't populate the grid, so drop them).
         wc = (d.get("weightClass") or {}).get("text")
         flag = (d.get("flag") or {})
         nationality = flag.get("alt")
@@ -332,6 +333,12 @@ def build(limit=None, refresh=False):
 
         rec = get_record(aid)
         if not rec:
+            continue
+
+        # Era gate: include anyone whose most recent UFC bout is 2010 or later
+        # (Hard-mode superset; Normal is derived client-side from lastUfcYear).
+        debut_year, last_year = get_ufc_year_range(aid)
+        if not last_year or last_year < 2010:
             continue
 
         name = d.get("displayName") or d.get("fullName")
@@ -357,7 +364,8 @@ def build(limit=None, refresh=False):
             "losses": rec["losses"],
             "draws": rec["draws"],
             "record": rec["summary"],
-            "debutYear": get_debut_year(aid),
+            "debutYear": debut_year,
+            "lastUfcYear": last_year,
             "isChampion": is_champ,
             "topTen": aid in top10,
             "rank": top10.get(aid),
@@ -390,8 +398,10 @@ def build(limit=None, refresh=False):
     ranked = sum(1 for f in fighters if f["topTen"])
     tbouts = sum(len(f["titleBouts"]) for f in fighters)
     afights = sum(len(f["ufcFights"]) for f in fighters)
+    normal_pool = sum(1 for f in fighters if (f["lastUfcYear"] or 0) >= 2023)
     print(f"[done] {len(fighters)} fighters -> {OUT_PATH} "
-          f"({champs} champions, {ranked} top-10 ranked, "
+          f"(Hard pool {len(fighters)} [2010+], Normal pool {normal_pool} [2023+]; "
+          f"{champs} champions, {ranked} top-10 ranked, "
           f"{tbouts} title bouts, {afights} total UFC fights)", file=sys.stderr)
 
 

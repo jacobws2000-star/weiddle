@@ -63,8 +63,17 @@ let solved = false;
 let startTime = null;
 let timerInterval = null;
 
-// Game mode: "classic" | "title-normal" | "title-hard"
-let mode = localStorage.getItem("octagonle_mode") || "classic";
+// Game mode: "classic-normal" | "classic-hard" | "title-normal" | "title-hard"
+let mode = localStorage.getItem("octagonle_mode") || "classic-normal";
+if (mode === "classic") mode = "classic-normal";   // migrate old saved value
+
+// Classic era pools, by a fighter's most recent UFC bout year.
+const NORMAL_SINCE = new Date().getFullYear() - 3;  // "last 3 years"
+const HARD_SINCE = 2010;
+function inClassicPool(f){
+  const since = mode === "classic-hard" ? HARD_SINCE : NORMAL_SINCE;
+  return (f.lastUfcYear || 0) >= since;
+}
 const TITLE_MAX_ATTEMPTS = 6;
 
 const el = (id) => document.getElementById(id);
@@ -84,10 +93,17 @@ async function load(){
   const res = await fetch("fighters.json");
   const json = await res.json();
   DATA = json.fighters.filter(f => f.heightIn && f.debutYear);
-  // Populate autocomplete
-  const dl = el("fighter-list");
-  dl.innerHTML = DATA.map(f => `<option value="${f.name}">`).join("");
   newGame();
+}
+
+// Fighters guessable in the current mode: classic restricts to the era pool;
+// title modes allow any fighter (the answer is always a champion in DATA).
+function guessablePool(){
+  return isTitleMode() ? DATA : DATA.filter(inClassicPool);
+}
+function updateAutocomplete(){
+  el("fighter-list").innerHTML =
+    guessablePool().map(f => `<option value="${f.name}">`).join("");
 }
 
 // Target selection is weighted, not uniform, so familiar (higher-win) names and
@@ -111,13 +127,14 @@ function fighterWeight(f){
 }
 
 function pickTarget(){
-  const total = DATA.reduce((s, f) => s + fighterWeight(f), 0);
+  const pool = DATA.filter(inClassicPool);           // era-restricted (Normal/Hard)
+  const total = pool.reduce((s, f) => s + fighterWeight(f), 0);
   let r = Math.random() * total;
-  for (const f of DATA){
+  for (const f of pool){
     r -= fighterWeight(f);
     if (r <= 0) return f;
   }
-  return DATA[DATA.length - 1];
+  return pool[pool.length - 1];
 }
 
 // Title Defense targets: any champion with at least one completed title bout.
@@ -133,6 +150,7 @@ function newGame(){
   el("reveal").classList.add("hidden");
   el("guess-input").value = "";
   el("guess-input").disabled = false;
+  updateAutocomplete();   // restrict guesses to the current mode's pool
 
   if (isTitleMode()){
     el("classic-view").classList.add("hidden");
@@ -254,6 +272,8 @@ function submitGuess(name){
   if (solved) return;
   const f = DATA.find(x => x.name.toLowerCase() === name.trim().toLowerCase());
   if (!f) return;
+  // Classic modes only accept guesses from the current era pool.
+  if (!isTitleMode() && !inClassicPool(f)) { el("guess-input").value=""; return; }
   if (guessed.has(f.name)) { el("guess-input").value=""; return; }
   guessed.add(f.name);
   guessCount++;
@@ -374,7 +394,7 @@ el("guess-input").addEventListener("change", (e) => {
 });
 el("play-again-btn").addEventListener("click", newGame);
 el("share-btn").addEventListener("click", () => {
-  const label = mode === "classic" ? "Octagonle" : "Octagonle Title Defense";
+  const label = isTitleMode() ? "Octagonle Title Defense" : "Octagonle";
   const line = `${label} — solved in ${guessCount} guesses ⏱`;
   if (navigator.clipboard) navigator.clipboard.writeText(line);
   el("share-btn").textContent = "Copied!";
