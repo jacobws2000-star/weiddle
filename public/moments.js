@@ -119,6 +119,7 @@ function submitMoment(){
 
   mScore += pts;
   mPlayed += 1;
+  addPoints(pts);   // lifetime account points (1 per Moments point earned) — from game.js
   if (mScore > mBest){ mBest = mScore; localStorage.setItem("octagonle_moments_best", String(mBest)); }
   updateMomentsScore();
 

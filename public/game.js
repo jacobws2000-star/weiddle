@@ -182,6 +182,55 @@ function ageFromDob(dob){
   return a;
 }
 
+// ---------- Account level (lifetime points -> level) ----------
+// Points accrue from wins across every mode (WIN_POINTS + awardWinPoints) and
+// from Defining Moments (1 per point earned, via addPoints in moments.js).
+// Stored per-browser in localStorage. Level 1 = 0 points; climbs forever.
+// Cost to advance FROM a level: L1–5 =100 · L5–20 =200 · L20–50 =450
+//   · L50–100 =1000 · L100+ =2000.
+const WIN_POINTS = {
+  "classic-normal": 10, "classic-hard": 15, "classic-extreme": 20,
+  "title-normal":   10, "title-hard":   15, "title-extreme":   15,
+};
+function levelStepCost(level){
+  if (level < 5)   return 100;
+  if (level < 20)  return 200;
+  if (level < 50)  return 450;
+  if (level < 100) return 1000;
+  return 2000;
+}
+function getPoints(){ return parseInt(localStorage.getItem("octagonle_points") || "0", 10); }
+function levelInfo(points){
+  let level = 1, spent = 0;
+  while (points - spent >= levelStepCost(level)){ spent += levelStepCost(level); level++; }
+  return { level, into: points - spent, need: levelStepCost(level) };
+}
+function renderLevelBox(){
+  const { level, into, need } = levelInfo(getPoints());
+  el("level-num").textContent = level;
+  el("level-points").textContent = `${into} / ${need}`;
+  el("level-bar-fill").style.width = `${Math.round(100 * into / need)}%`;
+}
+function addPoints(n){
+  if (!n || n < 0) return;
+  const before = levelInfo(getPoints()).level;
+  const points = getPoints() + n;
+  localStorage.setItem("octagonle_points", String(points));
+  renderLevelBox();
+  if (levelInfo(points).level > before){       // brief level-up pulse
+    const box = el("level-box");
+    box.classList.remove("leveled");
+    void box.offsetWidth;                        // restart the CSS animation
+    box.classList.add("leveled");
+  }
+}
+// Classic/Title win: base points by mode + an efficiency bonus of 2 per unused guess.
+function awardWinPoints(){
+  const base = WIN_POINTS[mode] || 10;
+  const unused = Math.max(0, maxAttempts() - guessCount);
+  addPoints(base + 2 * unused);
+}
+
 async function load(){
   // no-cache: revalidate on each load so a redeployed dataset shows immediately.
   const res = await fetch("fighters.json", { cache: "no-cache" });
@@ -489,6 +538,7 @@ function win(){
   solved = true;
   clearInterval(timerInterval);
   el("guess-input").disabled = true;
+  awardWinPoints();
   if (playStyle === "daily"){ finishDailyClassic(true); return; }
   // Streak (session-persistent via localStorage)
   const streak = parseInt(localStorage.getItem("octagonle_streak") || "0", 10) + 1;
@@ -648,4 +698,5 @@ el("daily-share").addEventListener("click", () => {
 });
 
 applyPlayStyle();
+renderLevelBox();
 load();
