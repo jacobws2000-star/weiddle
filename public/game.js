@@ -233,6 +233,7 @@ function addPoints(n){
 // never runs through here, so it is excluded from all boosts by design.
 const SPEED_BOOST = 1.65;   // <= 3 guesses -> x1.65 (ceil)
 const FAST_BOOST  = 1.20;   // exactly 4 guesses -> x1.20 (round)
+const DAILY_BOOST = 20;     // Daily play style -> x20 on all points earned
 function difficultyBoost(){
   if (mode.endsWith("-extreme")) return 1.15;   // Extreme -> +15%
   if (mode.endsWith("-hard"))    return 1.10;   // Hard    -> +10%
@@ -245,6 +246,7 @@ function awardWinPoints(){
   if (guessCount <= 3)      pts = Math.ceil(pts * SPEED_BOOST);
   else if (guessCount === 4) pts = Math.round(pts * FAST_BOOST);
   pts = Math.round(pts * difficultyBoost());   // Hard +10% / Extreme +15%
+  if (playStyle === "daily") pts *= DAILY_BOOST;   // Daily -> x5
   addPoints(pts);
 }
 

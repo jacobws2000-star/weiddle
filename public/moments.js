@@ -125,7 +125,9 @@ function submitMoment(){
 
   mScore += pts;
   mPlayed += 1;
-  addPoints(pts);   // lifetime account points (1 per Moments point earned) — from game.js
+  // Lifetime account points (1 per Moments point earned) — from game.js.
+  // Daily Moments get the x20 Daily boost (DAILY_BOOST, defined in game.js).
+  addPoints(mDaily ? pts * DAILY_BOOST : pts);
   if (mScore > mBest){ mBest = mScore; localStorage.setItem("octagonle_moments_best", String(mBest)); }
   updateMomentsScore();
 
