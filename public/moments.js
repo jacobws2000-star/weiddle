@@ -6,7 +6,9 @@
 // Reuses `el` and `DATA` from game.js (loaded first).
 
 let MOMENTS = [];
-const momentsReady = fetch("moments.json").then(r => r.json()).then(j => { MOMENTS = j.moments; });
+// no-cache: revalidate on each load so a redeployed set shows immediately.
+const momentsReady = fetch("moments.json", { cache: "no-cache" })
+  .then(r => r.json()).then(j => { MOMENTS = j.moments; });
 
 let mCurrent = null;
 let mScore = 0;

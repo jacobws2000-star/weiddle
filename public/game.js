@@ -106,7 +106,8 @@ function ageFromDob(dob){
 }
 
 async function load(){
-  const res = await fetch("fighters.json");
+  // no-cache: revalidate on each load so a redeployed dataset shows immediately.
+  const res = await fetch("fighters.json", { cache: "no-cache" });
   const json = await res.json();
   DATA = json.fighters.filter(f => f.heightIn && f.debutYear);
   BORDERS = json.borders || {};
