@@ -228,16 +228,23 @@ function addPoints(n){
 // guess, then a speed boost by how fast it was solved:
 //   3 guesses or fewer -> +65%, rounded UP to the nearest point
 //   exactly 4 guesses  -> +20%, rounded to the nearest point
-// Boosts apply to every Classic/Title mode+difficulty. Defining Moments never
-// runs through here, so it is excluded from both boosts by design.
+// Finally a difficulty boost on the total: Hard +10%, Extreme +15% (both game
+// modes). Boosts apply to every Classic/Title mode+difficulty. Defining Moments
+// never runs through here, so it is excluded from all boosts by design.
 const SPEED_BOOST = 1.65;   // <= 3 guesses -> x1.65 (ceil)
 const FAST_BOOST  = 1.20;   // exactly 4 guesses -> x1.20 (round)
+function difficultyBoost(){
+  if (mode.endsWith("-extreme")) return 1.15;   // Extreme -> +15%
+  if (mode.endsWith("-hard"))    return 1.10;   // Hard    -> +10%
+  return 1;                                      // Normal  -> unchanged
+}
 function awardWinPoints(){
   const base = WIN_POINTS[mode] || 10;
   const unused = Math.max(0, maxAttempts() - guessCount);
   let pts = base + 2 * unused;
   if (guessCount <= 3)      pts = Math.ceil(pts * SPEED_BOOST);
   else if (guessCount === 4) pts = Math.round(pts * FAST_BOOST);
+  pts = Math.round(pts * difficultyBoost());   // Hard +10% / Extreme +15%
   addPoints(pts);
 }
 
