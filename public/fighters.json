@@ -1,7 +1,7 @@
 {
  "meta": {
-  "generatedAt": "2026-07-13T19:32:15.088854+00:00",
-  "count": 1623,
+  "generatedAt": "2026-07-14T01:46:10.119050+00:00",
+  "count": 1631,
   "source": "ESPN public MMA API"
  },
  "fighters": [
@@ -24846,6 +24846,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4222369.png"
   },
   {
+   "id": "2487840",
+   "name": "Jerry Bohlander",
+   "nickname": "",
+   "weightClass": "Middleweight",
+   "nationality": "USA",
+   "heightIn": 70.9,
+   "displayHeight": "5' 11\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1974-02-12",
+   "wins": 5,
+   "losses": 3,
+   "draws": 0,
+   "record": "5-3-0",
+   "debutYear": 1996,
+   "lastUfcYear": 1999,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2487840.png"
+  },
+  {
    "id": "4397795",
    "name": "Jesse Butler",
    "nickname": "",
@@ -26350,6 +26374,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4423876.png"
+  },
+  {
+   "id": "2951453",
+   "name": "Joe Son",
+   "nickname": "",
+   "weightClass": "Open Weight",
+   "nationality": "USA",
+   "heightIn": 64.2,
+   "displayHeight": "5' 4\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1970-11-22",
+   "wins": 0,
+   "losses": 1,
+   "draws": 0,
+   "record": "0-1-0",
+   "debutYear": 1994,
+   "lastUfcYear": 1994,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2951453.png"
   },
   {
    "id": "2514885",
@@ -34594,6 +34642,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/5099679.png"
   },
   {
+   "id": "2558114",
+   "name": "Marco Ruas",
+   "nickname": "",
+   "weightClass": "Heavyweight",
+   "nationality": "Brazil",
+   "heightIn": 72.8,
+   "displayHeight": "6' 1\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1961-01-23",
+   "wins": 5,
+   "losses": 3,
+   "draws": 0,
+   "record": "5-3-0",
+   "debutYear": 1995,
+   "lastUfcYear": 1999,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2558114.png"
+  },
+  {
    "id": "5138111",
    "name": "Marco Tulio",
    "nickname": "Matuto",
@@ -34688,6 +34760,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4711604.png"
+  },
+  {
+   "id": "2501922",
+   "name": "Marcus Jones",
+   "nickname": "Big Baby",
+   "weightClass": "Heavyweight",
+   "nationality": "USA",
+   "heightIn": 78.0,
+   "displayHeight": "6' 6\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1973-08-15",
+   "wins": 0,
+   "losses": 1,
+   "draws": 0,
+   "record": "0-1-0",
+   "debutYear": 2009,
+   "lastUfcYear": 2009,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2501922.png"
   },
   {
    "id": "2957076",
@@ -35284,6 +35380,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4409220.png"
+  },
+  {
+   "id": "2951430",
+   "name": "Mark Schultz",
+   "nickname": "",
+   "weightClass": "Open Weight",
+   "nationality": "USA",
+   "heightIn": 68.1,
+   "displayHeight": "5' 8\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1960-10-26",
+   "wins": 1,
+   "losses": 0,
+   "draws": 0,
+   "record": "1-0-0",
+   "debutYear": 1996,
+   "lastUfcYear": 1996,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2951430.png"
   },
   {
    "id": "5310571",
@@ -46238,6 +46358,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2504943.png"
   },
   {
+   "id": "2558117",
+   "name": "Royce Alger",
+   "nickname": "",
+   "weightClass": "Middleweight",
+   "nationality": "USA",
+   "heightIn": 66.1,
+   "displayHeight": "5' 6\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1965-03-06",
+   "wins": 0,
+   "losses": 2,
+   "draws": 0,
+   "record": "0-2-0",
+   "debutYear": 1997,
+   "lastUfcYear": 1999,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2558117.png"
+  },
+  {
    "id": "3082805",
    "name": "Royston Wee",
    "nickname": "",
@@ -49964,6 +50108,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3127951.png"
   },
   {
+   "id": "2504081",
+   "name": "Teila Tuli",
+   "nickname": "",
+   "weightClass": "Open Weight",
+   "nationality": "USA",
+   "heightIn": 74.0,
+   "displayHeight": "6' 2\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1968-06-14",
+   "wins": 0,
+   "losses": 1,
+   "draws": 0,
+   "record": "0-1-0",
+   "debutYear": 1993,
+   "lastUfcYear": 1993,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2504081.png"
+  },
+  {
    "id": "5056144",
    "name": "Tereza Bleda",
    "nickname": "Ronda",
@@ -51258,6 +51426,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/5068617.png"
+  },
+  {
+   "id": "2558136",
+   "name": "Townsend Saunders",
+   "nickname": "",
+   "weightClass": "Lightweight",
+   "nationality": "USA",
+   "heightIn": 65.0,
+   "displayHeight": "5' 5\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1967-04-20",
+   "wins": 0,
+   "losses": 2,
+   "draws": 0,
+   "record": "0-2-0",
+   "debutYear": 1998,
+   "lastUfcYear": 1999,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2558136.png"
   },
   {
    "id": "2499917",
@@ -54325,88 +54517,6 @@
   }
  ],
  "borders": {
-  "Nigeria": [
-   "Cameroon",
-   "Niger"
-  ],
-  "Poland": [
-   "Belarus",
-   "Czechia",
-   "Germany",
-   "Lithuania",
-   "Russia",
-   "Slovakia",
-   "Ukraine"
-  ],
-  "Paraguay": [
-   "Argentina",
-   "Bolivia",
-   "Brazil"
-  ],
-  "Panama": [
-   "Colombia"
-  ],
-  "Sweden": [
-   "Finland",
-   "Norway"
-  ],
-  "Haiti": [
-   "Dominican Republic"
-  ],
-  "Chile": [
-   "Argentina",
-   "Bolivia",
-   "Peru"
-  ],
-  "Uganda": [
-   "Democratic Republic of Congo"
-  ],
-  "Thailand": [
-   "Myanmar"
-  ],
-  "Macedonia": [
-   "Albania",
-   "Bulgaria",
-   "Serbia"
-  ],
-  "Azerbaijan": [
-   "Armenia",
-   "Georgia",
-   "Iran",
-   "Russia",
-   "Türkiye"
-  ],
-  "Luxembourg": [
-   "Belgium",
-   "France",
-   "Germany"
-  ],
-  "Uzbekistan": [
-   "Afghanistan",
-   "Kazakhstan",
-   "Kyrgyzstan",
-   "Tajikistan"
-  ],
-  "Ecuador": [
-   "Colombia",
-   "Peru"
-  ],
-  "Finland": [
-   "Norway",
-   "Russia",
-   "Sweden"
-  ],
-  "Hungary": [
-   "Austria",
-   "Croatia",
-   "Romania",
-   "Serbia",
-   "Slovakia",
-   "Ukraine"
-  ],
-  "Dominican Republic": [
-   "Haiti"
-  ],
   "China": [
    "Afghanistan",
    "Hong Kong",
@@ -54419,101 +54529,53 @@
    "Tajikistan",
    "Vietnam"
   ],
-  "Bolivia": [
-   "Argentina",
-   "Brazil",
-   "Chile",
-   "Paraguay",
-   "Peru"
-  ],
-  "Türkiye": [
-   "Armenia",
-   "Azerbaijan",
-   "Bulgaria",
-   "Georgia",
-   "Iran",
-   "Iraq"
-  ],
-  "Slovakia": [
-   "Austria",
-   "Czechia",
-   "Hungary",
-   "Poland",
-   "Ukraine"
-  ],
-  "Mexico": [
-   "USA"
-  ],
-  "Peru": [
-   "Bolivia",
-   "Brazil",
-   "Chile",
-   "Colombia",
-   "Ecuador"
-  ],
-  "Denmark": [
-   "Germany"
-  ],
-  "Morocco": [
-   "Spain"
-  ],
-  "Canada": [
-   "USA"
-  ],
-  "Kyrgyzstan": [
-   "China",
-   "Kazakhstan",
-   "Tajikistan",
-   "Uzbekistan"
-  ],
-  "Wales": [
-   "England",
-   "Ireland",
-   "Scotland"
-  ],
-  "Lebanon": [
-   "Israel"
-  ],
   "England": [
    "Ireland",
    "Scotland",
    "Wales"
   ],
-  "Colombia": [
+  "Belgium": [
+   "France",
+   "Germany",
+   "Luxembourg",
+   "Netherlands"
+  ],
+  "Guyana": [
    "Brazil",
-   "Ecuador",
-   "Panama",
-   "Peru",
+   "Suriname",
    "Venezuela"
   ],
-  "Portugal": [
-   "Spain"
+  "Haiti": [
+   "Dominican Republic"
   ],
-  "Armenia": [
-   "Azerbaijan",
-   "Georgia",
+  "Chile": [
+   "Argentina",
+   "Bolivia",
+   "Peru"
+  ],
+  "Hong Kong": [
+   "China"
+  ],
+  "Lithuania": [
+   "Belarus",
+   "Poland",
+   "Russia"
+  ],
+  "Uzbekistan": [
+   "Afghanistan",
+   "Kazakhstan",
+   "Kyrgyzstan",
+   "Tajikistan"
+  ],
+  "Iraq": [
    "Iran",
+   "Jordan",
    "Türkiye"
   ],
-  "Georgia": [
-   "Armenia",
-   "Azerbaijan",
-   "Russia",
-   "Türkiye"
-  ],
-  "Palestine": [
-   "Egypt",
-   "Israel",
-   "Jordan"
-  ],
-  "Netherlands": [
-   "Belgium",
-   "Germany"
-  ],
-  "Scotland": [
-   "England",
-   "Ireland",
-   "Wales"
+  "Myanmar": [
+   "China",
+   "India",
+   "Thailand"
   ],
   "Kazakhstan": [
    "China",
@@ -54521,15 +54583,19 @@
    "Russia",
    "Uzbekistan"
   ],
-  "Moldova": [
-   "Romania",
+  "Vietnam": [
+   "China"
+  ],
+  "Romania": [
+   "Bulgaria",
+   "Hungary",
+   "Moldova",
+   "Serbia",
    "Ukraine"
   ],
-  "Czechia": [
-   "Austria",
-   "Germany",
-   "Poland",
-   "Slovakia"
+  "Bosnia & Herzegovina": [
+   "Croatia",
+   "Serbia"
   ],
   "Serbia": [
    "Albania",
@@ -54540,155 +54606,11 @@
    "Macedonia",
    "Romania"
   ],
-  "France": [
-   "Belgium",
-   "Germany",
-   "Italy",
-   "Luxembourg",
-   "Spain",
-   "Switzerland"
-  ],
-  "Egypt": [
-   "Israel",
-   "Palestine"
-  ],
-  "Jordan": [
-   "Iraq",
-   "Israel",
-   "Palestine"
-  ],
-  "Israel": [
-   "Egypt",
-   "Jordan",
-   "Lebanon",
-   "Palestine"
-  ],
-  "Albania": [
-   "Macedonia",
-   "Serbia"
-  ],
-  "Hong Kong": [
-   "China"
-  ],
-  "Ukraine": [
-   "Belarus",
-   "Hungary",
-   "Moldova",
-   "Poland",
-   "Romania",
-   "Russia",
-   "Slovakia"
-  ],
-  "Suriname": [
-   "Brazil",
-   "Guyana"
-  ],
-  "India": [
-   "China",
-   "Myanmar"
-  ],
-  "Romania": [
-   "Bulgaria",
-   "Hungary",
-   "Moldova",
-   "Serbia",
-   "Ukraine"
-  ],
-  "USA": [
-   "Canada",
-   "Cuba",
-   "Mexico"
-  ],
-  "Ireland": [
-   "England",
-   "Scotland",
-   "Wales"
-  ],
-  "Democratic Republic of Congo": [
-   "Uganda"
-  ],
-  "Italy": [
-   "Austria",
-   "France",
-   "Switzerland"
-  ],
-  "Croatia": [
-   "Bosnia & Herzegovina",
-   "Hungary",
-   "Serbia"
-  ],
   "Afghanistan": [
    "China",
    "Iran",
    "Tajikistan",
    "Uzbekistan"
-  ],
-  "Cameroon": [
-   "Nigeria"
-  ],
-  "Bulgaria": [
-   "Macedonia",
-   "Romania",
-   "Serbia",
-   "Türkiye"
-  ],
-  "Tajikistan": [
-   "Afghanistan",
-   "China",
-   "Kyrgyzstan",
-   "Uzbekistan"
-  ],
-  "South Africa": [
-   "Zimbabwe"
-  ],
-  "Switzerland": [
-   "Austria",
-   "France",
-   "Germany",
-   "Italy"
-  ],
-  "Argentina": [
-   "Bolivia",
-   "Brazil",
-   "Chile",
-   "Paraguay"
-  ],
-  "Austria": [
-   "Czechia",
-   "Germany",
-   "Hungary",
-   "Italy",
-   "Slovakia",
-   "Switzerland"
-  ],
-  "Venezuela": [
-   "Brazil",
-   "Colombia",
-   "Guyana"
-  ],
-  "Niger": [
-   "Nigeria"
-  ],
-  "Iraq": [
-   "Iran",
-   "Jordan",
-   "Türkiye"
-  ],
-  "Mongolia": [
-   "China",
-   "Russia"
-  ],
-  "Bosnia & Herzegovina": [
-   "Croatia",
-   "Serbia"
-  ],
-  "Guyana": [
-   "Brazil",
-   "Suriname",
-   "Venezuela"
-  ],
-  "Zimbabwe": [
-   "South Africa"
   ],
   "Germany": [
    "Austria",
@@ -54701,44 +54623,155 @@
    "Poland",
    "Switzerland"
   ],
-  "Iran": [
-   "Afghanistan",
+  "Azerbaijan": [
    "Armenia",
-   "Azerbaijan",
-   "Iraq",
+   "Georgia",
+   "Iran",
+   "Russia",
    "Türkiye"
   ],
-  "Belgium": [
-   "France",
-   "Germany",
-   "Luxembourg",
-   "Netherlands"
+  "Jordan": [
+   "Iraq",
+   "Israel",
+   "Palestine"
   ],
-  "Spain": [
-   "France",
-   "Morocco",
-   "Portugal"
-  ],
-  "Brazil": [
-   "Argentina",
-   "Bolivia",
-   "Colombia",
-   "Guyana",
-   "Paraguay",
-   "Peru",
-   "Suriname",
-   "Venezuela"
-  ],
-  "Myanmar": [
-   "China",
-   "India",
-   "Thailand"
+  "Finland": [
+   "Norway",
+   "Russia",
+   "Sweden"
   ],
   "Belarus": [
    "Lithuania",
    "Poland",
    "Russia",
    "Ukraine"
+  ],
+  "France": [
+   "Belgium",
+   "Germany",
+   "Italy",
+   "Luxembourg",
+   "Spain",
+   "Switzerland"
+  ],
+  "Palestine": [
+   "Egypt",
+   "Israel",
+   "Jordan"
+  ],
+  "Czechia": [
+   "Austria",
+   "Germany",
+   "Poland",
+   "Slovakia"
+  ],
+  "India": [
+   "China",
+   "Myanmar"
+  ],
+  "Moldova": [
+   "Romania",
+   "Ukraine"
+  ],
+  "Scotland": [
+   "England",
+   "Ireland",
+   "Wales"
+  ],
+  "Tajikistan": [
+   "Afghanistan",
+   "China",
+   "Kyrgyzstan",
+   "Uzbekistan"
+  ],
+  "Ukraine": [
+   "Belarus",
+   "Hungary",
+   "Moldova",
+   "Poland",
+   "Romania",
+   "Russia",
+   "Slovakia"
+  ],
+  "Bolivia": [
+   "Argentina",
+   "Brazil",
+   "Chile",
+   "Paraguay",
+   "Peru"
+  ],
+  "Kyrgyzstan": [
+   "China",
+   "Kazakhstan",
+   "Tajikistan",
+   "Uzbekistan"
+  ],
+  "Lebanon": [
+   "Israel"
+  ],
+  "Nigeria": [
+   "Cameroon",
+   "Niger"
+  ],
+  "Colombia": [
+   "Brazil",
+   "Ecuador",
+   "Panama",
+   "Peru",
+   "Venezuela"
+  ],
+  "Ecuador": [
+   "Colombia",
+   "Peru"
+  ],
+  "Niger": [
+   "Nigeria"
+  ],
+  "Democratic Republic of Congo": [
+   "Uganda"
+  ],
+  "Egypt": [
+   "Israel",
+   "Palestine"
+  ],
+  "Cameroon": [
+   "Nigeria"
+  ],
+  "Mexico": [
+   "USA"
+  ],
+  "Morocco": [
+   "Spain"
+  ],
+  "Mongolia": [
+   "China",
+   "Russia"
+  ],
+  "Spain": [
+   "France",
+   "Morocco",
+   "Portugal"
+  ],
+  "Suriname": [
+   "Brazil",
+   "Guyana"
+  ],
+  "Bulgaria": [
+   "Macedonia",
+   "Romania",
+   "Serbia",
+   "Türkiye"
+  ],
+  "Croatia": [
+   "Bosnia & Herzegovina",
+   "Hungary",
+   "Serbia"
+  ],
+  "Uganda": [
+   "Democratic Republic of Congo"
+  ],
+  "Canada": [
+   "USA"
   ],
   "Russia": [
    "Azerbaijan",
@@ -54753,21 +54786,180 @@
    "Poland",
    "Ukraine"
   ],
+  "Dominican Republic": [
+   "Haiti"
+  ],
+  "Brazil": [
+   "Argentina",
+   "Bolivia",
+   "Colombia",
+   "Guyana",
+   "Paraguay",
+   "Peru",
+   "Suriname",
+   "Venezuela"
+  ],
+  "Thailand": [
+   "Myanmar"
+  ],
+  "Iran": [
+   "Afghanistan",
+   "Armenia",
+   "Azerbaijan",
+   "Iraq",
+   "Türkiye"
+  ],
+  "Peru": [
+   "Bolivia",
+   "Brazil",
+   "Chile",
+   "Colombia",
+   "Ecuador"
+  ],
+  "Sweden": [
+   "Finland",
+   "Norway"
+  ],
+  "Slovakia": [
+   "Austria",
+   "Czechia",
+   "Hungary",
+   "Poland",
+   "Ukraine"
+  ],
+  "Switzerland": [
+   "Austria",
+   "France",
+   "Germany",
+   "Italy"
+  ],
+  "Luxembourg": [
+   "Belgium",
+   "France",
+   "Germany"
+  ],
+  "Portugal": [
+   "Spain"
+  ],
+  "Türkiye": [
+   "Armenia",
+   "Azerbaijan",
+   "Bulgaria",
+   "Georgia",
+   "Iran",
+   "Iraq"
+  ],
+  "South Africa": [
+   "Zimbabwe"
+  ],
+  "Poland": [
+   "Belarus",
+   "Czechia",
+   "Germany",
+   "Lithuania",
+   "Russia",
+   "Slovakia",
+   "Ukraine"
+  ],
+  "Armenia": [
+   "Azerbaijan",
+   "Georgia",
+   "Iran",
+   "Türkiye"
+  ],
   "Norway": [
    "Finland",
    "Russia",
    "Sweden"
   ],
+  "Wales": [
+   "England",
+   "Ireland",
+   "Scotland"
+  ],
+  "Netherlands": [
+   "Belgium",
+   "Germany"
+  ],
+  "Ireland": [
+   "England",
+   "Scotland",
+   "Wales"
+  ],
+  "Venezuela": [
+   "Brazil",
+   "Colombia",
+   "Guyana"
+  ],
+  "Albania": [
+   "Macedonia",
+   "Serbia"
+  ],
+  "USA": [
+   "Canada",
+   "Cuba",
+   "Mexico"
+  ],
+  "Panama": [
+   "Colombia"
+  ],
+  "Hungary": [
+   "Austria",
+   "Croatia",
+   "Romania",
+   "Serbia",
+   "Slovakia",
+   "Ukraine"
+  ],
+  "Italy": [
+   "Austria",
+   "France",
+   "Switzerland"
+  ],
+  "Austria": [
+   "Czechia",
+   "Germany",
+   "Hungary",
+   "Italy",
+   "Slovakia",
+   "Switzerland"
+  ],
+  "Denmark": [
+   "Germany"
+  ],
+  "Paraguay": [
+   "Argentina",
+   "Bolivia",
+   "Brazil"
+  ],
+  "Georgia": [
+   "Armenia",
+   "Azerbaijan",
+   "Russia",
+   "Türkiye"
+  ],
+  "Israel": [
+   "Egypt",
+   "Jordan",
+   "Lebanon",
+   "Palestine"
+  ],
   "Cuba": [
    "USA"
   ],
-  "Lithuania": [
-   "Belarus",
-   "Poland",
-   "Russia"
+  "Argentina": [
+   "Bolivia",
+   "Brazil",
+   "Chile",
+   "Paraguay"
   ],
-  "Vietnam": [
-   "China"
+  "Macedonia": [
+   "Albania",
+   "Bulgaria",
+   "Serbia"
+  ],
+  "Zimbabwe": [
+   "South Africa"
   ]
  }
 }

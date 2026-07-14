@@ -56,6 +56,7 @@ NATIONALITIES_AUTO = {
     "Garett Whiteley": "USA",
     "Georges St-Pierre": "Canada",
     "Gerard Gordeau": "Netherlands",
+    "Ivan Menjivar": "El Salvador",
     "Jack Nilson": "USA",
     "Jake Ellenberger": "USA",
     "James Wilks": "England",

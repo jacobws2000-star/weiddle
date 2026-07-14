@@ -17,6 +17,7 @@ DOBS = {
     "Igor Zinoviev": "1966-05-23",
     "Jason DeLucia": "1969-07-24",
     "Jason Reinhardt": "1969-10-31",
+    "Jason Tan": "2000-01-01",
     "Jeff Hougland": "1978-08-02",
     "Jeremy Jackson": "1982-09-19",
     "Jerry Bohlander": "1974-02-12",

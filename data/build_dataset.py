@@ -326,6 +326,13 @@ def build(limit=None, refresh=False):
     except ImportError:
         curated_dob = {}
 
+    # Wikidata-derived heights for fighters ESPN leaves without one.
+    try:
+        from heights import HEIGHTS
+        curated_height = {norm_name(k): v for k, v in HEIGHTS.items()}
+    except ImportError:
+        curated_height = {}
+
     top10 = top_ten_ids(refresh=refresh)
     print(f"[rankings] {len(top10)} top-10 ranked athletes", file=sys.stderr)
 
@@ -358,9 +365,15 @@ def build(limit=None, refresh=False):
             nationality = curated_nat.get(norm_name(name))
         if not dob:
             dob = curated_dob.get(norm_name(name))
+        height_in = d.get("height")
+        display_height = d.get("displayHeight")
+        if not height_in:
+            ch = curated_height.get(norm_name(name))
+            if ch:
+                height_in, display_height = ch["heightIn"], ch["displayHeight"]
         # Height is required too: the game filters on heightIn/debutYear client-side,
         # so a fighter without it can never appear — don't ship dead entries.
-        if not wc or not nationality or not dob or not d.get("height"):
+        if not wc or not nationality or not dob or not height_in:
             continue
 
         rec = get_record(aid)
@@ -393,8 +406,8 @@ def build(limit=None, refresh=False):
             "nickname": d.get("nickname") or "",
             "weightClass": wc,
             "nationality": nationality,
-            "heightIn": d.get("height"),
-            "displayHeight": d.get("displayHeight"),
+            "heightIn": height_in,
+            "displayHeight": display_height,
             "reachIn": d.get("reach"),
             "stance": (d.get("stance") or {}).get("text") or "",
             "dob": dob,
