@@ -56,13 +56,19 @@ function finishDailyMoments(){
   showDailyLocked();       // defined in game.js
 }
 
-// Suggest any roster fighter plus every fighter named in a moment.
+// Suggest any roster fighter plus every fighter named in a moment. Uses the
+// shared mobile-friendly dropdown from game.js (attachAutocomplete) instead of
+// a <datalist>, which doesn't render suggestions reliably on phones.
 function buildMomentsAutocomplete(){
+  if (buildMomentsAutocomplete._done) return;   // attach the widgets once
+  buildMomentsAutocomplete._done = true;
   const names = new Set();
   if (Array.isArray(DATA)) DATA.forEach(f => names.add(f.name));
   MOMENTS.forEach(m => { names.add(m.fighter1); names.add(m.fighter2); });
-  el("moments-fighter-list").innerHTML =
-    [...names].sort().map(n => `<option value="${n}"></option>`).join("");
+  const sorted = [...names].sort();
+  const getNames = () => sorted;
+  attachAutocomplete(el("m-f1"), getNames, () => {});
+  attachAutocomplete(el("m-f2"), getNames, () => {});
 }
 
 function updateMomentsScore(){

@@ -13,8 +13,7 @@
   <header class="topbar">
     <div class="guess-box">
       <span class="qmark">?</span>
-      <input id="guess-input" type="text" autocomplete="off" placeholder="Guess a fighter…" list="fighter-list">
-      <datalist id="fighter-list"></datalist>
+      <input id="guess-input" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Guess a fighter…">
     </div>
     <button id="play-btn" class="btn"><span class="ico">♾️</span> <span id="play-label">Infinity</span></button>
     <button id="mode-btn" class="btn"><span class="ico">🎮</span> Game Mode</button>
@@ -184,14 +183,13 @@
         <label class="m-field"><span>Event #</span>
           <input id="m-event" type="number" inputmode="numeric" placeholder="e.g. 229" autocomplete="off"></label>
         <label class="m-field"><span>Fighter 1</span>
-          <input id="m-f1" type="text" list="moments-fighter-list" placeholder="Name…" autocomplete="off"></label>
+          <input id="m-f1" type="text" placeholder="Name…" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></label>
         <label class="m-field"><span>Fighter 2</span>
-          <input id="m-f2" type="text" list="moments-fighter-list" placeholder="Name…" autocomplete="off"></label>
+          <input id="m-f2" type="text" placeholder="Name…" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></label>
         <label class="m-field"><span>Year</span>
           <input id="m-year" type="number" inputmode="numeric" placeholder="e.g. 2018" autocomplete="off"></label>
         <button id="m-submit" class="btn btn-accent">Submit</button>
       </div>
-      <datalist id="moments-fighter-list"></datalist>
 
       <div id="m-reveal" class="m-reveal hidden">
         <div id="m-points" class="m-points"></div>

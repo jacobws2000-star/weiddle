@@ -255,9 +255,98 @@ async function load(){
 function guessablePool(){
   return isTitleMode() ? DATA : DATA.filter(inClassicPool);
 }
-function updateAutocomplete(){
-  el("fighter-list").innerHTML =
-    guessablePool().map(f => `<option value="${f.name}">`).join("");
+// ---------- Autocomplete ----------
+// <datalist> suggestions are unreliable on mobile Safari/Chrome — they often
+// never render, which left phone users able to type but unable to pick a
+// fighter. This is a custom dropdown that works with touch: it filters as you
+// type, uses large tap targets, and you tap a name to choose it. Arrow keys +
+// Enter still work for desktop.
+function attachAutocomplete(input, getNames, onPick, opts = {}){
+  const submitOnEnter = !!opts.submitOnEnter;
+  const menu = document.createElement("div");
+  menu.className = "ac-menu hidden";
+  document.body.appendChild(menu);
+  let items = [];
+  let active = -1;
+  const isOpen = () => !menu.classList.contains("hidden");
+
+  const place = () => {
+    const r = input.getBoundingClientRect();
+    menu.style.left  = (r.left + window.scrollX) + "px";
+    menu.style.top   = (r.bottom + window.scrollY) + "px";
+    menu.style.width = r.width + "px";
+  };
+  const close = () => { menu.classList.add("hidden"); menu.replaceChildren(); items = []; active = -1; };
+  const highlight = () => {
+    [...menu.children].forEach((c, i) => c.classList.toggle("active", i === active));
+    if (active >= 0) menu.children[active].scrollIntoView({ block: "nearest" });
+  };
+  const render = () => {
+    const q = input.value.trim().toLowerCase();
+    if (!q){ close(); return; }
+    const starts = [], contains = [];
+    for (const n of getNames()){
+      const low = n.toLowerCase();
+      if (low.startsWith(q)) starts.push(n);
+      else if (low.includes(q)) contains.push(n);
+    }
+    items = starts.concat(contains).slice(0, 8);
+    if (!items.length){ close(); return; }
+    menu.replaceChildren(...items.map(n => {
+      const d = document.createElement("div");
+      d.className = "ac-item";
+      d.textContent = n;
+      return d;
+    }));
+    active = -1;
+    place();
+    menu.classList.remove("hidden");
+  };
+  const pick = (i) => {
+    if (i < 0 || i >= items.length) return;
+    const name = items[i];
+    input.value = name;
+    close();
+    onPick(name);
+  };
+
+  input.addEventListener("input", render);
+  input.addEventListener("focus", render);
+  // Capture phase so we can intercept Enter before other listeners (e.g. the
+  // Moments form's submit-on-Enter) whenever a suggestion is highlighted.
+  input.addEventListener("keydown", (e) => {
+    if (!isOpen()){
+      if (e.key === "Enter" && submitOnEnter) onPick(input.value);
+      return;
+    }
+    if (e.key === "ArrowDown"){ e.preventDefault(); active = Math.min(active + 1, items.length - 1); highlight(); }
+    else if (e.key === "ArrowUp"){ e.preventDefault(); active = Math.max(active - 1, 0); highlight(); }
+    else if (e.key === "Enter"){
+      if (active >= 0){ e.preventDefault(); e.stopPropagation(); pick(active); }
+      else if (submitOnEnter){ e.preventDefault(); const v = input.value; close(); onPick(v); }
+      else close();   // let the host form handle Enter (e.g. Moments submit)
+    }
+    else if (e.key === "Escape"){ close(); }
+  }, true);
+
+  // Tap/click a suggestion. Fire on pointer/mouse *down* + preventDefault so the
+  // input doesn't blur (which would close the menu) before the pick registers.
+  // Both event types are wired so touch, mouse, and pen all work; after a pick
+  // the menu is emptied, so the redundant event is a harmless no-op.
+  const onDown = (e) => {
+    const item = e.target.closest(".ac-item");
+    if (!item) return;
+    e.preventDefault();
+    pick([...menu.children].indexOf(item));
+  };
+  menu.addEventListener("pointerdown", onDown);
+  menu.addEventListener("mousedown", onDown);
+
+  document.addEventListener("pointerdown", (e) => {
+    if (e.target !== input && !menu.contains(e.target)) close();
+  });
+  window.addEventListener("scroll", () => { if (isOpen()) place(); }, true);
+  window.addEventListener("resize", () => { if (isOpen()) place(); });
 }
 
 // Target selection is weighted, not uniform, so familiar (higher-win) names and
@@ -355,7 +444,6 @@ function newGame(){
 
   el("guess-input").value = "";
   el("guess-input").disabled = false;
-  updateAutocomplete();   // restrict guesses to the current mode's pool
 
   if (isTitleMode()){
     el("classic-view").classList.add("hidden");
@@ -626,13 +714,13 @@ function renderTitleReveal(){
 }
 
 // ---------- Events ----------
-el("guess-input").addEventListener("keydown", (e) => {
-  if (e.key === "Enter") submitGuess(e.target.value);
-});
-el("guess-input").addEventListener("change", (e) => {
-  // Fires when a datalist option is picked
-  if (DATA.some(x => x.name === e.target.value)) submitGuess(e.target.value);
-});
+// Guesses are restricted to the current mode's pool; suggestions refresh live.
+attachAutocomplete(
+  el("guess-input"),
+  () => guessablePool().map(f => f.name),
+  submitGuess,
+  { submitOnEnter: true }
+);
 el("play-again-btn").addEventListener("click", newGame);
 el("share-btn").addEventListener("click", () => {
   const label = isTitleMode() ? "Octagonle Title Defense" : "Octagonle";
