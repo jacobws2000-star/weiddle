@@ -754,6 +754,17 @@ function showReveal(won, streak){
   el("reveal").classList.remove("hidden");
 }
 
+// A bout's weightClass ("Heavyweight") is the same for an interim and an
+// undisputed belt; only ESPN's title label (titleDivision) carries the
+// distinction, and it prefixes "Interim" but never spells out "Undisputed".
+// TUF tournament finals are flagged as title bouts but aren't championships,
+// so their label is left alone.
+function titleBoutLabel(b){
+  const label = b.titleDivision || b.division || b.weightClass || "";
+  if (/tournament/i.test(label)) return label;
+  return /^interim\b/i.test(label) ? label : `Undisputed ${label}`;
+}
+
 // Championship résumé for the Title Defense reveal.
 function renderTitleReveal(){
   el("reveal-label").textContent = "The Champion is…";
@@ -781,7 +792,7 @@ function renderTitleReveal(){
   const fights = (target.ufcFights && target.ufcFights.length) ? target.ufcFights : bouts;
   el("title-log").innerHTML = fights.map(b => {
     const cls = b.result === "Won" ? "won" : b.result === "Lost" ? "lost" : "draw";
-    const div = b.weightClass || b.division || "";
+    const div = b.isTitle ? titleBoutLabel(b) : (b.weightClass || b.division || "");
     const belt = b.isTitle ? '<span class="log-belt">🏆</span>' : "";
     return `<div class="log-row">
       <span class="log-year">${b.year ?? ""}</span>
