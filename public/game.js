@@ -394,8 +394,41 @@ function fighterWeight(f){
   return w;
 }
 
-function pickTarget(rng = Math.random){
+// Guess-history boost, Classic + Infinity only: 10% of the time the target is drawn
+// uniformly from the fighters guessed in the previous game, instead of the usual
+// weighted draw. History is kept per difficulty and holds one game only. The previous
+// answer is excluded so a solved fighter doesn't cycle straight back around.
+const HISTORY_BOOST = 0.10;
+function historyKey(){ return "octagonle_lastguesses_" + mode; }
+function getLastGuesses(){
+  try {
+    const a = JSON.parse(localStorage.getItem(historyKey()) || "[]");
+    return Array.isArray(a) ? a : [];
+  } catch { return []; }
+}
+function saveLastGuesses(){
+  const names = [...guessed].filter(n => n !== target.name);
+  localStorage.setItem(historyKey(), JSON.stringify(names));
+}
+// Returns null when the boost doesn't fire, or when there's no usable history (the
+// first game of a difficulty, or a previous game solved in one guess) — the caller
+// then falls back to the weighted draw.
+function pickFromHistory(pool, rng){
+  if (rng() >= HISTORY_BOOST) return null;
+  const last = new Set(getLastGuesses());
+  const cands = pool.filter(f => last.has(f.name));
+  return cands.length ? cands[Math.floor(rng() * cands.length)] : null;
+}
+
+// useHistory stays off for Daily: the boost is per-browser, and Daily's answer has to
+// be identical for everyone. Leaving it off also consumes no rng(), so Daily's seeded
+// sequence is unchanged from before this existed.
+function pickTarget(rng = Math.random, useHistory = false){
   const pool = DATA.filter(inClassicPool);           // era-restricted (Normal/Hard)
+  if (useHistory){
+    const boosted = pickFromHistory(pool, rng);
+    if (boosted) return boosted;
+  }
   const total = pool.reduce((s, f) => s + fighterWeight(f), 0);
   let r = rng() * total;
   for (const f of pool){
@@ -425,6 +458,7 @@ function newGame(){
 
   // Daily is limited to Classic-Normal + Moments.
   if (playStyle === "daily" && mode !== "moments") mode = "classic-normal";
+  syncGiveUp();   // reads the settled mode/playStyle; covers the early returns below
 
   // Defining Moments is a self-contained trivia mode (own view + module).
   const momentsMode = mode === "moments";
@@ -467,7 +501,7 @@ function newGame(){
     el("classic-view").classList.remove("hidden");
     target = playStyle === "daily"
       ? pickTarget(seededRng(dailyKey() + "|classic"))
-      : pickTarget();
+      : pickTarget(Math.random, true);
     el("rows").innerHTML = "";
     updateAttempts();
   }
@@ -630,8 +664,34 @@ function finishDailyClassic(won){
   showDailyLocked();
 }
 
+// Give Up is Infinity-only (Daily is one-and-done, so there's no burning today's shot
+// by accident) and never applies to the self-contained Moments mode.
+function canGiveUp(){
+  return playStyle === "infinity" && mode !== "moments" && !solved;
+}
+function syncGiveUp(){
+  el("giveup-btn").classList.toggle("hidden", !canGiveUp());
+}
+
+function giveUp(){
+  solved = true;
+  syncGiveUp();
+  clearInterval(timerInterval);
+  el("guess-input").disabled = true;
+  // Reveal the answer as a comparison row, matching lose().
+  if (isTitleMode() && !guessed.has(target.name)){
+    renderGuess(target);
+    el("title-grid").classList.remove("hidden");
+  }
+  // No saveLastGuesses() here, on purpose: giving up leaves the guess-history boost
+  // untouched, so the next game still draws from your last *finished* game.
+  localStorage.setItem("octagonle_streak", "0");
+  showReveal(false);
+}
+
 function lose(){
   solved = true;
+  syncGiveUp();
   clearInterval(timerInterval);
   el("guess-input").disabled = true;
   // Reveal the answer as a comparison row so its columns are shown (all green).
@@ -640,16 +700,19 @@ function lose(){
     el("title-grid").classList.remove("hidden");
   }
   if (playStyle === "daily"){ finishDailyClassic(false); return; }
+  if (!isTitleMode()) saveLastGuesses();
   localStorage.setItem("octagonle_streak", "0");
   showReveal(false);
 }
 
 function win(){
   solved = true;
+  syncGiveUp();
   clearInterval(timerInterval);
   el("guess-input").disabled = true;
   awardWinPoints();
   if (playStyle === "daily"){ finishDailyClassic(true); return; }
+  if (!isTitleMode()) saveLastGuesses();
   // Streak (session-persistent via localStorage)
   const streak = parseInt(localStorage.getItem("octagonle_streak") || "0", 10) + 1;
   localStorage.setItem("octagonle_streak", String(streak));
@@ -740,6 +803,20 @@ el("share-btn").addEventListener("click", () => {
   if (navigator.clipboard) navigator.clipboard.writeText(line);
   el("share-btn").textContent = "Copied!";
   setTimeout(() => el("share-btn").textContent = "↗ Share", 1500);
+});
+
+// ---------- Give-up modal ----------
+function closeGiveUp(){ el("giveup-modal").classList.add("hidden"); }
+el("giveup-btn").addEventListener("click", () => {
+  if (canGiveUp()) el("giveup-modal").classList.remove("hidden");
+});
+el("giveup-cancel").addEventListener("click", closeGiveUp);
+el("giveup-modal").addEventListener("click", (e) => {
+  if (e.target.id === "giveup-modal") closeGiveUp();
+});
+el("giveup-confirm").addEventListener("click", () => {
+  closeGiveUp();
+  if (canGiveUp()) giveUp();   // re-checked: the game may have ended while open
 });
 
 // ---------- Game mode modal ----------

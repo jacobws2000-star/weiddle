@@ -20,8 +20,25 @@
     </div>
     <button id="play-btn" class="btn"><span class="ico">♾️</span> <span id="play-label">Infinity</span></button>
     <button id="mode-btn" class="btn"><span class="ico">🎮</span> Game Mode</button>
+    <button id="giveup-btn" class="btn hidden"><span class="ico">🏳️</span> Give Up</button>
     <div id="timer" class="timer">00:00</div>
   </header>
+
+  <!-- Give-up confirmation modal (Infinity only) -->
+  <div id="giveup-modal" class="mode-modal hidden">
+    <div class="mode-card">
+      <div class="mode-title">Give up?</div>
+      <hr>
+      <div class="mode-desc">The answer will be revealed and this counts as a loss, so your streak resets to 0. Your guesses from your last finished game are kept as-is.</div>
+      <!-- Deliberately NOT .mode-option: that class carries the game-mode picker's
+           click handler and Daily's visibility toggle. .giveup-option just copies its look. -->
+      <button id="giveup-confirm" class="giveup-option">
+        <div class="mode-name">🏳️ Reveal the answer</div>
+        <div class="mode-desc">End this game and show who it was.</div>
+      </button>
+      <button id="giveup-cancel" class="btn">Keep playing</button>
+    </div>
+  </div>
 
   <!-- Game mode picker modal -->
   <div id="mode-modal" class="mode-modal hidden">
