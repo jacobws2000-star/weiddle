@@ -798,7 +798,7 @@ attachAutocomplete(
 );
 el("play-again-btn").addEventListener("click", newGame);
 el("share-btn").addEventListener("click", () => {
-  const label = isTitleMode() ? "Octagonle Title Defense" : "Octagonle";
+  const label = isTitleMode() ? "Weiddle Title Defense" : "Weiddle";
   const line = `${label} — solved in ${guessCount} guesses ⏱`;
   if (navigator.clipboard) navigator.clipboard.writeText(line);
   el("share-btn").textContent = "Copied!";
@@ -877,8 +877,8 @@ el("daily-share").addEventListener("click", () => {
   const rec = getDailyRecord(kind) || {};
   const streak = localStorage.getItem("octagonle_daily_streak") || "0";
   const line = kind === "moments"
-    ? `Octagonle Daily Moments — ${rec.score}/${rec.max} · streak ${streak} 🥊`
-    : `Octagonle Daily (${dailyKey()}) — ${rec.won ? rec.guesses + " guesses" : "X"} · streak ${streak} 🥊`;
+    ? `Weiddle Daily Moments — ${rec.score}/${rec.max} · streak ${streak} 🥊`
+    : `Weiddle Daily (${dailyKey()}) — ${rec.won ? rec.guesses + " guesses" : "X"} · streak ${streak} 🥊`;
   if (navigator.clipboard) navigator.clipboard.writeText(line);
   el("daily-share").textContent = "Copied!";
   setTimeout(() => el("daily-share").textContent = "↗ Share", 1500);
