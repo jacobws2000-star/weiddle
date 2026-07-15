@@ -154,11 +154,16 @@ function showDailyLocked(){
 }
 
 // Classic era pools, by a fighter's most recent UFC bout year.
-const NORMAL_SINCE = new Date().getFullYear() - 3;  // "last 3 years"
+// Read in UTC, to agree with dailyKey(). On the local clock a player east of UTC rolls
+// into the new year hours early, so on Dec 31 they'd share everyone's dailyKey but draw
+// from a year-smaller pool — a different Daily answer on the same day, which is the one
+// thing Daily can't do. Computed per call, not once at load, so a tab left open across
+// midnight on 1 Jan doesn't hold a stale window either.
+function normalSince(){ return new Date().getUTCFullYear() - 3; }   // "last 3 years"
 const HARD_SINCE = 2010;
 function inClassicPool(f){
   if (mode === "classic-extreme") return true;   // all-time: every fighter in DATA
-  const since = mode === "classic-hard" ? HARD_SINCE : NORMAL_SINCE;
+  const since = mode === "classic-hard" ? HARD_SINCE : normalSince();
   return (f.lastUfcYear || 0) >= since;
 }
 // Per-mode guess limit. Reaching it (without solving) ends the game.
