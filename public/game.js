@@ -564,12 +564,16 @@ function startTimer(){
 }
 
 // Build one comparison cell. kind: exact|close|none plus optional arrow.
-function cell(display, status, arrow){
+// `label` names the column. It is invisible on desktop (the grid header does that
+// job) and surfaces via .cell::before on phones, where the row becomes a card and
+// the header is hidden.
+function cell(display, status, arrow, label){
   const arr = arrow ? `<span class="arrow">${arrow}</span>` : "";
-  if (status === "exact") return `<div class="cell"><span class="chip green">${display} ✓</span></div>`;
-  if (status === "border") return `<div class="cell"><span class="chip orange">${display}</span></div>`;
-  if (status === "close") return `<div class="cell"><span class="chip yellow">${display} ${arr||"≈"}</span></div>`;
-  return `<div class="cell">${display} ${arr}</div>`;
+  const l = label ? ` data-label="${label}"` : "";
+  if (status === "exact") return `<div class="cell"${l}><span class="chip green">${display} ✓</span></div>`;
+  if (status === "border") return `<div class="cell"${l}><span class="chip orange">${display}</span></div>`;
+  if (status === "close") return `<div class="cell"${l}><span class="chip yellow">${display} ${arr||"≈"}</span></div>`;
+  return `<div class="cell"${l}><span class="val">${display} ${arr}</span></div>`;
 }
 
 function numCompare(guessVal, targetVal, key){
@@ -616,15 +620,15 @@ function renderGuess(f){
 
   row.innerHTML =
     `<div class="cell cell-name">${f.name}</div>` +
-    cell(f.weightClass.replace(/Women's\s+/i,"W "), divStatus, divArrow) +
-    cell(f.nationality, natStatus, "") +
-    cell(f.wins, wins.status, wins.arrow) +
-    cell(f.losses, losses.status, losses.arrow) +
-    cell(f.displayHeight || `${f.heightIn}"`, height.status, height.arrow) +
-    cell(gAge ?? "?", age.status, age.arrow) +
-    cell(f.stance || "—", stanceStatus, "") +
-    cell(f.debutYear, debut.status, debut.arrow) +
-    cell(champTxt, champStatus, "");
+    cell(f.weightClass.replace(/Women's\s+/i,"W "), divStatus, divArrow, "Div") +
+    cell(f.nationality, natStatus, "", "Nation") +
+    cell(f.wins, wins.status, wins.arrow, "Wins") +
+    cell(f.losses, losses.status, losses.arrow, "Losses") +
+    cell(f.displayHeight || `${f.heightIn}"`, height.status, height.arrow, "Height") +
+    cell(gAge ?? "?", age.status, age.arrow, "Age") +
+    cell(f.stance || "—", stanceStatus, "", "Stance") +
+    cell(f.debutYear, debut.status, debut.arrow, "Debut") +
+    cell(champTxt, champStatus, "", "Champ");
 
   el(isTitleMode() ? "title-rows" : "rows").appendChild(row);
 }
