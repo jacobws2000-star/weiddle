@@ -6,7 +6,8 @@
   --green:#3bd93b;
   --green-d:#2bb52b;
   --yellow:#ffd23a;
-  --orange:#ff8c1a;     /* nationality that borders the target country */
+  --orange:#ff8c1a;     /* nationality that borders the target country; a division one weight away */
+  --red:#ff6b6b;        /* a lost fight; a division of the wrong gender */
   --gold:#d9b45a;
   --white:#ffffff;
   --gray:#9a94a6;
@@ -194,7 +195,8 @@ body{
 }
 .chip.green{background:var(--green);}
 .chip.yellow{background:var(--yellow);}
-.chip.orange{background:var(--orange);}   /* nationality borders the target */
+.chip.orange{background:var(--orange);}   /* nationality borders the target; division one weight away */
+.chip.red{background:var(--red);}         /* division of the wrong gender */
 .arrow{font-weight:bold;}
 
 /* ---------- Reveal ---------- */
@@ -527,4 +529,10 @@ body{
     font-weight:700;
   }
   .chip{font-size:11px;padding:3px 6px;border-width:2px;}
+  /* A chip is a flex row, so a long value gets squeezed into the space left by its
+     arrow and breaks mid-word ("W Bantamweigh / t"). Laying the chip out as inline
+     content instead lets it wrap at the space, and wrapped lines need the leading
+     that line-height:1 denies them. Scoped to the grid: the reveal's belt chips and
+     the moments tags are short and stay flex. */
+  .cell .chip{display:inline-block;line-height:1.3;}
 }

@@ -18,6 +18,12 @@ function wcIndex(wc) {
   const clean = wc.replace(/Women's\s+/i, "").trim();
   return WEIGHT_ORDER.indexOf(clean);
 }
+// Gender is carried by the division name itself — "Women's Bantamweight" vs plain
+// "Bantamweight". Every non-prefixed division in the roster is men's, including
+// the old Open Weight and Catch Weight entries.
+function wcGender(wc) {
+  return /Women's/i.test(wc || "") ? "F" : "M";
+}
 
 // Nationality -> continent, so "close" nationality = same continent.
 // Covers every nationality present in fighters.json (kept in sync with the data).
@@ -563,17 +569,20 @@ function startTimer(){
   }, 1000);
 }
 
-// Build one comparison cell. kind: exact|close|none plus optional arrow.
-// `label` names the column. It is invisible on desktop (the grid header does that
-// job) and surfaces via .cell::before on phones, where the row becomes a card and
-// the header is hidden.
+// Build one comparison cell. status: exact|border|close|wrong-gender|none, plus an
+// optional arrow. `label` names the column. It is invisible on desktop (the grid
+// header does that job) and surfaces via .cell::before on phones, where the row
+// becomes a card and the header is hidden.
 function cell(display, status, arrow, label){
-  const arr = arrow ? `<span class="arrow">${arrow}</span>` : "";
+  const arr = arrow ? ` <span class="arrow">${arrow}</span>` : "";
   const l = label ? ` data-label="${label}"` : "";
   if (status === "exact") return `<div class="cell"${l}><span class="chip green">${display} ✓</span></div>`;
-  if (status === "border") return `<div class="cell"${l}><span class="chip orange">${display}</span></div>`;
-  if (status === "close") return `<div class="cell"${l}><span class="chip yellow">${display} ${arr||"≈"}</span></div>`;
-  return `<div class="cell"${l}><span class="val">${display} ${arr}</span></div>`;
+  // Orange carries an arrow for Div (one weight class away) but not for Nation,
+  // which passes none — a bordering country has no direction.
+  if (status === "border") return `<div class="cell"${l}><span class="chip orange">${display}${arr}</span></div>`;
+  if (status === "close") return `<div class="cell"${l}><span class="chip yellow">${display}${arr || " ≈"}</span></div>`;
+  if (status === "wrong-gender") return `<div class="cell"${l}><span class="chip red">${display}${arr}</span></div>`;
+  return `<div class="cell"${l}><span class="val">${display}${arr}</span></div>`;
 }
 
 function numCompare(guessVal, targetVal, key){
@@ -588,14 +597,18 @@ function renderGuess(f){
   const row = document.createElement("div");
   row.className = "guess-row";
 
-  // Division (weight class)
+  // Division: exact (green) > adjacent weight, same gender (orange) > same gender
+  // (yellow) > wrong gender (red). Gender gates the colours — matching only the
+  // weight half of the name ("Bantamweight" against "Women's Bantamweight") earns
+  // red, not credit, since the divisions are separate ladders. The arrow compares
+  // by poundage and still points the right way across genders, so it always shows.
   const gi = wcIndex(f.weightClass), ti = wcIndex(target.weightClass);
-  let divStatus = "none", divArrow = "";
+  let divStatus, divArrow = "";
+  if (gi >= 0 && ti >= 0 && gi !== ti) divArrow = ti > gi ? "↑" : "↓";
   if (f.weightClass === target.weightClass) divStatus = "exact";
-  else if (gi >= 0 && ti >= 0){
-    divArrow = ti > gi ? "↑" : "↓";
-    if (Math.abs(ti - gi) === 1) divStatus = "close";
-  }
+  else if (wcGender(f.weightClass) !== wcGender(target.weightClass)) divStatus = "wrong-gender";
+  else if (gi >= 0 && ti >= 0 && Math.abs(ti - gi) === 1) divStatus = "border";
+  else divStatus = "close";
 
   // Nationality: exact country > shares a border (orange) > same continent (yellow).
   let natStatus = "none";
