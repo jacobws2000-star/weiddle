@@ -248,15 +248,21 @@ body{
 .log-belt{margin-right:3px;}
 
 /* ---------- Game mode modal ---------- */
+/* align-items:center would clip a too-tall card at BOTH ends with no way to scroll
+   to the hidden parts. flex-start + `margin:auto` on the card still centers it when
+   it fits, but degrades to top-aligned-and-scrollable when it doesn't. */
 .mode-modal{
   position:fixed;inset:0;background:rgba(0,0,0,.55);
-  display:flex;align-items:center;justify-content:center;z-index:60;padding:16px;
+  display:flex;align-items:flex-start;justify-content:center;z-index:60;padding:16px;
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
 }
 .mode-card{
   background:var(--cream);
   border:4px solid var(--ink);border-radius:12px;
   box-shadow:6px 8px 0 var(--ink);
   padding:22px;width:min(520px,94vw);
+  margin:auto;
   display:flex;flex-direction:column;gap:14px;
 }
 .mode-title{font-size:26px;}
@@ -403,4 +409,27 @@ body{
   .level-box{left:8px;bottom:8px;padding:7px 10px;gap:8px;}
   .level-num{font-size:22px;}
   .level-prog{width:100px;}
+
+  /* The header wraps to 2-3 rows on a phone and was eating ~a third of the screen.
+     The timer's larger font also made wrapped rows uneven, since flex-wrap sizes each
+     row to its own tallest item. A shared min-height (44px = the iOS tap-target floor)
+     keeps every row level whatever ends up on it. */
+  .topbar{gap:8px;margin-bottom:16px;}
+  .topbar .btn,.timer{
+    min-height:44px;font-size:15px;padding:6px 12px;
+    border-width:3px;box-shadow:3px 4px 0 var(--ink);
+  }
+  .guess-box{flex-basis:100%;border-width:3px;box-shadow:3px 4px 0 var(--ink);}
+  .qmark{font-size:20px;padding:0 12px;}
+
+  /* Shrink the modal chrome so there's much less to scroll: the 7-option mode picker
+     goes 1134px -> 826px on a 375px-wide screen. It still exceeds a phone viewport,
+     so the scrolling enabled on .mode-modal is what actually makes it usable. */
+  .mode-card{padding:16px;gap:10px;box-shadow:4px 5px 0 var(--ink);}
+  .mode-title{font-size:20px;}
+  .mode-option,.giveup-option{
+    padding:10px 12px;border-width:3px;box-shadow:3px 4px 0 var(--ink);
+  }
+  .mode-name{font-size:15px;}
+  .mode-desc{font-size:12px;}
 }
