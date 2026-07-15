@@ -45,33 +45,36 @@
     <div class="mode-card">
       <div class="mode-title">Choose a Game Mode</div>
       <hr>
+      <!-- Descriptions are kept to one line each so the whole picker fits on a phone
+           screen without scrolling. The mode name already says "guess the fighter" /
+           "name the champion", so the copy doesn't repeat it. -->
       <button class="mode-option" data-mode="classic-normal" data-daily>
         <div class="mode-name">Classic — Normal</div>
-        <div class="mode-desc">Guess the fighter. Fighters who have competed in the UFC in the last 3 years. 10 guesses.</div>
+        <div class="mode-desc">In the UFC in the last 3 years. 10 guesses.</div>
       </button>
       <button class="mode-option" data-mode="classic-hard">
         <div class="mode-name">Classic — Hard</div>
-        <div class="mode-desc">Guess the fighter. Anyone who has fought in the UFC since 2010. 12 guesses.</div>
+        <div class="mode-desc">Anyone in the UFC since 2010. 12 guesses.</div>
       </button>
       <button class="mode-option" data-mode="classic-extreme">
         <div class="mode-name">Classic — Extreme</div>
-        <div class="mode-desc">Guess the fighter. Any fighter in UFC history our data covers. 13 guesses.</div>
+        <div class="mode-desc">Anyone in UFC history we cover. 13 guesses.</div>
       </button>
       <button class="mode-option" data-mode="title-normal">
         <div class="mode-name">Title Defense — Normal</div>
-        <div class="mode-desc">Name the champion from their 1st, 2nd, and 3rd UFC title bouts. 5 guesses.</div>
+        <div class="mode-desc">Their 1st, 2nd, and 3rd title bouts. 5 guesses.</div>
       </button>
       <button class="mode-option" data-mode="title-hard">
         <div class="mode-name">Title Defense — Hard</div>
-        <div class="mode-desc">Only their first UFC title bout is shown. 6 guesses.</div>
+        <div class="mode-desc">Their first title bout only. 6 guesses.</div>
       </button>
       <button class="mode-option" data-mode="title-extreme">
         <div class="mode-name">Title Defense — Extreme</div>
-        <div class="mode-desc">Name the champion from one random UFC title bout (leans toward their earliest). 6 guesses.</div>
+        <div class="mode-desc">Random title bout, earliest-leaning. 6 guesses.</div>
       </button>
       <button class="mode-option" data-mode="moments" data-daily>
         <div class="mode-name">Defining Moments</div>
-        <div class="mode-desc">From clues about a famous numbered main event, guess the event number, both fighters, and the year. Points add up.</div>
+        <div class="mode-desc">Event number, fighters, year. Points add up.</div>
       </button>
       <button id="mode-close" class="btn">Close</button>
     </div>

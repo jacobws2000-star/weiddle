@@ -422,14 +422,14 @@ body{
   .guess-box{flex-basis:100%;border-width:3px;box-shadow:3px 4px 0 var(--ink);}
   .qmark{font-size:20px;padding:0 12px;}
 
-  /* Shrink the modal chrome so there's much less to scroll: the 7-option mode picker
-     goes 1134px -> 826px on a 375px-wide screen. It still exceeds a phone viewport,
-     so the scrolling enabled on .mode-modal is what actually makes it usable. */
-  .mode-card{padding:16px;gap:10px;box-shadow:4px 5px 0 var(--ink);}
-  .mode-title{font-size:20px;}
+  /* Compact modal chrome. Together with the one-line descriptions this brings the
+     7-option mode picker from 1134px down to under a 667px phone viewport, so it no
+     longer needs scrolling (.mode-modal stays scrollable for shorter screens). */
+  .mode-card{padding:14px;gap:8px;box-shadow:4px 5px 0 var(--ink);}
+  .mode-title{font-size:19px;}
   .mode-option,.giveup-option{
-    padding:10px 12px;border-width:3px;box-shadow:3px 4px 0 var(--ink);
+    padding:8px 12px;border-width:3px;box-shadow:3px 4px 0 var(--ink);
   }
   .mode-name{font-size:15px;}
-  .mode-desc{font-size:12px;}
+  .mode-desc{font-size:12px;margin-top:2px;}
 }
