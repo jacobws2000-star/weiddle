@@ -422,7 +422,15 @@ body{
   .cell,.grid-header .col{font-size:9px;}
   .reveal-stats{grid-template-columns:repeat(2,1fr);}
   .m-form{grid-template-columns:1fr 1fr;}
-  .level-box{left:8px;bottom:8px;padding:7px 10px;gap:8px;}
+  /* Sits lower to clear the guess cards. Less room here than `bottom` implies:
+     the drop shadow hangs below the box, so the old bottom:8px with a 6px
+     shadow was already painting within 2px of the edge. Trimming the shadow to
+     the 3px/4px the rest of the mobile chrome uses frees the difference.
+     bottom:4px is the floor -- 4px + a 4px shadow lands exactly on the viewport
+     edge, and 3px clips the shadow. Net drop is only 4px; the reason the box no
+     longer lands on a card is body's 60px bottom padding, which lets the last
+     card scroll clear of it. */
+  .level-box{left:8px;bottom:4px;padding:7px 10px;gap:8px;box-shadow:3px 4px 0 #555555;}
   .level-num{font-size:22px;}
   .level-prog{width:100px;}
 
