@@ -614,7 +614,10 @@ function renderGuess(f){
   // Stance (categorical)
   const stanceStatus = f.stance && f.stance === target.stance ? "exact" : "none";
 
-  // Champion (boolean)
+  // Champion (boolean). isChampion means "has held a UFC belt at some point",
+  // undisputed or interim, current or former — hence the "Ever Champ" label. The
+  // roster has no current-vs-former split: ESPN's champion rankings have been
+  // frozen since ~2021, so the only source is the hand-kept list in champions.py.
   const champStatus = f.isChampion === target.isChampion ? "exact" : "none";
   const champTxt = f.isChampion ? "Yes" : "No";
 
@@ -628,7 +631,7 @@ function renderGuess(f){
     cell(gAge ?? "?", age.status, age.arrow, "Age") +
     cell(f.stance || "—", stanceStatus, "", "Stance") +
     cell(f.debutYear, debut.status, debut.arrow, "Debut") +
-    cell(champTxt, champStatus, "", "Champ");
+    cell(champTxt, champStatus, "", "Ever Champ");
 
   el(isTitleMode() ? "title-rows" : "rows").appendChild(row);
 }
@@ -746,7 +749,7 @@ function showReveal(won, streak){
       ["Age", ageFromDob(target.dob)],
       ["Stance", target.stance || "—"],
       ["Debut", target.debutYear],
-      ["Champ", target.isChampion ? "Yes" : "No"],
+      ["Ever Champ", target.isChampion ? "Yes" : "No"],
     ];
     el("reveal-stats").innerHTML = stats
       .map(([k,v]) => `<div><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");

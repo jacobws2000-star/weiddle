@@ -138,11 +138,15 @@ body{
 .grid-header{
   padding:10px 12px 16px;
   margin-bottom:16px;
+  /* stretch, not center: "Ever Champ" wraps to two lines in its narrow track, and
+     centering would leave that one pill taller than its neighbours. */
+  align-items:stretch;
 }
 /* Column labels are pills so the header speaks the same cream-card language as
    the guess rows it labels; the tracks are shared, so each pill sits over its
    column. Hidden entirely on mobile, where guesses become stacked cards. */
 .grid-header .col{
+  display:flex;align-items:center;justify-content:center;
   text-align:center;
   font-size:clamp(11px,1.15vw,18px);
   letter-spacing:.5px;
