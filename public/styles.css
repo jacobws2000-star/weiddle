@@ -137,14 +137,16 @@ body{
 }
 .grid-header{
   padding:10px 12px 16px;
-  border-bottom:3px dashed var(--on-bg);
   margin-bottom:16px;
-  color:var(--on-bg);
 }
+/* Column labels are pills so the header speaks the same cream-card language as
+   the guess rows it labels; the tracks are shared, so each pill sits over its
+   column. Hidden entirely on mobile, where guesses become stacked cards. */
 .grid-header .col{
   text-align:center;
   font-size:clamp(11px,1.15vw,18px);
   letter-spacing:.5px;
+  padding:5px 4px;
 }
 .grid-header .col-name{text-align:center;}
 
@@ -299,13 +301,25 @@ body{
 #mode-close{align-self:flex-end;}
 #giveup-cancel{align-self:flex-end;}
 
-/* ---------- Title Defense clue panel ---------- */
+/* ---------- Clue header (all three modes) ---------- */
 .clue-header{
-  display:flex;justify-content:space-between;align-items:center;
-  padding:6px 12px 14px;border-bottom:3px dashed var(--on-bg);margin-bottom:16px;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+  padding:6px 12px 14px;margin-bottom:16px;
   font-size:clamp(14px,1.4vw,20px);
   font-weight:700;   /* caption ("Guess the fighter") + attempts counter */
-  color:var(--on-bg);
+}
+.clue-header > span{padding:6px 12px;}
+/* Header text is pilled rather than left bare on the crimson: every other surface
+   on the page is a cream card with the ink border and hard shadow, and these two
+   bands were the only exception. Shared by the caption/counter line and the
+   column labels above the guess grid. */
+.clue-header > span,
+.grid-header .col{
+  background:var(--cream);
+  color:var(--ink);
+  border:3px solid var(--ink);
+  border-radius:8px;
+  box-shadow:3px 4px 0 var(--ink);
 }
 .attempts{font-size:clamp(13px,1.3vw,18px);}
 #clue-rows{display:flex;flex-direction:column;gap:12px;margin-bottom:18px;}
