@@ -191,6 +191,9 @@ function ageFromDob(dob){
 const WIN_POINTS = {
   "classic-normal": 10, "classic-hard": 15, "classic-extreme": 20,
   "title-normal":   10, "title-hard":   15, "title-extreme":   15,
+  // Moments never reaches awardWinPoints (it has no win/lose path); moments.js
+  // scales this base by the share of clues solved.
+  "moments":        50,
 };
 function levelStepCost(level){
   if (level < 5)   return 100;

@@ -17,6 +17,7 @@ let mBest = parseInt(localStorage.getItem("octagonle_moments_best") || "0", 10);
 
 // Daily Moments: a fixed seeded set played once per UTC day.
 const DAILY_MOMENTS_N = 5;
+const MOMENT_CLUES = 4;   // event #, fighter 1, fighter 2, year
 let mDaily = false, mDailySet = [], mDailyIdx = 0;
 function seededMoments(n){
   const rng = seededRng(dailyKey() + "|moments");  // helpers from game.js
@@ -50,7 +51,7 @@ async function startMoments(){
 }
 
 function finishDailyMoments(){
-  setDailyRecord("moments", { done: true, score: mScore, max: DAILY_MOMENTS_N * 4 });
+  setDailyRecord("moments", { done: true, score: mScore, max: DAILY_MOMENTS_N * MOMENT_CLUES });
   updateDailyStreak(true);
   el("moments-view").classList.add("hidden");
   showDailyLocked();       // defined in game.js
@@ -123,16 +124,23 @@ function submitMoment(){
   const fighterPts = used.filter(Boolean).length;
   const pts = (gotEvent ? 1 : 0) + (gotYear ? 1 : 0) + fighterPts;
 
+  // Account points scale with the SHARE of clues solved, against the mode's
+  // base score: 4/4 -> 50, 3/4 -> 38, 2/4 -> 25, 1/4 -> 13, 0/4 -> 0.
+  // mScore stays the raw clue tally, since Best and the Daily record's max
+  // (DAILY_MOMENTS_N * MOMENT_CLUES) are both counted in clues.
+  const awarded = Math.round((pts / MOMENT_CLUES) * WIN_POINTS.moments);
+
   mScore += pts;
   mPlayed += 1;
-  // Lifetime account points (1 per Moments point earned) — from game.js.
+  // Lifetime account points — from game.js.
   // Daily Moments get the x20 Daily boost (DAILY_BOOST, defined in game.js).
-  addPoints(mDaily ? pts * DAILY_BOOST : pts);
+  addPoints(mDaily ? awarded * DAILY_BOOST : awarded);
   if (mScore > mBest){ mBest = mScore; localStorage.setItem("octagonle_moments_best", String(mBest)); }
   updateMomentsScore();
 
   const mark = ok => ok ? "✓" : "✗";
-  el("m-points").textContent = `+${pts} point${pts === 1 ? "" : "s"} this moment`;
+  el("m-points").textContent =
+    `+${mDaily ? awarded * DAILY_BOOST : awarded} points  ·  ${pts}/${MOMENT_CLUES} clues (${Math.round(100 * pts / MOMENT_CLUES)}%)`;
   el("m-answer").innerHTML =
     `<div class="ma-row ${gotEvent ? "hit" : "miss"}">${mark(gotEvent)} Event — <b>UFC ${m.eventNumber}</b></div>` +
     `<div class="ma-row ${used[0] || used[1] ? "hit" : "miss"}">${mark(fighterPts > 0)} Fighters — <b>${m.fighter1}</b> vs <b>${m.fighter2}</b> <span class="ma-sub">(${fighterPts}/2)</span></div>` +
