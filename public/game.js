@@ -390,21 +390,58 @@ function eraBoost(f){
   return 1;
 }
 
-function fighterWeight(f){
+// Classic Infinity only: a losing run leans the draw toward names you'd know. Each
+// loss (a give-up counts as one — you didn't find the fighter either way) bumps a
+// counter, a win clears it, and the tier multiplies the champion/top-10 weighting.
+// Applied once per fighter rather than per boost, so a top-10 champ isn't squared:
+// at 5 losses every ever-champ or top-10 fighter carries 1.5x their usual weight.
+// One counter across all three Classic difficulties — the streak follows the player,
+// not the difficulty. Daily is excluded: its answer is seeded off the date and has to
+// come out identical for every player, so it can't depend on your local record.
+const LOSS_STREAK_KEY = "octagonle_lossstreak";
+const LOSS_STREAK_TIERS = [[10, 2.0], [5, 1.5], [2, 1.3]];   // highest first
+function getLossStreak(){
+  return parseInt(localStorage.getItem(LOSS_STREAK_KEY) || "0", 10) || 0;
+}
+function bumpLossStreak(){
+  if (isTitleMode()) return;
+  localStorage.setItem(LOSS_STREAK_KEY, String(getLossStreak() + 1));
+}
+function clearLossStreak(){
+  if (isTitleMode()) return;
+  localStorage.setItem(LOSS_STREAK_KEY, "0");
+}
+function lossStreakBoost(){
+  if (playStyle !== "infinity" || isTitleMode()) return 1;
+  const n = getLossStreak();
+  for (const [losses, mult] of LOSS_STREAK_TIERS) if (n >= losses) return mult;
+  return 1;
+}
+
+// lossMult is passed in rather than read here: this runs once per fighter per draw,
+// and the streak can't change mid-draw.
+function fighterWeight(f, lossMult = 1){
   // floor of 1 so nobody is impossible; cap at WIN_CAP so 40 wins == 30 wins
   const wins = Math.min(Math.max(f.wins || 0, 1), WIN_CAP);
   let w = Math.pow(wins, WIN_EXP);
   if (f.isChampion) w *= CHAMP_BOOST;
   if (f.topTen) w *= TOP10_BOOST;   // stacks: a top-10 champ gets 1.25 * 1.75
+  if (f.isChampion || f.topTen) w *= lossMult;   // losing run -> more familiar answers
   w *= eraBoost(f);                 // Extreme: nudge toward earlier debut years
   return w;
 }
 
 // Guess-history boost, Classic + Infinity only: 10% of the time the target is drawn
-// uniformly from the fighters guessed in the previous game, instead of the usual
-// weighted draw. History is kept per difficulty and holds one game only. The previous
-// answer is excluded so a solved fighter doesn't cycle straight back around.
+// from the fighters guessed in the previous game, instead of the usual weighted draw.
+// History is kept per difficulty and holds one game only. The previous answer is
+// excluded so a solved fighter doesn't cycle straight back around.
+//
+// The 10% is split by gender instead of drawn uniformly: two thirds of it goes to the
+// men's candidates and the remaining third is shared among the women's, so a mixed
+// history leans men 2:1 regardless of how many of each you guessed. If either side is
+// empty the other takes the whole boost.
 const HISTORY_BOOST = 0.10;
+const HISTORY_MALE_SHARE = 2 / 3;
 function historyKey(){ return "octagonle_lastguesses_" + mode; }
 function getLastGuesses(){
   try {
@@ -423,7 +460,14 @@ function pickFromHistory(pool, rng){
   if (rng() >= HISTORY_BOOST) return null;
   const last = new Set(getLastGuesses());
   const cands = pool.filter(f => last.has(f.name));
-  return cands.length ? cands[Math.floor(rng() * cands.length)] : null;
+  if (!cands.length) return null;
+  const men   = cands.filter(f => wcGender(f.weightClass) === "M");
+  const women = cands.filter(f => wcGender(f.weightClass) === "F");
+  let bucket;
+  if (!men.length)        bucket = women;
+  else if (!women.length) bucket = men;
+  else                    bucket = rng() < HISTORY_MALE_SHARE ? men : women;
+  return bucket[Math.floor(rng() * bucket.length)];
 }
 
 // useHistory stays off for Daily: the boost is per-browser, and Daily's answer has to
@@ -435,10 +479,11 @@ function pickTarget(rng = Math.random, useHistory = false){
     const boosted = pickFromHistory(pool, rng);
     if (boosted) return boosted;
   }
-  const total = pool.reduce((s, f) => s + fighterWeight(f), 0);
+  const lossMult = lossStreakBoost();
+  const total = pool.reduce((s, f) => s + fighterWeight(f, lossMult), 0);
   let r = rng() * total;
   for (const f of pool){
-    r -= fighterWeight(f);
+    r -= fighterWeight(f, lossMult);
     if (r <= 0) return f;
   }
   return pool[pool.length - 1];
@@ -706,6 +751,7 @@ function giveUp(){
   // No saveLastGuesses() here, on purpose: giving up leaves the guess-history boost
   // untouched, so the next game still draws from your last *finished* game.
   localStorage.setItem("octagonle_streak", "0");
+  bumpLossStreak();   // a give-up is a loss for the loss-streak boost
   showReveal(false);
 }
 
@@ -722,6 +768,7 @@ function lose(){
   if (playStyle === "daily"){ finishDailyClassic(false); return; }
   if (!isTitleMode()) saveLastGuesses();
   localStorage.setItem("octagonle_streak", "0");
+  bumpLossStreak();
   showReveal(false);
 }
 
@@ -733,6 +780,7 @@ function win(){
   awardWinPoints();
   if (playStyle === "daily"){ finishDailyClassic(true); return; }
   if (!isTitleMode()) saveLastGuesses();
+  clearLossStreak();
   // Streak (session-persistent via localStorage)
   const streak = parseInt(localStorage.getItem("octagonle_streak") || "0", 10) + 1;
   localStorage.setItem("octagonle_streak", String(streak));
