@@ -16,6 +16,7 @@ All network responses are cached under data/.cache/ so reruns are cheap and poli
 Run:  python3 data/build_dataset.py   [--limit N] [--refresh]
 """
 
+import http.client
 import json
 import os
 import re
@@ -30,6 +31,7 @@ from datetime import datetime, timezone
 HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE_DIR = os.path.join(HERE, ".cache")
 OUT_PATH = os.path.join(HERE, "..", "public", "fighters.json")
+EVENT_IDS_PATH = os.path.join(CACHE_DIR, "_event_athlete_ids.json")
 API = "https://sports.core.api.espn.com/v2/sports/mma"
 UA = "octagonle-dataset-builder/1.0 (personal project; build-time only)"
 SLEEP = 0.05  # polite delay between uncached requests
@@ -58,7 +60,11 @@ def fetch(url, refresh=False):
                 json.dump(data, f)
             time.sleep(SLEEP)
             return data
-        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as e:
+        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError,
+                http.client.HTTPException, json.JSONDecodeError, OSError) as e:
+            # The event walk is ~8k requests over a threadpool, where a dropped
+            # connection or truncated body is routine; retry those the same way
+            # as a plain timeout rather than killing the whole run.
             last_err = e
             time.sleep(0.5 * (attempt + 1))
     raise RuntimeError(f"failed to fetch {url}: {last_err}")
@@ -111,6 +117,55 @@ def athlete_ids():
             break
         page += 1
     return ids
+
+
+def event_athlete_ids():
+    """Collect UFC athlete ids by walking the league's event history.
+
+    ESPN's league roster (`athlete_ids`) only lists fighters it still considers
+    current, so it silently omits much of the pre-2010 era — Chuck Liddell, for
+    one, is absent from all 1803 roster ids while his athlete endpoint works
+    fine. Every bout ESPN has ever carded does name its competitors, so walking
+    events -> competitions -> competitors recovers those fighters.
+
+    Returns {athlete_id: earliest_year_seen}.
+    """
+    ev_refs = []
+    for year in range(1993, datetime.now(timezone.utc).year + 1):
+        try:
+            d = fetch(f"{API}/leagues/ufc/events?limit=1000&dates={year}")
+        except RuntimeError:
+            continue
+        ev_refs += [it["$ref"] for it in d.get("items", []) if it.get("$ref")]
+
+    comp_refs, comp_year = [], {}
+    for ref, d in fetch_many(ev_refs, workers=12).items():
+        if not d:
+            continue
+        m = re.match(r"(\d{4})", d.get("date") or "")
+        year = int(m.group(1)) if m else None
+        for c in d.get("competitions", []):
+            if c.get("$ref"):
+                comp_refs.append(c["$ref"])
+                comp_year[c["$ref"]] = year
+
+    found = {}
+    for ref, d in fetch_many(comp_refs, workers=12).items():
+        if not d:
+            continue
+        for cm in d.get("competitors", []):
+            m = re.search(r"/athletes/(\d+)", (cm.get("athlete") or {}).get("$ref", ""))
+            if not m:
+                continue
+            aid, year = m.group(1), comp_year.get(ref)
+            if aid not in found or (year and found[aid] and year < found[aid]):
+                found[aid] = year
+
+    # Persist for wikidata_enrich.py, which works off the cache and would
+    # otherwise only ever see the roster ids.
+    with open(EVENT_IDS_PATH, "w") as f:
+        json.dump(found, f)
+    return found
 
 
 def get_record(aid):
@@ -336,10 +391,17 @@ def build(limit=None, refresh=False):
     top10 = top_ten_ids(refresh=refresh)
     print(f"[rankings] {len(top10)} top-10 ranked athletes", file=sys.stderr)
 
-    ids = athlete_ids()
+    # The roster alone misses much of the pre-2010 era (see event_athlete_ids),
+    # so union it with everyone ESPN has ever carded on a UFC event. Roster
+    # order first, so the ids that drive the modern pools build first.
+    roster = athlete_ids()
+    seen = set(roster)
+    ids = roster + [a for a in sorted(event_athlete_ids()) if a not in seen]
+    print(f"[roster] {len(roster)} athlete ids, "
+          f"+{len(ids) - len(roster)} more from event history "
+          f"= {len(ids)} total", file=sys.stderr)
     if limit:
         ids = ids[:limit]
-    print(f"[roster] {len(ids)} athlete ids", file=sys.stderr)
 
     fighters = []
     kept = 0

@@ -237,6 +237,16 @@ def roster_targets():
             if m:
                 ids.add(m.group(1))
 
+    # build_dataset.py also enumerates fighters off the event history, which is
+    # where the pre-2010 era lives. Those are exactly the profiles ESPN leaves
+    # incomplete, so they're the ones most in need of enrichment — without this
+    # they'd never become targets.
+    try:
+        with open(os.path.join(CACHE_DIR, "_event_athlete_ids.json")) as f:
+            ids.update(json.load(f))
+    except (OSError, ValueError):
+        pass
+
     def detail(aid):
         for fp in glob.glob(os.path.join(CACHE_DIR, f"*athletes_{aid}_lang_en_region_us.json")):
             try:
