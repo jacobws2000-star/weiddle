@@ -57,6 +57,14 @@ NATIONALITY_TO_ISO2 = {
     "Tunisia": "TN", "Haiti": "HT", "Paraguay": "PY", "Hong Kong": "HK",
     "Singapore": "SG", "Finland": "FI", "Belarus": "BY",
     "Dominican Republic": "DO", "Senegal": "SN", "El Salvador": "SV",
+    # Nationalities the event-history fighters brought in. GeoNames folds
+    # Northern Ireland into GB like the other home nations, so its land border
+    # with Ireland lives in MANUAL_BORDERS. Taiwan and Angola aren't in the
+    # dataset yet — they're here so wikidata_enrich stops rejecting them.
+    "Greece": "GR", "Costa Rica": "CR", "Uruguay": "UY", "Nicaragua": "NI",
+    "Liberia": "LR", "Cape Verde": "CV", "Trinidad": "TT",
+    "Northern Ireland": "GB", "American Samoa": "AS", "Virgin Islands": "VI",
+    "Taiwan": "TW", "Angola": "AO",
 }
 
 # Manual adjacencies GeoNames can't express, added on top of the raw neighbours.
@@ -66,8 +74,12 @@ MANUAL_BORDERS = [
     # British Isles cluster: GeoNames folds England/Scotland/Wales into GB, so
     # their internal borders (and the land border on the island of Ireland) are
     # invisible in the data. Treat all four as mutually bordering (user decision).
+    # Northern Ireland is also GB to GeoNames, and it carries the one real land
+    # border in the cluster (with Ireland) rather than a notional one.
     ("England", "Scotland"), ("England", "Wales"), ("England", "Ireland"),
     ("Scotland", "Wales"), ("Scotland", "Ireland"), ("Wales", "Ireland"),
+    ("Northern Ireland", "Ireland"), ("Northern Ireland", "England"),
+    ("Northern Ireland", "Scotland"), ("Northern Ireland", "Wales"),
     # Hong Kong physically borders mainland China, but GeoNames leaves HK's
     # neighbours column empty.
     ("Hong Kong", "China"),

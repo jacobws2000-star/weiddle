@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generatedAt": "2026-07-20T00:39:17.387377+00:00",
+  "generatedAt": "2026-07-20T00:55:16.474753+00:00",
   "count": 2664,
   "source": "ESPN public MMA API"
  },
@@ -82771,301 +82771,38 @@
   }
  ],
  "borders": {
-  "Russia": [
-   "Azerbaijan",
-   "Belarus",
+  "Mongolia": [
    "China",
-   "Finland",
-   "Georgia",
-   "Kazakhstan",
-   "Lithuania",
-   "Mongolia",
-   "Norway",
-   "Poland",
-   "Ukraine"
+   "Russia"
   ],
-  "Czechia": [
-   "Austria",
-   "Germany",
-   "Poland",
-   "Slovakia"
-  ],
-  "Morocco": [
-   "Spain"
-  ],
-  "Guyana": [
-   "Brazil",
-   "Suriname",
-   "Venezuela"
-  ],
-  "Myanmar": [
-   "China",
-   "India",
-   "Thailand"
-  ],
-  "Norway": [
-   "Finland",
-   "Russia",
-   "Sweden"
-  ],
-  "Denmark": [
-   "Germany"
-  ],
-  "Vietnam": [
-   "China"
-  ],
-  "Uganda": [
-   "Democratic Republic of Congo"
-  ],
-  "Serbia": [
-   "Albania",
-   "Bosnia & Herzegovina",
-   "Bulgaria",
-   "Croatia",
-   "Hungary",
-   "Macedonia",
-   "Romania"
-  ],
-  "Colombia": [
-   "Brazil",
-   "Ecuador",
-   "Panama",
-   "Peru",
-   "Venezuela"
-  ],
-  "Spain": [
-   "France",
-   "Morocco",
-   "Portugal"
-  ],
-  "Iran": [
-   "Afghanistan",
-   "Armenia",
-   "Azerbaijan",
+  "Jordan": [
    "Iraq",
-   "Türkiye"
-  ],
-  "Netherlands": [
-   "Belgium",
-   "Germany"
-  ],
-  "Poland": [
-   "Belarus",
-   "Czechia",
-   "Germany",
-   "Lithuania",
-   "Russia",
-   "Slovakia",
-   "Ukraine"
-  ],
-  "Türkiye": [
-   "Armenia",
-   "Azerbaijan",
-   "Bulgaria",
-   "Georgia",
-   "Iran",
-   "Iraq"
-  ],
-  "Paraguay": [
-   "Argentina",
-   "Bolivia",
-   "Brazil"
-  ],
-  "Armenia": [
-   "Azerbaijan",
-   "Georgia",
-   "Iran",
-   "Türkiye"
-  ],
-  "Lebanon": [
-   "Israel"
-  ],
-  "Tajikistan": [
-   "Afghanistan",
-   "China",
-   "Kyrgyzstan",
-   "Uzbekistan"
-  ],
-  "Switzerland": [
-   "Austria",
-   "France",
-   "Germany",
-   "Italy"
-  ],
-  "Democratic Republic of Congo": [
-   "Uganda"
-  ],
-  "Panama": [
-   "Colombia"
-  ],
-  "Finland": [
-   "Norway",
-   "Russia",
-   "Sweden"
-  ],
-  "Bulgaria": [
-   "Macedonia",
-   "Romania",
-   "Serbia",
-   "Türkiye"
-  ],
-  "Suriname": [
-   "Brazil",
-   "Guyana"
-  ],
-  "Uzbekistan": [
-   "Afghanistan",
-   "Kazakhstan",
-   "Kyrgyzstan",
-   "Tajikistan"
-  ],
-  "Israel": [
-   "Egypt",
-   "Jordan",
-   "Lebanon",
+   "Israel",
    "Palestine"
   ],
-  "Slovakia": [
-   "Austria",
-   "Czechia",
-   "Hungary",
-   "Poland",
-   "Ukraine"
+  "South Africa": [
+   "Zimbabwe"
+  ],
+  "Palestine": [
+   "Egypt",
+   "Israel",
+   "Jordan"
   ],
   "Luxembourg": [
    "Belgium",
    "France",
    "Germany"
   ],
-  "Mexico": [
-   "USA"
-  ],
-  "Canada": [
-   "USA"
-  ],
-  "Portugal": [
-   "Spain"
-  ],
-  "Haiti": [
-   "Dominican Republic"
-  ],
-  "Austria": [
-   "Czechia",
-   "Germany",
-   "Hungary",
-   "Italy",
-   "Slovakia",
-   "Switzerland"
-  ],
-  "Ukraine": [
-   "Belarus",
-   "Hungary",
-   "Moldova",
-   "Poland",
-   "Romania",
-   "Russia",
-   "Slovakia"
-  ],
-  "Thailand": [
-   "Myanmar"
-  ],
-  "France": [
-   "Belgium",
-   "Germany",
-   "Italy",
-   "Luxembourg",
-   "Spain",
-   "Switzerland"
-  ],
-  "Nigeria": [
-   "Cameroon",
-   "Niger"
-  ],
-  "Bolivia": [
-   "Argentina",
-   "Brazil",
-   "Chile",
-   "Paraguay",
-   "Peru"
-  ],
-  "Kazakhstan": [
-   "China",
-   "Kyrgyzstan",
-   "Russia",
-   "Uzbekistan"
-  ],
-  "Romania": [
-   "Bulgaria",
-   "Hungary",
-   "Moldova",
-   "Serbia",
-   "Ukraine"
-  ],
-  "Italy": [
-   "Austria",
-   "France",
-   "Switzerland"
-  ],
-  "Croatia": [
-   "Bosnia & Herzegovina",
-   "Hungary",
-   "Serbia"
-  ],
-  "Belgium": [
-   "France",
-   "Germany",
-   "Luxembourg",
-   "Netherlands"
-  ],
-  "Bosnia & Herzegovina": [
-   "Croatia",
-   "Serbia"
-  ],
-  "Albania": [
-   "Macedonia",
-   "Serbia"
-  ],
-  "Germany": [
-   "Austria",
-   "Belgium",
-   "Czechia",
-   "Denmark",
-   "France",
-   "Luxembourg",
-   "Netherlands",
-   "Poland",
-   "Switzerland"
-  ],
-  "Niger": [
-   "Nigeria"
-  ],
-  "Macedonia": [
-   "Albania",
-   "Bulgaria",
-   "Serbia"
-  ],
-  "Sweden": [
-   "Finland",
-   "Norway"
-  ],
-  "Egypt": [
-   "Israel",
-   "Palestine"
-  ],
-  "Kyrgyzstan": [
-   "China",
-   "Kazakhstan",
-   "Tajikistan",
-   "Uzbekistan"
-  ],
   "Ecuador": [
    "Colombia",
    "Peru"
   ],
-  "Chile": [
-   "Argentina",
+  "Peru": [
    "Bolivia",
-   "Peru"
+   "Brazil",
+   "Chile",
+   "Colombia",
+   "Ecuador"
   ],
   "China": [
    "Afghanistan",
@@ -83079,14 +82816,45 @@
    "Tajikistan",
    "Vietnam"
   ],
-  "India": [
-   "China",
-   "Myanmar"
+  "Finland": [
+   "Norway",
+   "Russia",
+   "Sweden"
   ],
-  "Ireland": [
-   "England",
+  "Dominican Republic": [
+   "Haiti"
+  ],
+  "Bosnia & Herzegovina": [
+   "Croatia",
+   "Serbia"
+  ],
+  "Democratic Republic of Congo": [
+   "Uganda"
+  ],
+  "Kazakhstan": [
+   "China",
+   "Kyrgyzstan",
+   "Russia",
+   "Uzbekistan"
+  ],
+  "USA": [
+   "Canada",
+   "Cuba",
+   "Mexico"
+  ],
+  "Iraq": [
+   "Iran",
+   "Jordan",
+   "Türkiye"
+  ],
+  "England": [
+   "Ireland",
+   "Northern Ireland",
    "Scotland",
    "Wales"
+  ],
+  "Cuba": [
+   "USA"
   ],
   "Brazil": [
    "Argentina",
@@ -83096,34 +82864,115 @@
    "Paraguay",
    "Peru",
    "Suriname",
+   "Uruguay",
    "Venezuela"
   ],
-  "Cuba": [
-   "USA"
+  "Ukraine": [
+   "Belarus",
+   "Hungary",
+   "Moldova",
+   "Poland",
+   "Romania",
+   "Russia",
+   "Slovakia"
   ],
-  "Hong Kong": [
-   "China"
+  "Norway": [
+   "Finland",
+   "Russia",
+   "Sweden"
   ],
-  "Mongolia": [
-   "China",
+  "Lithuania": [
+   "Belarus",
+   "Poland",
    "Russia"
   ],
-  "Argentina": [
-   "Bolivia",
-   "Brazil",
-   "Chile",
-   "Paraguay"
+  "Costa Rica": [
+   "Nicaragua",
+   "Panama"
+  ],
+  "Türkiye": [
+   "Armenia",
+   "Azerbaijan",
+   "Bulgaria",
+   "Georgia",
+   "Greece",
+   "Iran",
+   "Iraq"
+  ],
+  "Uruguay": [
+   "Argentina",
+   "Brazil"
+  ],
+  "Germany": [
+   "Austria",
+   "Belgium",
+   "Czechia",
+   "Denmark",
+   "France",
+   "Luxembourg",
+   "Netherlands",
+   "Poland",
+   "Switzerland"
   ],
   "Venezuela": [
    "Brazil",
    "Colombia",
    "Guyana"
   ],
-  "Afghanistan": [
+  "Guyana": [
+   "Brazil",
+   "Suriname",
+   "Venezuela"
+  ],
+  "Suriname": [
+   "Brazil",
+   "Guyana"
+  ],
+  "Kyrgyzstan": [
    "China",
-   "Iran",
+   "Kazakhstan",
    "Tajikistan",
    "Uzbekistan"
+  ],
+  "Chile": [
+   "Argentina",
+   "Bolivia",
+   "Peru"
+  ],
+  "Armenia": [
+   "Azerbaijan",
+   "Georgia",
+   "Iran",
+   "Türkiye"
+  ],
+  "Nigeria": [
+   "Cameroon",
+   "Niger"
+  ],
+  "Denmark": [
+   "Germany"
+  ],
+  "Spain": [
+   "France",
+   "Morocco",
+   "Portugal"
+  ],
+  "Russia": [
+   "Azerbaijan",
+   "Belarus",
+   "China",
+   "Finland",
+   "Georgia",
+   "Kazakhstan",
+   "Lithuania",
+   "Mongolia",
+   "Norway",
+   "Poland",
+   "Ukraine"
+  ],
+  "India": [
+   "China",
+   "Myanmar"
   ],
   "Belarus": [
    "Lithuania",
@@ -83131,81 +82980,95 @@
    "Russia",
    "Ukraine"
   ],
-  "Moldova": [
-   "Romania",
-   "Ukraine"
-  ],
-  "USA": [
-   "Canada",
-   "Cuba",
-   "Mexico"
-  ],
-  "England": [
-   "Ireland",
-   "Scotland",
-   "Wales"
-  ],
-  "Wales": [
-   "England",
-   "Ireland",
-   "Scotland"
-  ],
-  "South Africa": [
-   "Zimbabwe"
-  ],
-  "Scotland": [
-   "England",
-   "Ireland",
-   "Wales"
-  ],
-  "Palestine": [
-   "Egypt",
-   "Israel",
-   "Jordan"
-  ],
-  "Azerbaijan": [
-   "Armenia",
-   "Georgia",
-   "Iran",
-   "Russia",
-   "Türkiye"
-  ],
-  "Georgia": [
-   "Armenia",
-   "Azerbaijan",
-   "Russia",
-   "Türkiye"
-  ],
-  "Dominican Republic": [
-   "Haiti"
-  ],
-  "Iraq": [
-   "Iran",
-   "Jordan",
-   "Türkiye"
-  ],
-  "Jordan": [
-   "Iraq",
-   "Israel",
-   "Palestine"
-  ],
-  "Zimbabwe": [
-   "South Africa"
-  ],
-  "Peru": [
-   "Bolivia",
-   "Brazil",
-   "Chile",
-   "Colombia",
-   "Ecuador"
-  ],
   "Cameroon": [
    "Nigeria"
   ],
-  "Lithuania": [
-   "Belarus",
+  "Egypt": [
+   "Israel",
+   "Palestine"
+  ],
+  "Iran": [
+   "Afghanistan",
+   "Armenia",
+   "Azerbaijan",
+   "Iraq",
+   "Türkiye"
+  ],
+  "Canada": [
+   "USA"
+  ],
+  "Uganda": [
+   "Democratic Republic of Congo"
+  ],
+  "Haiti": [
+   "Dominican Republic"
+  ],
+  "Panama": [
+   "Colombia",
+   "Costa Rica"
+  ],
+  "Albania": [
+   "Greece",
+   "Macedonia",
+   "Serbia"
+  ],
+  "Afghanistan": [
+   "China",
+   "Iran",
+   "Tajikistan",
+   "Uzbekistan"
+  ],
+  "Uzbekistan": [
+   "Afghanistan",
+   "Kazakhstan",
+   "Kyrgyzstan",
+   "Tajikistan"
+  ],
+  "Nicaragua": [
+   "Costa Rica"
+  ],
+  "France": [
+   "Belgium",
+   "Germany",
+   "Italy",
+   "Luxembourg",
+   "Spain",
+   "Switzerland"
+  ],
+  "Ireland": [
+   "England",
+   "Northern Ireland",
+   "Scotland",
+   "Wales"
+  ],
+  "Serbia": [
+   "Albania",
+   "Bosnia & Herzegovina",
+   "Bulgaria",
+   "Croatia",
+   "Hungary",
+   "Macedonia",
+   "Romania"
+  ],
+  "Mexico": [
+   "USA"
+  ],
+  "Slovakia": [
+   "Austria",
+   "Czechia",
+   "Hungary",
    "Poland",
-   "Russia"
+   "Ukraine"
+  ],
+  "Portugal": [
+   "Spain"
+  ],
+  "Bulgaria": [
+   "Greece",
+   "Macedonia",
+   "Romania",
+   "Serbia",
+   "Türkiye"
   ],
   "Hungary": [
    "Austria",
@@ -83214,6 +83077,177 @@
    "Serbia",
    "Slovakia",
    "Ukraine"
+  ],
+  "Lebanon": [
+   "Israel"
+  ],
+  "Czechia": [
+   "Austria",
+   "Germany",
+   "Poland",
+   "Slovakia"
+  ],
+  "Hong Kong": [
+   "China"
+  ],
+  "Paraguay": [
+   "Argentina",
+   "Bolivia",
+   "Brazil"
+  ],
+  "Scotland": [
+   "England",
+   "Ireland",
+   "Northern Ireland",
+   "Wales"
+  ],
+  "Argentina": [
+   "Bolivia",
+   "Brazil",
+   "Chile",
+   "Paraguay",
+   "Uruguay"
+  ],
+  "Switzerland": [
+   "Austria",
+   "France",
+   "Germany",
+   "Italy"
+  ],
+  "Bolivia": [
+   "Argentina",
+   "Brazil",
+   "Chile",
+   "Paraguay",
+   "Peru"
+  ],
+  "Israel": [
+   "Egypt",
+   "Jordan",
+   "Lebanon",
+   "Palestine"
+  ],
+  "Netherlands": [
+   "Belgium",
+   "Germany"
+  ],
+  "Wales": [
+   "England",
+   "Ireland",
+   "Northern Ireland",
+   "Scotland"
+  ],
+  "Tajikistan": [
+   "Afghanistan",
+   "China",
+   "Kyrgyzstan",
+   "Uzbekistan"
+  ],
+  "Romania": [
+   "Bulgaria",
+   "Hungary",
+   "Moldova",
+   "Serbia",
+   "Ukraine"
+  ],
+  "Georgia": [
+   "Armenia",
+   "Azerbaijan",
+   "Russia",
+   "Türkiye"
+  ],
+  "Italy": [
+   "Austria",
+   "France",
+   "Switzerland"
+  ],
+  "Belgium": [
+   "France",
+   "Germany",
+   "Luxembourg",
+   "Netherlands"
+  ],
+  "Macedonia": [
+   "Albania",
+   "Bulgaria",
+   "Greece",
+   "Serbia"
+  ],
+  "Azerbaijan": [
+   "Armenia",
+   "Georgia",
+   "Iran",
+   "Russia",
+   "Türkiye"
+  ],
+  "Moldova": [
+   "Romania",
+   "Ukraine"
+  ],
+  "Thailand": [
+   "Myanmar"
+  ],
+  "Northern Ireland": [
+   "England",
+   "Ireland",
+   "Scotland",
+   "Wales"
+  ],
+  "Niger": [
+   "Nigeria"
+  ],
+  "Poland": [
+   "Belarus",
+   "Czechia",
+   "Germany",
+   "Lithuania",
+   "Russia",
+   "Slovakia",
+   "Ukraine"
+  ],
+  "Sweden": [
+   "Finland",
+   "Norway"
+  ],
+  "Greece": [
+   "Albania",
+   "Bulgaria",
+   "Macedonia",
+   "Türkiye"
+  ],
+  "Colombia": [
+   "Brazil",
+   "Ecuador",
+   "Panama",
+   "Peru",
+   "Venezuela"
+  ],
+  "Zimbabwe": [
+   "South Africa"
+  ],
+  "Myanmar": [
+   "China",
+   "India",
+   "Thailand"
+  ],
+  "Vietnam": [
+   "China"
+  ],
+  "Croatia": [
+   "Bosnia & Herzegovina",
+   "Hungary",
+   "Serbia"
+  ],
+  "Morocco": [
+   "Spain"
+  ],
+  "Austria": [
+   "Czechia",
+   "Germany",
+   "Hungary",
+   "Italy",
+   "Slovakia",
+   "Switzerland"
   ]
  }
 }

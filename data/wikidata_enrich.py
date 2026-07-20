@@ -64,6 +64,11 @@ ALIASES = {
     "People's Republic of China": "China",
     "East Germany": "Germany", "West Germany": "Germany",
     "Socialist Republic of Vietnam": "Vietnam",
+    "Kingdom of Denmark": "Denmark",
+    "Republic of China": "Taiwan",
+    "Trinidad and Tobago": "Trinidad",
+    "Cabo Verde": "Cape Verde",
+    "United States Virgin Islands": "Virgin Islands",
 }
 
 os.makedirs(CACHE_DIR, exist_ok=True)
