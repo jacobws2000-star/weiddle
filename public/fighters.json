@@ -1,7 +1,7 @@
 {
  "meta": {
-  "generatedAt": "2026-07-20T00:55:16.474753+00:00",
-  "count": 2664,
+  "generatedAt": "2026-07-20T01:07:58.553441+00:00",
+  "count": 2763,
   "source": "ESPN public MMA API"
  },
  "fighters": [
@@ -990,6 +990,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2501820.png"
   },
   {
+   "id": "2335668",
+   "name": "Akihiro Gono",
+   "nickname": "",
+   "weightClass": "Welterweight",
+   "nationality": "Japan",
+   "heightIn": 69.0,
+   "displayHeight": "5' 9\"",
+   "reachIn": 68.0,
+   "stance": "Switch",
+   "dob": "1974-10-07T07:00Z",
+   "wins": 11,
+   "losses": 11,
+   "draws": 2,
+   "record": "11-11-2",
+   "debutYear": 2007,
+   "lastUfcYear": 2009,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335668.png"
+  },
+  {
    "id": "2615078",
    "name": "Akira Corassani",
    "nickname": "",
@@ -1276,6 +1300,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3077132.png"
+  },
+  {
+   "id": "2354194",
+   "name": "Alberto Crane",
+   "nickname": "",
+   "weightClass": "Lightweight",
+   "nationality": "USA",
+   "heightIn": 65.0,
+   "displayHeight": "5' 5\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1976-07-14T07:00Z",
+   "wins": 2,
+   "losses": 3,
+   "draws": 0,
+   "record": "2-3-0",
+   "debutYear": 2007,
+   "lastUfcYear": 2008,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354194.png"
   },
   {
    "id": "3091100",
@@ -3916,6 +3964,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/5229339.png"
   },
   {
+   "id": "2354124",
+   "name": "Alvin Robinson",
+   "nickname": "Kid",
+   "weightClass": "Lightweight",
+   "nationality": "USA",
+   "heightIn": 69.0,
+   "displayHeight": "5' 9\"",
+   "reachIn": 68.0,
+   "stance": "Southpaw",
+   "dob": "1982-07-16T07:00Z",
+   "wins": 5,
+   "losses": 8,
+   "draws": 0,
+   "record": "5-8-0",
+   "debutYear": 2007,
+   "lastUfcYear": 2008,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354124.png"
+  },
+  {
    "id": "3923486",
    "name": "Amanda Cooper",
    "nickname": "ABC",
@@ -4228,6 +4300,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4221863.png"
+  },
+  {
+   "id": "2335847",
+   "name": "Amar Suloev",
+   "nickname": "",
+   "weightClass": "Middleweight",
+   "nationality": "Armenia",
+   "heightIn": 69.0,
+   "displayHeight": "5' 9\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1976-07-01T07:00Z",
+   "wins": 5,
+   "losses": 5,
+   "draws": 0,
+   "record": "5-5-0",
+   "debutYear": 2002,
+   "lastUfcYear": 2002,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335847.png"
   },
   {
    "id": "2504231",
@@ -5550,6 +5646,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2964410.png"
   },
   {
+   "id": "2410614",
+   "name": "Andy Wang",
+   "nickname": "",
+   "weightClass": "Lightweight",
+   "nationality": "Taiwan",
+   "heightIn": 66.0,
+   "displayHeight": "5' 6\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1977-05-28",
+   "wins": 0,
+   "losses": 2,
+   "draws": 0,
+   "record": "0-2-0",
+   "debutYear": 2007,
+   "lastUfcYear": 2007,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2410614.png"
+  },
+  {
    "id": "4875506",
    "name": "Ange Loosa",
    "nickname": "The Last Ninja",
@@ -5692,6 +5812,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4079844.png"
+  },
+  {
+   "id": "2965159",
+   "name": "Anistavio Medeiros",
+   "nickname": "",
+   "weightClass": "Featherweight",
+   "nationality": "Brazil",
+   "heightIn": 67.0,
+   "displayHeight": "5' 7\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1988-05-01T07:00Z",
+   "wins": 0,
+   "losses": 2,
+   "draws": 0,
+   "record": "0-2-0",
+   "debutYear": 2012,
+   "lastUfcYear": 2012,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2965159.png"
   },
   {
    "id": "3995914",
@@ -6360,6 +6504,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2512976.png"
   },
   {
+   "id": "2556802",
+   "name": "Anthony Torres",
+   "nickname": "",
+   "weightClass": "Welterweight",
+   "nationality": "USA",
+   "heightIn": 68.0,
+   "displayHeight": "5' 8\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1978-07-31T07:00Z",
+   "wins": 1,
+   "losses": 4,
+   "draws": 0,
+   "record": "1-4-0",
+   "debutYear": 2006,
+   "lastUfcYear": 2007,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2556802.png"
+  },
+  {
    "id": "3039664",
    "name": "Anton Berzin",
    "nickname": "",
@@ -6646,6 +6814,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3153210.png"
+  },
+  {
+   "id": "2501639",
+   "name": "Antonio McKee",
+   "nickname": "Mandingo",
+   "weightClass": "Lightweight",
+   "nationality": "USA",
+   "heightIn": 68.0,
+   "displayHeight": "5' 8\"",
+   "reachIn": 0.0,
+   "stance": "Southpaw",
+   "dob": "1970-03-12T08:00Z",
+   "wins": 29,
+   "losses": 7,
+   "draws": 2,
+   "record": "29-7-2",
+   "debutYear": 2011,
+   "lastUfcYear": 2011,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2501639.png"
   },
   {
    "id": "5057385",
@@ -10923,7 +11115,7 @@
    "id": "2354106",
    "name": "Brock Larson",
    "nickname": "",
-   "weightClass": "Catchweight",
+   "weightClass": "Catch Weight",
    "nationality": "USA",
    "heightIn": 71.0,
    "displayHeight": "5' 11\"",
@@ -11466,6 +11658,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2966920.png"
   },
   {
+   "id": "2557955",
+   "name": "Bubba McDaniel",
+   "nickname": "The Menace",
+   "weightClass": "Middleweight",
+   "nationality": "USA",
+   "heightIn": 75.0,
+   "displayHeight": "6' 3\"",
+   "reachIn": 75.0,
+   "stance": "Southpaw",
+   "dob": "1983-05-03T07:00Z",
+   "wins": 28,
+   "losses": 10,
+   "draws": 0,
+   "record": "28-10-0",
+   "debutYear": 2013,
+   "lastUfcYear": 2014,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2557955.png"
+  },
+  {
    "id": "2615270",
    "name": "Buddy Roberts",
    "nickname": "",
@@ -11934,6 +12150,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2613965.png"
+  },
+  {
+   "id": "2951124",
+   "name": "Cal Worsham",
+   "nickname": "",
+   "weightClass": "Open Weight",
+   "nationality": "USA",
+   "heightIn": 71.0,
+   "displayHeight": "5' 11\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1963-06-11",
+   "wins": 1,
+   "losses": 2,
+   "draws": 0,
+   "record": "1-2-0",
+   "debutYear": 1995,
+   "lastUfcYear": 1996,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2951124.png"
   },
   {
    "id": "3099070",
@@ -13106,6 +13346,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4377048.png"
   },
   {
+   "id": "2335256",
+   "name": "Carmelo Marrero",
+   "nickname": "The Fury",
+   "weightClass": "Light Heavyweight",
+   "nationality": "USA",
+   "heightIn": 74.0,
+   "displayHeight": "6' 2\"",
+   "reachIn": 73.0,
+   "stance": "Orthodox",
+   "dob": "1981-01-26T08:00Z",
+   "wins": 5,
+   "losses": 4,
+   "draws": 0,
+   "record": "5-4-0",
+   "debutYear": 2006,
+   "lastUfcYear": 2009,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335256.png"
+  },
+  {
    "id": "5278269",
    "name": "Carol Foro",
    "nickname": "Anabelle",
@@ -13536,6 +13800,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2504172.png"
+  },
+  {
+   "id": "2354211",
+   "name": "Chad Reiner",
+   "nickname": "The Grinder",
+   "weightClass": "Welterweight",
+   "nationality": "USA",
+   "heightIn": 71.0,
+   "displayHeight": "5' 11\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1981-06-29",
+   "wins": 4,
+   "losses": 9,
+   "draws": 0,
+   "record": "4-9-0",
+   "debutYear": 2007,
+   "lastUfcYear": 2007,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354211.png"
   },
   {
    "id": "2335796",
@@ -14778,6 +15066,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4081555.png"
   },
   {
+   "id": "2500426",
+   "name": "Chris Brennan",
+   "nickname": "The Westside Strangler",
+   "weightClass": "Lightweight",
+   "nationality": "USA",
+   "heightIn": 68.0,
+   "displayHeight": "5' 8\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1971-10-12",
+   "wins": 3,
+   "losses": 7,
+   "draws": 0,
+   "record": "3-7-0",
+   "debutYear": 1998,
+   "lastUfcYear": 2002,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2500426.png"
+  },
+  {
    "id": "2502414",
    "name": "Chris Camozzi",
    "nickname": "",
@@ -15352,6 +15664,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2614777.png"
+  },
+  {
+   "id": "2960678",
+   "name": "Chris Tickle",
+   "nickname": "Bad Boy",
+   "weightClass": "Lightweight",
+   "nationality": "USA",
+   "heightIn": 69.0,
+   "displayHeight": "5' 9\"",
+   "reachIn": 0.0,
+   "stance": "--",
+   "dob": "1982-02-01T08:00Z",
+   "wins": 0,
+   "losses": 5,
+   "draws": 0,
+   "record": "0-5-0",
+   "debutYear": 2012,
+   "lastUfcYear": 2012,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2960678.png"
   },
   {
    "id": "2431276",
@@ -17042,6 +17378,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/5001014.png"
   },
   {
+   "id": "2536133",
+   "name": "Cody McKenzie",
+   "nickname": "AK Kid",
+   "weightClass": "Lightweight",
+   "nationality": "USA",
+   "heightIn": 72.0,
+   "displayHeight": "6' 0\"",
+   "reachIn": 72.0,
+   "stance": "Switch",
+   "dob": "1987-12-16T08:00Z",
+   "wins": 16,
+   "losses": 11,
+   "draws": 0,
+   "record": "16-11-0",
+   "debutYear": 2010,
+   "lastUfcYear": 2013,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2536133.png"
+  },
+  {
    "id": "2517112",
    "name": "Cody Pfister",
    "nickname": "The First",
@@ -18392,6 +18752,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4409558.png"
   },
   {
+   "id": "2502589",
+   "name": "DaMarques Johnson",
+   "nickname": "Darkness",
+   "weightClass": "Welterweight",
+   "nationality": "USA",
+   "heightIn": 73.0,
+   "displayHeight": "6' 1\"",
+   "reachIn": 75.0,
+   "stance": "Orthodox",
+   "dob": "1982-06-28T07:00Z",
+   "wins": 15,
+   "losses": 14,
+   "draws": 0,
+   "record": "15-14-0",
+   "debutYear": 2009,
+   "lastUfcYear": 2012,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2502589.png"
+  },
+  {
    "id": "4046608",
    "name": "Daichi Abe",
    "nickname": "",
@@ -18510,6 +18894,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335805.png"
+  },
+  {
+   "id": "2465553",
+   "name": "Damacio Page",
+   "nickname": "The Angel of Death",
+   "weightClass": "Bantamweight",
+   "nationality": "USA",
+   "heightIn": 66.0,
+   "displayHeight": "5' 6\"",
+   "reachIn": 66.0,
+   "stance": "Orthodox",
+   "dob": "1982-09-30T07:00Z",
+   "wins": 20,
+   "losses": 10,
+   "draws": 0,
+   "record": "20-10-0",
+   "debutYear": 2011,
+   "lastUfcYear": 2012,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2465553.png"
   },
   {
    "id": "2506570",
@@ -18992,6 +19400,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3150680.png"
   },
   {
+   "id": "2335726",
+   "name": "Dan Severn",
+   "nickname": "The Beast",
+   "weightClass": "Open Weight",
+   "nationality": "USA",
+   "heightIn": 74.0,
+   "displayHeight": "6' 2\"",
+   "reachIn": 0.0,
+   "stance": "Southpaw",
+   "dob": "1954-06-08T07:00Z",
+   "wins": 101,
+   "losses": 19,
+   "draws": 7,
+   "record": "101-19-7",
+   "debutYear": 1994,
+   "lastUfcYear": 2000,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335726.png"
+  },
+  {
    "id": "3024141",
    "name": "Dan Spohn",
    "nickname": "The Dragon",
@@ -19460,6 +19892,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2514828.png"
+  },
+  {
+   "id": "2504245",
+   "name": "Daniel Roberts",
+   "nickname": "Ninja",
+   "weightClass": "Welterweight",
+   "nationality": "USA",
+   "heightIn": 70.0,
+   "displayHeight": "5' 10\"",
+   "reachIn": 74.0,
+   "stance": "Southpaw",
+   "dob": "1980-01-01T08:00Z",
+   "wins": 15,
+   "losses": 7,
+   "draws": 0,
+   "record": "15-7-0",
+   "debutYear": 2010,
+   "lastUfcYear": 2012,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2504245.png"
   },
   {
    "id": "4426312",
@@ -20374,6 +20830,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3121961.png"
   },
   {
+   "id": "2556038",
+   "name": "Darrill Schoonover",
+   "nickname": "The Boss",
+   "weightClass": "Heavyweight",
+   "nationality": "USA",
+   "heightIn": 74.0,
+   "displayHeight": "6' 2\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1985-06-18T07:00Z",
+   "wins": 13,
+   "losses": 7,
+   "draws": 0,
+   "record": "13-7-0",
+   "debutYear": 2009,
+   "lastUfcYear": 2009,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2556038.png"
+  },
+  {
    "id": "4358252",
    "name": "Darrius Flowers",
    "nickname": "Beast Mode",
@@ -20652,6 +21132,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3114625.png"
   },
   {
+   "id": "2335760",
+   "name": "David Baron",
+   "nickname": "",
+   "weightClass": "Lightweight",
+   "nationality": "France",
+   "heightIn": 66.0,
+   "displayHeight": "5' 6\"",
+   "reachIn": 0.0,
+   "stance": "Switch",
+   "dob": "1973-02-15T08:00Z",
+   "wins": 3,
+   "losses": 3,
+   "draws": 0,
+   "record": "3-3-0",
+   "debutYear": 2008,
+   "lastUfcYear": 2008,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335760.png"
+  },
+  {
    "id": "2335763",
    "name": "David Bielkheden",
    "nickname": "",
@@ -20818,6 +21322,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3102615.png"
+  },
+  {
+   "id": "2506556",
+   "name": "David Mitchell",
+   "nickname": "Daudi",
+   "weightClass": "Welterweight",
+   "nationality": "USA",
+   "heightIn": 72.0,
+   "displayHeight": "6' 0\"",
+   "reachIn": 75.5,
+   "stance": "Orthodox",
+   "dob": "1979-10-24T07:00Z",
+   "wins": 20,
+   "losses": 7,
+   "draws": 0,
+   "record": "20-7-0",
+   "debutYear": 2010,
+   "lastUfcYear": 2013,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2506556.png"
   },
   {
    "id": "4897850",
@@ -21582,6 +22110,54 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335778.png"
   },
   {
+   "id": "2335751",
+   "name": "Denis Kang",
+   "nickname": "",
+   "weightClass": "Middleweight",
+   "nationality": "Canada",
+   "heightIn": 71.0,
+   "displayHeight": "5' 11\"",
+   "reachIn": 77.0,
+   "stance": "Orthodox",
+   "dob": "1977-09-17T07:00Z",
+   "wins": 35,
+   "losses": 16,
+   "draws": 2,
+   "record": "35-16-2",
+   "debutYear": 2009,
+   "lastUfcYear": 2009,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335751.png"
+  },
+  {
+   "id": "2335741",
+   "name": "Denis Stojnic",
+   "nickname": "The Menace",
+   "weightClass": "Heavyweight",
+   "nationality": "Bosnia & Herzegovina",
+   "heightIn": 71.0,
+   "displayHeight": "5' 11\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1980-02-02T08:00Z",
+   "wins": 9,
+   "losses": 2,
+   "draws": 0,
+   "record": "9-2-0",
+   "debutYear": 2009,
+   "lastUfcYear": 2009,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335741.png"
+  },
+  {
    "id": "4969973",
    "name": "Denis Tiuliulin",
    "nickname": "",
@@ -22254,6 +22830,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335671.png"
   },
   {
+   "id": "2354337",
+   "name": "Diego Saraiva",
+   "nickname": "The Octopus",
+   "weightClass": "Lightweight",
+   "nationality": "Brazil",
+   "heightIn": 66.0,
+   "displayHeight": "5' 6\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1982-04-23T08:00Z",
+   "wins": 3,
+   "losses": 10,
+   "draws": 1,
+   "record": "3-10-1",
+   "debutYear": 2007,
+   "lastUfcYear": 2007,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354337.png"
+  },
+  {
    "id": "3093507",
    "name": "Dileno Lopes",
    "nickname": "",
@@ -22492,6 +23092,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4077001.png"
+  },
+  {
+   "id": "2354126",
+   "name": "Dokonjonosuke Mishima",
+   "nickname": "",
+   "weightClass": "Lightweight",
+   "nationality": "Japan",
+   "heightIn": 67.0,
+   "displayHeight": "5' 7\"",
+   "reachIn": 0.0,
+   "stance": "Southpaw",
+   "dob": "1972-04-19T08:00Z",
+   "wins": 4,
+   "losses": 7,
+   "draws": 0,
+   "record": "4-7-0",
+   "debutYear": 2006,
+   "lastUfcYear": 2007,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354126.png"
   },
   {
    "id": "5157806",
@@ -23018,6 +23642,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2505261.png"
+  },
+  {
+   "id": "2555198",
+   "name": "Donny Walker",
+   "nickname": "",
+   "weightClass": "Bantamweight",
+   "nationality": "USA",
+   "heightIn": 69.0,
+   "displayHeight": "5' 9\"",
+   "reachIn": 0.0,
+   "stance": "--",
+   "dob": "1980-01-04T08:00Z",
+   "wins": 1,
+   "losses": 6,
+   "draws": 0,
+   "record": "1-6-0",
+   "debutYear": 2011,
+   "lastUfcYear": 2011,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2555198.png"
   },
   {
    "id": "5088537",
@@ -23604,6 +24252,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2512958.png"
+  },
+  {
+   "id": "2499693",
+   "name": "Dustin Pague",
+   "nickname": "The Disciple",
+   "weightClass": "Bantamweight",
+   "nationality": "USA",
+   "heightIn": 69.0,
+   "displayHeight": "5' 9\"",
+   "reachIn": 74.5,
+   "stance": "Orthodox",
+   "dob": "1987-08-05T07:00Z",
+   "wins": 11,
+   "losses": 10,
+   "draws": 0,
+   "record": "11-10-0",
+   "debutYear": 2011,
+   "lastUfcYear": 2013,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2499693.png"
   },
   {
    "id": "2506549",
@@ -24326,6 +24998,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2612668.png"
   },
   {
+   "id": "2354240",
+   "name": "Eddie Sanchez",
+   "nickname": "The Manic Hispanic",
+   "weightClass": "Heavyweight",
+   "nationality": "USA",
+   "heightIn": 75.0,
+   "displayHeight": "6' 3\"",
+   "reachIn": 74.0,
+   "stance": "Orthodox",
+   "dob": "1982-04-11T08:00Z",
+   "wins": 4,
+   "losses": 9,
+   "draws": 0,
+   "record": "4-9-0",
+   "debutYear": 2006,
+   "lastUfcYear": 2008,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354240.png"
+  },
+  {
    "id": "2504561",
    "name": "Eddie Wineland",
    "nickname": "",
@@ -24708,6 +25404,54 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/5119536.png"
+  },
+  {
+   "id": "2528638",
+   "name": "Edward Faaloloto",
+   "nickname": "Falo",
+   "weightClass": "Lightweight",
+   "nationality": "USA",
+   "heightIn": 69.0,
+   "displayHeight": "5' 9\"",
+   "reachIn": 70.0,
+   "stance": "--",
+   "dob": "1985-07-15",
+   "wins": 2,
+   "losses": 4,
+   "draws": 0,
+   "record": "2-4-0",
+   "debutYear": 2011,
+   "lastUfcYear": 2011,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2528638.png"
+  },
+  {
+   "id": "2431251",
+   "name": "Edwin Dewees",
+   "nickname": "Babyface",
+   "weightClass": "Middleweight",
+   "nationality": "USA",
+   "heightIn": 73.0,
+   "displayHeight": "6' 1\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1982-08-07T07:00Z",
+   "wins": 0,
+   "losses": 8,
+   "draws": 0,
+   "record": "0-8-0",
+   "debutYear": 2003,
+   "lastUfcYear": 2006,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2431251.png"
   },
   {
    "id": "2555761",
@@ -25428,6 +26172,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/5290958.png"
+  },
+  {
+   "id": "2335650",
+   "name": "Eric Schafer",
+   "nickname": "Red",
+   "weightClass": "Light Heavyweight",
+   "nationality": "USA",
+   "heightIn": 75.0,
+   "displayHeight": "6' 3\"",
+   "reachIn": 76.5,
+   "stance": "Orthodox",
+   "dob": "1977-09-20T07:00Z",
+   "wins": 13,
+   "losses": 7,
+   "draws": 0,
+   "record": "13-7-0",
+   "debutYear": 2006,
+   "lastUfcYear": 2012,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335650.png"
   },
   {
    "id": "3122041",
@@ -26160,6 +26928,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4245091.png"
+  },
+  {
+   "id": "2431261",
+   "name": "Fabiano Scherner",
+   "nickname": "Pega-Leve",
+   "weightClass": "Heavyweight",
+   "nationality": "Brazil",
+   "heightIn": 75.0,
+   "displayHeight": "6' 3\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1972-06-30T07:00Z",
+   "wins": 1,
+   "losses": 6,
+   "draws": 0,
+   "record": "1-6-0",
+   "debutYear": 2005,
+   "lastUfcYear": 2006,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2431261.png"
   },
   {
    "id": "4426301",
@@ -27064,6 +27856,30 @@
     }
    ],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335522.png"
+  },
+  {
+   "id": "2354208",
+   "name": "Forrest Petz",
+   "nickname": "The Meat Cleaver",
+   "weightClass": "Welterweight",
+   "nationality": "USA",
+   "heightIn": 69.0,
+   "displayHeight": "5' 9\"",
+   "reachIn": 71.5,
+   "stance": "Orthodox",
+   "dob": "1975-09-22T07:00Z",
+   "wins": 6,
+   "losses": 8,
+   "draws": 0,
+   "record": "6-8-0",
+   "debutYear": 2006,
+   "lastUfcYear": 2010,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354208.png"
   },
   {
    "id": "5220883",
@@ -28726,6 +29542,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3254940.png"
   },
   {
+   "id": "2473804",
+   "name": "Gary Goodridge",
+   "nickname": "Big Daddy",
+   "weightClass": "Heavyweight",
+   "nationality": "Canada",
+   "heightIn": 75.0,
+   "displayHeight": "6' 3\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1966-01-17T08:00Z",
+   "wins": 14,
+   "losses": 18,
+   "draws": 0,
+   "record": "14-18-0",
+   "debutYear": 1996,
+   "lastUfcYear": 1999,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2473804.png"
+  },
+  {
    "id": "3085301",
    "name": "Gasan Umalatov",
    "nickname": "Cobra",
@@ -29614,6 +30454,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4887310.png"
+  },
+  {
+   "id": "2354196",
+   "name": "Gideon Ray",
+   "nickname": "",
+   "weightClass": "Middleweight",
+   "nationality": "USA",
+   "heightIn": 70.0,
+   "displayHeight": "5' 10\"",
+   "reachIn": 0.0,
+   "stance": "Southpaw",
+   "dob": "1973-05-27T07:00Z",
+   "wins": 0,
+   "losses": 9,
+   "draws": 0,
+   "record": "0-9-0",
+   "debutYear": 2005,
+   "lastUfcYear": 2006,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354196.png"
   },
   {
    "id": "3957071",
@@ -31904,6 +32768,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3952966.png"
   },
   {
+   "id": "2335529",
+   "name": "Houston Alexander",
+   "nickname": "The Assassin",
+   "weightClass": "Light Heavyweight",
+   "nationality": "USA",
+   "heightIn": 72.0,
+   "displayHeight": "6' 0\"",
+   "reachIn": 72.0,
+   "stance": "Orthodox",
+   "dob": "1972-03-22T08:00Z",
+   "wins": 16,
+   "losses": 15,
+   "draws": 1,
+   "record": "16-15-1",
+   "debutYear": 2007,
+   "lastUfcYear": 2009,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335529.png"
+  },
+  {
    "id": "4287236",
    "name": "Hu Yaozong",
    "nickname": "Totoro",
@@ -32502,6 +33390,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4684776.png"
+  },
+  {
+   "id": "2354242",
+   "name": "Ikuhisa Minowa",
+   "nickname": "Minowaman",
+   "weightClass": "Middleweight",
+   "nationality": "Japan",
+   "heightIn": 69.0,
+   "displayHeight": "5' 9\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1976-01-12T08:00Z",
+   "wins": 23,
+   "losses": 20,
+   "draws": 1,
+   "record": "23-20-1",
+   "debutYear": 2000,
+   "lastUfcYear": 2000,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354242.png"
   },
   {
    "id": "2557025",
@@ -34416,6 +35328,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4193828.png"
   },
   {
+   "id": "2495165",
+   "name": "Jacob Volkmann",
+   "nickname": "Christmas",
+   "weightClass": "Lightweight",
+   "nationality": "USA",
+   "heightIn": 69.0,
+   "displayHeight": "5' 9\"",
+   "reachIn": 71.5,
+   "stance": "Southpaw",
+   "dob": "1980-09-05T07:00Z",
+   "wins": 19,
+   "losses": 7,
+   "draws": 0,
+   "record": "19-7-0",
+   "debutYear": 2009,
+   "lastUfcYear": 2013,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2495165.png"
+  },
+  {
    "id": "5149961",
    "name": "Jacobe Smith",
    "nickname": "Cobe",
@@ -35294,6 +36230,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/5075748.png"
   },
   {
+   "id": "2354228",
+   "name": "James McSweeney",
+   "nickname": "",
+   "weightClass": "Heavyweight",
+   "nationality": "England",
+   "heightIn": 76.0,
+   "displayHeight": "6' 4\"",
+   "reachIn": 77.0,
+   "stance": "Switch",
+   "dob": "1980-10-24T07:00Z",
+   "wins": 15,
+   "losses": 18,
+   "draws": 0,
+   "record": "15-18-0",
+   "debutYear": 2009,
+   "lastUfcYear": 2010,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354228.png"
+  },
+  {
    "id": "3106310",
    "name": "James Moontasri",
    "nickname": "Moonwalker",
@@ -35436,6 +36396,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2500695.png"
+  },
+  {
+   "id": "2431321",
+   "name": "James Zikic",
+   "nickname": "The Messenger",
+   "weightClass": "Light Heavyweight",
+   "nationality": "England",
+   "heightIn": 74.0,
+   "displayHeight": "6' 2\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1977-03-01T08:00Z",
+   "wins": 3,
+   "losses": 6,
+   "draws": 1,
+   "record": "3-6-1",
+   "debutYear": 2002,
+   "lastUfcYear": 2002,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2431321.png"
   },
   {
    "id": "4684018",
@@ -36288,6 +37272,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335532.png"
   },
   {
+   "id": "2335495",
+   "name": "Jason Day",
+   "nickname": "Dooms",
+   "weightClass": "Middleweight",
+   "nationality": "Canada",
+   "heightIn": 72.0,
+   "displayHeight": "6' 0\"",
+   "reachIn": 72.0,
+   "stance": "Orthodox",
+   "dob": "1979-03-18",
+   "wins": 4,
+   "losses": 8,
+   "draws": 0,
+   "record": "4-8-0",
+   "debutYear": 2008,
+   "lastUfcYear": 2009,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335495.png"
+  },
+  {
    "id": "2335635",
    "name": "Jason DeLucia",
    "nickname": "",
@@ -36310,6 +37318,54 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335635.png"
+  },
+  {
+   "id": "2354437",
+   "name": "Jason Dent",
+   "nickname": "Dynamite",
+   "weightClass": "Lightweight",
+   "nationality": "USA",
+   "heightIn": 70.0,
+   "displayHeight": "5' 10\"",
+   "reachIn": 71.0,
+   "stance": "Orthodox",
+   "dob": "1980-06-12T07:00Z",
+   "wins": 1,
+   "losses": 8,
+   "draws": 0,
+   "record": "1-8-0",
+   "debutYear": 2006,
+   "lastUfcYear": 2009,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354437.png"
+  },
+  {
+   "id": "2499034",
+   "name": "Jason Gilliam",
+   "nickname": "",
+   "weightClass": "Lightweight",
+   "nationality": "USA",
+   "heightIn": 72.0,
+   "displayHeight": "6' 0\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1972-10-31T08:00Z",
+   "wins": 0,
+   "losses": 5,
+   "draws": 0,
+   "record": "0-5-0",
+   "debutYear": 2007,
+   "lastUfcYear": 2007,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2499034.png"
   },
   {
    "id": "3128086",
@@ -36406,6 +37462,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3955317.png"
+  },
+  {
+   "id": "2335604",
+   "name": "Jason Lambert",
+   "nickname": "The Punisher",
+   "weightClass": "Light Heavyweight",
+   "nationality": "USA",
+   "heightIn": 73.0,
+   "displayHeight": "6' 1\"",
+   "reachIn": 75.0,
+   "stance": "Orthodox",
+   "dob": "1977-09-23T07:00Z",
+   "wins": 6,
+   "losses": 12,
+   "draws": 0,
+   "record": "6-12-0",
+   "debutYear": 2006,
+   "lastUfcYear": 2008,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335604.png"
   },
   {
    "id": "2335771",
@@ -36526,6 +37606,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3011425.png"
+  },
+  {
+   "id": "2447638",
+   "name": "Jason Von Flue",
+   "nickname": "Livewire",
+   "weightClass": "Welterweight",
+   "nationality": "USA",
+   "heightIn": 72.0,
+   "displayHeight": "6' 0\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1975-08-01",
+   "wins": 2,
+   "losses": 6,
+   "draws": 1,
+   "record": "2-6-1",
+   "debutYear": 2006,
+   "lastUfcYear": 2006,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2447638.png"
   },
   {
    "id": "3913466",
@@ -36694,6 +37798,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4062287.png"
+  },
+  {
+   "id": "2487259",
+   "name": "Jay Silva",
+   "nickname": "",
+   "weightClass": "Middleweight",
+   "nationality": "USA",
+   "heightIn": 74.0,
+   "displayHeight": "6' 2\"",
+   "reachIn": 75.0,
+   "stance": "Southpaw",
+   "dob": "1981-05-25T07:00Z",
+   "wins": 12,
+   "losses": 13,
+   "draws": 1,
+   "record": "12-13-1",
+   "debutYear": 2009,
+   "lastUfcYear": 2010,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2487259.png"
   },
   {
    "id": "5149439",
@@ -36886,6 +38014,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4684238.png"
+  },
+  {
+   "id": "2412446",
+   "name": "Jeff Monson",
+   "nickname": "The Snowman",
+   "weightClass": "Heavyweight",
+   "nationality": "USA",
+   "heightIn": 69.0,
+   "displayHeight": "5' 9\"",
+   "reachIn": 74.0,
+   "stance": "Orthodox",
+   "dob": "1971-01-18T08:00Z",
+   "wins": 50,
+   "losses": 22,
+   "draws": 1,
+   "record": "50-22-1",
+   "debutYear": 2000,
+   "lastUfcYear": 2006,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2412446.png"
   },
   {
    "id": "5362725",
@@ -37170,6 +38322,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3970873.png"
+  },
+  {
+   "id": "2335477",
+   "name": "Jeremy Horn",
+   "nickname": "Gumby",
+   "weightClass": "Middleweight",
+   "nationality": "USA",
+   "heightIn": 73.0,
+   "displayHeight": "6' 1\"",
+   "reachIn": 74.0,
+   "stance": "Orthodox",
+   "dob": "1975-08-25T07:00Z",
+   "wins": 90,
+   "losses": 21,
+   "draws": 1,
+   "record": "90-21-1",
+   "debutYear": 1998,
+   "lastUfcYear": 2009,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335477.png"
   },
   {
    "id": "4034830",
@@ -39422,6 +40598,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335672.png"
   },
   {
+   "id": "2502718",
+   "name": "Joe Vedepo",
+   "nickname": "The Doctor",
+   "weightClass": "Middleweight",
+   "nationality": "USA",
+   "heightIn": 72.0,
+   "displayHeight": "6' 0\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1983-01-01T08:00Z",
+   "wins": 18,
+   "losses": 9,
+   "draws": 0,
+   "record": "18-9-0",
+   "debutYear": 2008,
+   "lastUfcYear": 2009,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2502718.png"
+  },
+  {
    "id": "4411888",
    "name": "Joel Álvarez",
    "nickname": "El Fenomeno",
@@ -39444,6 +40644,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4411888.png"
+  },
+  {
+   "id": "2504046",
+   "name": "Joey Beltran",
+   "nickname": "Mexicutioner",
+   "weightClass": "Heavyweight",
+   "nationality": "USA",
+   "heightIn": 73.0,
+   "displayHeight": "6' 1\"",
+   "reachIn": 75.0,
+   "stance": "Orthodox",
+   "dob": "1981-12-09T08:00Z",
+   "wins": 17,
+   "losses": 15,
+   "draws": 0,
+   "record": "17-15-0",
+   "debutYear": 2010,
+   "lastUfcYear": 2013,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2504046.png"
   },
   {
    "id": "2516118",
@@ -39684,6 +40908,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/5369414.png"
+  },
+  {
+   "id": "2487735",
+   "name": "John Gunderson",
+   "nickname": "Quick Guns",
+   "weightClass": "Lightweight",
+   "nationality": "USA",
+   "heightIn": 69.0,
+   "displayHeight": "5' 9\"",
+   "reachIn": 69.0,
+   "stance": "Orthodox",
+   "dob": "1979-01-05T08:00Z",
+   "wins": 35,
+   "losses": 16,
+   "draws": 2,
+   "record": "35-16-2",
+   "debutYear": 2010,
+   "lastUfcYear": 2010,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2487735.png"
   },
   {
    "id": "4355238",
@@ -40604,6 +41852,54 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4884867.png"
+  },
+  {
+   "id": "2494735",
+   "name": "Jonathan Brookins",
+   "nickname": "",
+   "weightClass": "Featherweight",
+   "nationality": "USA",
+   "heightIn": 72.0,
+   "displayHeight": "6' 0\"",
+   "reachIn": 74.0,
+   "stance": "Southpaw",
+   "dob": "1985-08-13T07:00Z",
+   "wins": 17,
+   "losses": 10,
+   "draws": 0,
+   "record": "17-10-0",
+   "debutYear": 2010,
+   "lastUfcYear": 2012,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2494735.png"
+  },
+  {
+   "id": "2335806",
+   "name": "Jonathan Goulet",
+   "nickname": "The Road Warrior",
+   "weightClass": "Welterweight",
+   "nationality": "Canada",
+   "heightIn": 72.0,
+   "displayHeight": "6' 0\"",
+   "reachIn": 73.5,
+   "stance": "Orthodox",
+   "dob": "1979-07-13T07:00Z",
+   "wins": 7,
+   "losses": 6,
+   "draws": 0,
+   "record": "7-6-0",
+   "debutYear": 2005,
+   "lastUfcYear": 2010,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335806.png"
   },
   {
    "id": "3928690",
@@ -43846,6 +45142,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/5277050.png"
   },
   {
+   "id": "2335770",
+   "name": "Justin Buchholz",
+   "nickname": "",
+   "weightClass": "Lightweight",
+   "nationality": "USA",
+   "heightIn": 71.0,
+   "displayHeight": "5' 11\"",
+   "reachIn": 73.0,
+   "stance": "Orthodox",
+   "dob": "1983-08-22T07:00Z",
+   "wins": 15,
+   "losses": 11,
+   "draws": 0,
+   "record": "15-11-0",
+   "debutYear": 2008,
+   "lastUfcYear": 2010,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335770.png"
+  },
+  {
    "id": "4848687",
    "name": "Justin Burlinson",
    "nickname": "",
@@ -44414,6 +45734,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3028441.png"
   },
   {
+   "id": "2354525",
+   "name": "Jutaro Nakao",
+   "nickname": "",
+   "weightClass": "Welterweight",
+   "nationality": "Japan",
+   "heightIn": 69.0,
+   "displayHeight": "5' 9\"",
+   "reachIn": 0.0,
+   "stance": "Southpaw",
+   "dob": "1970-11-30T08:00Z",
+   "wins": 2,
+   "losses": 5,
+   "draws": 0,
+   "record": "2-5-0",
+   "debutYear": 2001,
+   "lastUfcYear": 2002,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354525.png"
+  },
+  {
    "id": "4689219",
    "name": "KB Bhullar",
    "nickname": "The Bengal",
@@ -44700,6 +46044,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4080575.png"
+  },
+  {
+   "id": "2335832",
+   "name": "Kalib Starnes",
+   "nickname": "",
+   "weightClass": "Middleweight",
+   "nationality": "Canada",
+   "heightIn": 75.0,
+   "displayHeight": "6' 3\"",
+   "reachIn": 74.0,
+   "stance": "Orthodox",
+   "dob": "1975-01-06T08:00Z",
+   "wins": 16,
+   "losses": 11,
+   "draws": 1,
+   "record": "16-11-1",
+   "debutYear": 2006,
+   "lastUfcYear": 2008,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335832.png"
   },
   {
    "id": "3024386",
@@ -45542,6 +46910,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4244337.png"
   },
   {
+   "id": "2335517",
+   "name": "Kazuhiro Nakamura",
+   "nickname": "Kaz",
+   "weightClass": "Light Heavyweight",
+   "nationality": "Japan",
+   "heightIn": 71.0,
+   "displayHeight": "5' 11\"",
+   "reachIn": 70.0,
+   "stance": "Orthodox",
+   "dob": "1979-07-16T07:00Z",
+   "wins": 19,
+   "losses": 12,
+   "draws": 0,
+   "record": "19-12-0",
+   "debutYear": 2007,
+   "lastUfcYear": 2008,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335517.png"
+  },
+  {
    "id": "2525965",
    "name": "Kazuki Tokudome",
    "nickname": "",
@@ -45998,6 +47390,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2515913.png"
   },
   {
+   "id": "2354537",
+   "name": "Kerry Schall",
+   "nickname": "Meat Truck",
+   "weightClass": "Heavyweight",
+   "nationality": "USA",
+   "heightIn": 74.0,
+   "displayHeight": "6' 2\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1971-08-09T07:00Z",
+   "wins": 1,
+   "losses": 7,
+   "draws": 0,
+   "record": "1-7-0",
+   "debutYear": 2005,
+   "lastUfcYear": 2005,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354537.png"
+  },
+  {
    "id": "4566308",
    "name": "Ketlen Souza",
    "nickname": "Esquentadinha",
@@ -46332,6 +47748,112 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4426319.png"
+  },
+  {
+   "id": "2335518",
+   "name": "Kevin Randleman",
+   "nickname": "The Monster",
+   "weightClass": "Heavyweight",
+   "nationality": "USA",
+   "heightIn": 70.0,
+   "displayHeight": "5' 10\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1971-08-10T07:00Z",
+   "wins": 17,
+   "losses": 16,
+   "draws": 0,
+   "record": "17-16-0",
+   "debutYear": 1999,
+   "lastUfcYear": 2002,
+   "isChampion": true,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [
+    {
+     "year": 1999,
+     "division": "Heavyweight",
+     "opponent": "Bas Rutten",
+     "result": "Lost"
+    },
+    {
+     "year": 1999,
+     "division": "Heavyweight",
+     "opponent": "Pete Williams",
+     "result": "Won"
+    },
+    {
+     "year": 2000,
+     "division": "Heavyweight",
+     "opponent": "Pedro Rizzo",
+     "result": "Won"
+    },
+    {
+     "year": 2000,
+     "division": "Heavyweight",
+     "opponent": "Randy Couture",
+     "result": "Lost"
+    }
+   ],
+   "ufcFights": [
+    {
+     "year": 1999,
+     "weightClass": "Heavyweight",
+     "result": "Won",
+     "isTitle": false,
+     "titleDivision": null,
+     "opponent": "Maurice Smith"
+    },
+    {
+     "year": 1999,
+     "weightClass": "Heavyweight",
+     "result": "Lost",
+     "isTitle": true,
+     "titleDivision": "Heavyweight",
+     "opponent": "Bas Rutten"
+    },
+    {
+     "year": 1999,
+     "weightClass": "Heavyweight",
+     "result": "Won",
+     "isTitle": true,
+     "titleDivision": "Heavyweight",
+     "opponent": "Pete Williams"
+    },
+    {
+     "year": 2000,
+     "weightClass": "Heavyweight",
+     "result": "Won",
+     "isTitle": true,
+     "titleDivision": "Heavyweight",
+     "opponent": "Pedro Rizzo"
+    },
+    {
+     "year": 2000,
+     "weightClass": "Heavyweight",
+     "result": "Lost",
+     "isTitle": true,
+     "titleDivision": "Heavyweight",
+     "opponent": "Randy Couture"
+    },
+    {
+     "year": 2001,
+     "weightClass": "Light Heavyweight",
+     "result": "Lost",
+     "isTitle": false,
+     "titleDivision": null,
+     "opponent": "Chuck Liddell"
+    },
+    {
+     "year": 2002,
+     "weightClass": "Light Heavyweight",
+     "result": "Won",
+     "isTitle": false,
+     "titleDivision": null,
+     "opponent": "Renato Sobral"
+    }
+   ],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335518.png"
   },
   {
    "id": "4424582",
@@ -46966,6 +48488,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4906182.png"
   },
   {
+   "id": "2354129",
+   "name": "Kit Cope",
+   "nickname": "",
+   "weightClass": "Welterweight",
+   "nationality": "USA",
+   "heightIn": 72.0,
+   "displayHeight": "6' 0\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1977-03-17T08:00Z",
+   "wins": 0,
+   "losses": 6,
+   "draws": 0,
+   "record": "0-6-0",
+   "debutYear": 2005,
+   "lastUfcYear": 2005,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354129.png"
+  },
+  {
    "id": "5122175",
    "name": "Klaudia Syguła",
    "nickname": "",
@@ -47326,6 +48872,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335651.png"
   },
   {
+   "id": "2335827",
+   "name": "Kuniyoshi Hironaka",
+   "nickname": "",
+   "weightClass": "Welterweight",
+   "nationality": "Japan",
+   "heightIn": 70.0,
+   "displayHeight": "5' 10\"",
+   "reachIn": 70.0,
+   "stance": "Orthodox",
+   "dob": "1976-06-17T07:00Z",
+   "wins": 8,
+   "losses": 8,
+   "draws": 0,
+   "record": "8-8-0",
+   "debutYear": 2006,
+   "lastUfcYear": 2008,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335827.png"
+  },
+  {
    "id": "3019246",
    "name": "Kurt Holobaugh",
    "nickname": "",
@@ -47468,6 +49038,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3947005.png"
+  },
+  {
+   "id": "2335767",
+   "name": "Kyle Bradley",
+   "nickname": "",
+   "weightClass": "Lightweight",
+   "nationality": "USA",
+   "heightIn": 70.0,
+   "displayHeight": "5' 10\"",
+   "reachIn": 71.0,
+   "stance": "Orthodox",
+   "dob": "1982-08-19T07:00Z",
+   "wins": 19,
+   "losses": 11,
+   "draws": 0,
+   "record": "19-11-0",
+   "debutYear": 2008,
+   "lastUfcYear": 2010,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335767.png"
   },
   {
    "id": "4329444",
@@ -50080,6 +51674,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4350772.png"
   },
   {
+   "id": "2613376",
+   "name": "Luis Ramos",
+   "nickname": "Beicao",
+   "weightClass": "Welterweight",
+   "nationality": "Brazil",
+   "heightIn": 68.0,
+   "displayHeight": "5' 8\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1981-01-18T08:00Z",
+   "wins": 20,
+   "losses": 9,
+   "draws": 2,
+   "record": "20-9-2",
+   "debutYear": 2011,
+   "lastUfcYear": 2012,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2613376.png"
+  },
+  {
    "id": "3074813",
    "name": "Luis Saldana",
    "nickname": "",
@@ -50102,6 +51720,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3074813.png"
+  },
+  {
+   "id": "2335634",
+   "name": "Luiz Cane",
+   "nickname": "Banha",
+   "weightClass": "Light Heavyweight",
+   "nationality": "Brazil",
+   "heightIn": 74.0,
+   "displayHeight": "6' 2\"",
+   "reachIn": 77.0,
+   "stance": "Southpaw",
+   "dob": "1981-04-02T08:00Z",
+   "wins": 13,
+   "losses": 5,
+   "draws": 0,
+   "record": "13-5-0",
+   "debutYear": 2007,
+   "lastUfcYear": 2012,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335634.png"
   },
   {
    "id": "3083005",
@@ -52688,6 +54330,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2965160.png"
   },
   {
+   "id": "2335683",
+   "name": "Marcus Aurelio",
+   "nickname": "Maximus",
+   "weightClass": "Lightweight",
+   "nationality": "Brazil",
+   "heightIn": 70.0,
+   "displayHeight": "5' 10\"",
+   "reachIn": 74.0,
+   "stance": "Orthodox",
+   "dob": "1973-08-18T07:00Z",
+   "wins": 24,
+   "losses": 10,
+   "draws": 0,
+   "record": "24-10-0",
+   "debutYear": 2007,
+   "lastUfcYear": 2009,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335683.png"
+  },
+  {
    "id": "2611951",
    "name": "Marcus Brimage",
    "nickname": "The Bama Beast",
@@ -53884,6 +55550,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4354427.png"
   },
   {
+   "id": "2335749",
+   "name": "Marvin Eastman",
+   "nickname": "The Beastman",
+   "weightClass": "Light Heavyweight",
+   "nationality": "USA",
+   "heightIn": 69.0,
+   "displayHeight": "5' 9\"",
+   "reachIn": 73.0,
+   "stance": "Orthodox",
+   "dob": "1971-07-16T07:00Z",
+   "wins": 9,
+   "losses": 12,
+   "draws": 1,
+   "record": "9-12-1",
+   "debutYear": 2003,
+   "lastUfcYear": 2008,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335749.png"
+  },
+  {
    "id": "4001851",
    "name": "Marvin Vettori",
    "nickname": "The Italian Dream",
@@ -54412,6 +56102,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335789.png"
   },
   {
+   "id": "2335527",
+   "name": "Matt Hamill",
+   "nickname": "The Hammer",
+   "weightClass": "Light Heavyweight",
+   "nationality": "USA",
+   "heightIn": 73.0,
+   "displayHeight": "6' 1\"",
+   "reachIn": 76.0,
+   "stance": "Orthodox",
+   "dob": "1976-10-05T07:00Z",
+   "wins": 12,
+   "losses": 8,
+   "draws": 0,
+   "record": "12-8-0",
+   "debutYear": 2006,
+   "lastUfcYear": 2013,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335527.png"
+  },
+  {
    "id": "3020409",
    "name": "Matt Hobar",
    "nickname": "The Crowbar",
@@ -54434,6 +56148,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3020409.png"
+  },
+  {
+   "id": "2335761",
+   "name": "Matt Horwich",
+   "nickname": "Suave",
+   "weightClass": "Middleweight",
+   "nationality": "USA",
+   "heightIn": 71.0,
+   "displayHeight": "5' 11\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1978-02-10T08:00Z",
+   "wins": 9,
+   "losses": 15,
+   "draws": 0,
+   "record": "9-15-0",
+   "debutYear": 2008,
+   "lastUfcYear": 2009,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335761.png"
   },
   {
    "id": "2335661",
@@ -57732,6 +59470,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4423448.png"
   },
   {
+   "id": "2354016",
+   "name": "Miguel Torres",
+   "nickname": "",
+   "weightClass": "Bantamweight",
+   "nationality": "USA",
+   "heightIn": 69.0,
+   "displayHeight": "5' 9\"",
+   "reachIn": 76.0,
+   "stance": "Orthodox",
+   "dob": "1981-01-18T08:00Z",
+   "wins": 44,
+   "losses": 9,
+   "draws": 0,
+   "record": "44-9-0",
+   "debutYear": 2011,
+   "lastUfcYear": 2012,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354016.png"
+  },
+  {
    "id": "4684468",
    "name": "Mike Breeden",
    "nickname": "Money",
@@ -58234,6 +59996,54 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354532.png"
+  },
+  {
+   "id": "2335743",
+   "name": "Mike Wessel",
+   "nickname": "",
+   "weightClass": "Heavyweight",
+   "nationality": "USA",
+   "heightIn": 72.0,
+   "displayHeight": "6' 0\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1977-12-02T08:00Z",
+   "wins": 4,
+   "losses": 6,
+   "draws": 0,
+   "record": "4-6-0",
+   "debutYear": 2008,
+   "lastUfcYear": 2008,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335743.png"
+  },
+  {
+   "id": "2354536",
+   "name": "Mike Whitehead",
+   "nickname": "Iron",
+   "weightClass": "Light Heavyweight",
+   "nationality": "USA",
+   "heightIn": 73.0,
+   "displayHeight": "6' 1\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1981-06-29T07:00Z",
+   "wins": 5,
+   "losses": 7,
+   "draws": 0,
+   "record": "5-7-0",
+   "debutYear": 2006,
+   "lastUfcYear": 2006,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354536.png"
   },
   {
    "id": "3009720",
@@ -61122,6 +62932,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4424224.png"
   },
   {
+   "id": "2501400",
+   "name": "Oleg Taktarov",
+   "nickname": "The Russian Bear",
+   "weightClass": "Open Weight",
+   "nationality": "Russia",
+   "heightIn": 72.0,
+   "displayHeight": "6' 0\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1967-08-26",
+   "wins": 6,
+   "losses": 4,
+   "draws": 1,
+   "record": "6-4-1",
+   "debutYear": 1995,
+   "lastUfcYear": 1995,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2501400.png"
+  },
+  {
    "id": "2557453",
    "name": "Oli Thompson",
    "nickname": "The Spartan",
@@ -61698,6 +63532,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2526109.png"
   },
   {
+   "id": "2507860",
+   "name": "Pat Audinwood",
+   "nickname": "",
+   "weightClass": "Lightweight",
+   "nationality": "USA",
+   "heightIn": 72.0,
+   "displayHeight": "6' 0\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1986-04-16T08:00Z",
+   "wins": 11,
+   "losses": 2,
+   "draws": 1,
+   "record": "11-2-1",
+   "debutYear": 2010,
+   "lastUfcYear": 2010,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2507860.png"
+  },
+  {
    "id": "2335658",
    "name": "Pat Barry",
    "nickname": "HD",
@@ -62206,6 +64064,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2519774.png"
   },
   {
+   "id": "2431330",
+   "name": "Paul Buentello",
+   "nickname": "The Headhunter",
+   "weightClass": "Heavyweight",
+   "nationality": "USA",
+   "heightIn": 75.0,
+   "displayHeight": "6' 3\"",
+   "reachIn": 77.0,
+   "stance": "Orthodox",
+   "dob": "1974-01-16T07:00Z",
+   "wins": 35,
+   "losses": 17,
+   "draws": 0,
+   "record": "35-17-0",
+   "debutYear": 2005,
+   "lastUfcYear": 2010,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2431330.png"
+  },
+  {
    "id": "3946951",
    "name": "Paul Craig",
    "nickname": "BearJew",
@@ -62660,6 +64542,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3070982.png"
+  },
+  {
+   "id": "2335775",
+   "name": "Per Eklund",
+   "nickname": "",
+   "weightClass": "Lightweight",
+   "nationality": "Sweden",
+   "heightIn": 70.0,
+   "displayHeight": "5' 10\"",
+   "reachIn": 72.0,
+   "stance": "Orthodox",
+   "dob": "1980-11-12",
+   "wins": 2,
+   "losses": 4,
+   "draws": 0,
+   "record": "2-4-0",
+   "debutYear": 2008,
+   "lastUfcYear": 2009,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335775.png"
   },
   {
    "id": "4914568",
@@ -64488,6 +66394,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4895691.png"
+  },
+  {
+   "id": "2335610",
+   "name": "Rameau Thierry Sokoudjou",
+   "nickname": "The African Assassin",
+   "weightClass": "Light Heavyweight",
+   "nationality": "Cameroon",
+   "heightIn": 70.0,
+   "displayHeight": "5' 10\"",
+   "reachIn": 78.0,
+   "stance": "Orthodox",
+   "dob": "1984-04-18T08:00Z",
+   "wins": 19,
+   "losses": 18,
+   "draws": 0,
+   "record": "19-18-0",
+   "debutYear": 2007,
+   "lastUfcYear": 2008,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335610.png"
   },
   {
    "id": "4295666",
@@ -67278,6 +69208,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3897220.png"
   },
   {
+   "id": "2537490",
+   "name": "Riki Fukuda",
+   "nickname": "",
+   "weightClass": "Middleweight",
+   "nationality": "Japan",
+   "heightIn": 72.0,
+   "displayHeight": "6' 0\"",
+   "reachIn": 73.0,
+   "stance": "Southpaw",
+   "dob": "1981-01-06T08:00Z",
+   "wins": 23,
+   "losses": 9,
+   "draws": 0,
+   "record": "23-9-0",
+   "debutYear": 2011,
+   "lastUfcYear": 2013,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2537490.png"
+  },
+  {
    "id": "3084125",
    "name": "Rilley Dutro",
    "nickname": "The Perfect Storm",
@@ -68056,6 +70010,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4024479.png"
   },
   {
+   "id": "2500659",
+   "name": "Rodney Wallace",
+   "nickname": "Sho Nuff the Master",
+   "weightClass": "Light Heavyweight",
+   "nationality": "USA",
+   "heightIn": 69.0,
+   "displayHeight": "5' 9\"",
+   "reachIn": 72.0,
+   "stance": "Switch",
+   "dob": "1981-11-21T08:00Z",
+   "wins": 25,
+   "losses": 14,
+   "draws": 1,
+   "record": "25-14-1",
+   "debutYear": 2009,
+   "lastUfcYear": 2010,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2500659.png"
+  },
+  {
    "id": "5060489",
    "name": "Rodolfo Bellato",
    "nickname": "Trator",
@@ -68726,6 +70704,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2499974.png"
+  },
+  {
+   "id": "2354131",
+   "name": "Ronald Jhun",
+   "nickname": "The Machine",
+   "weightClass": "Welterweight",
+   "nationality": "USA",
+   "heightIn": 71.0,
+   "displayHeight": "5' 11\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1970-09-21",
+   "wins": 1,
+   "losses": 13,
+   "draws": 1,
+   "record": "1-13-1",
+   "debutYear": 2004,
+   "lastUfcYear": 2004,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354131.png"
   },
   {
    "id": "4073937",
@@ -69470,6 +71472,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2502444.png"
   },
   {
+   "id": "2354078",
+   "name": "Ross Pointon",
+   "nickname": "The Gladiator",
+   "weightClass": "Welterweight",
+   "nationality": "England",
+   "heightIn": 68.0,
+   "displayHeight": "5' 8\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1980-02-18T08:00Z",
+   "wins": 1,
+   "losses": 6,
+   "draws": 0,
+   "record": "1-6-0",
+   "debutYear": 2006,
+   "lastUfcYear": 2007,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354078.png"
+  },
+  {
    "id": "4424184",
    "name": "Rostem Akman",
    "nickname": "Kurdimus Prime",
@@ -70070,6 +72096,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3887606.png"
   },
   {
+   "id": "2354197",
+   "name": "Ryan Thomas",
+   "nickname": "The Tank Engine",
+   "weightClass": "Welterweight",
+   "nationality": "USA",
+   "heightIn": 72.0,
+   "displayHeight": "6' 0\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1984-11-05T08:00Z",
+   "wins": 4,
+   "losses": 7,
+   "draws": 0,
+   "record": "4-7-0",
+   "debutYear": 2008,
+   "lastUfcYear": 2008,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354197.png"
+  },
+  {
    "id": "2335667",
    "name": "Ryo Chonan",
    "nickname": "Piranha",
@@ -70500,6 +72550,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/5124146.png"
+  },
+  {
+   "id": "2475116",
+   "name": "Sanae Kikuta",
+   "nickname": "",
+   "weightClass": "Middleweight",
+   "nationality": "Japan",
+   "heightIn": 69.0,
+   "displayHeight": "5' 9\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1971-09-10T07:00Z",
+   "wins": 4,
+   "losses": 5,
+   "draws": 1,
+   "record": "4-5-1",
+   "debutYear": 2000,
+   "lastUfcYear": 2000,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2475116.png"
   },
   {
    "id": "5044439",
@@ -71238,6 +73312,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2531643.png"
+  },
+  {
+   "id": "2335603",
+   "name": "Sean Salmon",
+   "nickname": "",
+   "weightClass": "Light Heavyweight",
+   "nationality": "USA",
+   "heightIn": 70.0,
+   "displayHeight": "5' 10\"",
+   "reachIn": 0.0,
+   "stance": "Southpaw",
+   "dob": "1977-11-09T08:00Z",
+   "wins": 0,
+   "losses": 10,
+   "draws": 0,
+   "record": "0-10-0",
+   "debutYear": 2007,
+   "lastUfcYear": 2007,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335603.png"
   },
   {
    "id": "5240957",
@@ -72116,6 +74214,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4701012.png"
   },
   {
+   "id": "2560087",
+   "name": "Shamar Bailey",
+   "nickname": "",
+   "weightClass": "Lightweight",
+   "nationality": "USA",
+   "heightIn": 68.0,
+   "displayHeight": "5' 8\"",
+   "reachIn": 75.0,
+   "stance": "--",
+   "dob": "1982-09-22T07:00Z",
+   "wins": 15,
+   "losses": 10,
+   "draws": 0,
+   "record": "15-10-0",
+   "debutYear": 2011,
+   "lastUfcYear": 2011,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2560087.png"
+  },
+  {
    "id": "2558062",
    "name": "Shamil Abdurakhimov",
    "nickname": "Abrek",
@@ -72812,6 +74934,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4013988.png"
   },
   {
+   "id": "2410622",
+   "name": "Sherman Pendergarst",
+   "nickname": "The Tank",
+   "weightClass": "Heavyweight",
+   "nationality": "USA",
+   "heightIn": 73.0,
+   "displayHeight": "6' 1\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1967-02-01",
+   "wins": 1,
+   "losses": 9,
+   "draws": 0,
+   "record": "1-9-0",
+   "debutYear": 2006,
+   "lastUfcYear": 2006,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2410622.png"
+  },
+  {
    "id": "4689223",
    "name": "Sherrard Blackledge",
    "nickname": "The Thriller",
@@ -72930,6 +75076,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3132040.png"
+  },
+  {
+   "id": "2354207",
+   "name": "Shonie Carter",
+   "nickname": "Mr. International",
+   "weightClass": "Welterweight",
+   "nationality": "USA",
+   "heightIn": 69.0,
+   "displayHeight": "5' 9\"",
+   "reachIn": 0.0,
+   "stance": "Southpaw",
+   "dob": "1972-05-03T07:00Z",
+   "wins": 6,
+   "losses": 13,
+   "draws": 0,
+   "record": "6-13-0",
+   "debutYear": 2000,
+   "lastUfcYear": 2006,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354207.png"
   },
   {
    "id": "4875515",
@@ -73578,6 +75748,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2504809.png"
+  },
+  {
+   "id": "2335765",
+   "name": "Steve Bruno",
+   "nickname": "Hollywood",
+   "weightClass": "Welterweight",
+   "nationality": "USA",
+   "heightIn": 70.0,
+   "displayHeight": "5' 10\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1982-01-01",
+   "wins": 2,
+   "losses": 4,
+   "draws": 0,
+   "record": "2-4-0",
+   "debutYear": 2008,
+   "lastUfcYear": 2009,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335765.png"
   },
   {
    "id": "2335633",
@@ -74562,6 +76756,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4422029.png"
+  },
+  {
+   "id": "2531642",
+   "name": "TJ O'Brien",
+   "nickname": "The Spider",
+   "weightClass": "Lightweight",
+   "nationality": "USA",
+   "heightIn": 74.0,
+   "displayHeight": "6' 2\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1987-01-01T08:00Z",
+   "wins": 20,
+   "losses": 8,
+   "draws": 0,
+   "record": "20-8-0",
+   "debutYear": 2010,
+   "lastUfcYear": 2011,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2531642.png"
   },
   {
    "id": "2354141",
@@ -75740,6 +77958,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3955778.png"
   },
   {
+   "id": "2965161",
+   "name": "Thiago Perpetuo",
+   "nickname": "Bodao",
+   "weightClass": "Middleweight",
+   "nationality": "Brazil",
+   "heightIn": 70.0,
+   "displayHeight": "5' 10\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1987-12-14T08:00Z",
+   "wins": 9,
+   "losses": 4,
+   "draws": 1,
+   "record": "9-4-1",
+   "debutYear": 2012,
+   "lastUfcYear": 2014,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2965161.png"
+  },
+  {
    "id": "3045798",
    "name": "Thiago Santos",
    "nickname": "Marreta",
@@ -76100,6 +78342,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3088841.png"
   },
   {
+   "id": "2431287",
+   "name": "Tim Hague",
+   "nickname": "The Thrashing Machine",
+   "weightClass": "Heavyweight",
+   "nationality": "Canada",
+   "heightIn": 76.0,
+   "displayHeight": "6' 4\"",
+   "reachIn": 76.0,
+   "stance": "Orthodox",
+   "dob": "1983-05-09T07:00Z",
+   "wins": 21,
+   "losses": 13,
+   "draws": 0,
+   "record": "21-13-0",
+   "debutYear": 2009,
+   "lastUfcYear": 2011,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2431287.png"
+  },
+  {
    "id": "3165523",
    "name": "Tim Johnson",
    "nickname": "",
@@ -76146,6 +78412,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2492785.png"
+  },
+  {
+   "id": "2335791",
+   "name": "Tim McKenzie",
+   "nickname": "Wrecking Machine",
+   "weightClass": "Middleweight",
+   "nationality": "USA",
+   "heightIn": 71.0,
+   "displayHeight": "5' 11\"",
+   "reachIn": 74.0,
+   "stance": "Orthodox",
+   "dob": "1982-07-21",
+   "wins": 3,
+   "losses": 6,
+   "draws": 0,
+   "record": "3-6-0",
+   "debutYear": 2009,
+   "lastUfcYear": 2009,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335791.png"
   },
   {
    "id": "2500946",
@@ -77546,6 +79836,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2560085.png"
   },
   {
+   "id": "2354103",
+   "name": "Tony Fryklund",
+   "nickname": "The Freak",
+   "weightClass": "Middleweight",
+   "nationality": "USA",
+   "heightIn": 72.0,
+   "displayHeight": "6' 0\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1971-03-26",
+   "wins": 4,
+   "losses": 7,
+   "draws": 1,
+   "record": "4-7-1",
+   "debutYear": 1997,
+   "lastUfcYear": 2004,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354103.png"
+  },
+  {
    "id": "4084453",
    "name": "Tony Gravely",
    "nickname": "",
@@ -77856,6 +80170,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2504648.png"
+  },
+  {
+   "id": "2487720",
+   "name": "Travis Fulton",
+   "nickname": "The Ironman",
+   "weightClass": "Heavyweight",
+   "nationality": "USA",
+   "heightIn": 72.0,
+   "displayHeight": "6' 0\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1977-05-29T07:00Z",
+   "wins": 3,
+   "losses": 26,
+   "draws": 1,
+   "record": "3-26-1",
+   "debutYear": 1999,
+   "lastUfcYear": 1999,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2487720.png"
   },
   {
    "id": "2335768",
@@ -79678,6 +82016,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/5310564.png"
   },
   {
+   "id": "2553808",
+   "name": "Victor Valimaki",
+   "nickname": "The Matrix",
+   "weightClass": "Light Heavyweight",
+   "nationality": "Canada",
+   "heightIn": 72.0,
+   "displayHeight": "6' 0\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1981-12-17T08:00Z",
+   "wins": 18,
+   "losses": 11,
+   "draws": 0,
+   "record": "18-11-0",
+   "debutYear": 2006,
+   "lastUfcYear": 2007,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2553808.png"
+  },
+  {
    "id": "4374740",
    "name": "Victoria Leonardo",
    "nickname": "Fury",
@@ -80542,6 +82904,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/3108775.png"
   },
   {
+   "id": "2502387",
+   "name": "Waylon Lowe",
+   "nickname": "",
+   "weightClass": "Lightweight",
+   "nationality": "USA",
+   "heightIn": 67.0,
+   "displayHeight": "5' 7\"",
+   "reachIn": 0.0,
+   "stance": "Southpaw",
+   "dob": "1981-10-31T08:00Z",
+   "wins": 16,
+   "losses": 7,
+   "draws": 0,
+   "record": "16-7-0",
+   "debutYear": 2010,
+   "lastUfcYear": 2011,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2502387.png"
+  },
+  {
    "id": "4426282",
    "name": "Wellington Turman",
    "nickname": "The Prodigy",
@@ -80636,6 +83022,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2354049.png"
+  },
+  {
+   "id": "2502148",
+   "name": "Wesley Correira",
+   "nickname": "",
+   "weightClass": "Heavyweight",
+   "nationality": "USA",
+   "heightIn": 75.0,
+   "displayHeight": "6' 3\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1978-11-11T08:00Z",
+   "wins": 5,
+   "losses": 5,
+   "draws": 0,
+   "record": "5-5-0",
+   "debutYear": 2002,
+   "lastUfcYear": 2004,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2502148.png"
   },
   {
    "id": "4305514",
@@ -81794,6 +84204,30 @@
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/4565904.png"
   },
   {
+   "id": "2335734",
+   "name": "Yoshiyuki Yoshida",
+   "nickname": "Zenko",
+   "weightClass": "Welterweight",
+   "nationality": "Japan",
+   "heightIn": 71.0,
+   "displayHeight": "5' 11\"",
+   "reachIn": 70.0,
+   "stance": "Southpaw",
+   "dob": "1974-05-10T07:00Z",
+   "wins": 17,
+   "losses": 8,
+   "draws": 0,
+   "record": "17-8-0",
+   "debutYear": 2008,
+   "lastUfcYear": 2010,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2335734.png"
+  },
+  {
    "id": "5149815",
    "name": "Yousri Belgaroui",
    "nickname": "",
@@ -81888,6 +84322,30 @@
    "titleBouts": [],
    "ufcFights": [],
    "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2487839.png"
+  },
+  {
+   "id": "2553270",
+   "name": "Yuki Sasaki",
+   "nickname": "",
+   "weightClass": "Middleweight",
+   "nationality": "Japan",
+   "heightIn": 74.0,
+   "displayHeight": "6' 2\"",
+   "reachIn": 0.0,
+   "stance": "Orthodox",
+   "dob": "1976-09-12T07:00Z",
+   "wins": 1,
+   "losses": 10,
+   "draws": 0,
+   "record": "1-10-0",
+   "debutYear": 2006,
+   "lastUfcYear": 2006,
+   "isChampion": false,
+   "topTen": false,
+   "rank": null,
+   "titleBouts": [],
+   "ufcFights": [],
+   "headshot": "https://a.espncdn.com/i/headshots/mma/players/full/2553270.png"
   },
   {
    "id": "5211223",
@@ -82771,91 +85229,6 @@
   }
  ],
  "borders": {
-  "Mongolia": [
-   "China",
-   "Russia"
-  ],
-  "Jordan": [
-   "Iraq",
-   "Israel",
-   "Palestine"
-  ],
-  "South Africa": [
-   "Zimbabwe"
-  ],
-  "Palestine": [
-   "Egypt",
-   "Israel",
-   "Jordan"
-  ],
-  "Luxembourg": [
-   "Belgium",
-   "France",
-   "Germany"
-  ],
-  "Ecuador": [
-   "Colombia",
-   "Peru"
-  ],
-  "Peru": [
-   "Bolivia",
-   "Brazil",
-   "Chile",
-   "Colombia",
-   "Ecuador"
-  ],
-  "China": [
-   "Afghanistan",
-   "Hong Kong",
-   "India",
-   "Kazakhstan",
-   "Kyrgyzstan",
-   "Mongolia",
-   "Myanmar",
-   "Russia",
-   "Tajikistan",
-   "Vietnam"
-  ],
-  "Finland": [
-   "Norway",
-   "Russia",
-   "Sweden"
-  ],
-  "Dominican Republic": [
-   "Haiti"
-  ],
-  "Bosnia & Herzegovina": [
-   "Croatia",
-   "Serbia"
-  ],
-  "Democratic Republic of Congo": [
-   "Uganda"
-  ],
-  "Kazakhstan": [
-   "China",
-   "Kyrgyzstan",
-   "Russia",
-   "Uzbekistan"
-  ],
-  "USA": [
-   "Canada",
-   "Cuba",
-   "Mexico"
-  ],
-  "Iraq": [
-   "Iran",
-   "Jordan",
-   "Türkiye"
-  ],
-  "England": [
-   "Ireland",
-   "Northern Ireland",
-   "Scotland",
-   "Wales"
-  ],
-  "Cuba": [
-   "USA"
-  ],
   "Brazil": [
    "Argentina",
    "Bolivia",
@@ -82867,41 +85240,67 @@
    "Uruguay",
    "Venezuela"
   ],
-  "Ukraine": [
-   "Belarus",
+  "Sweden": [
+   "Finland",
+   "Norway"
+  ],
+  "USA": [
+   "Canada",
+   "Cuba",
+   "Mexico"
+  ],
+  "Romania": [
+   "Bulgaria",
    "Hungary",
    "Moldova",
-   "Poland",
-   "Romania",
-   "Russia",
-   "Slovakia"
+   "Serbia",
+   "Ukraine"
   ],
-  "Norway": [
-   "Finland",
+  "Armenia": [
+   "Azerbaijan",
+   "Georgia",
+   "Iran",
+   "Türkiye"
+  ],
+  "Iraq": [
+   "Iran",
+   "Jordan",
+   "Türkiye"
+  ],
+  "Panama": [
+   "Colombia",
+   "Costa Rica"
+  ],
+  "Peru": [
+   "Bolivia",
+   "Brazil",
+   "Chile",
+   "Colombia",
+   "Ecuador"
+  ],
+  "Finland": [
+   "Norway",
    "Russia",
    "Sweden"
   ],
-  "Lithuania": [
-   "Belarus",
+  "Uzbekistan": [
+   "Afghanistan",
+   "Kazakhstan",
+   "Kyrgyzstan",
+   "Tajikistan"
+  ],
+  "Nicaragua": [
+   "Costa Rica"
+  ],
+  "Portugal": [
+   "Spain"
+  ],
+  "Slovakia": [
+   "Austria",
+   "Czechia",
+   "Hungary",
    "Poland",
-   "Russia"
-  ],
-  "Costa Rica": [
-   "Nicaragua",
-   "Panama"
-  ],
-  "Türkiye": [
-   "Armenia",
-   "Azerbaijan",
-   "Bulgaria",
-   "Georgia",
-   "Greece",
-   "Iran",
-   "Iraq"
-  ],
-  "Uruguay": [
-   "Argentina",
-   "Brazil"
+   "Ukraine"
   ],
   "Germany": [
    "Austria",
@@ -82914,48 +85313,58 @@
    "Poland",
    "Switzerland"
   ],
-  "Venezuela": [
-   "Brazil",
-   "Colombia",
-   "Guyana"
+  "Cuba": [
+   "USA"
   ],
-  "Guyana": [
-   "Brazil",
-   "Suriname",
-   "Venezuela"
-  ],
-  "Suriname": [
-   "Brazil",
-   "Guyana"
-  ],
-  "Kyrgyzstan": [
-   "China",
-   "Kazakhstan",
-   "Tajikistan",
-   "Uzbekistan"
-  ],
-  "Chile": [
-   "Argentina",
-   "Bolivia",
-   "Peru"
-  ],
-  "Armenia": [
-   "Azerbaijan",
-   "Georgia",
-   "Iran",
-   "Türkiye"
-  ],
-  "Nigeria": [
-   "Cameroon",
-   "Niger"
-  ],
-  "Denmark": [
-   "Germany"
-  ],
-  "Spain": [
+  "Italy": [
+   "Austria",
    "France",
-   "Morocco",
-   "Portugal"
+   "Switzerland"
+  ],
+  "Democratic Republic of Congo": [
+   "Uganda"
+  ],
+  "France": [
+   "Belgium",
+   "Germany",
+   "Italy",
+   "Luxembourg",
+   "Spain",
+   "Switzerland"
+  ],
+  "Hong Kong": [
+   "China"
+  ],
+  "South Africa": [
+   "Zimbabwe"
+  ],
+  "Wales": [
+   "England",
+   "Ireland",
+   "Northern Ireland",
+   "Scotland"
+  ],
+  "Dominican Republic": [
+   "Haiti"
+  ],
+  "Türkiye": [
+   "Armenia",
+   "Azerbaijan",
+   "Bulgaria",
+   "Georgia",
+   "Greece",
+   "Iran",
+   "Iraq"
+  ],
+  "Argentina": [
+   "Bolivia",
+   "Brazil",
+   "Chile",
+   "Paraguay",
+   "Uruguay"
+  ],
+  "Mexico": [
+   "USA"
   ],
   "Russia": [
    "Azerbaijan",
@@ -82970,76 +85379,24 @@
    "Poland",
    "Ukraine"
   ],
-  "India": [
-   "China",
-   "Myanmar"
-  ],
-  "Belarus": [
-   "Lithuania",
-   "Poland",
-   "Russia",
-   "Ukraine"
-  ],
-  "Cameroon": [
-   "Nigeria"
-  ],
-  "Egypt": [
-   "Israel",
-   "Palestine"
-  ],
-  "Iran": [
-   "Afghanistan",
-   "Armenia",
-   "Azerbaijan",
-   "Iraq",
-   "Türkiye"
-  ],
-  "Canada": [
-   "USA"
-  ],
-  "Uganda": [
-   "Democratic Republic of Congo"
-  ],
-  "Haiti": [
-   "Dominican Republic"
-  ],
-  "Panama": [
-   "Colombia",
-   "Costa Rica"
-  ],
-  "Albania": [
-   "Greece",
-   "Macedonia",
-   "Serbia"
-  ],
-  "Afghanistan": [
-   "China",
-   "Iran",
-   "Tajikistan",
-   "Uzbekistan"
-  ],
-  "Uzbekistan": [
-   "Afghanistan",
-   "Kazakhstan",
-   "Kyrgyzstan",
-   "Tajikistan"
-  ],
-  "Nicaragua": [
-   "Costa Rica"
-  ],
-  "France": [
-   "Belgium",
+  "Austria": [
+   "Czechia",
    "Germany",
+   "Hungary",
    "Italy",
-   "Luxembourg",
-   "Spain",
+   "Slovakia",
    "Switzerland"
   ],
-  "Ireland": [
-   "England",
-   "Northern Ireland",
-   "Scotland",
-   "Wales"
+  "Norway": [
+   "Finland",
+   "Russia",
+   "Sweden"
+  ],
+  "Czechia": [
+   "Austria",
+   "Germany",
+   "Poland",
+   "Slovakia"
   ],
   "Serbia": [
    "Albania",
@@ -83050,24 +85407,38 @@
    "Macedonia",
    "Romania"
   ],
-  "Mexico": [
+  "Luxembourg": [
+   "Belgium",
+   "France",
+   "Germany"
+  ],
+  "Cameroon": [
+   "Nigeria"
+  ],
+  "Canada": [
    "USA"
   ],
-  "Slovakia": [
-   "Austria",
-   "Czechia",
-   "Hungary",
-   "Poland",
+  "Tajikistan": [
+   "Afghanistan",
+   "China",
+   "Kyrgyzstan",
+   "Uzbekistan"
+  ],
+  "Moldova": [
+   "Romania",
    "Ukraine"
   ],
-  "Portugal": [
-   "Spain"
+  "Iran": [
+   "Afghanistan",
+   "Armenia",
+   "Azerbaijan",
+   "Iraq",
+   "Türkiye"
   ],
-  "Bulgaria": [
-   "Greece",
-   "Macedonia",
-   "Romania",
-   "Serbia",
+  "Georgia": [
+   "Armenia",
+   "Azerbaijan",
+   "Russia",
    "Türkiye"
   ],
   "Hungary": [
@@ -83078,88 +85449,11 @@
    "Slovakia",
    "Ukraine"
   ],
-  "Lebanon": [
-   "Israel"
-  ],
-  "Czechia": [
-   "Austria",
-   "Germany",
-   "Poland",
-   "Slovakia"
-  ],
-  "Hong Kong": [
-   "China"
-  ],
-  "Paraguay": [
-   "Argentina",
-   "Bolivia",
-   "Brazil"
-  ],
-  "Scotland": [
-   "England",
-   "Ireland",
-   "Northern Ireland",
-   "Wales"
-  ],
-  "Argentina": [
-   "Bolivia",
-   "Brazil",
-   "Chile",
-   "Paraguay",
-   "Uruguay"
-  ],
-  "Switzerland": [
-   "Austria",
-   "France",
-   "Germany",
-   "Italy"
-  ],
-  "Bolivia": [
-   "Argentina",
-   "Brazil",
-   "Chile",
-   "Paraguay",
-   "Peru"
-  ],
-  "Israel": [
-   "Egypt",
-   "Jordan",
-   "Lebanon",
-   "Palestine"
-  ],
-  "Netherlands": [
-   "Belgium",
-   "Germany"
-  ],
-  "Wales": [
-   "England",
-   "Ireland",
-   "Northern Ireland",
-   "Scotland"
-  ],
-  "Tajikistan": [
-   "Afghanistan",
+  "Kazakhstan": [
    "China",
    "Kyrgyzstan",
-   "Uzbekistan"
-  ],
-  "Romania": [
-   "Bulgaria",
-   "Hungary",
-   "Moldova",
-   "Serbia",
-   "Ukraine"
-  ],
-  "Georgia": [
-   "Armenia",
-   "Azerbaijan",
    "Russia",
-   "Türkiye"
-  ],
-  "Italy": [
-   "Austria",
-   "France",
-   "Switzerland"
+   "Uzbekistan"
   ],
   "Belgium": [
    "France",
@@ -83167,11 +85461,41 @@
    "Luxembourg",
    "Netherlands"
   ],
-  "Macedonia": [
-   "Albania",
-   "Bulgaria",
+  "Mongolia": [
+   "China",
+   "Russia"
+  ],
+  "India": [
+   "China",
+   "Myanmar"
+  ],
+  "Afghanistan": [
+   "China",
+   "Iran",
+   "Tajikistan",
+   "Uzbekistan"
+  ],
+  "Bulgaria": [
    "Greece",
-   "Serbia"
+   "Macedonia",
+   "Romania",
+   "Serbia",
+   "Türkiye"
+  ],
+  "Spain": [
+   "France",
+   "Morocco",
+   "Portugal"
+  ],
+  "Guyana": [
+   "Brazil",
+   "Suriname",
+   "Venezuela"
+  ],
+  "Jordan": [
+   "Iraq",
+   "Israel",
+   "Palestine"
   ],
   "Azerbaijan": [
    "Armenia",
@@ -83180,12 +85504,102 @@
    "Russia",
    "Türkiye"
   ],
-  "Moldova": [
-   "Romania",
+  "Zimbabwe": [
+   "South Africa"
+  ],
+  "Bosnia & Herzegovina": [
+   "Croatia",
+   "Serbia"
+  ],
+  "Paraguay": [
+   "Argentina",
+   "Bolivia",
+   "Brazil"
+  ],
+  "Vietnam": [
+   "China"
+  ],
+  "Kyrgyzstan": [
+   "China",
+   "Kazakhstan",
+   "Tajikistan",
+   "Uzbekistan"
+  ],
+  "Egypt": [
+   "Israel",
+   "Palestine"
+  ],
+  "Uruguay": [
+   "Argentina",
+   "Brazil"
+  ],
+  "Ireland": [
+   "England",
+   "Northern Ireland",
+   "Scotland",
+   "Wales"
+  ],
+  "Palestine": [
+   "Egypt",
+   "Israel",
+   "Jordan"
+  ],
+  "Ecuador": [
+   "Colombia",
+   "Peru"
+  ],
+  "Croatia": [
+   "Bosnia & Herzegovina",
+   "Hungary",
+   "Serbia"
+  ],
+  "Greece": [
+   "Albania",
+   "Bulgaria",
+   "Macedonia",
+   "Türkiye"
+  ],
+  "Morocco": [
+   "Spain"
+  ],
+  "Uganda": [
+   "Democratic Republic of Congo"
+  ],
+  "Venezuela": [
+   "Brazil",
+   "Colombia",
+   "Guyana"
+  ],
+  "Suriname": [
+   "Brazil",
+   "Guyana"
+  ],
+  "Macedonia": [
+   "Albania",
+   "Bulgaria",
+   "Greece",
+   "Serbia"
+  ],
+  "Haiti": [
+   "Dominican Republic"
+  ],
+  "Belarus": [
+   "Lithuania",
+   "Poland",
+   "Russia",
    "Ukraine"
   ],
-  "Thailand": [
-   "Myanmar"
+  "Israel": [
+   "Egypt",
+   "Jordan",
+   "Lebanon",
+   "Palestine"
+  ],
+  "Scotland": [
+   "England",
+   "Ireland",
+   "Northern Ireland",
+   "Wales"
   ],
   "Northern Ireland": [
    "England",
@@ -83193,8 +85607,84 @@
    "Scotland",
    "Wales"
   ],
+  "Netherlands": [
+   "Belgium",
+   "Germany"
+  ],
+  "England": [
+   "Ireland",
+   "Northern Ireland",
+   "Scotland",
+   "Wales"
+  ],
+  "Colombia": [
+   "Brazil",
+   "Ecuador",
+   "Panama",
+   "Peru",
+   "Venezuela"
+  ],
+  "Costa Rica": [
+   "Nicaragua",
+   "Panama"
+  ],
+  "Thailand": [
+   "Myanmar"
+  ],
+  "Myanmar": [
+   "China",
+   "India",
+   "Thailand"
+  ],
+  "Chile": [
+   "Argentina",
+   "Bolivia",
+   "Peru"
+  ],
   "Niger": [
    "Nigeria"
+  ],
+  "Ukraine": [
+   "Belarus",
+   "Hungary",
+   "Moldova",
+   "Poland",
+   "Romania",
+   "Russia",
+   "Slovakia"
+  ],
+  "Denmark": [
+   "Germany"
+  ],
+  "Switzerland": [
+   "Austria",
+   "France",
+   "Germany",
+   "Italy"
+  ],
+  "Lebanon": [
+   "Israel"
+  ],
+  "Nigeria": [
+   "Cameroon",
+   "Niger"
+  ],
+  "China": [
+   "Afghanistan",
+   "Hong Kong",
+   "India",
+   "Kazakhstan",
+   "Kyrgyzstan",
+   "Mongolia",
+   "Myanmar",
+   "Russia",
+   "Tajikistan",
+   "Vietnam"
+  ],
+  "Lithuania": [
+   "Belarus",
+   "Poland",
+   "Russia"
   ],
   "Poland": [
    "Belarus",
@@ -83205,49 +85695,17 @@
    "Slovakia",
    "Ukraine"
   ],
-  "Sweden": [
-   "Finland",
-   "Norway"
-  ],
-  "Greece": [
-   "Albania",
-   "Bulgaria",
+  "Albania": [
+   "Greece",
    "Macedonia",
-   "Türkiye"
-  ],
-  "Colombia": [
-   "Brazil",
-   "Ecuador",
-   "Panama",
-   "Peru",
-   "Venezuela"
-  ],
-  "Zimbabwe": [
-   "South Africa"
-  ],
-  "Myanmar": [
-   "China",
-   "India",
-   "Thailand"
-  ],
-  "Vietnam": [
-   "China"
-  ],
-  "Croatia": [
-   "Bosnia & Herzegovina",
-   "Hungary",
    "Serbia"
   ],
-  "Morocco": [
-   "Spain"
-  ],
-  "Austria": [
-   "Czechia",
-   "Germany",
-   "Hungary",
-   "Italy",
-   "Slovakia",
-   "Switzerland"
+  "Bolivia": [
+   "Argentina",
+   "Brazil",
+   "Chile",
+   "Paraguay",
+   "Peru"
   ]
  }
 }

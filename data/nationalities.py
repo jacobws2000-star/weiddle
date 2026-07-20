@@ -77,4 +77,8 @@ NATIONALITIES = {
     "Krzysztof Soszynski": "Canada",  # Polish-born, competed for Canada
     "Farid Basharat": "England",      # born Birmingham, England
     "Ivan Menjivar": "El Salvador",   # Salvadoran-Canadian
+    "Oleg Taktarov": "Russia",        # USSR-born; competed as Russian
+    "Amar Suloev": "Armenia",         # competed as Armenian
+    "Denis Kang": "Canada",           # born in France, competed out of Canada
+    "Gary Goodridge": "Canada",       # Trinidad-born, competed out of Ontario
 }

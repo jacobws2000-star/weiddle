@@ -16,6 +16,7 @@ All network responses are cached under data/.cache/ so reruns are cheap and poli
 Run:  python3 data/build_dataset.py   [--limit N] [--refresh]
 """
 
+import collections
 import http.client
 import json
 import os
@@ -321,6 +322,38 @@ def get_ufc_bouts(aid):
     return bouts
 
 
+# ESPN spells the same division two ways, both in bout `type.text` and in
+# athlete-profile `weightClass.text` (Brock Larson's profile says "Catchweight",
+# everyone else's says "Catch Weight"). The game compares division strings, so
+# an unnormalized variant reads as a different division in the Div column.
+# Applied to whichever source the division came from.
+DIVISION_ALIASES = {"Catchweight": "Catch Weight"}
+
+
+def division_from_bouts(aid):
+    """Most-fought UFC division, for fighters ESPN gives no weight class.
+
+    ESPN leaves `weightClass` blank on many older profiles — Jeremy Horn among
+    them — even though every one of their bouts carries a division in the
+    competition's `type.text`. Take the mode across their UFC bouts so a
+    one-off catchweight or short-notice bout up a division doesn't decide it;
+    ties break toward the most recent, since a fighter who moved up is
+    remembered at the division they finished in.
+    """
+    counts = collections.Counter()
+    latest = {}
+    for bout in get_ufc_bouts(aid):
+        wc = bout.get("weightClass")
+        if not wc:
+            continue
+        wc = DIVISION_ALIASES.get(wc, wc)
+        counts[wc] += 1
+        latest[wc] = max(latest.get(wc, 0), bout.get("year") or 0)
+    if not counts:
+        return None
+    return max(counts, key=lambda w: (counts[w], latest.get(w, 0)))
+
+
 def top_ten_ids(refresh=False):
     """Athlete ids ranked in the top 10 of any UFC ranking set (divisions + P4P).
 
@@ -433,6 +466,11 @@ def build(limit=None, refresh=False):
             ch = curated_height.get(norm_name(name))
             if ch:
                 height_in, display_height = ch["heightIn"], ch["displayHeight"]
+        # Same story for the division: recover it from the fighter's own bouts
+        # rather than dropping a career that ESPN simply never labelled.
+        if not wc:
+            wc = division_from_bouts(aid)
+        wc = DIVISION_ALIASES.get(wc, wc)
         # Height is required too: the game filters on heightIn/debutYear client-side,
         # so a fighter without it can never appear — don't ship dead entries.
         if not wc or not nationality or not dob or not height_in:
