@@ -81,4 +81,22 @@ NATIONALITIES = {
     "Amar Suloev": "Armenia",         # competed as Armenian
     "Denis Kang": "Canada",           # born in France, competed out of Canada
     "Gary Goodridge": "Canada",       # Trinidad-born, competed out of Ontario
+
+    # --- Fighters Wikidata's name search can't reach ---
+    # Each of these is a common enough name that the top hits are other people
+    # entirely (an admiral for Mark Kerr, a soul singer for Michael McDonald),
+    # so they can't be recovered automatically. Identity confirmed against the
+    # ESPN record + DOB + UFC years shown in the comments.
+    "David Abbott": "USA",            # "Tank" Abbott, 1965-07-16, UFC 1995-2003
+    "Mark Kerr": "USA",               # "The Smashing Machine", 1968-12-21, UFC 1997
+    "Michael McDonald": "USA",        # "Mayday", 1991-01-15, UFC 2011-2016
+    "Scott Smith": "USA",             # "Hands of Steel", 1979-05-21, UFC 2006-2007
+    "Terry Martin": "USA",            # 1980-10-10, UFC 2005-2008
+    "David Heath": "USA",             # "The Crow", 1976-10-02, UFC 2006-2008
+    "Tom Murphy": "USA",              # TUF 2 heavyweight, 8-0, UFC 2006
+    "Paul Kelly": "England",          # Liverpool, 1984-09-12, UFC 2008-2011
+    "Semmy Schilt": "Netherlands",    # Dutch, 1973-10-27, UFC 2001
+    "Andre Gusmao": "Brazil",         # UFC 2008-2009 (debuted vs Jon Jones)
+    "Rodrigo de Lima": "Brazil",      # UFC 2014-2015
+    "Kenneth Bergh": "Norway",        # Norwegian, UFC 2019
 }

@@ -214,14 +214,34 @@ def resolve_uk(pob_qid):
     return None
 
 
-def find_fighter_item(name):
-    """Return claims of the best Wikidata item for `name` that is an MMA fighter."""
+def find_fighter_item(name, espn_dob=None):
+    """Return claims of the best Wikidata item for `name` that is an MMA fighter.
+
+    Two ways to accept a candidate, strongest evidence first:
+
+    1. Its birth date equals ESPN's. An exact DOB match on a name hit is
+       near-conclusive identity, and it catches fighters Wikidata files under a
+       neighbouring occupation -- Semmy Schilt is "kickboxer", Paul Sass is
+       "martial artist", so neither carries P106=mixed martial artist.
+    2. Otherwise the occupation tag, as before.
+
+    Note the DOB check only *adds* candidates the occupation rule would miss; it
+    never overrides it, so this can't loosen matching for the common case. The
+    occupation gate has to stay, because these searches are name-only and a
+    plain "best hit" rule matches an admiral for Mark Kerr and a soul singer for
+    Michael McDonald.
+    """
     s = api({"action": "wbsearchentities", "search": name, "language": "en",
              "type": "item", "limit": 7})
     ids = [h["id"] for h in s.get("search", [])]
     if not ids:
         return None
     allclaims = get_claims(ids)
+    if espn_dob:
+        for qid in ids:
+            cl = allclaims.get(qid, {})
+            if fmt_dob(claim_times(cl, "P569")) == espn_dob:
+                return cl
     for qid in ids:  # search order = relevance
         cl = allclaims.get(qid, {})
         if MMA_OCCUPATION in claim_entity_ids(cl, "P106"):
@@ -273,10 +293,15 @@ def roster_targets():
         need_dob = not d.get("dateOfBirth")
         need_height = not d.get("height")
         if need_nat or need_dob or need_height:
-            targets.append((name, need_nat, need_dob, need_height))
+            # ESPN's own DOB (when it has one) is the identity check in
+            # find_fighter_item; a fighter missing only a nationality still has it.
+            espn_dob = str(d.get("dateOfBirth") or "")[:10] or None
+            targets.append((name, need_nat, need_dob, need_height, espn_dob))
     # de-dup by normalized name
     seen, uniq = set(), []
-    for t in sorted(targets):
+    # Sort by name only: the tuple now ends in an optional DOB, and tuple
+    # ordering would compare None against a string for two same-named fighters.
+    for t in sorted(targets, key=lambda t: t[0]):
         k = norm_name(t[0])
         if k not in seen:
             seen.add(k)
@@ -298,10 +323,10 @@ def main(limit=None):
 
     # Pass 1: pull each fighter's raw claims.
     raw = {}   # name -> {p27, p1532, p19, dob, height, need_*}
-    for i, (name, need_nat, need_dob, need_height) in enumerate(targets):
+    for i, (name, need_nat, need_dob, need_height, espn_dob) in enumerate(targets):
         if i % 25 == 0:
             print(f"  ...{i}/{len(targets)}", file=sys.stderr)
-        cl = find_fighter_item(name)
+        cl = find_fighter_item(name, espn_dob)
         if cl is None:
             raw[name] = None
             continue
