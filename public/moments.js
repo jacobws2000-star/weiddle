@@ -34,6 +34,77 @@ function mNorm(s){
     .toLowerCase().replace(/[^a-z0-9 ]/g, "").trim().replace(/\s+/g, " ");
 }
 
+// ---------- Moment enrichment (age + first-title-bout clues) ----------
+// Both are derived at render time from DATA (game.js) so moments.json stays the
+// curated source and the tags never drift from the dataset. Deterministic across
+// clients (same DATA + MOMENTS everywhere), so Daily's shared set stays identical.
+let _mDataIdx = null;
+function mDataIndex(){
+  if (_mDataIdx) return _mDataIdx;
+  _mDataIdx = new Map();
+  if (Array.isArray(DATA)) for (const f of DATA){
+    const k = mNorm(f.name);
+    if (k && !_mDataIdx.has(k)) _mDataIdx.set(k, f);   // first spelling wins the key
+  }
+  return _mDataIdx;
+}
+function mLookup(name){ return mDataIndex().get(mNorm(name)) || null; }
+function mAgeInYear(f, year){
+  if (!f || !f.dob || !year) return null;
+  const born = parseInt(String(f.dob).slice(0, 4), 10);
+  return Number.isFinite(born) ? year - born : null;   // year-based (no fight date), so ±1
+}
+function mSurname(name){ const t = mNorm(name).split(" "); return t[t.length - 1] || ""; }
+function mSameFighter(a, b){ return mNorm(a) === mNorm(b) || mSurname(a) === mSurname(b); }
+// Interim vs undisputed rides on the bout's `division` prefix (titleDivision is null
+// in the dataset), e.g. "Interim Welterweight" vs "Welterweight".
+function mBeltType(bout){
+  const d = bout.division || bout.weightClass || "";
+  return /^interim\b/i.test(d) ? "Interim" : "Undisputed";
+}
+function mPairKey(m){ return [mNorm(m.fighter1), mNorm(m.fighter2)].sort().join("|"); }
+// Returns the matched bout if THIS moment is `fighter`'s first UFC title bout, else
+// null. Their earliest title bout (titleBouts is oldest-first) must land in the
+// moment's year against the moment's other fighter. Same-year rematches vs the same
+// opponent are byte-identical in the dataset (no date), so they're disambiguated by
+// event order within MOMENTS: the lower event number is the first fight.
+function mFirstTitleBout(fighter, oppName, m){
+  const tb = fighter && fighter.titleBouts;
+  if (!tb || !tb.length) return null;
+  const b0 = tb[0];
+  if (b0.year !== m.year || !mSameFighter(b0.opponent || "", oppName)) return null;
+  const dup = tb.filter(b => b.year === m.year && mSameFighter(b.opponent || "", oppName)).length;
+  if (dup > 1){
+    const earlier = MOMENTS.some(m2 =>
+      m2 !== m && m2.title && m2.year === m.year &&
+      mPairKey(m2) === mPairKey(m) && m2.eventNumber < m.eventNumber);
+    if (earlier) return null;
+  }
+  return b0;
+}
+// The chip row for a moment: division/venue (as before) + ages + a first-title tag.
+// The title tag never names the fighter — that would leak an answer.
+function momentTags(m){
+  const tags = [];
+  if (m.weightClass) tags.push(m.title ? `${m.weightClass} Championship` : m.weightClass);
+  if (m.venue) tags.push(m.venue);
+
+  const f1 = mLookup(m.fighter1), f2 = mLookup(m.fighter2);
+  const ages = [mAgeInYear(f1, m.year), mAgeInYear(f2, m.year)]
+    .filter(a => a != null).sort((x, y) => x - y);   // sorted so order doesn't hint who's who
+  if (ages.length === 2) tags.push(`🎂 Ages ${ages[0]} & ${ages[1]}`);
+  else if (ages.length === 1) tags.push(`🎂 Age ${ages[0]}`);
+
+  const t1 = f1 && mFirstTitleBout(f1, m.fighter2, m);
+  const t2 = f2 && mFirstTitleBout(f2, m.fighter1, m);
+  const t = t1 || t2;
+  if (t){
+    const who = (t1 && t2) ? "Both fighters' first title fight" : "A fighter's first title fight";
+    tags.push(`🏆 ${who} · ${mBeltType(t)}`);
+  }
+  return tags;
+}
+
 async function startMoments(){
   await momentsReady;
   buildMomentsAutocomplete();
@@ -96,10 +167,7 @@ function nextMoment(){
   }
   mCurrent = m;
 
-  const tags = [];
-  if (m.weightClass) tags.push(m.title ? `${m.weightClass} Championship` : m.weightClass);
-  if (m.venue) tags.push(m.venue);
-  el("m-tags").innerHTML = tags.map(t => `<span class="chip">${t}</span>`).join("");
+  el("m-tags").innerHTML = momentTags(m).map(t => `<span class="chip">${t}</span>`).join("");
   el("m-clue").textContent = m.clue;
 
   for (const id of ["m-event", "m-f1", "m-f2", "m-year"]) el(id).value = "";
