@@ -145,6 +145,16 @@
   </section>
 
   <main>
+    <!-- Hints ("In Your Corner") — spends Corner Coins, Infinity Classic/Title only -->
+    <section id="hint-tray" class="hint-tray hidden">
+      <span class="hint-tray-label">🥊 In your corner</span>
+      <button class="hint-btn" data-hint="initial"><span>🔤 Initials</span><span class="hint-cost">🪙 10</span></button>
+      <button class="hint-btn" data-hint="nickname"><span>🏷️ Nickname</span><span class="hint-cost">🪙 15</span></button>
+      <button class="hint-btn" data-hint="headshot"><span>📷 Photo</span><span class="hint-cost">🪙 30</span></button>
+      <span id="hint-msg" class="hint-msg"></span>
+      <div id="hint-reveal" class="hint-reveal"></div>
+    </section>
+
     <!-- Classic mode: attribute grid -->
     <div id="classic-view">
       <div class="clue-header">
@@ -232,6 +242,7 @@
       <div class="level-bar"><div id="level-bar-fill" class="level-bar-fill"></div></div>
       <div id="level-points" class="level-points">0 / 100</div>
     </div>
+    <div class="level-coins" title="Corner Coins — spend on hints">🪙 <span id="coin-count">0</span></div>
   </aside>
 
   <script src="game.js"></script>

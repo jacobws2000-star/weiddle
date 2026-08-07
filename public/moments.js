@@ -142,6 +142,7 @@ function submitMoment(){
   // Lifetime account points — from game.js.
   // Daily Moments get the Daily boost (DAILY_BOOST, defined in game.js).
   addPoints(mDaily ? awarded * DAILY_BOOST : awarded);
+  // No Corner Coins here — Moments earns account points only, never hint coins.
   if (mScore > mBest){ mBest = mScore; localStorage.setItem("octagonle_moments_best", String(mBest)); }
   updateMomentsScore();
 

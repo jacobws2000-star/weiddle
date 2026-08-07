@@ -199,6 +199,40 @@ body{
 .chip.red{background:var(--red);}         /* division of the wrong gender */
 .arrow{font-weight:bold;}
 
+/* ---------- Hints ("In Your Corner") ---------- */
+.hint-tray{
+  display:flex;flex-wrap:wrap;align-items:center;gap:10px;
+  margin-bottom:20px;
+}
+.hint-tray-label{
+  font-weight:700;font-size:clamp(13px,1.3vw,18px);
+  background:var(--cream);color:var(--ink);
+  border:3px solid var(--ink);border-radius:8px;box-shadow:3px 4px 0 var(--ink);
+  padding:8px 12px;
+}
+.hint-btn{
+  font-family:inherit;font-weight:700;font-size:15px;cursor:pointer;
+  background:var(--gold);color:var(--ink);
+  border:3px solid var(--ink);border-radius:8px;box-shadow:3px 4px 0 var(--ink);
+  padding:8px 12px;display:flex;align-items:center;gap:8px;
+}
+.hint-btn:active{transform:translate(2px,2px);box-shadow:1px 2px 0 var(--ink);}
+.hint-btn:disabled{cursor:default;opacity:.5;box-shadow:2px 3px 0 var(--ink);}
+.hint-btn.used{background:var(--green);opacity:1;}
+.hint-cost{font-weight:700;white-space:nowrap;}
+.hint-msg{font-size:13px;color:var(--on-bg);font-style:italic;}
+.hint-reveal{display:flex;flex-wrap:wrap;gap:10px;width:100%;}
+.hint-card{
+  background:var(--cream);color:var(--ink);
+  border:3px solid var(--ink);border-radius:8px;box-shadow:3px 4px 0 var(--ink);
+  padding:8px 12px;display:flex;flex-direction:column;gap:4px;font-size:17px;
+}
+.hint-card .hk{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--gray);}
+.hint-photo img{
+  width:120px;height:144px;object-fit:cover;
+  border:3px solid var(--ink);border-radius:6px;background:#ddd;
+}
+
 /* ---------- Reveal ---------- */
 .reveal{
   display:flex;gap:20px;flex-wrap:wrap;
@@ -430,6 +464,11 @@ body{
 }
 .level-bar-fill{height:100%;width:0;background:var(--green);transition:width .45s ease;}
 .level-points{font-size:12px;font-weight:700;color:var(--ink);text-align:right;}
+.level-coins{
+  display:flex;align-items:center;gap:4px;
+  font-size:16px;font-weight:700;color:var(--ink);
+  border-left:2px dashed var(--ink);padding-left:12px;
+}
 .level-box.leveled{animation:levelpop .6s ease;}
 @keyframes levelpop{
   0%{transform:scale(1);}
@@ -453,6 +492,14 @@ body{
   .level-box{left:8px;bottom:4px;padding:7px 10px;gap:8px;box-shadow:3px 4px 0 #555555;}
   .level-num{font-size:22px;}
   .level-prog{width:100px;}
+  .level-coins{font-size:13px;padding-left:8px;}
+
+  /* Hint tray: shrink to phone chrome */
+  .hint-tray{gap:8px;margin-bottom:14px;}
+  .hint-tray-label{font-size:12px;padding:6px 10px;border-width:2px;box-shadow:2px 3px 0 var(--ink);}
+  .hint-btn{font-size:13px;padding:6px 10px;border-width:2px;box-shadow:2px 3px 0 var(--ink);}
+  .hint-card{font-size:15px;border-width:2px;box-shadow:2px 3px 0 var(--ink);}
+  .hint-photo img{width:100px;height:120px;}
 
   /* The header wraps to 2-3 rows on a phone and was eating ~a third of the screen.
      The timer's larger font also made wrapped rows uneven, since flex-wrap sizes each

@@ -68,6 +68,7 @@ let target = null;
 let guessed = new Set();
 let guessCount = 0;
 let solved = false;
+let hintsUsed = {};   // which hints were bought this game (reset each newGame)
 let startTime = null;
 let timerInterval = null;
 
@@ -238,6 +239,129 @@ function addPoints(n){
     box.classList.add("leveled");
   }
 }
+// ---------- Corner Coins (a SEPARATE spendable bank) ----------
+// Deliberately distinct from octagonle_points/levels: coins are spent on hints, so
+// hint use never costs a player the account levels they've earned. Points only ever
+// climb; coins are the only balance that goes down. First read seeds a starting
+// bank, which also grandfathers existing players in the moment they next load.
+const COIN_KEY = "octagonle_coins";
+const COIN_START = 100;
+// Coins are earned in INFINITY only — never Daily, never Moments. Title Defense pays
+// far less than Classic because it's the easier mode (a short title-bout résumé is a
+// much stronger clue than the Classic grid), so a Title win shouldn't bankroll hints
+// as fast. Win base by mode:
+const COIN_WIN = {
+  "classic-normal": 6, "classic-hard": 9, "classic-extreme": 12,
+  "title-normal":   3, "title-hard":   4, "title-extreme":   4,
+};
+function getCoins(){
+  const raw = localStorage.getItem(COIN_KEY);
+  if (raw === null){ localStorage.setItem(COIN_KEY, String(COIN_START)); return COIN_START; }
+  return parseInt(raw, 10) || 0;
+}
+function renderCoins(){ const e = el("coin-count"); if (e) e.textContent = String(getCoins()); }
+function setCoins(n){ localStorage.setItem(COIN_KEY, String(Math.max(0, n))); renderCoins(); }
+function addCoins(n){ if (n > 0) setCoins(getCoins() + n); }
+function spendCoins(n){ if (getCoins() < n) return false; setCoins(getCoins() - n); return true; }
+function awardWinCoins(){
+  if (playStyle !== "infinity") return;   // Infinity only — Daily earns no coins
+  const base = COIN_WIN[mode] || 6;
+  const unused = Math.max(0, maxAttempts() - guessCount);
+  let c;
+  if (isTitleMode()){
+    // Title is easier: smaller efficiency cap and no quick-solve bonus, so a win
+    // tops out at ~5-6 coins vs Classic's ~15-21.
+    c = base + Math.min(unused, 2);
+  } else {
+    c = base + Math.min(unused, 5);       // efficiency bonus, capped
+    if (guessCount <= 3) c += 4;          // quick-solve bonus (Classic only)
+  }
+  addCoins(c);
+}
+
+// ---------- Hints ("In Your Corner") ----------
+// Recognition clues aimed at casual fans, bought with Corner Coins. Infinity-only
+// (like Give Up) and never in Moments, so Daily's shared puzzle stays hint-free.
+const HINT_COST = { initial: 10, nickname: 15, headshot: 30 };
+function hasNickname(){ return !!(target && target.nickname && target.nickname.trim()); }
+function targetInitials(){
+  return (target.name || "").split(/\s+/).filter(Boolean)
+    .map(w => w[0].toUpperCase() + ".").join(" ");
+}
+let hintMsgTimer = null;
+function flashHint(msg){
+  const e = el("hint-msg");
+  if (!e) return;
+  e.textContent = msg;
+  clearTimeout(hintMsgTimer);
+  hintMsgTimer = setTimeout(() => { e.textContent = ""; }, 2200);
+}
+// Whether the hint tray is live right now: Infinity, and a Classic/Title game (not
+// Moments). Daily is excluded so its one-shot puzzle can't be hint-assisted.
+function hintsActive(){ return playStyle === "infinity" && mode !== "moments"; }
+function renderHintReveal(){
+  const box = el("hint-reveal");
+  if (!box) return;
+  box.innerHTML = "";
+  if (!target) return;
+  if (hintsUsed.initial){
+    box.insertAdjacentHTML("beforeend",
+      `<div class="hint-card"><span class="hk">Initials</span><b>${targetInitials()}</b></div>`);
+  }
+  if (hintsUsed.nickname && hasNickname()){
+    box.insertAdjacentHTML("beforeend",
+      `<div class="hint-card"><span class="hk">Nickname</span><b>&ldquo;${target.nickname}&rdquo;</b></div>`);
+  }
+  if (hintsUsed.headshot){
+    const card = document.createElement("div");
+    card.className = "hint-card hint-photo";
+    card.innerHTML = `<span class="hk">Photo</span>`;
+    const img = document.createElement("img");
+    img.className = "hint-img";
+    img.alt = "fighter";
+    // ESPN only hosts headshots for the modern roster; older fighters 404. On error
+    // we refund the cost rather than charge for a broken image.
+    img.onerror = () => {
+      if (!hintsUsed.headshot) return;      // already handled
+      delete hintsUsed.headshot;
+      addCoins(HINT_COST.headshot);
+      flashHint("No photo on file — refunded 🪙" + HINT_COST.headshot);
+      syncHintButtons();
+      renderHintReveal();
+    };
+    img.src = target.headshot;
+    card.appendChild(img);
+    box.appendChild(card);
+  }
+}
+function syncHintButtons(){
+  const coins = getCoins();
+  document.querySelectorAll(".hint-btn").forEach(b => {
+    const k = b.dataset.hint;
+    const used = !!hintsUsed[k];
+    const naNick = (k === "nickname" && !hasNickname());
+    const afford = coins >= HINT_COST[k];
+    b.classList.toggle("used", used);
+    b.disabled = used || solved || naNick || !afford;
+    const cost = b.querySelector(".hint-cost");
+    if (cost) cost.textContent = used ? "✓" : naNick ? "n/a" : `🪙 ${HINT_COST[k]}`;
+  });
+}
+function syncHintTray(){
+  const on = hintsActive();
+  el("hint-tray").classList.toggle("hidden", !on);
+  if (on){ renderHintReveal(); syncHintButtons(); }
+}
+function buyHint(kind){
+  if (!target || solved || !hintsActive()) return;
+  if (hintsUsed[kind]) return;
+  if (kind === "nickname" && !hasNickname()) return;
+  if (!spendCoins(HINT_COST[kind])){ flashHint("Not enough coins"); return; }
+  hintsUsed[kind] = true;
+  renderHintReveal();
+  syncHintButtons();
+}
+
 // Classic/Title win: base points by mode + an efficiency bonus of 2 per unused
 // guess, then a speed boost by how fast it was solved:
 //   3 guesses or fewer -> +65%, rounded UP to the nearest point
@@ -507,6 +631,8 @@ function newGame(){
   guessed = new Set();
   guessCount = 0;
   solved = false;
+  hintsUsed = {};
+  el("hint-tray").classList.add("hidden");   // shown at the end for the normal path
   el("reveal").classList.add("hidden");
   el("play-again-btn").classList.remove("hidden");
   el("daily-panel").classList.add("hidden");
@@ -563,6 +689,7 @@ function newGame(){
   }
   el("guess-input").focus();
   startTimer();
+  syncHintTray();   // Infinity Classic/Title only; hidden everywhere else
 }
 
 // Extreme clue: pick ONE title bout with a linear lean toward the least-recent
@@ -746,6 +873,7 @@ function syncGiveUp(){
 function giveUp(){
   solved = true;
   syncGiveUp();
+  syncHintButtons();
   clearInterval(timerInterval);
   el("guess-input").disabled = true;
   // Reveal the answer as a comparison row, matching lose().
@@ -763,6 +891,7 @@ function giveUp(){
 function lose(){
   solved = true;
   syncGiveUp();
+  syncHintButtons();
   clearInterval(timerInterval);
   el("guess-input").disabled = true;
   // Reveal the answer as a comparison row so its columns are shown (all green).
@@ -780,9 +909,11 @@ function lose(){
 function win(){
   solved = true;
   syncGiveUp();
+  syncHintButtons();   // lock hint buying now the game is over
   clearInterval(timerInterval);
   el("guess-input").disabled = true;
   awardWinPoints();
+  awardWinCoins();
   if (playStyle === "daily"){ finishDailyClassic(true); return; }
   if (!isTitleMode()) saveLastGuesses();
   clearLossStreak();
@@ -969,6 +1100,11 @@ el("daily-share").addEventListener("click", () => {
   setTimeout(() => el("daily-share").textContent = "↗ Share", 1500);
 });
 
+// ---------- Hint buttons ----------
+document.querySelectorAll(".hint-btn").forEach(btn =>
+  btn.addEventListener("click", () => buyHint(btn.dataset.hint)));
+
 applyPlayStyle();
 renderLevelBox();
+renderCoins();
 load();
