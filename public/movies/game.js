@@ -89,12 +89,16 @@ function selectMode(m){
   else newGame();
 }
 
+// The Give Up button only makes sense while a game is live (input enabled).
+function showGiveUp(on){ el("giveup-btn").classList.toggle("hidden", !on); }
+
 function newGame(){
   const pool = poolFor(mode);
   target = pool[Math.floor(Math.random() * pool.length)];
   resetBoard();
   el("guess-input").disabled = false;
   el("guess-input").focus();
+  showGiveUp(true);
 }
 
 // Daily: same film for everyone on a given UTC day; one-and-done, resumable.
@@ -108,6 +112,7 @@ function startDaily(){
   if (rec){ replayDaily(rec); return; }        // already played today
   el("guess-input").disabled = false;
   el("guess-input").focus();
+  showGiveUp(true);
 }
 
 function resetBoard(){
@@ -119,6 +124,7 @@ function resetBoard(){
   el("reveal").className = "reveal hidden";
   el("daily-panel").className = "reveal hidden";
   el("guess-input").value = "";
+  showGiveUp(false);
   updateStatus();
 }
 
@@ -227,14 +233,21 @@ function submitGuess(val){
   updateStatus();
 }
 
-function endGame(won){
+// Reveal the answer without spending a guess; ends the round as a loss.
+function giveUp(){
+  if (solved) return;
+  endGame(false, true);
+}
+
+function endGame(won, gaveUp = false){
   solved = true;
   el("guess-input").disabled = true;
+  showGiveUp(false);
   if (mode === "daily"){
-    setDailyRecord({ won, guesses: guessCount, answer: `${target.title} (${target.year})`, grid: guessRows });
+    setDailyRecord({ won, guesses: guessCount, answer: `${target.title} (${target.year})`, grid: guessRows, gaveUp });
     updateDailyStreak(won);
     if (won) addPoints(TIERS.daily.guesses - guessCount + 3);
-    showDailyPanel(won);
+    showDailyPanel(won, null, gaveUp);
   } else {
     if (won){ addPoints(scoreFor()); bumpStreak(true); } else bumpStreak(false);
     const r = el("reveal");
@@ -242,7 +255,7 @@ function endGame(won){
     r.innerHTML = won
       ? `<div class="reveal-title">🎉 Got it in ${guessCount}!</div>
          <div>${esc(target.title)} (${target.year}) — dir. ${esc(target.director)}</div>`
-      : `<div class="reveal-title">Out of guesses</div>
+      : `<div class="reveal-title">${gaveUp ? "Gave up" : "Out of guesses"}</div>
          <div>It was <b>${esc(target.title)} (${target.year})</b> — dir. ${esc(target.director)}, ${esc(target.leadActor)}.</div>`;
   }
   renderStats();
@@ -274,19 +287,21 @@ function updateDailyStreak(won){
 // Re-render a Daily that was already completed today, then show the locked panel.
 function replayDaily(rec){
   el("guess-input").disabled = true;
+  showGiveUp(false);
   guessRows = rec.grid || [];
   // We don't persist the actual guessed films, only the grid — so redraw the grid
   // rows from stored statuses (title hidden as "•••" isn't worth the storage).
   showDailyPanel(rec.won, rec);
 }
 
-function showDailyPanel(won, rec){
+function showDailyPanel(won, rec, gaveUp = false){
   const guesses = rec ? rec.guesses : guessCount;
   const answer = rec ? rec.answer : `${target.title} (${target.year})`;
+  const gave = rec ? rec.gaveUp : gaveUp;   // a resumed record remembers how it ended
   el("daily-title").textContent = won ? "Daily solved! 🎉" : "Daily complete";
   el("daily-sub").innerHTML = won
     ? `Solved in ${guesses} guess${guesses === 1 ? "" : "es"}.`
-    : `Out of guesses — it was <b>${esc(answer)}</b>.`;
+    : `${gave ? "Gave up" : "Out of guesses"} — it was <b>${esc(answer)}</b>.`;
   el("daily-streak").textContent = localStorage.getItem("cindle_daily_streak") || "0";
   el("daily-panel").className = "reveal" + (won ? " win" : "");
   startCountdown();
@@ -345,6 +360,14 @@ function wireUI(){
     if (e.key === "Enter") { e.preventDefault(); submitGuess(input.value); }
   });
   el("new-btn").addEventListener("click", newGame);
+  el("giveup-btn").addEventListener("click", () => {
+    if (!solved) el("giveup-modal").classList.remove("hidden");
+  });
+  el("giveup-confirm").addEventListener("click", () => {
+    el("giveup-modal").classList.add("hidden");
+    giveUp();
+  });
+  el("giveup-cancel").addEventListener("click", () => el("giveup-modal").classList.add("hidden"));
   el("share-btn").addEventListener("click", doShare);
   document.querySelectorAll(".mode-tab").forEach(b =>
     b.addEventListener("click", () => selectMode(b.dataset.mode)));

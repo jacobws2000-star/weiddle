@@ -21,6 +21,7 @@
     </div>
     <datalist id="titles"></datalist>
     <button id="new-btn" class="btn"><span class="ico">🔀</span> New Movie</button>
+    <button id="giveup-btn" class="btn hidden"><span class="ico">🏳️</span> Give Up</button>
     <a class="btn" href="/"><span class="ico">🥊</span> UFC Game</a>
     <div class="stat-box" title="Day streak">🔥 <span id="streak">0</span></div>
     <div class="stat-box" title="Points">⭐ <span id="points">0</span></div>
@@ -67,6 +68,20 @@
       <div id="share-copied" class="share-copied hidden">Copied to clipboard!</div>
     </div>
   </main>
+
+  <!-- Give-up confirmation. Reuses the UFC game's shared .mode-modal/.mode-card
+       chrome from the parent stylesheet; not .mode-desc (Cindle recolors that). -->
+  <div id="giveup-modal" class="mode-modal hidden">
+    <div class="mode-card">
+      <div class="mode-title">Give up?</div>
+      <hr>
+      <div class="giveup-note">The answer will be revealed and this round counts as a loss, so your streak resets to 0.</div>
+      <button id="giveup-confirm" class="giveup-option">
+        <div class="mode-name">🏳️ Reveal the answer</div>
+      </button>
+      <button id="giveup-cancel" class="btn">Keep playing</button>
+    </div>
+  </div>
 
   <footer class="cindle-foot">
     Data via <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">TMDB</a> &amp;
