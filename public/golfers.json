@@ -1,0 +1,959 @@
+{
+ "meta": {
+  "generatedAt": "2026-08-08T18:27:40.637138+00:00",
+  "count": 90,
+  "source": "curated seed (majors/wins/turned-pro) + ESPN golf API (dob/hand)"
+ },
+ "golfers": [
+  {
+   "name": "Adam Scott",
+   "country": "Australia",
+   "hand": "R",
+   "dob": "1980-07-16",
+   "turnedPro": 2000,
+   "majors": 1,
+   "pgaWins": 14,
+   "fame": 19
+  },
+  {
+   "name": "Angel Cabrera",
+   "country": "Argentina",
+   "hand": "R",
+   "dob": "1969-09-12",
+   "turnedPro": 1989,
+   "majors": 2,
+   "pgaWins": 3,
+   "fame": 13
+  },
+  {
+   "name": "Arnold Palmer",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1929-09-10",
+   "turnedPro": 1954,
+   "majors": 7,
+   "pgaWins": 62,
+   "fame": 97
+  },
+  {
+   "name": "Ben Crenshaw",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1952-01-11",
+   "turnedPro": 1973,
+   "majors": 2,
+   "pgaWins": 19,
+   "fame": 29
+  },
+  {
+   "name": "Ben Hogan",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1912-08-13",
+   "turnedPro": 1930,
+   "majors": 9,
+   "pgaWins": 64,
+   "fame": 109
+  },
+  {
+   "name": "Bernhard Langer",
+   "country": "Germany",
+   "hand": "R",
+   "dob": "1957-08-27",
+   "turnedPro": 1972,
+   "majors": 2,
+   "pgaWins": 3,
+   "fame": 13
+  },
+  {
+   "name": "Brooks Koepka",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1990-05-03",
+   "turnedPro": 2012,
+   "majors": 5,
+   "pgaWins": 8,
+   "fame": 33
+  },
+  {
+   "name": "Bryson DeChambeau",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1993-09-16",
+   "turnedPro": 2016,
+   "majors": 2,
+   "pgaWins": 8,
+   "fame": 18
+  },
+  {
+   "name": "Bubba Watson",
+   "country": "USA",
+   "hand": "L",
+   "dob": "1978-11-05",
+   "turnedPro": 2002,
+   "majors": 2,
+   "pgaWins": 12,
+   "fame": 22
+  },
+  {
+   "name": "Byron Nelson",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1912-02-04",
+   "turnedPro": 1932,
+   "majors": 5,
+   "pgaWins": 52,
+   "fame": 77
+  },
+  {
+   "name": "Cameron Smith",
+   "country": "Australia",
+   "hand": "R",
+   "dob": "1993-08-18",
+   "turnedPro": 2013,
+   "majors": 1,
+   "pgaWins": 6,
+   "fame": 11
+  },
+  {
+   "name": "Charl Schwartzel",
+   "country": "South Africa",
+   "hand": "R",
+   "dob": "1984-08-31",
+   "turnedPro": 2002,
+   "majors": 1,
+   "pgaWins": 2,
+   "fame": 7
+  },
+  {
+   "name": "Collin Morikawa",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1997-02-06",
+   "turnedPro": 2019,
+   "majors": 2,
+   "pgaWins": 6,
+   "fame": 16
+  },
+  {
+   "name": "Corey Pavin",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1959-11-16",
+   "turnedPro": 1982,
+   "majors": 1,
+   "pgaWins": 15,
+   "fame": 20
+  },
+  {
+   "name": "Curtis Strange",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1955-01-30",
+   "turnedPro": 1976,
+   "majors": 2,
+   "pgaWins": 17,
+   "fame": 27
+  },
+  {
+   "name": "Danny Willett",
+   "country": "England",
+   "hand": "R",
+   "dob": "1987-10-03",
+   "turnedPro": 2008,
+   "majors": 1,
+   "pgaWins": 1,
+   "fame": 6
+  },
+  {
+   "name": "Darren Clarke",
+   "country": "Northern Ireland",
+   "hand": "R",
+   "dob": "1968-08-14",
+   "turnedPro": 1990,
+   "majors": 1,
+   "pgaWins": 1,
+   "fame": 6
+  },
+  {
+   "name": "David Duval",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1971-11-09",
+   "turnedPro": 1993,
+   "majors": 1,
+   "pgaWins": 13,
+   "fame": 18
+  },
+  {
+   "name": "David Graham",
+   "country": "Australia",
+   "hand": "R",
+   "dob": "1946-05-23",
+   "turnedPro": 1962,
+   "majors": 2,
+   "pgaWins": 8,
+   "fame": 18
+  },
+  {
+   "name": "Davis Love III",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1964-04-13",
+   "turnedPro": 1985,
+   "majors": 1,
+   "pgaWins": 21,
+   "fame": 26
+  },
+  {
+   "name": "Dustin Johnson",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1984-06-22",
+   "turnedPro": 2007,
+   "majors": 2,
+   "pgaWins": 24,
+   "fame": 34
+  },
+  {
+   "name": "Ernie Els",
+   "country": "South Africa",
+   "hand": "R",
+   "dob": "1969-10-17",
+   "turnedPro": 1989,
+   "majors": 4,
+   "pgaWins": 19,
+   "fame": 39
+  },
+  {
+   "name": "Francesco Molinari",
+   "country": "Italy",
+   "hand": "R",
+   "dob": "1982-11-08",
+   "turnedPro": 2004,
+   "majors": 1,
+   "pgaWins": 3,
+   "fame": 8
+  },
+  {
+   "name": "Fred Couples",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1959-10-03",
+   "turnedPro": 1980,
+   "majors": 1,
+   "pgaWins": 15,
+   "fame": 20
+  },
+  {
+   "name": "Gary Player",
+   "country": "South Africa",
+   "hand": "R",
+   "dob": "1935-11-01",
+   "turnedPro": 1953,
+   "majors": 9,
+   "pgaWins": 24,
+   "fame": 69
+  },
+  {
+   "name": "Gary Woodland",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1984-05-21",
+   "turnedPro": 2007,
+   "majors": 1,
+   "pgaWins": 4,
+   "fame": 9
+  },
+  {
+   "name": "Geoff Ogilvy",
+   "country": "Australia",
+   "hand": "R",
+   "dob": "1977-06-11",
+   "turnedPro": 1998,
+   "majors": 1,
+   "pgaWins": 8,
+   "fame": 13
+  },
+  {
+   "name": "Graeme McDowell",
+   "country": "Northern Ireland",
+   "hand": "R",
+   "dob": "1979-07-30",
+   "turnedPro": 2002,
+   "majors": 1,
+   "pgaWins": 4,
+   "fame": 9
+  },
+  {
+   "name": "Greg Norman",
+   "country": "Australia",
+   "hand": "R",
+   "dob": "1955-02-10",
+   "turnedPro": 1976,
+   "majors": 2,
+   "pgaWins": 20,
+   "fame": 30
+  },
+  {
+   "name": "Hale Irwin",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1945-06-03",
+   "turnedPro": 1968,
+   "majors": 3,
+   "pgaWins": 20,
+   "fame": 35
+  },
+  {
+   "name": "Henrik Stenson",
+   "country": "Sweden",
+   "hand": "R",
+   "dob": "1976-04-05",
+   "turnedPro": 1998,
+   "majors": 1,
+   "pgaWins": 6,
+   "fame": 11
+  },
+  {
+   "name": "Hideki Matsuyama",
+   "country": "Japan",
+   "hand": "R",
+   "dob": "1992-02-25",
+   "turnedPro": 2013,
+   "majors": 1,
+   "pgaWins": 10,
+   "fame": 15
+  },
+  {
+   "name": "Ian Poulter",
+   "country": "England",
+   "hand": "R",
+   "dob": "1976-01-10",
+   "turnedPro": 1995,
+   "majors": 0,
+   "pgaWins": 2,
+   "fame": 2
+  },
+  {
+   "name": "Ian Woosnam",
+   "country": "Wales",
+   "hand": "R",
+   "dob": "1958-03-02",
+   "turnedPro": 1976,
+   "majors": 1,
+   "pgaWins": 1,
+   "fame": 6
+  },
+  {
+   "name": "Jack Nicklaus",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1940-01-21",
+   "turnedPro": 1961,
+   "majors": 18,
+   "pgaWins": 73,
+   "fame": 163
+  },
+  {
+   "name": "Jason Day",
+   "country": "Australia",
+   "hand": "R",
+   "dob": "1987-11-12",
+   "turnedPro": 2006,
+   "majors": 1,
+   "pgaWins": 13,
+   "fame": 18
+  },
+  {
+   "name": "Jason Dufner",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1977-03-24",
+   "turnedPro": 2000,
+   "majors": 1,
+   "pgaWins": 5,
+   "fame": 10
+  },
+  {
+   "name": "Jim Furyk",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1970-05-12",
+   "turnedPro": 1992,
+   "majors": 1,
+   "pgaWins": 17,
+   "fame": 22
+  },
+  {
+   "name": "Jimmy Walker",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1979-01-16",
+   "turnedPro": 2001,
+   "majors": 1,
+   "pgaWins": 6,
+   "fame": 11
+  },
+  {
+   "name": "John Daly",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1966-04-28",
+   "turnedPro": 1987,
+   "majors": 2,
+   "pgaWins": 5,
+   "fame": 15
+  },
+  {
+   "name": "Johnny Miller",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1947-04-29",
+   "turnedPro": 1969,
+   "majors": 2,
+   "pgaWins": 25,
+   "fame": 35
+  },
+  {
+   "name": "Jon Rahm",
+   "country": "Spain",
+   "hand": "R",
+   "dob": "1994-11-10",
+   "turnedPro": 2016,
+   "majors": 2,
+   "pgaWins": 11,
+   "fame": 21
+  },
+  {
+   "name": "Jordan Spieth",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1993-07-27",
+   "turnedPro": 2012,
+   "majors": 3,
+   "pgaWins": 13,
+   "fame": 28
+  },
+  {
+   "name": "Jose Maria Olazabal",
+   "country": "Spain",
+   "hand": "R",
+   "dob": "1966-02-05",
+   "turnedPro": 1985,
+   "majors": 2,
+   "pgaWins": 6,
+   "fame": 16
+  },
+  {
+   "name": "Justin Rose",
+   "country": "England",
+   "hand": "R",
+   "dob": "1980-07-30",
+   "turnedPro": 1998,
+   "majors": 1,
+   "pgaWins": 11,
+   "fame": 16
+  },
+  {
+   "name": "Justin Thomas",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1993-04-29",
+   "turnedPro": 2013,
+   "majors": 2,
+   "pgaWins": 15,
+   "fame": 25
+  },
+  {
+   "name": "Keegan Bradley",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1986-06-07",
+   "turnedPro": 2008,
+   "majors": 1,
+   "pgaWins": 8,
+   "fame": 13
+  },
+  {
+   "name": "Larry Nelson",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1947-09-10",
+   "turnedPro": 1971,
+   "majors": 3,
+   "pgaWins": 10,
+   "fame": 25
+  },
+  {
+   "name": "Lee Trevino",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1939-12-01",
+   "turnedPro": 1960,
+   "majors": 6,
+   "pgaWins": 29,
+   "fame": 59
+  },
+  {
+   "name": "Lee Westwood",
+   "country": "England",
+   "hand": "R",
+   "dob": "1973-04-24",
+   "turnedPro": 1993,
+   "majors": 0,
+   "pgaWins": 2,
+   "fame": 2
+  },
+  {
+   "name": "Louis Oosthuizen",
+   "country": "South Africa",
+   "hand": "R",
+   "dob": "1982-10-19",
+   "turnedPro": 2002,
+   "majors": 1,
+   "pgaWins": 1,
+   "fame": 6
+  },
+  {
+   "name": "Lucas Glover",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1979-11-12",
+   "turnedPro": 2001,
+   "majors": 1,
+   "pgaWins": 6,
+   "fame": 11
+  },
+  {
+   "name": "Luke Donald",
+   "country": "England",
+   "hand": "R",
+   "dob": "1977-12-07",
+   "turnedPro": 2001,
+   "majors": 0,
+   "pgaWins": 5,
+   "fame": 5
+  },
+  {
+   "name": "Mark O'Meara",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1957-01-13",
+   "turnedPro": 1980,
+   "majors": 2,
+   "pgaWins": 16,
+   "fame": 26
+  },
+  {
+   "name": "Martin Kaymer",
+   "country": "Germany",
+   "hand": "R",
+   "dob": "1984-12-28",
+   "turnedPro": 2005,
+   "majors": 2,
+   "pgaWins": 3,
+   "fame": 13
+  },
+  {
+   "name": "Matt Fitzpatrick",
+   "country": "England",
+   "hand": "R",
+   "dob": "1994-09-19",
+   "turnedPro": 2013,
+   "majors": 1,
+   "pgaWins": 2,
+   "fame": 7
+  },
+  {
+   "name": "Max Homa",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1990-11-19",
+   "turnedPro": 2013,
+   "majors": 0,
+   "pgaWins": 6,
+   "fame": 6
+  },
+  {
+   "name": "Mike Weir",
+   "country": "Canada",
+   "hand": "L",
+   "dob": "1970-05-12",
+   "turnedPro": 1992,
+   "majors": 1,
+   "pgaWins": 8,
+   "fame": 13
+  },
+  {
+   "name": "Nick Faldo",
+   "country": "England",
+   "hand": "R",
+   "dob": "1957-07-18",
+   "turnedPro": 1976,
+   "majors": 6,
+   "pgaWins": 9,
+   "fame": 39
+  },
+  {
+   "name": "Nick Price",
+   "country": "Zimbabwe",
+   "hand": "R",
+   "dob": "1957-01-28",
+   "turnedPro": 1977,
+   "majors": 3,
+   "pgaWins": 18,
+   "fame": 33
+  },
+  {
+   "name": "Padraig Harrington",
+   "country": "Ireland",
+   "hand": "R",
+   "dob": "1971-08-31",
+   "turnedPro": 1995,
+   "majors": 3,
+   "pgaWins": 6,
+   "fame": 21
+  },
+  {
+   "name": "Patrick Cantlay",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1992-03-17",
+   "turnedPro": 2012,
+   "majors": 0,
+   "pgaWins": 8,
+   "fame": 8
+  },
+  {
+   "name": "Patrick Reed",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1990-08-05",
+   "turnedPro": 2011,
+   "majors": 1,
+   "pgaWins": 9,
+   "fame": 14
+  },
+  {
+   "name": "Payne Stewart",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1957-01-30",
+   "turnedPro": 1979,
+   "majors": 3,
+   "pgaWins": 11,
+   "fame": 26
+  },
+  {
+   "name": "Phil Mickelson",
+   "country": "USA",
+   "hand": "L",
+   "dob": "1970-06-16",
+   "turnedPro": 1992,
+   "majors": 6,
+   "pgaWins": 45,
+   "fame": 75
+  },
+  {
+   "name": "Raymond Floyd",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1942-09-04",
+   "turnedPro": 1961,
+   "majors": 4,
+   "pgaWins": 22,
+   "fame": 42
+  },
+  {
+   "name": "Retief Goosen",
+   "country": "South Africa",
+   "hand": "R",
+   "dob": "1969-02-03",
+   "turnedPro": 1990,
+   "majors": 2,
+   "pgaWins": 7,
+   "fame": 17
+  },
+  {
+   "name": "Rickie Fowler",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1988-12-13",
+   "turnedPro": 2009,
+   "majors": 0,
+   "pgaWins": 6,
+   "fame": 6
+  },
+  {
+   "name": "Rory McIlroy",
+   "country": "Northern Ireland",
+   "hand": "R",
+   "dob": "1989-05-04",
+   "turnedPro": 2007,
+   "majors": 4,
+   "pgaWins": 27,
+   "fame": 47
+  },
+  {
+   "name": "Sam Burns",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1996-07-29",
+   "turnedPro": 2017,
+   "majors": 0,
+   "pgaWins": 5,
+   "fame": 5
+  },
+  {
+   "name": "Sam Snead",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1912-05-27",
+   "turnedPro": 1934,
+   "majors": 7,
+   "pgaWins": 82,
+   "fame": 117
+  },
+  {
+   "name": "Sandy Lyle",
+   "country": "Scotland",
+   "hand": "R",
+   "dob": "1958-02-09",
+   "turnedPro": 1977,
+   "majors": 2,
+   "pgaWins": 6,
+   "fame": 16
+  },
+  {
+   "name": "Scottie Scheffler",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1996-06-21",
+   "turnedPro": 2018,
+   "majors": 2,
+   "pgaWins": 12,
+   "fame": 22
+  },
+  {
+   "name": "Sergio Garcia",
+   "country": "Spain",
+   "hand": "R",
+   "dob": "1980-01-09",
+   "turnedPro": 1999,
+   "majors": 1,
+   "pgaWins": 11,
+   "fame": 16
+  },
+  {
+   "name": "Seve Ballesteros",
+   "country": "Spain",
+   "hand": "R",
+   "dob": "1957-04-09",
+   "turnedPro": 1974,
+   "majors": 5,
+   "pgaWins": 9,
+   "fame": 34
+  },
+  {
+   "name": "Shane Lowry",
+   "country": "Ireland",
+   "hand": "R",
+   "dob": "1987-04-02",
+   "turnedPro": 2009,
+   "majors": 1,
+   "pgaWins": 2,
+   "fame": 7
+  },
+  {
+   "name": "Stewart Cink",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1973-05-21",
+   "turnedPro": 1995,
+   "majors": 1,
+   "pgaWins": 8,
+   "fame": 13
+  },
+  {
+   "name": "Tiger Woods",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1975-12-30",
+   "turnedPro": 1996,
+   "majors": 15,
+   "pgaWins": 82,
+   "fame": 157
+  },
+  {
+   "name": "Tom Kite",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1949-12-09",
+   "turnedPro": 1972,
+   "majors": 1,
+   "pgaWins": 19,
+   "fame": 24
+  },
+  {
+   "name": "Tom Watson",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1949-09-04",
+   "turnedPro": 1971,
+   "majors": 8,
+   "pgaWins": 39,
+   "fame": 79
+  },
+  {
+   "name": "Tommy Fleetwood",
+   "country": "England",
+   "hand": "R",
+   "dob": "1991-01-19",
+   "turnedPro": 2010,
+   "majors": 0,
+   "pgaWins": 0,
+   "fame": 0
+  },
+  {
+   "name": "Tony Finau",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1989-09-14",
+   "turnedPro": 2007,
+   "majors": 0,
+   "pgaWins": 6,
+   "fame": 6
+  },
+  {
+   "name": "Trevor Immelman",
+   "country": "South Africa",
+   "hand": "R",
+   "dob": "1979-12-16",
+   "turnedPro": 1999,
+   "majors": 1,
+   "pgaWins": 2,
+   "fame": 7
+  },
+  {
+   "name": "Tyrrell Hatton",
+   "country": "England",
+   "hand": "R",
+   "dob": "1991-10-14",
+   "turnedPro": 2011,
+   "majors": 0,
+   "pgaWins": 1,
+   "fame": 1
+  },
+  {
+   "name": "Vijay Singh",
+   "country": "Fiji",
+   "hand": "R",
+   "dob": "1963-02-22",
+   "turnedPro": 1982,
+   "majors": 3,
+   "pgaWins": 34,
+   "fame": 49
+  },
+  {
+   "name": "Viktor Hovland",
+   "country": "Norway",
+   "hand": "R",
+   "dob": "1997-09-18",
+   "turnedPro": 2019,
+   "majors": 0,
+   "pgaWins": 6,
+   "fame": 6
+  },
+  {
+   "name": "Webb Simpson",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1985-08-08",
+   "turnedPro": 2008,
+   "majors": 1,
+   "pgaWins": 7,
+   "fame": 12
+  },
+  {
+   "name": "Wyndham Clark",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1993-12-29",
+   "turnedPro": 2017,
+   "majors": 1,
+   "pgaWins": 3,
+   "fame": 8
+  },
+  {
+   "name": "Xander Schauffele",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1993-10-25",
+   "turnedPro": 2015,
+   "majors": 2,
+   "pgaWins": 8,
+   "fame": 18
+  },
+  {
+   "name": "Zach Johnson",
+   "country": "USA",
+   "hand": "R",
+   "dob": "1976-02-24",
+   "turnedPro": 1998,
+   "majors": 2,
+   "pgaWins": 12,
+   "fame": 22
+  }
+ ],
+ "borders": {
+  "USA": [
+   "Canada"
+  ],
+  "Northern Ireland": [
+   "England",
+   "Ireland",
+   "Scotland",
+   "Wales"
+  ],
+  "Wales": [
+   "England",
+   "Ireland",
+   "Northern Ireland",
+   "Scotland"
+  ],
+  "South Africa": [
+   "Zimbabwe"
+  ],
+  "Norway": [
+   "Sweden"
+  ],
+  "Canada": [
+   "USA"
+  ],
+  "Zimbabwe": [
+   "South Africa"
+  ],
+  "Sweden": [
+   "Norway"
+  ],
+  "England": [
+   "Ireland",
+   "Northern Ireland",
+   "Scotland",
+   "Wales"
+  ],
+  "Scotland": [
+   "England",
+   "Ireland",
+   "Northern Ireland",
+   "Wales"
+  ],
+  "Ireland": [
+   "England",
+   "Northern Ireland",
+   "Scotland",
+   "Wales"
+  ]
+ }
+}

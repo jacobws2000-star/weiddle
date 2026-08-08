@@ -26,6 +26,26 @@ public/
   fighters.json      # generated dataset (the game's DB)
 ```
 
+## Other games on weiddle.com
+
+The site hosts three sibling guessing games, each self-contained under `public/`:
+
+- **Weiddle** (`/`) — guess the UFC fighter (this README's main subject).
+- **Cindle** (`public/movies/`) — guess the movie. Data: `data/build_movies.py` →
+  `public/movies.json` (TMDB + OMDb + Wikidata).
+- **Puttle** (`public/golf/`) — guess the PGA Tour golfer. Data:
+  `data/build_golfers.py` → `public/golfers.json`. The playable pool is the curated
+  `data/golfers_seed.py` (majors, PGA Tour wins, turned-pro year — which ESPN's golf
+  API and Wikidata don't expose cleanly); ESPN's public golf API enriches each
+  golfer's citizenship, handedness, and DOB by name. Border adjacency reuses
+  `data/borders.py`. Build with `python3 data/build_golfers.py` (add `--no-espn` to
+  skip enrichment and build from the seed alone).
+
+Cross-game navigation is a single shared switcher: `public/games.js` (loaded as
+`/games.js` on every page) holds the game registry and injects a "🎮 Games" button
+plus a switcher modal — so adding a game is a one-line edit there rather than a new
+link in each top bar.
+
 ## Data source
 
 All fighter data comes from **ESPN's public MMA API** (no key/auth, JSON):

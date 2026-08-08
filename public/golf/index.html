@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cindle — Guess the Movie</title>
+  <title>Puttle — Guess the Golfer</title>
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-  <meta name="theme-color" content="#15633a">
+  <meta name="theme-color" content="#2f6d3b">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,700;1,500&display=swap">
@@ -15,12 +15,12 @@
 <body>
   <header class="topbar">
     <div class="guess-box">
-      <span class="qmark">🎬</span>
-      <input id="guess-input" type="text" list="titles" autocomplete="off" autocorrect="off"
-             autocapitalize="off" spellcheck="false" placeholder="Guess a movie…">
+      <span class="qmark">⛳</span>
+      <input id="guess-input" type="text" list="names" autocomplete="off" autocorrect="off"
+             autocapitalize="off" spellcheck="false" placeholder="Guess a golfer…">
     </div>
-    <datalist id="titles"></datalist>
-    <button id="new-btn" class="btn"><span class="ico">🔀</span> New Movie</button>
+    <datalist id="names"></datalist>
+    <button id="new-btn" class="btn"><span class="ico">🔀</span> New Golfer</button>
     <button id="giveup-btn" class="btn hidden"><span class="ico">🏳️</span> Give Up</button>
     <div class="stat-box" title="Day streak">🔥 <span id="streak">0</span></div>
     <div class="stat-box" title="Points">⭐ <span id="points">0</span></div>
@@ -28,8 +28,11 @@
   </header>
 
   <main>
-    <h1 class="cindle-title">CINDLE</h1>
-    <p class="cindle-sub">Guess the mystery movie. Each guess grades you on Year, Genre, Runtime, Director, Lead Actor, Box Office, IMDb rating, and Academy Awards won — green is exact, yellow is close, ↑/↓ points toward the answer. For Director &amp; Lead Actor, 🟧 orange means the same first-name initial and 🟨 yellow means the same gender.</p>
+    <h1 class="puttle-title">PUTTLE</h1>
+    <p class="puttle-sub">Guess the mystery golfer. Each guess grades you on Country, Age,
+      the year they Turned Pro, Major championships won, and PGA Tour wins — green is exact,
+      yellow is close, ↑/↓ points toward the answer. Country turns 🟧 orange when it borders
+      the answer's country, and Handedness is green only when it matches.</p>
 
     <!-- Mode bar: Daily is one-and-done; the three tiers are endless. -->
     <div class="mode-bar" id="mode-bar">
@@ -41,15 +44,13 @@
     <p class="mode-desc" id="mode-desc"></p>
 
     <div class="grid-header" id="grid-header">
-      <div class="col col-name">Movie</div>
-      <div class="col">Year</div>
-      <div class="col">Genre</div>
-      <div class="col">Runtime</div>
-      <div class="col">Director</div>
-      <div class="col">Lead Actor</div>
-      <div class="col">Box Office</div>
-      <div class="col">IMDb</div>
-      <div class="col">Oscars</div>
+      <div class="col col-name">Golfer</div>
+      <div class="col">Country</div>
+      <div class="col">Age</div>
+      <div class="col">Turned Pro</div>
+      <div class="col">Majors</div>
+      <div class="col">PGA Wins</div>
+      <div class="col">Hand</div>
     </div>
     <div id="rows"></div>
 
@@ -69,8 +70,8 @@
     </div>
   </main>
 
-  <!-- Give-up confirmation. Reuses the UFC game's shared .mode-modal/.mode-card
-       chrome from the parent stylesheet; not .mode-desc (Cindle recolors that). -->
+  <!-- Give-up confirmation. Reuses the shared .mode-modal/.mode-card chrome from
+       the parent stylesheet (@import'd by styles.css). -->
   <div id="giveup-modal" class="mode-modal hidden">
     <div class="mode-card">
       <div class="mode-title">Give up?</div>
@@ -83,9 +84,10 @@
     </div>
   </div>
 
-  <footer class="cindle-foot">
-    Data via <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">TMDB</a> &amp;
-    IMDb ratings via OMDb. This product uses the TMDB API but is not endorsed or certified by TMDB.
+  <footer class="puttle-foot">
+    Golf-specific stats (majors, PGA Tour wins, turned-pro year) are curated; player
+    bios via <a href="https://www.espn.com/golf/" target="_blank" rel="noopener">ESPN</a>'s
+    public data. PGA Tour win totals are a periodic snapshot.
   </footer>
 
   <script src="game.js"></script>

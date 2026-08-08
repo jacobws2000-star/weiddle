@@ -1,0 +1,72 @@
+/* Puttle reuses the Weiddle/Octagonle look wholesale (grid, chips, cards, modals),
+   then overrides only the 7-column grid and a little Puttle chrome. @import leads. */
+@import url("../styles.css");
+
+/* Puttle's backdrop: a fairway green, distinct from Cindle's deeper emerald
+   (#15633a) and the UFC game's cobalt. Kept dark enough that the bright-green
+   "exact" chips (--green) still pop. */
+:root{ --bg:#2f6d3b; }
+
+/* Golfer | Country | Age | Turned Pro | Majors | PGA Wins | Hand.
+   Golfer names and Country run long; the numeric columns never exceed a few
+   chars. minmax(0,...) so a long value wraps in its track instead of scrolling
+   the page sideways. Desktop-only: below 821px the parent stylesheet reflows
+   .guess-row into stacked data-label cards, and this template must not fight it. */
+@media(min-width:821px){
+  .grid-header,.guess-row{
+    grid-template-columns:
+      minmax(0,1.8fr) minmax(0,1.2fr) minmax(0,.6fr) minmax(0,.9fr)
+      minmax(0,.7fr)  minmax(0,.8fr)  minmax(0,.7fr);
+  }
+}
+
+.puttle-title{
+  text-align:center;color:var(--cream);
+  font-weight:700;letter-spacing:4px;margin:4px 0 6px;
+  font-size:clamp(28px,5vw,52px);
+}
+.puttle-sub{
+  text-align:center;color:var(--cream);opacity:.9;
+  max-width:760px;margin:0 auto 22px;line-height:1.5;
+  font-size:clamp(12px,1.3vw,15px);
+}
+
+/* Header stat pills (streak / points) — cream-card language. */
+.stat-box{
+  background:var(--cream);border:3px solid var(--ink);border-radius:8px;
+  box-shadow:3px 4px 0 #555;padding:8px 12px;font-weight:700;white-space:nowrap;
+}
+
+/* Mode bar — Daily + three tiers. */
+.mode-bar{
+  display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:0 0 6px;
+}
+.mode-tab{
+  font-family:inherit;font-weight:700;font-size:clamp(12px,1.2vw,15px);cursor:pointer;
+  background:var(--cream);color:var(--ink);border:3px solid var(--ink);border-radius:8px;
+  box-shadow:3px 4px 0 #555;padding:8px 16px;
+}
+.mode-tab.active{background:var(--yellow);}
+.mode-desc{text-align:center;color:var(--cream);opacity:.85;margin:0 0 20px;
+  font-size:clamp(11px,1.1vw,14px);min-height:1.2em;}
+
+.daily-meta{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin:12px 0;
+  font-size:14px;}
+.share-btn{margin-top:4px;}
+.share-copied{margin-top:8px;color:var(--green-d);font-weight:700;}
+
+.reveal{
+  background:var(--cream);border:4px solid var(--ink);border-radius:8px;
+  box-shadow:5px 7px 0 #555;padding:16px 18px;margin:20px auto 0;
+  max-width:640px;text-align:center;line-height:1.5;
+}
+.reveal.win{border-color:var(--green-d);}
+.reveal .reveal-title{font-weight:700;font-size:20px;margin-bottom:6px;}
+
+.puttle-foot{
+  text-align:center;color:var(--cream);opacity:.7;
+  font-size:11px;margin-top:40px;
+}
+.puttle-foot a{color:var(--cream);}
+
+.hidden{display:none;}

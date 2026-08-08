@@ -65,6 +65,9 @@ NATIONALITY_TO_ISO2 = {
     "Liberia": "LR", "Cape Verde": "CV", "Trinidad": "TT",
     "Northern Ireland": "GB", "American Samoa": "AS", "Virgin Islands": "VI",
     "Taiwan": "TW", "Angola": "AO",
+    # Golfer nationalities (Puttle) not already covered above. Fiji is an island
+    # nation with no land borders, so it just needs a code to avoid the warning.
+    "Fiji": "FJ",
 }
 
 # Manual adjacencies GeoNames can't express, added on top of the raw neighbours.

@@ -1,0 +1,363 @@
+"use strict";
+
+// Puttle — golfer-guessing game.
+//   Modes: Daily (one shared seeded puzzle per UTC day, one-and-done) + three
+//   endless difficulty tiers gated on fame (majors*5 + PGA Tour wins). Scoring/
+//   streak in localStorage under a puttle_ prefix (kept fully separate from the
+//   UFC game's octagonle_ and Cindle's cindle_ keys, which share the same origin).
+
+// Numeric "close" thresholds (|diff| <= threshold and not equal => yellow). The
+// pgaWins / turnedPro windows are a touch generous on purpose: they cushion the
+// small drift in the curated PGA-win snapshot (see data/golfers_seed.py).
+const NUM_CLOSE = { age: 3, turnedPro: 3, majors: 1, pgaWins: 2 };
+
+// Difficulty tiers gate the pool by fame; Daily draws from the Normal (most-
+// accomplished) pool so the shared puzzle stays fair. Guess limits grow as the
+// pool deepens. Fame = majors*5 + pgaWins (see build_golfers.py).
+const TIERS = {
+  daily:   { label: "Daily",   minFame: 15, guesses: 8,  endless: false,
+             desc: "One golfer a day, same for everyone. Drawn from the big names." },
+  normal:  { label: "Normal",  minFame: 15, guesses: 8,  endless: true,
+             desc: "The biggest, most-accomplished names. 8 guesses." },
+  hard:    { label: "Hard",    minFame: 6,  guesses: 9,  endless: true,
+             desc: "Broader — multiple-time tour winners and classics. 9 guesses." },
+  extreme: { label: "Extreme", minFame: 0,  guesses: 10, endless: true,
+             desc: "The whole pool, including the one-win wonders. 10 guesses." },
+};
+
+let DATA = [];
+let BORDERS = {};
+let mode = localStorage.getItem("puttle_mode") || "daily";
+if (!TIERS[mode]) mode = "daily";
+let target = null;
+let guessed = new Set();
+let guessRows = [];       // per-guess status arrays, for the share grid
+let guessCount = 0;
+let solved = false;
+let countdownInterval = null;
+
+const el = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c =>
+  ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+// ---------- deterministic daily seeding (mirrors the UFC & movie games) ----------
+function dailyKey(){ return new Date().toISOString().slice(0, 10); }
+function hashStr(s){
+  let h = 2166136261 >>> 0;
+  for (let i = 0; i < s.length; i++){ h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); }
+  return h >>> 0;
+}
+function mulberry32(a){
+  return function(){
+    a |= 0; a = a + 0x6D2B79F5 | 0;
+    let t = Math.imul(a ^ a >>> 15, 1 | a);
+    t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+    return ((t ^ t >>> 14) >>> 0) / 4294967296;
+  };
+}
+function prevDay(key){ const d = new Date(key + "T00:00:00Z"); d.setUTCDate(d.getUTCDate() - 1); return d.toISOString().slice(0, 10); }
+
+// Age computed client-side from DOB so it never goes stale (same as the UFC game).
+function ageOf(dob){
+  const d = new Date(String(dob) + "T00:00:00Z");
+  if (isNaN(d)) return null;
+  const now = new Date();
+  let a = now.getUTCFullYear() - d.getUTCFullYear();
+  const m = now.getUTCMonth() - d.getUTCMonth();
+  if (m < 0 || (m === 0 && now.getUTCDate() < d.getUTCDate())) a--;
+  return a;
+}
+
+// ---------- pools ----------
+function poolFor(m){ return DATA.filter(x => (x.fame || 0) >= TIERS[m].minFame); }
+function maxAttempts(){ return TIERS[mode].guesses; }
+
+// ---------- boot ----------
+async function boot(){
+  const res = await fetch("../golfers.json", { cache: "no-cache" });
+  const j = await res.json();
+  DATA = (j.golfers || []).map(g => ({ ...g, age: ageOf(g.dob) }));
+  BORDERS = j.borders || {};
+  buildDatalist();
+  wireUI();
+  renderStats();
+  selectMode(mode);
+}
+
+function buildDatalist(){
+  el("names").innerHTML = DATA
+    .map(g => `<option value="${esc(g.name)}"></option>`)
+    .join("");
+}
+
+// ---------- mode handling ----------
+function selectMode(m){
+  mode = TIERS[m] ? m : "daily";
+  localStorage.setItem("puttle_mode", mode);
+  document.querySelectorAll(".mode-tab").forEach(b =>
+    b.classList.toggle("active", b.dataset.mode === mode));
+  el("mode-desc").textContent = TIERS[mode].desc;
+  el("new-btn").classList.toggle("hidden", !TIERS[mode].endless);
+  if (mode === "daily") startDaily();
+  else newGame();
+}
+
+// The Give Up button only makes sense while a game is live (input enabled).
+function showGiveUp(on){ el("giveup-btn").classList.toggle("hidden", !on); }
+
+function newGame(){
+  const pool = poolFor(mode);
+  target = pool[Math.floor(Math.random() * pool.length)];
+  resetBoard();
+  el("guess-input").disabled = false;
+  el("guess-input").focus();
+  showGiveUp(true);
+}
+
+// Daily: same golfer for everyone on a given UTC day; one-and-done, resumable.
+function startDaily(){
+  const pool = poolFor("daily").slice().sort((a, b) => a.name < b.name ? -1 : 1); // stable order
+  const rng = mulberry32(hashStr(dailyKey() + "-puttle"));
+  target = pool[Math.floor(rng() * pool.length)];
+  resetBoard();
+
+  const rec = getDailyRecord();
+  if (rec){ replayDaily(rec); return; }        // already played today
+  el("guess-input").disabled = false;
+  el("guess-input").focus();
+  showGiveUp(true);
+}
+
+function resetBoard(){
+  guessed = new Set();
+  guessRows = [];
+  guessCount = 0;
+  solved = false;
+  el("rows").innerHTML = "";
+  el("reveal").className = "reveal hidden";
+  el("daily-panel").className = "reveal hidden";
+  el("guess-input").value = "";
+  showGiveUp(false);
+  updateStatus();
+}
+
+function updateStatus(){ el("status").textContent = `${guessCount} / ${maxAttempts()}`; }
+
+// ---------- comparators ----------
+function numCompare(g, t, key){
+  if (g == null || t == null) return { status: "none", arrow: "" };
+  if (g === t) return { status: "exact", arrow: "" };
+  const arrow = t > g ? "↑" : "↓";
+  return { status: Math.abs(t - g) <= NUM_CLOSE[key] ? "close" : "none", arrow };
+}
+// Country: green if same, orange if the guess borders the answer's country.
+function countryCompare(g, t){
+  if (g === t) return "exact";
+  return (BORDERS[t] || []).includes(g) ? "border" : "none";
+}
+// Handedness is exact-or-nothing (only R/L exist, so "close" is meaningless).
+function handCompare(g, t){ return g === t ? "exact" : "none"; }
+
+function cell(display, status, arrow, label){
+  const arr = arrow ? ` <span class="arrow">${arrow}</span>` : "";
+  const l = label ? ` data-label="${label}"` : "";
+  if (status === "exact")  return `<div class="cell"${l}><span class="chip green">${display} ✓</span></div>`;
+  if (status === "close")  return `<div class="cell"${l}><span class="chip yellow">${display}${arr || " ≈"}</span></div>`;
+  if (status === "border") return `<div class="cell"${l}><span class="chip orange">${display}</span></div>`;
+  return `<div class="cell"${l}><span class="val">${display}${arr}</span></div>`;
+}
+
+const HAND_LABEL = { R: "Right", L: "Left" };
+
+// Returns the 6 column statuses so the same call renders a row and records the
+// share grid (order: Country Age TurnedPro Majors PGAWins Hand).
+function renderGuess(g){
+  const country = countryCompare(g.country, target.country);
+  const age     = numCompare(g.age, target.age, "age");
+  const tp      = numCompare(g.turnedPro, target.turnedPro, "turnedPro");
+  const majors  = numCompare(g.majors, target.majors, "majors");
+  const wins    = numCompare(g.pgaWins, target.pgaWins, "pgaWins");
+  const hand    = handCompare(g.hand, target.hand);
+
+  const row = document.createElement("div");
+  row.className = "guess-row";
+  row.innerHTML =
+    `<div class="cell cell-name">${esc(g.name)}</div>` +
+    cell(esc(g.country), country, "", "Country") +
+    cell(g.age != null ? g.age : "—", age.status, age.arrow, "Age") +
+    cell(g.turnedPro, tp.status, tp.arrow, "Turned Pro") +
+    cell(g.majors, majors.status, majors.arrow, "Majors") +
+    cell(g.pgaWins, wins.status, wins.arrow, "PGA Wins") +
+    cell(HAND_LABEL[g.hand] || g.hand, hand, "", "Hand");
+  el("rows").appendChild(row);
+
+  return [country, age.status, tp.status, majors.status, wins.status, hand];
+}
+
+// ---------- guess handling ----------
+function matchGolfer(val){
+  const v = val.trim().toLowerCase();
+  return DATA.find(x => x.name.toLowerCase() === v) || null;
+}
+
+function submitGuess(val){
+  if (solved) return;
+  const g = matchGolfer(val);
+  if (!g) return;
+  if (guessed.has(g.name)) { el("guess-input").value = ""; return; }
+  guessed.add(g.name);
+  guessCount++;
+  el("guess-input").value = "";
+  guessRows.push(renderGuess(g));
+  const won = g.name === target.name;
+  if (won || guessCount >= maxAttempts()) endGame(won);
+  updateStatus();
+}
+
+// Reveal the answer without spending a guess; ends the round as a loss.
+function giveUp(){
+  if (solved) return;
+  endGame(false, true);
+}
+
+function golferLine(g){
+  const bits = [g.country, `${g.majors} major${g.majors === 1 ? "" : "s"}`,
+                `${g.pgaWins} PGA win${g.pgaWins === 1 ? "" : "s"}`];
+  return bits.join(" · ");
+}
+
+function endGame(won, gaveUp = false){
+  solved = true;
+  el("guess-input").disabled = true;
+  showGiveUp(false);
+  if (mode === "daily"){
+    setDailyRecord({ won, guesses: guessCount, answer: target.name, grid: guessRows, gaveUp });
+    updateDailyStreak(won);
+    if (won) addPoints(TIERS.daily.guesses - guessCount + 3);
+    showDailyPanel(won, null, gaveUp);
+  } else {
+    if (won){ addPoints(scoreFor()); bumpStreak(true); } else bumpStreak(false);
+    const r = el("reveal");
+    r.className = "reveal" + (won ? " win" : "");
+    r.innerHTML = won
+      ? `<div class="reveal-title">🎉 Got it in ${guessCount}!</div>
+         <div>${esc(target.name)} — ${esc(golferLine(target))}</div>`
+      : `<div class="reveal-title">${gaveUp ? "Gave up" : "Out of guesses"}</div>
+         <div>It was <b>${esc(target.name)}</b> — ${esc(golferLine(target))}.</div>`;
+  }
+  renderStats();
+}
+
+function scoreFor(){
+  // Base by tier, bonus for solving with guesses to spare.
+  const base = { normal: 60, hard: 100, extreme: 150 }[mode] || 60;
+  return Math.round(base * (1 + (maxAttempts() - guessCount) / maxAttempts()));
+}
+
+// ---------- Daily state ----------
+function dailyRecordKey(){ return `puttle_daily_${dailyKey()}`; }
+function getDailyRecord(){ try { return JSON.parse(localStorage.getItem(dailyRecordKey()) || "null"); } catch { return null; } }
+function setDailyRecord(rec){ localStorage.setItem(dailyRecordKey(), JSON.stringify(rec)); }
+
+function updateDailyStreak(won){
+  const today = dailyKey();
+  if (localStorage.getItem("puttle_daily_counted") === today) return;
+  let streak = parseInt(localStorage.getItem("puttle_daily_streak") || "0", 10);
+  if (won){
+    streak = (localStorage.getItem("puttle_daily_lastwin") === prevDay(today)) ? streak + 1 : 1;
+    localStorage.setItem("puttle_daily_lastwin", today);
+  } else streak = 0;
+  localStorage.setItem("puttle_daily_streak", String(streak));
+  localStorage.setItem("puttle_daily_counted", today);
+}
+
+// Re-render a Daily that was already completed today, then show the locked panel.
+function replayDaily(rec){
+  el("guess-input").disabled = true;
+  showGiveUp(false);
+  guessRows = rec.grid || [];
+  // We persist only the grid statuses, not the guessed golfers, so there's no
+  // per-row redraw here — the share grid replays from stored statuses.
+  showDailyPanel(rec.won, rec);
+}
+
+function showDailyPanel(won, rec, gaveUp = false){
+  const guesses = rec ? rec.guesses : guessCount;
+  const answer = rec ? rec.answer : target.name;
+  const gave = rec ? rec.gaveUp : gaveUp;   // a resumed record remembers how it ended
+  el("daily-title").textContent = won ? "Daily solved! 🎉" : "Daily complete";
+  el("daily-sub").innerHTML = won
+    ? `Solved in ${guesses} guess${guesses === 1 ? "" : "es"}.`
+    : `${gave ? "Gave up" : "Out of guesses"} — it was <b>${esc(answer)}</b>.`;
+  el("daily-streak").textContent = localStorage.getItem("puttle_daily_streak") || "0";
+  el("daily-panel").className = "reveal" + (won ? " win" : "");
+  startCountdown();
+}
+
+function startCountdown(){
+  clearInterval(countdownInterval);
+  const tick = () => {
+    const now = new Date();
+    const next = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1, 0, 0, 0);
+    const ms = Math.max(0, next - now.getTime());
+    const pad = n => String(n).padStart(2, "0");
+    el("daily-countdown").textContent =
+      `${pad(Math.floor(ms / 3.6e6))}:${pad(Math.floor(ms % 3.6e6 / 6e4))}:${pad(Math.floor(ms % 6e4 / 1e3))}`;
+  };
+  tick();
+  countdownInterval = setInterval(tick, 1000);
+}
+
+// ---------- points & endless streak ----------
+function addPoints(n){
+  const p = parseInt(localStorage.getItem("puttle_points") || "0", 10) + n;
+  localStorage.setItem("puttle_points", String(p));
+}
+function bumpStreak(won){
+  const k = "puttle_win_streak";
+  localStorage.setItem(k, won ? String(parseInt(localStorage.getItem(k) || "0", 10) + 1) : "0");
+}
+function renderStats(){
+  el("points").textContent = localStorage.getItem("puttle_points") || "0";
+  el("streak").textContent = localStorage.getItem("puttle_daily_streak") || "0";
+}
+
+// ---------- share ----------
+function shareText(){
+  const rec = getDailyRecord();
+  const grid = (rec && rec.grid) || guessRows;
+  const emoji = s => s === "exact" ? "🟩" : s === "border" ? "🟧"
+                   : s === "close" ? "🟨" : "⬜";
+  const head = `Puttle ${dailyKey()} — ${rec && !rec.won ? "X" : (rec ? rec.guesses : guessCount)}/${TIERS.daily.guesses}`;
+  const body = grid.map(row => row.map(emoji).join("")).join("\n");
+  return `${head}\n${body}\nhttps://weiddle.com/golf`;
+}
+function doShare(){
+  const txt = shareText();
+  navigator.clipboard.writeText(txt).then(() => {
+    el("share-copied").classList.remove("hidden");
+    setTimeout(() => el("share-copied").classList.add("hidden"), 2000);
+  });
+}
+
+// ---------- wiring ----------
+function wireUI(){
+  const input = el("guess-input");
+  input.addEventListener("keydown", e => {
+    if (e.key === "Enter") { e.preventDefault(); submitGuess(input.value); }
+  });
+  el("new-btn").addEventListener("click", newGame);
+  el("giveup-btn").addEventListener("click", () => {
+    if (!solved) el("giveup-modal").classList.remove("hidden");
+  });
+  el("giveup-confirm").addEventListener("click", () => {
+    el("giveup-modal").classList.add("hidden");
+    giveUp();
+  });
+  el("giveup-cancel").addEventListener("click", () => el("giveup-modal").classList.add("hidden"));
+  el("share-btn").addEventListener("click", doShare);
+  document.querySelectorAll(".mode-tab").forEach(b =>
+    b.addEventListener("click", () => selectMode(b.dataset.mode)));
+}
+
+boot();
