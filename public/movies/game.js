@@ -73,7 +73,7 @@ async function boot(){
 
 function buildDatalist(){
   el("titles").innerHTML = DATA
-    .map(m => `<option value="${esc(m.title)} (${m.year})"></option>`)
+    .map(m => `<option value="${esc(m.title)}"></option>`)
     .join("");
 }
 
@@ -324,7 +324,6 @@ function wireUI(){
   input.addEventListener("keydown", e => {
     if (e.key === "Enter") { e.preventDefault(); submitGuess(input.value); }
   });
-  input.addEventListener("input", () => { if (matchMovie(input.value)) submitGuess(input.value); });
   el("new-btn").addEventListener("click", newGame);
   el("share-btn").addEventListener("click", doShare);
   document.querySelectorAll(".mode-tab").forEach(b =>
