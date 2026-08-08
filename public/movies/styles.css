@@ -1,0 +1,76 @@
+/* Cindle reuses the Weiddle/Octagonle look wholesale, then overrides only the
+   grid (8 columns: Movie + 7 clues, vs the UFC game's 10) and a few bits of
+   Cindle chrome. @import must lead the file. */
+@import url("../styles.css");
+
+/* Cindle's own backdrop: a deep emerald, distinct from the UFC game's cobalt.
+   Kept dark/muted so the bright-green "exact" chips (--green) still pop against it. */
+:root{ --bg:#15633a; }
+
+/* Movie | Year | Genre | Runtime | Director | Lead | Box | IMDb.
+   Weighted to the widest real value per column: titles and Director/Lead names
+   run long; Year/Runtime/IMDb never exceed a few chars. minmax(0,...) so a long
+   value wraps inside its track instead of scrolling the page sideways.
+
+   Desktop-only: below 821px the parent stylesheet reflows .guess-row into a
+   3-wide card with per-cell data-label headers, and this 8-column template must
+   NOT override that — hence the min-width guard. */
+@media(min-width:821px){
+  .grid-header,.guess-row{
+    grid-template-columns:
+      minmax(0,1.9fr) minmax(0,.6fr) minmax(0,1.5fr) minmax(0,.8fr)
+      minmax(0,1.4fr) minmax(0,1.4fr) minmax(0,1fr)  minmax(0,.7fr);
+  }
+}
+
+.cindle-title{
+  text-align:center;color:var(--cream);
+  font-weight:700;letter-spacing:4px;margin:4px 0 6px;
+  font-size:clamp(28px,5vw,52px);
+}
+.cindle-sub{
+  text-align:center;color:var(--cream);opacity:.9;
+  max-width:760px;margin:0 auto 22px;line-height:1.5;
+  font-size:clamp(12px,1.3vw,15px);
+}
+.cell-name .yr{opacity:.55;font-weight:500;}
+
+/* Header stat pills (streak / points) reuse the cream-card language. */
+.stat-box{
+  background:var(--cream);border:3px solid var(--ink);border-radius:8px;
+  box-shadow:3px 4px 0 #555;padding:8px 12px;font-weight:700;white-space:nowrap;
+}
+
+/* Mode bar — Daily + three tiers. */
+.mode-bar{
+  display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:0 0 6px;
+}
+.mode-tab{
+  font-family:inherit;font-weight:700;font-size:clamp(12px,1.2vw,15px);cursor:pointer;
+  background:var(--cream);color:var(--ink);border:3px solid var(--ink);border-radius:8px;
+  box-shadow:3px 4px 0 #555;padding:8px 16px;
+}
+.mode-tab.active{background:var(--yellow);}
+.mode-desc{text-align:center;color:var(--cream);opacity:.85;margin:0 0 20px;
+  font-size:clamp(11px,1.1vw,14px);min-height:1.2em;}
+
+.daily-meta{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin:12px 0;
+  font-size:14px;}
+.share-btn{margin-top:4px;}
+.share-copied{margin-top:8px;color:var(--green-d);font-weight:700;}
+
+.reveal{
+  background:var(--cream);border:4px solid var(--ink);border-radius:8px;
+  box-shadow:5px 7px 0 #555;padding:16px 18px;margin:20px auto 0;
+  max-width:640px;text-align:center;line-height:1.5;
+}
+.reveal.win{border-color:var(--green-d);}
+.reveal .reveal-title{font-weight:700;font-size:20px;margin-bottom:6px;}
+
+.cindle-foot{
+  text-align:center;color:var(--cream);opacity:.7;
+  font-size:11px;margin-top:40px;
+}
+.cindle-foot a{color:var(--cream);}
+
+.hidden{display:none;}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cindle — Guess the Movie</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <meta name="theme-color" content="#15633a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,700;1,500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="guess-box">
+      <span class="qmark">🎬</span>
+      <input id="guess-input" type="text" list="titles" autocomplete="off" autocorrect="off"
+             autocapitalize="off" spellcheck="false" placeholder="Guess a movie…">
+    </div>
+    <datalist id="titles"></datalist>
+    <button id="new-btn" class="btn"><span class="ico">🔀</span> New Movie</button>
+    <a class="btn" href="/"><span class="ico">🥊</span> UFC Game</a>
+    <div class="stat-box" title="Day streak">🔥 <span id="streak">0</span></div>
+    <div class="stat-box" title="Points">⭐ <span id="points">0</span></div>
+    <div id="status" class="timer">0 / 8</div>
+  </header>
+
+  <main>
+    <h1 class="cindle-title">CINDLE</h1>
+    <p class="cindle-sub">Guess the mystery movie. Each guess grades you on Year, Genre, Runtime, Director, Lead Actor, Box Office, and IMDb rating — green is exact, yellow is close, ↑/↓ points toward the answer.</p>
+
+    <!-- Mode bar: Daily is one-and-done; the three tiers are endless. -->
+    <div class="mode-bar" id="mode-bar">
+      <button class="mode-tab" data-mode="daily">📅 Daily</button>
+      <button class="mode-tab" data-mode="normal">Normal</button>
+      <button class="mode-tab" data-mode="hard">Hard</button>
+      <button class="mode-tab" data-mode="extreme">Extreme</button>
+    </div>
+    <p class="mode-desc" id="mode-desc"></p>
+
+    <div class="grid-header" id="grid-header">
+      <div class="col col-name">Movie</div>
+      <div class="col">Year</div>
+      <div class="col">Genre</div>
+      <div class="col">Runtime</div>
+      <div class="col">Director</div>
+      <div class="col">Lead Actor</div>
+      <div class="col">Box Office</div>
+      <div class="col">IMDb</div>
+    </div>
+    <div id="rows"></div>
+
+    <!-- End-of-game reveal (endless modes) -->
+    <div id="reveal" class="reveal hidden"></div>
+
+    <!-- Daily "come back tomorrow" panel -->
+    <div id="daily-panel" class="reveal hidden">
+      <div id="daily-title" class="reveal-title"></div>
+      <div id="daily-sub"></div>
+      <div class="daily-meta">
+        <span>🔥 Streak: <b id="daily-streak">0</b></span>
+        <span>Next Daily in <b id="daily-countdown">--:--:--</b></span>
+      </div>
+      <button id="share-btn" class="btn share-btn">📋 Share result</button>
+      <div id="share-copied" class="share-copied hidden">Copied to clipboard!</div>
+    </div>
+  </main>
+
+  <footer class="cindle-foot">
+    Data via <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">TMDB</a> &amp;
+    IMDb ratings via OMDb. This product uses the TMDB API but is not endorsed or certified by TMDB.
+  </footer>
+
+  <script src="game.js"></script>
+</body>
+</html>
