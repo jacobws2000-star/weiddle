@@ -1,5 +1,5 @@
 /* Cindle reuses the Weiddle/Octagonle look wholesale, then overrides only the
-   grid (8 columns: Movie + 7 clues, vs the UFC game's 10) and a few bits of
+   grid (9 columns: Movie + 8 clues, vs the UFC game's 10) and a few bits of
    Cindle chrome. @import must lead the file. */
 @import url("../styles.css");
 
@@ -7,19 +7,20 @@
    Kept dark/muted so the bright-green "exact" chips (--green) still pop against it. */
 :root{ --bg:#15633a; }
 
-/* Movie | Year | Genre | Runtime | Director | Lead | Box | IMDb.
+/* Movie | Year | Genre | Runtime | Director | Lead | Box | IMDb | Oscars.
    Weighted to the widest real value per column: titles and Director/Lead names
-   run long; Year/Runtime/IMDb never exceed a few chars. minmax(0,...) so a long
-   value wraps inside its track instead of scrolling the page sideways.
+   run long; Year/Runtime/IMDb/Oscars never exceed a few chars. minmax(0,...) so a
+   long value wraps inside its track instead of scrolling the page sideways.
 
    Desktop-only: below 821px the parent stylesheet reflows .guess-row into a
-   3-wide card with per-cell data-label headers, and this 8-column template must
+   3-wide card with per-cell data-label headers, and this 9-column template must
    NOT override that — hence the min-width guard. */
 @media(min-width:821px){
   .grid-header,.guess-row{
     grid-template-columns:
       minmax(0,1.9fr) minmax(0,.6fr) minmax(0,1.5fr) minmax(0,.8fr)
-      minmax(0,1.4fr) minmax(0,1.4fr) minmax(0,1fr)  minmax(0,.7fr);
+      minmax(0,1.4fr) minmax(0,1.4fr) minmax(0,1fr)  minmax(0,.7fr)
+      minmax(0,.6fr);
   }
 }
 

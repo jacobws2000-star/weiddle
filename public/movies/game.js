@@ -7,7 +7,7 @@
 //   octagonle_ keys, which share the same origin).
 
 // Numeric "close" thresholds (|diff| <= threshold and not equal => yellow).
-const NUM_CLOSE = { year: 3, runtime: 10, rating: 0.3 };
+const NUM_CLOSE = { year: 3, runtime: 10, rating: 0.3, oscars: 1 };
 
 // Difficulty tiers. minVotes gates the pool by fame; Daily draws from the Normal
 // (most-recognizable) pool so the shared puzzle stays fair. Guess limits scale
@@ -190,6 +190,7 @@ function renderGuess(m){
   const year    = numCompare(m.year, target.year, "year");
   const runtime = numCompare(m.runtime, target.runtime, "runtime");
   const rating  = numCompare(m.rating, target.rating, "rating");
+  const oscars  = numCompare(m.oscarsWon, target.oscarsWon, "oscars");
   const box     = boxCompare(m.boxOffice, target.boxOffice);
   const gen     = genreCompare(m.genres, target.genres);
   const dir     = personCompare(m.director, target.director, m.directorGender, target.directorGender);
@@ -205,10 +206,11 @@ function renderGuess(m){
     cell(esc(m.director), dir, "", "Director") +
     cell(esc(m.leadActor), act, "", "Lead Actor") +
     cell(money(m.boxOffice), box.status, box.arrow, "Box Office") +
-    cell(m.rating != null ? m.rating.toFixed(1) : "—", rating.status, rating.arrow, "IMDb");
+    cell(m.rating != null ? m.rating.toFixed(1) : "—", rating.status, rating.arrow, "IMDb") +
+    cell(m.oscarsWon, oscars.status, oscars.arrow, "Oscars");
   el("rows").appendChild(row);
 
-  return [year.status, gen, runtime.status, dir, act, box.status, rating.status];
+  return [year.status, gen, runtime.status, dir, act, box.status, rating.status, oscars.status];
 }
 
 // ---------- guess handling ----------

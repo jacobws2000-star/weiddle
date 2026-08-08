@@ -178,6 +178,24 @@ def resolve_rating(imdb_id, refresh=False):
     return None, None
 
 
+_WON_OSCARS_RE = re.compile(r"\bWon\s+(\d+)\s+Oscar", re.I)
+
+
+def oscars_won_omdb(imdb_id, refresh=False):
+    """Count of Academy Awards the film won, parsed from OMDb's Awards summary
+    ("Won 4 Oscars. ..."). 0 if it won none or was only nominated. Reuses the same
+    cached OMDb response as the rating lookup, so this costs no extra API call."""
+    if not imdb_id or not OMDB_KEY:
+        return 0
+    url = f"{OMDB_API}?i={urllib.parse.quote(imdb_id)}&apikey={OMDB_KEY}"
+    try:
+        d = fetch(url, refresh=refresh, tag="omdb")
+    except RuntimeError:
+        return 0
+    m = _WON_OSCARS_RE.search((d or {}).get("Awards") or "")
+    return int(m.group(1)) if m else 0
+
+
 # ---------- Curation ----------
 def genre_map(refresh=False):
     d = tmdb("/genre/movie/list", language="en-US", refresh=refresh)
@@ -249,6 +267,7 @@ def build_movie(mid, genres, refresh=False):
         return None
 
     rating, rating_src = resolve_rating(imdb_id, refresh=refresh)
+    oscars = oscars_won_omdb(imdb_id, refresh=refresh)
 
     return {
         "id": mid,
@@ -262,6 +281,7 @@ def build_movie(mid, genres, refresh=False):
         "director": director,
         "directorGender": director_gender,        # 0 unknown / 1 female / 2 male / 3 non-binary
         "boxOffice": revenue or None,             # USD worldwide, null if unknown
+        "oscarsWon": oscars,                       # Academy Awards won (0 if none)
         "rating": rating,                         # 0-10; IMDb, else Wikidata, else null
         "ratingSource": rating_src,
         # Kept so the front-end can derive difficulty tiers (Normal/Hard/Extreme)
