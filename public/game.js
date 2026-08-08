@@ -315,17 +315,17 @@ function renderHintReveal(){
   if (hintsUsed.headshot){
     const card = document.createElement("div");
     card.className = "hint-card hint-photo";
-    card.innerHTML = `<span class="hk">Photo</span>`;
+    card.innerHTML = `<span class="hk">Silhouette</span>`;
     const img = document.createElement("img");
     img.className = "hint-img";
-    img.alt = "fighter";
+    img.alt = "fighter silhouette";
     // ESPN only hosts headshots for the modern roster; older fighters 404. On error
     // we refund the cost rather than charge for a broken image.
     img.onerror = () => {
       if (!hintsUsed.headshot) return;      // already handled
       delete hintsUsed.headshot;
       addCoins(HINT_COST.headshot);
-      flashHint("No photo on file — refunded 🪙" + HINT_COST.headshot);
+      flashHint("No silhouette on file — refunded 🪙" + HINT_COST.headshot);
       syncHintButtons();
       renderHintReveal();
     };

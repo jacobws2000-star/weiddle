@@ -230,8 +230,15 @@ a.btn{text-decoration:none;color:var(--ink);}       /* cross-game nav links rend
 }
 .hint-card .hk{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--gray);}
 .hint-photo img{
-  width:120px;height:144px;object-fit:cover;
-  border:3px solid var(--ink);border-radius:6px;background:#ddd;
+  width:120px;height:144px;object-fit:contain;
+  border:3px solid var(--ink);border-radius:6px;background:transparent;
+  /* Silhouette-only hint: ESPN headshots are transparent cut-outs, so
+     brightness(0) collapses the fighter to a solid black shape — revealing
+     their outline, never their actual photo. The background must stay
+     transparent (not cream): brightness(0) would blacken a solid backdrop too,
+     filling the whole box; leaving it transparent lets the cream card show
+     through, so only the fighter's shape reads. */
+  filter:brightness(0);
 }
 
 /* ---------- Reveal ---------- */
