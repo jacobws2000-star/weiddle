@@ -11,15 +11,15 @@ const NUM_CLOSE = { year: 3, runtime: 10, rating: 0.3, oscars: 1 };
 
 // Difficulty tiers. minVotes gates the pool by fame; Daily draws from the Normal
 // (most-recognizable) pool so the shared puzzle stays fair. Guess limits scale
-// with how deep the pool goes. Thresholds tuned against the vote_count spread.
-// Thresholds tuned against the real 1000-film vote_count spread (5.1k–40.6k):
-// Normal >=10k (~373 famous films), Hard >=6k (~828), Extreme all (1000).
+// with how deep the pool goes. Thresholds tuned against the real ~1980-film
+// vote_count spread (2.7k–40.6k), a roughly-doubling ladder:
+// Normal >=10k (~373 famous films), Hard >=5k (~1020), Extreme all (~1980).
 const TIERS = {
   daily:   { label: "Daily",   minVotes: 10000, guesses: 8,  endless: false,
              desc: "One movie a day, same for everyone. Drawn from the famous pool." },
   normal:  { label: "Normal",  minVotes: 10000, guesses: 8,  endless: true,
              desc: "The most famous, widely-seen films. 8 guesses." },
-  hard:    { label: "Hard",    minVotes: 6000,  guesses: 10, endless: true,
+  hard:    { label: "Hard",    minVotes: 5000,  guesses: 10, endless: true,
              desc: "Broader — solid hits and older classics. 10 guesses." },
   extreme: { label: "Extreme", minVotes: 0,     guesses: 12, endless: true,
              desc: "The whole pool, deep cuts included. 12 guesses." },

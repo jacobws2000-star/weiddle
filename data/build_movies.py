@@ -24,10 +24,17 @@ LICENSING NOTE (ads are planned for weiddle.com):
   "prefer Wikidata sources", not a rewrite. Revisit sourcing before monetizing.
 
 Run:  TMDB_TOKEN=... OMDB_KEY=... python3 data/build_movies.py
-      [--limit N] [--pages P] [--min-votes V] [--refresh]
+      [--limit N] [--pages P] [--min-votes V] [--max-new-omdb N] [--refresh]
+
+OMDb's free tier is 1000 requests/day. Cached films cost nothing, so the pool is
+grown a batch at a time: rerun on later days and the build reuses every cached
+film for free and spends the day's budget only on the next new films in the
+pool. --max-new-omdb caps the day's new calls (it also stops cleanly on its own
+when OMDb reports the cap), so a partial run appends a clean, fully-rated batch.
 """
 
 import argparse
+import hashlib
 import http.client
 import json
 import os
@@ -67,8 +74,15 @@ os.makedirs(CACHE_DIR, exist_ok=True)
 
 # ---------- HTTP with on-disk caching (mirrors build_dataset.py) ----------
 def _cache_path(url, tag=""):
-    key = re.sub(r"[^a-zA-Z0-9]+", "_", tag + url)[:180]
-    return os.path.join(CACHE_DIR, key + ".json")
+    # A readable, filesystem-safe key. When the key would exceed the filename
+    # limit we truncate and append a hash of the FULL url — otherwise the cut
+    # silently collides (e.g. discover ?page=100 truncated to the same name as
+    # ?page=10), which caps deep pagination at ~99 pages. Keys at or under the
+    # limit are left untouched so existing cache files stay valid.
+    safe = re.sub(r"[^a-zA-Z0-9]+", "_", tag + url)
+    if len(safe) > 180:
+        safe = safe[:160] + "_" + hashlib.sha1((tag + url).encode("utf-8")).hexdigest()[:12]
+    return os.path.join(CACHE_DIR, safe + ".json")
 
 
 def fetch(url, headers=None, refresh=False, tag=""):
@@ -119,17 +133,61 @@ def norm_title(t):
     return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]", "", n.lower())).strip()
 
 
-# ---------- Rating: OMDb (IMDb) with a Wikidata fallback ----------
-def imdb_rating_omdb(imdb_id, refresh=False):
-    """IMDb rating (0-10 float) for a film via OMDb, keyed by imdb_id. None if absent."""
-    if not imdb_id or not OMDB_KEY:
+# ---------- OMDb access with a daily new-call budget ----------
+# OMDb's free tier allows 1000 requests/day. A cached response is free; only a
+# live (uncached) request counts against the day. We track live requests and
+# stop cleanly the moment the budget is reached or OMDb reports the cap, so a
+# partial daily run appends a clean, contiguous batch of fully-rated films
+# instead of trailing films with null ratings. Rerun on later days to resume:
+# the cache makes every already-built film free, so the budget is spent only on
+# the next new films in the pool.
+OMDB_STATE = {"live": 0, "budget": None, "limit_hit": False}
+
+
+def omdb_record(imdb_id, refresh=False):
+    """The full OMDb record (dict) for a film, or None.
+
+    Honors the daily new-call budget: a cache hit is free; a cache miss counts
+    against the budget. Once the budget is exhausted, or OMDb returns its
+    "Request limit reached" response (401 or an in-band error), this sets
+    OMDB_STATE['limit_hit'] and returns None without spending further calls."""
+    if not imdb_id or not OMDB_KEY or OMDB_STATE["limit_hit"]:
         return None
     url = f"{OMDB_API}?i={urllib.parse.quote(imdb_id)}&apikey={OMDB_KEY}"
-    try:
-        d = fetch(url, refresh=refresh, tag="omdb")  # key kept out of cache filename via tag
-    except RuntimeError:
+    cp = _cache_path(url, "omdb")  # key kept out of cache filename via the tag
+    if not refresh and os.path.exists(cp):
+        with open(cp) as f:
+            return json.load(f)
+    # A cache miss means a live call — check the budget before spending it.
+    if OMDB_STATE["budget"] is not None and OMDB_STATE["live"] >= OMDB_STATE["budget"]:
+        OMDB_STATE["limit_hit"] = True
         return None
-    val = (d or {}).get("imdbRating")
+    hdrs = {"User-Agent": UA, "Accept": "application/json"}
+    try:
+        req = urllib.request.Request(url, headers=hdrs)
+        with urllib.request.urlopen(req, timeout=30) as r:
+            data = json.loads(r.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        if e.code == 401:  # OMDb signals the daily cap with a 401
+            OMDB_STATE["limit_hit"] = True
+        return None
+    except (urllib.error.URLError, TimeoutError, http.client.HTTPException,
+            json.JSONDecodeError, OSError):
+        return None
+    # OMDb can also report the cap in-band: {"Response":"False","Error":"Request limit reached!"}
+    if str(data.get("Response")) == "False" and "limit" in (data.get("Error") or "").lower():
+        OMDB_STATE["limit_hit"] = True
+        return None
+    with open(cp, "w") as f:
+        json.dump(data, f)
+    OMDB_STATE["live"] += 1
+    time.sleep(SLEEP)
+    return data
+
+
+def rating_from_omdb(rec):
+    """IMDb rating (0-10 float) from an OMDb record. None if absent."""
+    val = (rec or {}).get("imdbRating")
     try:
         return float(val) if val and val != "N/A" else None
     except (TypeError, ValueError):
@@ -167,9 +225,10 @@ def imdb_rating_wikidata(imdb_id, refresh=False):
     return float(m.group(1)) if m else None
 
 
-def resolve_rating(imdb_id, refresh=False):
-    """IMDb rating with source label: OMDb first, Wikidata fallback."""
-    r = imdb_rating_omdb(imdb_id, refresh=refresh)
+def resolve_rating(rec, imdb_id, refresh=False):
+    """IMDb rating with source label from an already-fetched OMDb record:
+    OMDb first, Wikidata (CC0) fallback when OMDb has no rating."""
+    r = rating_from_omdb(rec)
     if r is not None:
         return r, "imdb"
     r = imdb_rating_wikidata(imdb_id, refresh=refresh)
@@ -181,18 +240,11 @@ def resolve_rating(imdb_id, refresh=False):
 _WON_OSCARS_RE = re.compile(r"\bWon\s+(\d+)\s+Oscar", re.I)
 
 
-def oscars_won_omdb(imdb_id, refresh=False):
-    """Count of Academy Awards the film won, parsed from OMDb's Awards summary
-    ("Won 4 Oscars. ..."). 0 if it won none or was only nominated. Reuses the same
-    cached OMDb response as the rating lookup, so this costs no extra API call."""
-    if not imdb_id or not OMDB_KEY:
-        return 0
-    url = f"{OMDB_API}?i={urllib.parse.quote(imdb_id)}&apikey={OMDB_KEY}"
-    try:
-        d = fetch(url, refresh=refresh, tag="omdb")
-    except RuntimeError:
-        return 0
-    m = _WON_OSCARS_RE.search((d or {}).get("Awards") or "")
+def oscars_from_omdb(rec):
+    """Count of Academy Awards the film won, parsed from an OMDb record's Awards
+    summary ("Won 4 Oscars. ..."). 0 if it won none or was only nominated. Reads
+    the same record used for the rating, so it costs no extra API call."""
+    m = _WON_OSCARS_RE.search((rec or {}).get("Awards") or "")
     return int(m.group(1)) if m else 0
 
 
@@ -233,8 +285,14 @@ def curate_pool(pages, min_votes, refresh=False):
     return ids
 
 
+# Sentinel: build_movie returns this when the OMDb daily budget runs out mid-film,
+# so build() stops appending rather than adding films with missing ratings/oscars.
+BUDGET_EXHAUSTED = object()
+
+
 def build_movie(mid, genres, refresh=False):
-    """Fetch one film and assemble its record, or None if it fails the gate."""
+    """Fetch one film and assemble its record. Returns None if it fails the gate,
+    or BUDGET_EXHAUSTED if the OMDb daily budget is spent before it can be rated."""
     try:
         d = tmdb(f"/movie/{mid}", append_to_response="credits",
                  language="en-US", refresh=refresh)
@@ -266,8 +324,13 @@ def build_movie(mid, genres, refresh=False):
     if not (title and year and runtime and genre_names and lead_actor and director):
         return None
 
-    rating, rating_src = resolve_rating(imdb_id, refresh=refresh)
-    oscars = oscars_won_omdb(imdb_id, refresh=refresh)
+    # One OMDb call feeds both the rating and the Oscar count. If the film needs a
+    # live call but the daily budget is gone, bail so build() can stop cleanly.
+    rec = omdb_record(imdb_id, refresh=refresh)
+    if imdb_id and rec is None and OMDB_STATE["limit_hit"]:
+        return BUDGET_EXHAUSTED
+    rating, rating_src = resolve_rating(rec, imdb_id, refresh=refresh)
+    oscars = oscars_from_omdb(rec)
 
     return {
         "id": mid,
@@ -293,7 +356,12 @@ def build_movie(mid, genres, refresh=False):
     }
 
 
-def build(limit=None, pages=DEFAULT_PAGES, min_votes=DEFAULT_MIN_VOTES, refresh=False):
+def build(limit=None, pages=DEFAULT_PAGES, min_votes=DEFAULT_MIN_VOTES,
+          refresh=False, max_new_omdb=None):
+    OMDB_STATE["budget"] = max_new_omdb
+    OMDB_STATE["live"] = 0
+    OMDB_STATE["limit_hit"] = False
+
     genres = genre_map(refresh=refresh)
     print(f"[genres] {len(genres)} TMDB genres", file=sys.stderr)
 
@@ -306,8 +374,13 @@ def build(limit=None, pages=DEFAULT_PAGES, min_votes=DEFAULT_MIN_VOTES, refresh=
     movies, kept = [], 0
     for i, mid in enumerate(ids):
         if i % 100 == 0:
-            print(f"  ...{i}/{len(ids)} (kept {kept})", file=sys.stderr)
+            print(f"  ...{i}/{len(ids)} (kept {kept}, {OMDB_STATE['live']} new OMDb calls)",
+                  file=sys.stderr)
         rec = build_movie(mid, genres, refresh=refresh)
+        if rec is BUDGET_EXHAUSTED:
+            print(f"[omdb] daily limit reached after {OMDB_STATE['live']} new calls "
+                  f"(processed {i}/{len(ids)} candidates) — stopping.", file=sys.stderr)
+            break
         if rec:
             movies.append(rec)
             kept += 1
@@ -336,7 +409,9 @@ def build(limit=None, pages=DEFAULT_PAGES, min_votes=DEFAULT_MIN_VOTES, refresh=
         json.dump(out, f, ensure_ascii=False, indent=1)
     print(f"[done] {len(movies)} films -> {OUT_PATH} "
           f"(box office on {with_box}, rating on {with_rating} "
-          f"[{wiki_rating} via Wikidata fallback])", file=sys.stderr)
+          f"[{wiki_rating} via Wikidata fallback]; "
+          f"{OMDB_STATE['live']} new OMDb calls this run"
+          f"{', hit daily limit' if OMDB_STATE['limit_hit'] else ''})", file=sys.stderr)
 
 
 if __name__ == "__main__":
@@ -346,6 +421,11 @@ if __name__ == "__main__":
                    help="TMDB discover pages to scan (20 films each)")
     p.add_argument("--min-votes", type=int, default=DEFAULT_MIN_VOTES,
                    help="vote_count floor for the pool")
+    p.add_argument("--max-new-omdb", type=int, default=None,
+                   help="cap NEW (uncached) OMDb calls this run; stops cleanly at "
+                        "the cap so partial daily runs append a fully-rated batch. "
+                        "Cached films are free — rerun on later days to resume.")
     p.add_argument("--refresh", action="store_true", help="bypass cache")
     a = p.parse_args()
-    build(limit=a.limit, pages=a.pages, min_votes=a.min_votes, refresh=a.refresh)
+    build(limit=a.limit, pages=a.pages, min_votes=a.min_votes, refresh=a.refresh,
+          max_new_omdb=a.max_new_omdb)
