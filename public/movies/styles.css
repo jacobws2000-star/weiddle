@@ -3,9 +3,9 @@
    Cindle chrome. @import must lead the file. */
 @import url("../styles.css");
 
-/* Cindle's own backdrop: a deep emerald, distinct from the UFC game's cobalt.
+/* Cindle's own backdrop: a deep plum, distinct from the UFC game's cobalt.
    Kept dark/muted so the bright-green "exact" chips (--green) still pop against it. */
-:root{ --bg:#15633a; }
+:root{ --bg:#4a2c6d; }
 
 /* Movie | Year | Genre | Runtime | Director | Lead | Box | IMDb | Oscars.
    Weighted to the widest real value per column: titles and Director/Lead names
