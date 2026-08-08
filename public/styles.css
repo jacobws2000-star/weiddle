@@ -104,6 +104,7 @@ body{
   white-space:nowrap;
 }
 .btn:active{transform:translate(2px,2px);box-shadow:3px 4px 0 var(--ink);}
+a.btn{text-decoration:none;color:var(--ink);}       /* cross-game nav links render as buttons, not links */
 .btn-accent{background:var(--yellow);color:var(--ink);}  /* Play Again — yellow */
 #mode-btn{background:var(--cream);font-weight:700;}       /* Game Mode bar — cream, bold */
 .ico{filter:grayscale(0);}
