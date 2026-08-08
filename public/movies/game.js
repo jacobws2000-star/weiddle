@@ -143,6 +143,23 @@ function genreCompare(g, t){
   if (g.length === t.length && g.every(x => ts.has(x))) return "exact";
   return g.some(x => ts.has(x)) ? "close" : "none";
 }
+// First initial of a person's first (given) name, lower-cased. "" if unknown.
+function firstInitial(name){
+  const first = String(name || "").trim().split(/\s+/)[0] || "";
+  return first.charAt(0).toLowerCase();
+}
+// Director / Lead Actor grading, warmest match wins:
+//   exact  (green)  same person
+//   letter (orange) same first-name initial as the answer's
+//   gender (yellow) same gender as the answer's   (TMDB: 1 F, 2 M, 3 NB; 0 unknown)
+//   none            no signal
+function personCompare(gName, tName, gGender, tGender){
+  if (gName != null && gName === tName) return "exact";
+  const gi = firstInitial(gName), ti = firstInitial(tName);
+  if (gi && gi === ti) return "letter";
+  if (gGender && tGender && gGender === tGender) return "gender";
+  return "none";
+}
 function money(n){
   if (n == null) return "—";
   if (n >= 1e9) return "$" + (n / 1e9).toFixed(1) + "B";
@@ -154,8 +171,10 @@ function money(n){
 function cell(display, status, arrow, label){
   const arr = arrow ? ` <span class="arrow">${arrow}</span>` : "";
   const l = label ? ` data-label="${label}"` : "";
-  if (status === "exact") return `<div class="cell"${l}><span class="chip green">${display} ✓</span></div>`;
-  if (status === "close") return `<div class="cell"${l}><span class="chip yellow">${display}${arr || " ≈"}</span></div>`;
+  if (status === "exact")  return `<div class="cell"${l}><span class="chip green">${display} ✓</span></div>`;
+  if (status === "close")  return `<div class="cell"${l}><span class="chip yellow">${display}${arr || " ≈"}</span></div>`;
+  if (status === "letter") return `<div class="cell"${l}><span class="chip orange">${display}</span></div>`;
+  if (status === "gender") return `<div class="cell"${l}><span class="chip yellow">${display}</span></div>`;
   return `<div class="cell"${l}><span class="val">${display}${arr}</span></div>`;
 }
 
@@ -167,8 +186,8 @@ function renderGuess(m){
   const rating  = numCompare(m.rating, target.rating, "rating");
   const box     = boxCompare(m.boxOffice, target.boxOffice);
   const gen     = genreCompare(m.genres, target.genres);
-  const dir     = m.director === target.director ? "exact" : "none";
-  const act     = m.leadActor === target.leadActor ? "exact" : "none";
+  const dir     = personCompare(m.director, target.director, m.directorGender, target.directorGender);
+  const act     = personCompare(m.leadActor, target.leadActor, m.leadActorGender, target.leadActorGender);
 
   const row = document.createElement("div");
   row.className = "guess-row";
@@ -305,7 +324,8 @@ function renderStats(){
 function shareText(){
   const rec = getDailyRecord();
   const grid = (rec && rec.grid) || guessRows;
-  const emoji = s => s === "exact" ? "🟩" : s === "close" ? "🟨" : "⬜";
+  const emoji = s => s === "exact" ? "🟩" : s === "letter" ? "🟧"
+                   : (s === "close" || s === "gender") ? "🟨" : "⬜";
   const head = `Cindle ${dailyKey()} — ${rec && !rec.won ? "X" : (rec ? rec.guesses : guessCount)}/${TIERS.daily.guesses}`;
   const body = grid.map(row => row.map(emoji).join("")).join("\n");
   return `${head}\n${body}\nhttps://weiddle.com/movies`;

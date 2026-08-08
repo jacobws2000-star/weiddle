@@ -234,8 +234,13 @@ def build_movie(mid, genres, refresh=False):
     credits = d.get("credits") or {}
     cast = sorted((credits.get("cast") or []), key=lambda c: c.get("order", 999))
     lead_actor = cast[0]["name"] if cast else None
-    director = next((c["name"] for c in (credits.get("crew") or [])
-                     if c.get("job") == "Director"), None)
+    # TMDB gender: 0 unknown, 1 female, 2 male, 3 non-binary. Kept so the game can
+    # give a "right gender" (yellow) hint on the Director / Lead Actor columns.
+    lead_actor_gender = cast[0].get("gender") if cast else None
+    director_person = next((c for c in (credits.get("crew") or [])
+                            if c.get("job") == "Director"), None)
+    director = director_person["name"] if director_person else None
+    director_gender = director_person.get("gender") if director_person else None
 
     # Completeness gate: every clue column except box office must be present, or the
     # film can't populate the grid. Box office is the weakest field for older/cheap
@@ -251,9 +256,11 @@ def build_movie(mid, genres, refresh=False):
         "title": title,
         "year": year,
         "leadActor": lead_actor,
+        "leadActorGender": lead_actor_gender,     # 0 unknown / 1 female / 2 male / 3 non-binary
         "genres": genre_names,
         "runtime": runtime,                       # minutes
         "director": director,
+        "directorGender": director_gender,        # 0 unknown / 1 female / 2 male / 3 non-binary
         "boxOffice": revenue or None,             # USD worldwide, null if unknown
         "rating": rating,                         # 0-10; IMDb, else Wikidata, else null
         "ratingSource": rating_src,
