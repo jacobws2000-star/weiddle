@@ -65,16 +65,101 @@ async function boot(){
   const res = await fetch("../movies.json", { cache: "no-cache" });
   const j = await res.json();
   DATA = j.movies || [];
-  buildDatalist();
   wireUI();
   renderStats();
   selectMode(mode);
 }
 
-function buildDatalist(){
-  el("titles").innerHTML = DATA
-    .map(m => `<option value="${esc(m.title)}"></option>`)
-    .join("");
+// ---------- Autocomplete ----------
+// <datalist> suggestions are unreliable on mobile Safari/Chrome — they often
+// never render, which left phone users able to type but unable to pick a movie.
+// This is a custom dropdown that works with touch: it filters as you type, uses
+// large tap targets, and you tap a title to choose it. Arrow keys + Enter still
+// work for desktop. (Ported from the Weiddle main game; styles live in the
+// parent stylesheet's .ac-menu / .ac-item, which this page @imports.)
+function attachAutocomplete(input, getNames, onPick, opts = {}){
+  const submitOnEnter = !!opts.submitOnEnter;
+  const menu = document.createElement("div");
+  menu.className = "ac-menu hidden";
+  document.body.appendChild(menu);
+  let items = [];
+  let active = -1;
+  const isOpen = () => !menu.classList.contains("hidden");
+
+  const place = () => {
+    const r = input.getBoundingClientRect();
+    menu.style.left  = (r.left + window.scrollX) + "px";
+    menu.style.top   = (r.bottom + window.scrollY) + "px";
+    menu.style.width = r.width + "px";
+  };
+  const close = () => { menu.classList.add("hidden"); menu.replaceChildren(); items = []; active = -1; };
+  const highlight = () => {
+    [...menu.children].forEach((c, i) => c.classList.toggle("active", i === active));
+    if (active >= 0) menu.children[active].scrollIntoView({ block: "nearest" });
+  };
+  const render = () => {
+    const q = input.value.trim().toLowerCase();
+    if (!q){ close(); return; }
+    const starts = [], contains = [];
+    for (const n of getNames()){
+      const low = n.toLowerCase();
+      if (low.startsWith(q)) starts.push(n);
+      else if (low.includes(q)) contains.push(n);
+    }
+    items = starts.concat(contains).slice(0, 8);
+    if (!items.length){ close(); return; }
+    menu.replaceChildren(...items.map(n => {
+      const d = document.createElement("div");
+      d.className = "ac-item";
+      d.textContent = n;
+      return d;
+    }));
+    active = -1;
+    place();
+    menu.classList.remove("hidden");
+  };
+  const pick = (i) => {
+    if (i < 0 || i >= items.length) return;
+    const name = items[i];
+    input.value = name;
+    close();
+    onPick(name);
+  };
+
+  input.addEventListener("input", render);
+  input.addEventListener("focus", render);
+  input.addEventListener("keydown", (e) => {
+    if (!isOpen()){
+      if (e.key === "Enter" && submitOnEnter) onPick(input.value);
+      return;
+    }
+    if (e.key === "ArrowDown"){ e.preventDefault(); active = Math.min(active + 1, items.length - 1); highlight(); }
+    else if (e.key === "ArrowUp"){ e.preventDefault(); active = Math.max(active - 1, 0); highlight(); }
+    else if (e.key === "Enter"){
+      if (active >= 0){ e.preventDefault(); e.stopPropagation(); pick(active); }
+      else if (submitOnEnter){ e.preventDefault(); const v = input.value; close(); onPick(v); }
+      else close();
+    }
+    else if (e.key === "Escape"){ close(); }
+  }, true);
+
+  // Fire on pointer/mouse *down* + preventDefault so the input doesn't blur
+  // (which would close the menu) before the pick registers. Both event types are
+  // wired so touch, mouse, and pen all work.
+  const onDown = (e) => {
+    const item = e.target.closest(".ac-item");
+    if (!item) return;
+    e.preventDefault();
+    pick([...menu.children].indexOf(item));
+  };
+  menu.addEventListener("pointerdown", onDown);
+  menu.addEventListener("mousedown", onDown);
+
+  document.addEventListener("pointerdown", (e) => {
+    if (e.target !== input && !menu.contains(e.target)) close();
+  });
+  window.addEventListener("scroll", () => { if (isOpen()) place(); }, true);
+  window.addEventListener("resize", () => { if (isOpen()) place(); });
 }
 
 // ---------- mode handling ----------
@@ -357,10 +442,12 @@ function doShare(){
 
 // ---------- wiring ----------
 function wireUI(){
-  const input = el("guess-input");
-  input.addEventListener("keydown", e => {
-    if (e.key === "Enter") { e.preventDefault(); submitGuess(input.value); }
-  });
+  attachAutocomplete(
+    el("guess-input"),
+    () => DATA.map(m => `${m.title} (${m.year})`),
+    submitGuess,
+    { submitOnEnter: true }
+  );
   el("new-btn").addEventListener("click", newGame);
   el("giveup-btn").addEventListener("click", () => {
     if (!solved) el("giveup-modal").classList.remove("hidden");
