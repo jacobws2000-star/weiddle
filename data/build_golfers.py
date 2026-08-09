@@ -89,15 +89,30 @@ def norm_country(c):
     return COUNTRY_NORM.get(c, c)
 
 
+# Ramping fame multiplier for prolific PGA Tour winners: a golfer's whole fame
+# score scales up as their PGA-win count crosses these cumulative bands, so
+# multi-win tour regulars rise in the ranking (and into easier tiers). Bands are
+# thresholds, not additive tiers — a golfer gets exactly one multiplier.
+def pga_boost(pga):
+    pga = pga or 0
+    if pga >= 51: return 1.175   # 51+  wins -> +17.5%
+    if pga >= 21: return 1.15    # 21-50 wins -> +15%
+    if pga >= 11: return 1.10    # 11-20 wins -> +10%
+    if pga >= 4:  return 1.035   # 4-10  wins -> +3.5%
+    return 1.0                   # 0-3   wins -> no boost
+
+
 def fame(majors, pga, pro, sitelinks):
     """Composite recognizability+accomplishment score used only for tier ranking.
 
     Majors dominate (a multi-major great must outrank a journeyman), PGA wins
     next, then worldwide pro wins and Wikipedia language coverage fill in the
-    long tail so Hard/Extreme have enough depth. Tuned by eyeballing the top of
-    the ranking and the tier boundaries (see the --report output)."""
+    long tail so Hard/Extreme have enough depth. The whole score is then scaled
+    by pga_boost() so prolific tour winners get an extra ramping bump. Tuned by
+    eyeballing the top of the ranking and the tier boundaries (--report)."""
     pro = min(pro or 0, PRO_WINS_CAP)
-    return (majors or 0) * 12 + (pga or 0) * 3 + pro * 0.5 + (sitelinks or 0) * 1.0
+    base = (majors or 0) * 12 + (pga or 0) * 3 + pro * 0.5 + (sitelinks or 0) * 1.0
+    return base * pga_boost(pga)
 
 
 def load_bulk():
