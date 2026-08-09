@@ -24,6 +24,12 @@ const TIERS = {
              desc: "~1,250 golfers — tour winners and classics, deeper cuts. 9 guesses." },
   extreme: { label: "Extreme", level: 3, guesses: 10, endless: true,
              desc: "The whole pool — every pro we could find. 10 guesses." },
+  // Themed mode: champions only. `filter` (not `level`) defines the pool — every
+  // major winner already ranks tier 1, but level:3 keeps it robust if the fame
+  // ranking ever shifts. ~300 golfers, all recognizable, so guesses are tight.
+  majors:  { label: "Majors",  level: 3, guesses: 6, endless: true,
+             filter: g => (g.majors || 0) >= 1,
+             desc: "Major champions only — the ~300 golfers with at least one major. 6 guesses." },
 };
 
 let DATA = [];
@@ -71,7 +77,10 @@ function ageOf(dob){
 }
 
 // ---------- pools ----------
-function poolFor(m){ return DATA.filter(x => (x.tier || 3) <= TIERS[m].level); }
+function poolFor(m){
+  const t = TIERS[m];
+  return DATA.filter(x => (x.tier || 3) <= t.level && (!t.filter || t.filter(x)));
+}
 function maxAttempts(){ return TIERS[mode].guesses; }
 
 // ---------- boot ----------
@@ -335,7 +344,7 @@ function endGame(won, gaveUp = false){
 
 function scoreFor(){
   // Base by tier, bonus for solving with guesses to spare.
-  const base = { normal: 60, hard: 100, extreme: 150 }[mode] || 60;
+  const base = { normal: 60, hard: 100, extreme: 150, majors: 90 }[mode] || 60;
   return Math.round(base * (1 + (maxAttempts() - guessCount) / maxAttempts()));
 }
 
