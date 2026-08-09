@@ -9,12 +9,13 @@ Wikidata has no clean property for majors or tour wins either. So those three
 numbers are curated here, the same hand-maintained pattern as champions.py /
 nationalities.py.
 
-build_golfers.py takes this list as the playable pool and enriches each entry
-from ESPN by name: it prefers ESPN's `dateOfBirth` and `hand` when present
-(fresher/authoritative), falling back to the values here (needed for older
-legends ESPN's current roster omits). The `country` here is authoritative and
-must be a nationality string borders.py knows (see NATIONALITY_TO_ISO2) so the
-orange "borders the answer" color works.
+build_golfers.py merges this seed with the much larger bulk pool scraped from
+Wikipedia (golf_universe.py + golf_stats.py). For any golfer that appears in both,
+these curated values WIN — this is the hand-verified override for the marquee
+names. The `country` here is authoritative and must be a nationality string
+borders.py knows (see NATIONALITY_TO_ISO2) so the orange "borders the answer"
+color works. (`hand` is retained in the tuples for reference but is no longer a
+clue column — handedness isn't sourceable across the ~2.5k-golfer pool.)
 
 MAINTENANCE: `pgaWins` is a SNAPSHOT (~2024 season) and drifts as active players
 keep winning; `majors` and `turnedPro` are effectively static. Correct any entry

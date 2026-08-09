@@ -7,7 +7,7 @@
    "exact" chips (--green) still pop. */
 :root{ --bg:#2f6d3b; }
 
-/* Golfer | Country | Age | Turned Pro | Majors | PGA Wins | Hand.
+/* Golfer | Country | Age | Turned Pro | Majors | PGA Wins.
    Golfer names and Country run long; the numeric columns never exceed a few
    chars. minmax(0,...) so a long value wraps in its track instead of scrolling
    the page sideways. Desktop-only: below 821px the parent stylesheet reflows
@@ -16,7 +16,7 @@
   .grid-header,.guess-row{
     grid-template-columns:
       minmax(0,1.8fr) minmax(0,1.2fr) minmax(0,.6fr) minmax(0,.9fr)
-      minmax(0,.7fr)  minmax(0,.8fr)  minmax(0,.7fr);
+      minmax(0,.7fr)  minmax(0,.8fr);
   }
 }
 
