@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generatedAt": "2026-08-09T02:58:17.694825+00:00",
+  "generatedAt": "2026-08-09T03:05:03.556904+00:00",
   "count": 2541,
   "tiers": {
    "normal": 650,
@@ -37,7 +37,7 @@
    "turnedPro": 2000,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 26.9,
+   "fame": 26.0,
    "tier": 1
   },
   {
@@ -157,7 +157,7 @@
    "turnedPro": 2000,
    "majors": 1,
    "pgaWins": 14,
-   "fame": 67.1,
+   "fame": 61.0,
    "tier": 1
   },
   {
@@ -347,7 +347,7 @@
    "turnedPro": 1959,
    "majors": 1,
    "pgaWins": 11,
-   "fame": 71.5,
+   "fame": 65.0,
    "tier": 1
   },
   {
@@ -937,7 +937,7 @@
    "turnedPro": 1984,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 18.6,
+   "fame": 18.0,
    "tier": 1
   },
   {
@@ -1057,7 +1057,7 @@
    "turnedPro": 1975,
    "majors": 0,
    "pgaWins": 11,
-   "fame": 50.6,
+   "fame": 46.0,
    "tier": 1
   },
   {
@@ -1467,7 +1467,7 @@
    "turnedPro": 1954,
    "majors": 7,
    "pgaWins": 62,
-   "fame": 424.8,
+   "fame": 361.5,
    "tier": 1
   },
   {
@@ -1897,7 +1897,7 @@
    "turnedPro": 1999,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 27.4,
+   "fame": 26.5,
    "tier": 1
   },
   {
@@ -1907,7 +1907,7 @@
    "turnedPro": 1973,
    "majors": 2,
    "pgaWins": 19,
-   "fame": 122.1,
+   "fame": 111.0,
    "tier": 1
   },
   {
@@ -1917,7 +1917,7 @@
    "turnedPro": 2000,
    "majors": 1,
    "pgaWins": 4,
-   "fame": 41.9,
+   "fame": 40.5,
    "tier": 1
   },
   {
@@ -1937,7 +1937,7 @@
    "turnedPro": 1930,
    "majors": 9,
    "pgaWins": 64,
-   "fame": 433.0,
+   "fame": 368.5,
    "tier": 1
   },
   {
@@ -2087,7 +2087,7 @@
    "turnedPro": 1960,
    "majors": 0,
    "pgaWins": 7,
-   "fame": 29.0,
+   "fame": 28.0,
    "tier": 1
   },
   {
@@ -2267,7 +2267,7 @@
    "turnedPro": 1983,
    "majors": 0,
    "pgaWins": 7,
-   "fame": 27.4,
+   "fame": 26.5,
    "tier": 1
   },
   {
@@ -2277,7 +2277,7 @@
    "turnedPro": 2004,
    "majors": 0,
    "pgaWins": 6,
-   "fame": 31.6,
+   "fame": 30.5,
    "tier": 1
   },
   {
@@ -2327,7 +2327,7 @@
    "turnedPro": 1974,
    "majors": 1,
    "pgaWins": 6,
-   "fame": 44.5,
+   "fame": 43.0,
    "tier": 1
   },
   {
@@ -2337,7 +2337,7 @@
    "turnedPro": 1987,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 24.3,
+   "fame": 23.5,
    "tier": 1
   },
   {
@@ -2347,7 +2347,7 @@
    "turnedPro": 2009,
    "majors": 0,
    "pgaWins": 8,
-   "fame": 39.8,
+   "fame": 38.5,
    "tier": 1
   },
   {
@@ -2367,7 +2367,7 @@
    "turnedPro": 1954,
    "majors": 0,
    "pgaWins": 7,
-   "fame": 31.0,
+   "fame": 30.0,
    "tier": 1
   },
   {
@@ -2377,7 +2377,7 @@
    "turnedPro": 1988,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 21.2,
+   "fame": 20.5,
    "tier": 1
   },
   {
@@ -2417,7 +2417,7 @@
    "turnedPro": 1981,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 20.7,
+   "fame": 20.0,
    "tier": 1
   },
   {
@@ -2467,7 +2467,7 @@
    "turnedPro": 1952,
    "majors": 0,
    "pgaWins": 6,
-   "fame": 23.3,
+   "fame": 22.5,
    "tier": 1
   },
   {
@@ -2527,7 +2527,7 @@
    "turnedPro": 1988,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 18.6,
+   "fame": 18.0,
    "tier": 1
   },
   {
@@ -2547,7 +2547,7 @@
    "turnedPro": 1973,
    "majors": 0,
    "pgaWins": 6,
-   "fame": 34.2,
+   "fame": 33.0,
    "tier": 1
   },
   {
@@ -2567,7 +2567,7 @@
    "turnedPro": 1957,
    "majors": 1,
    "pgaWins": 11,
-   "fame": 64.9,
+   "fame": 59.0,
    "tier": 1
   },
   {
@@ -2587,7 +2587,7 @@
    "turnedPro": 1965,
    "majors": 0,
    "pgaWins": 6,
-   "fame": 26.4,
+   "fame": 25.5,
    "tier": 1
   },
   {
@@ -2617,7 +2617,7 @@
    "turnedPro": 1967,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 30.5,
+   "fame": 29.5,
    "tier": 1
   },
   {
@@ -2627,7 +2627,7 @@
    "turnedPro": 1953,
    "majors": 1,
    "pgaWins": 6,
-   "fame": 41.4,
+   "fame": 40.0,
    "tier": 1
   },
   {
@@ -2647,7 +2647,7 @@
    "turnedPro": 1945,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 22.8,
+   "fame": 22.0,
    "tier": 1
   },
   {
@@ -2667,7 +2667,7 @@
    "turnedPro": 1981,
    "majors": 1,
    "pgaWins": 8,
-   "fame": 49.2,
+   "fame": 47.5,
    "tier": 1
   },
   {
@@ -2727,7 +2727,7 @@
    "turnedPro": 1930,
    "majors": 13,
    "pgaWins": 9,
-   "fame": 227.2,
+   "fame": 219.5,
    "tier": 1
   },
   {
@@ -2747,7 +2747,7 @@
    "turnedPro": 1938,
    "majors": 4,
    "pgaWins": 15,
-   "fame": 167.2,
+   "fame": 152.0,
    "tier": 1
   },
   {
@@ -2767,7 +2767,7 @@
    "turnedPro": 1960,
    "majors": 1,
    "pgaWins": 12,
-   "fame": 64.4,
+   "fame": 58.5,
    "tier": 1
   },
   {
@@ -2887,7 +2887,7 @@
    "turnedPro": 1983,
    "majors": 0,
    "pgaWins": 8,
-   "fame": 41.9,
+   "fame": 40.5,
    "tier": 1
   },
   {
@@ -3037,7 +3037,7 @@
    "turnedPro": 2004,
    "majors": 0,
    "pgaWins": 10,
-   "fame": 47.6,
+   "fame": 46.0,
    "tier": 1
   },
   {
@@ -3217,7 +3217,7 @@
    "turnedPro": 1994,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 28.5,
+   "fame": 27.5,
    "tier": 1
   },
   {
@@ -3227,7 +3227,7 @@
    "turnedPro": 2009,
    "majors": 1,
    "pgaWins": 4,
-   "fame": 37.3,
+   "fame": 36.0,
    "tier": 1
   },
   {
@@ -3357,7 +3357,7 @@
    "turnedPro": 2012,
    "majors": 5,
    "pgaWins": 8,
-   "fame": 119.5,
+   "fame": 115.5,
    "tier": 1
   },
   {
@@ -3367,7 +3367,7 @@
    "turnedPro": 1953,
    "majors": 0,
    "pgaWins": 14,
-   "fame": 75.4,
+   "fame": 68.5,
    "tier": 1
   },
   {
@@ -3377,7 +3377,7 @@
    "turnedPro": 1961,
    "majors": 0,
    "pgaWins": 8,
-   "fame": 44.5,
+   "fame": 43.0,
    "tier": 1
   },
   {
@@ -3387,7 +3387,7 @@
    "turnedPro": 1974,
    "majors": 0,
    "pgaWins": 13,
-   "fame": 58.3,
+   "fame": 53.0,
    "tier": 1
   },
   {
@@ -3427,7 +3427,7 @@
    "turnedPro": 2016,
    "majors": 2,
    "pgaWins": 8,
-   "fame": 74.5,
+   "fame": 72.0,
    "tier": 1
   },
   {
@@ -3447,7 +3447,7 @@
    "turnedPro": 2002,
    "majors": 2,
    "pgaWins": 12,
-   "fame": 98.5,
+   "fame": 89.5,
    "tier": 1
   },
   {
@@ -3467,7 +3467,7 @@
    "turnedPro": 1969,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 22.3,
+   "fame": 21.5,
    "tier": 1
   },
   {
@@ -3517,7 +3517,7 @@
    "turnedPro": 1932,
    "majors": 5,
    "pgaWins": 52,
-   "fame": 317.2,
+   "fame": 270.0,
    "tier": 1
   },
   {
@@ -3547,7 +3547,7 @@
    "turnedPro": 1975,
    "majors": 0,
    "pgaWins": 12,
-   "fame": 52.8,
+   "fame": 48.0,
    "tier": 1
   },
   {
@@ -3597,7 +3597,7 @@
    "turnedPro": 2013,
    "majors": 1,
    "pgaWins": 6,
-   "fame": 48.6,
+   "fame": 47.0,
    "tier": 1
   },
   {
@@ -3637,7 +3637,7 @@
    "turnedPro": 2004,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 31.0,
+   "fame": 30.0,
    "tier": 1
   },
   {
@@ -3687,7 +3687,7 @@
    "turnedPro": 2000,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 25.9,
+   "fame": 25.0,
    "tier": 1
   },
   {
@@ -3727,7 +3727,7 @@
    "turnedPro": 1986,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 29.5,
+   "fame": 28.5,
    "tier": 1
   },
   {
@@ -3867,7 +3867,7 @@
    "turnedPro": 1947,
    "majors": 3,
    "pgaWins": 39,
-   "fame": 212.7,
+   "fame": 185.0,
    "tier": 1
   },
   {
@@ -4007,7 +4007,7 @@
    "turnedPro": 1996,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 35.2,
+   "fame": 34.0,
    "tier": 1
   },
   {
@@ -4057,7 +4057,7 @@
    "turnedPro": 1934,
    "majors": 1,
    "pgaWins": 7,
-   "fame": 49.2,
+   "fame": 47.5,
    "tier": 1
   },
   {
@@ -4147,7 +4147,7 @@
    "turnedPro": 2000,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 22.3,
+   "fame": 21.5,
    "tier": 1
   },
   {
@@ -4297,7 +4297,7 @@
    "turnedPro": 1960,
    "majors": 0,
    "pgaWins": 8,
-   "fame": 52.3,
+   "fame": 50.5,
    "tier": 1
   },
   {
@@ -4307,7 +4307,7 @@
    "turnedPro": 1940,
    "majors": 1,
    "pgaWins": 6,
-   "fame": 45.0,
+   "fame": 43.5,
    "tier": 1
   },
   {
@@ -4337,7 +4337,7 @@
    "turnedPro": 1978,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 21.2,
+   "fame": 20.5,
    "tier": 1
   },
   {
@@ -4517,7 +4517,7 @@
    "turnedPro": 2022,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 24.8,
+   "fame": 24.0,
    "tier": 1
   },
   {
@@ -4527,7 +4527,7 @@
    "turnedPro": 2007,
    "majors": 0,
    "pgaWins": 6,
-   "fame": 28.5,
+   "fame": 27.5,
    "tier": 1
   },
   {
@@ -4957,7 +4957,7 @@
    "turnedPro": 2019,
    "majors": 2,
    "pgaWins": 6,
-   "fame": 64.2,
+   "fame": 62.0,
    "tier": 1
   },
   {
@@ -5017,7 +5017,7 @@
    "turnedPro": 1982,
    "majors": 1,
    "pgaWins": 15,
-   "fame": 90.2,
+   "fame": 82.0,
    "tier": 1
   },
   {
@@ -5137,7 +5137,7 @@
    "turnedPro": 1976,
    "majors": 1,
    "pgaWins": 13,
-   "fame": 84.7,
+   "fame": 77.0,
    "tier": 1
   },
   {
@@ -5147,7 +5147,7 @@
    "turnedPro": 1920,
    "majors": 2,
    "pgaWins": 20,
-   "fame": 117.7,
+   "fame": 107.0,
    "tier": 1
   },
   {
@@ -5197,7 +5197,7 @@
    "turnedPro": 1976,
    "majors": 2,
    "pgaWins": 17,
-   "fame": 111.7,
+   "fame": 101.5,
    "tier": 1
   },
   {
@@ -5257,7 +5257,7 @@
    "turnedPro": 1975,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 25.4,
+   "fame": 24.5,
    "tier": 1
   },
   {
@@ -5357,7 +5357,7 @@
    "turnedPro": 1982,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 23.3,
+   "fame": 22.5,
    "tier": 1
   },
   {
@@ -5397,7 +5397,7 @@
    "turnedPro": 2013,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 20.7,
+   "fame": 20.0,
    "tier": 1
   },
   {
@@ -5567,7 +5567,7 @@
    "turnedPro": 1973,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 22.3,
+   "fame": 21.5,
    "tier": 1
   },
   {
@@ -5667,7 +5667,7 @@
    "turnedPro": 1966,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 21.7,
+   "fame": 21.0,
    "tier": 1
   },
   {
@@ -5677,7 +5677,7 @@
    "turnedPro": 1958,
    "majors": 0,
    "pgaWins": 13,
-   "fame": 60.0,
+   "fame": 54.5,
    "tier": 1
   },
   {
@@ -5697,7 +5697,7 @@
    "turnedPro": 1964,
    "majors": 2,
    "pgaWins": 10,
-   "fame": 73.0,
+   "fame": 70.5,
    "tier": 1
   },
   {
@@ -5797,7 +5797,7 @@
    "turnedPro": 1993,
    "majors": 1,
    "pgaWins": 13,
-   "fame": 82.5,
+   "fame": 75.0,
    "tier": 1
   },
   {
@@ -5807,7 +5807,7 @@
    "turnedPro": 1978,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 18.1,
+   "fame": 17.5,
    "tier": 1
   },
   {
@@ -5837,7 +5837,7 @@
    "turnedPro": 1981,
    "majors": 0,
    "pgaWins": 10,
-   "fame": 51.2,
+   "fame": 49.5,
    "tier": 1
   },
   {
@@ -5897,7 +5897,7 @@
    "turnedPro": 1962,
    "majors": 2,
    "pgaWins": 8,
-   "fame": 77.6,
+   "fame": 75.0,
    "tier": 1
   },
   {
@@ -6147,7 +6147,7 @@
    "turnedPro": 1989,
    "majors": 1,
    "pgaWins": 13,
-   "fame": 84.2,
+   "fame": 76.5,
    "tier": 1
   },
   {
@@ -6177,7 +6177,7 @@
    "turnedPro": 1985,
    "majors": 1,
    "pgaWins": 21,
-   "fame": 124.8,
+   "fame": 108.5,
    "tier": 1
   },
   {
@@ -6367,7 +6367,7 @@
    "turnedPro": 1928,
    "majors": 3,
    "pgaWins": 16,
-   "fame": 108.4,
+   "fame": 98.5,
    "tier": 1
   },
   {
@@ -6497,7 +6497,7 @@
    "turnedPro": 1949,
    "majors": 1,
    "pgaWins": 7,
-   "fame": 41.9,
+   "fame": 40.5,
    "tier": 1
   },
   {
@@ -6507,7 +6507,7 @@
    "turnedPro": 1927,
    "majors": 0,
    "pgaWins": 8,
-   "fame": 35.2,
+   "fame": 34.0,
    "tier": 1
   },
   {
@@ -6607,7 +6607,7 @@
    "turnedPro": 1956,
    "majors": 1,
    "pgaWins": 10,
-   "fame": 71.9,
+   "fame": 69.5,
    "tier": 1
   },
   {
@@ -6687,7 +6687,7 @@
    "turnedPro": 1949,
    "majors": 2,
    "pgaWins": 19,
-   "fame": 118.8,
+   "fame": 108.0,
    "tier": 1
   },
   {
@@ -6727,7 +6727,7 @@
    "turnedPro": 1956,
    "majors": 0,
    "pgaWins": 20,
-   "fame": 83.6,
+   "fame": 76.0,
    "tier": 1
   },
   {
@@ -6737,7 +6737,7 @@
    "turnedPro": 1971,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 21.7,
+   "fame": 21.0,
    "tier": 1
   },
   {
@@ -6767,7 +6767,7 @@
    "turnedPro": 1985,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 21.7,
+   "fame": 21.0,
    "tier": 1
   },
   {
@@ -6787,7 +6787,7 @@
    "turnedPro": 2007,
    "majors": 2,
    "pgaWins": 24,
-   "fame": 151.8,
+   "fame": 132.0,
    "tier": 1
   },
   {
@@ -6817,7 +6817,7 @@
    "turnedPro": 1930,
    "majors": 0,
    "pgaWins": 18,
-   "fame": 79.2,
+   "fame": 72.0,
    "tier": 1
   },
   {
@@ -6867,7 +6867,7 @@
    "turnedPro": 1977,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 18.1,
+   "fame": 17.5,
    "tier": 1
   },
   {
@@ -6887,7 +6887,7 @@
    "turnedPro": 1945,
    "majors": 1,
    "pgaWins": 5,
-   "fame": 40.9,
+   "fame": 39.5,
    "tier": 1
   },
   {
@@ -6907,7 +6907,7 @@
    "turnedPro": 1940,
    "majors": 0,
    "pgaWins": 8,
-   "fame": 35.7,
+   "fame": 34.5,
    "tier": 1
   },
   {
@@ -6917,7 +6917,7 @@
    "turnedPro": 1967,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 19.7,
+   "fame": 19.0,
    "tier": 1
   },
   {
@@ -7267,7 +7267,7 @@
    "turnedPro": 1989,
    "majors": 4,
    "pgaWins": 19,
-   "fame": 186.5,
+   "fame": 169.5,
    "tier": 1
   },
   {
@@ -7617,7 +7617,7 @@
    "turnedPro": 1962,
    "majors": 0,
    "pgaWins": 11,
-   "fame": 48.4,
+   "fame": 44.0,
    "tier": 1
   },
   {
@@ -7657,7 +7657,7 @@
    "turnedPro": 1954,
    "majors": 2,
    "pgaWins": 6,
-   "fame": 50.2,
+   "fame": 48.5,
    "tier": 1
   },
   {
@@ -7697,7 +7697,7 @@
    "turnedPro": 1980,
    "majors": 1,
    "pgaWins": 15,
-   "fame": 118.8,
+   "fame": 108.0,
    "tier": 1
   },
   {
@@ -7707,7 +7707,7 @@
    "turnedPro": 1981,
    "majors": 0,
    "pgaWins": 8,
-   "fame": 48.1,
+   "fame": 46.5,
    "tier": 1
   },
   {
@@ -7727,7 +7727,7 @@
    "turnedPro": 1946,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 23.3,
+   "fame": 22.5,
    "tier": 1
   },
   {
@@ -7787,7 +7787,7 @@
    "turnedPro": 1973,
    "majors": 2,
    "pgaWins": 10,
-   "fame": 82.3,
+   "fame": 79.5,
    "tier": 1
   },
   {
@@ -7847,7 +7847,7 @@
    "turnedPro": 1952,
    "majors": 0,
    "pgaWins": 7,
-   "fame": 31.6,
+   "fame": 30.5,
    "tier": 1
   },
   {
@@ -7987,7 +7987,7 @@
    "turnedPro": 1975,
    "majors": 0,
    "pgaWins": 6,
-   "fame": 25.9,
+   "fame": 25.0,
    "tier": 1
   },
   {
@@ -8037,7 +8037,7 @@
    "turnedPro": 1953,
    "majors": 9,
    "pgaWins": 24,
-   "fame": 220.8,
+   "fame": 192.0,
    "tier": 1
   },
   {
@@ -8077,7 +8077,7 @@
    "turnedPro": 2007,
    "majors": 1,
    "pgaWins": 4,
-   "fame": 43.0,
+   "fame": 41.5,
    "tier": 1
   },
   {
@@ -8117,7 +8117,7 @@
    "turnedPro": 1956,
    "majors": 1,
    "pgaWins": 10,
-   "fame": 59.5,
+   "fame": 57.5,
    "tier": 1
   },
   {
@@ -8137,7 +8137,7 @@
    "turnedPro": 1954,
    "majors": 2,
    "pgaWins": 29,
-   "fame": 170.2,
+   "fame": 148.0,
    "tier": 1
   },
   {
@@ -8147,7 +8147,7 @@
    "turnedPro": 1920,
    "majors": 7,
    "pgaWins": 38,
-   "fame": 276.0,
+   "fame": 240.0,
    "tier": 1
   },
   {
@@ -8167,7 +8167,7 @@
    "turnedPro": 1998,
    "majors": 1,
    "pgaWins": 8,
-   "fame": 59.0,
+   "fame": 57.0,
    "tier": 1
   },
   {
@@ -8187,7 +8187,7 @@
    "turnedPro": 1964,
    "majors": 1,
    "pgaWins": 13,
-   "fame": 89.7,
+   "fame": 81.5,
    "tier": 1
   },
   {
@@ -8207,7 +8207,7 @@
    "turnedPro": 1975,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 19.1,
+   "fame": 18.5,
    "tier": 1
   },
   {
@@ -8227,7 +8227,7 @@
    "turnedPro": 1958,
    "majors": 0,
    "pgaWins": 8,
-   "fame": 44.5,
+   "fame": 43.0,
    "tier": 1
   },
   {
@@ -8267,7 +8267,7 @@
    "turnedPro": 1930,
    "majors": 1,
    "pgaWins": 5,
-   "fame": 33.1,
+   "fame": 32.0,
    "tier": 1
   },
   {
@@ -8317,7 +8317,7 @@
    "turnedPro": 1972,
    "majors": 0,
    "pgaWins": 7,
-   "fame": 46.1,
+   "fame": 44.5,
    "tier": 1
   },
   {
@@ -8477,7 +8477,7 @@
    "turnedPro": 2002,
    "majors": 1,
    "pgaWins": 4,
-   "fame": 26.9,
+   "fame": 26.0,
    "tier": 1
   },
   {
@@ -8587,7 +8587,7 @@
    "turnedPro": 1976,
    "majors": 2,
    "pgaWins": 20,
-   "fame": 103.4,
+   "fame": 94.0,
    "tier": 1
   },
   {
@@ -8777,7 +8777,7 @@
    "turnedPro": 1981,
    "majors": 1,
    "pgaWins": 14,
-   "fame": 77.6,
+   "fame": 70.5,
    "tier": 1
   },
   {
@@ -8787,7 +8787,7 @@
    "turnedPro": 1968,
    "majors": 3,
    "pgaWins": 20,
-   "fame": 165.6,
+   "fame": 150.5,
    "tier": 1
   },
   {
@@ -8887,7 +8887,7 @@
    "turnedPro": 2011,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 27.4,
+   "fame": 26.5,
    "tier": 1
   },
   {
@@ -8917,7 +8917,7 @@
    "turnedPro": 1923,
    "majors": 0,
    "pgaWins": 30,
-   "fame": 128.8,
+   "fame": 112.0,
    "tier": 1
   },
   {
@@ -9137,7 +9137,7 @@
    "turnedPro": 1998,
    "majors": 1,
    "pgaWins": 6,
-   "fame": 66.2,
+   "fame": 64.0,
    "tier": 1
   },
   {
@@ -9157,7 +9157,7 @@
    "turnedPro": 1925,
    "majors": 2,
    "pgaWins": 24,
-   "fame": 139.1,
+   "fame": 121.0,
    "tier": 1
   },
   {
@@ -9167,7 +9167,7 @@
    "turnedPro": 1933,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 19.1,
+   "fame": 18.5,
    "tier": 1
   },
   {
@@ -9187,7 +9187,7 @@
    "turnedPro": 2013,
    "majors": 1,
    "pgaWins": 10,
-   "fame": 76.1,
+   "fame": 73.5,
    "tier": 1
   },
   {
@@ -9367,7 +9367,7 @@
    "turnedPro": 1965,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 18.1,
+   "fame": 17.5,
    "tier": 1
   },
   {
@@ -9397,7 +9397,7 @@
    "turnedPro": 1926,
    "majors": 2,
    "pgaWins": 30,
-   "fame": 166.8,
+   "fame": 145.0,
    "tier": 1
   },
   {
@@ -9447,7 +9447,7 @@
    "turnedPro": 1969,
    "majors": 2,
    "pgaWins": 19,
-   "fame": 118.3,
+   "fame": 107.5,
    "tier": 1
   },
   {
@@ -9527,7 +9527,7 @@
    "turnedPro": 2003,
    "majors": 0,
    "pgaWins": 6,
-   "fame": 33.6,
+   "fame": 32.5,
    "tier": 1
   },
   {
@@ -9757,7 +9757,7 @@
    "turnedPro": 2005,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 27.9,
+   "fame": 27.0,
    "tier": 1
   },
   {
@@ -9767,7 +9767,7 @@
    "turnedPro": 1964,
    "majors": 0,
    "pgaWins": 8,
-   "fame": 37.3,
+   "fame": 36.0,
    "tier": 1
   },
   {
@@ -9817,7 +9817,7 @@
    "turnedPro": 2015,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 18.6,
+   "fame": 18.0,
    "tier": 1
   },
   {
@@ -9837,7 +9837,7 @@
    "turnedPro": 1941,
    "majors": 2,
    "pgaWins": 16,
-   "fame": 101.8,
+   "fame": 92.5,
    "tier": 1
   },
   {
@@ -9907,7 +9907,7 @@
    "turnedPro": 1961,
    "majors": 18,
    "pgaWins": 73,
-   "fame": 630.4,
+   "fame": 536.5,
    "tier": 1
   },
   {
@@ -9947,7 +9947,7 @@
    "turnedPro": 1960,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 15.5,
+   "fame": 15.0,
    "tier": 1
   },
   {
@@ -10387,7 +10387,7 @@
    "turnedPro": 2006,
    "majors": 1,
    "pgaWins": 13,
-   "fame": 85.2,
+   "fame": 77.5,
    "tier": 1
   },
   {
@@ -10397,7 +10397,7 @@
    "turnedPro": 2000,
    "majors": 1,
    "pgaWins": 5,
-   "fame": 43.5,
+   "fame": 42.0,
    "tier": 1
   },
   {
@@ -10507,7 +10507,7 @@
    "turnedPro": 1976,
    "majors": 0,
    "pgaWins": 9,
-   "fame": 53.3,
+   "fame": 51.5,
    "tier": 1
   },
   {
@@ -10517,7 +10517,7 @@
    "turnedPro": 1949,
    "majors": 1,
    "pgaWins": 5,
-   "fame": 37.3,
+   "fame": 36.0,
    "tier": 1
   },
   {
@@ -10727,7 +10727,7 @@
    "turnedPro": 1980,
    "majors": 1,
    "pgaWins": 6,
-   "fame": 46.6,
+   "fame": 45.0,
    "tier": 1
   },
   {
@@ -10917,7 +10917,7 @@
    "turnedPro": 1942,
    "majors": 1,
    "pgaWins": 7,
-   "fame": 45.5,
+   "fame": 44.0,
    "tier": 1
   },
   {
@@ -10937,7 +10937,7 @@
    "turnedPro": 1968,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 22.8,
+   "fame": 22.0,
    "tier": 1
   },
   {
@@ -10957,7 +10957,7 @@
    "turnedPro": 1966,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 18.1,
+   "fame": 17.5,
    "tier": 1
   },
   {
@@ -10967,7 +10967,7 @@
    "turnedPro": 1975,
    "majors": 1,
    "pgaWins": 8,
-   "fame": 50.2,
+   "fame": 48.5,
    "tier": 1
   },
   {
@@ -10997,7 +10997,7 @@
    "turnedPro": 1986,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 34.7,
+   "fame": 33.5,
    "tier": 1
   },
   {
@@ -11037,7 +11037,7 @@
    "turnedPro": 2008,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 21.7,
+   "fame": 21.0,
    "tier": 1
   },
   {
@@ -11097,7 +11097,7 @@
    "turnedPro": 1965,
    "majors": 0,
    "pgaWins": 8,
-   "fame": 46.1,
+   "fame": 44.5,
    "tier": 1
   },
   {
@@ -11127,7 +11127,7 @@
    "turnedPro": 1941,
    "majors": 1,
    "pgaWins": 18,
-   "fame": 97.9,
+   "fame": 89.0,
    "tier": 1
   },
   {
@@ -11137,7 +11137,7 @@
    "turnedPro": 1992,
    "majors": 1,
    "pgaWins": 17,
-   "fame": 104.0,
+   "fame": 94.5,
    "tier": 1
   },
   {
@@ -11147,7 +11147,7 @@
    "turnedPro": 1983,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 23.3,
+   "fame": 22.5,
    "tier": 1
   },
   {
@@ -11287,7 +11287,7 @@
    "turnedPro": 1927,
    "majors": 3,
    "pgaWins": 31,
-   "fame": 181.1,
+   "fame": 157.5,
    "tier": 1
   },
   {
@@ -11307,7 +11307,7 @@
    "turnedPro": 1933,
    "majors": 0,
    "pgaWins": 9,
-   "fame": 37.3,
+   "fame": 36.0,
    "tier": 1
   },
   {
@@ -11337,7 +11337,7 @@
    "turnedPro": 2001,
    "majors": 1,
    "pgaWins": 6,
-   "fame": 47.1,
+   "fame": 45.5,
    "tier": 1
   },
   {
@@ -11537,7 +11537,7 @@
    "turnedPro": 1982,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 16.6,
+   "fame": 16.0,
    "tier": 1
   },
   {
@@ -11577,7 +11577,7 @@
    "turnedPro": 1987,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 22.3,
+   "fame": 21.5,
    "tier": 1
   },
   {
@@ -11607,7 +11607,7 @@
    "turnedPro": 1925,
    "majors": 0,
    "pgaWins": 14,
-   "fame": 61.6,
+   "fame": 56.0,
    "tier": 1
   },
   {
@@ -11657,7 +11657,7 @@
    "turnedPro": 1981,
    "majors": 0,
    "pgaWins": 7,
-   "fame": 27.4,
+   "fame": 26.5,
    "tier": 1
   },
   {
@@ -11767,7 +11767,7 @@
    "turnedPro": 1979,
    "majors": 0,
    "pgaWins": 11,
-   "fame": 58.3,
+   "fame": 53.0,
    "tier": 1
   },
   {
@@ -11777,7 +11777,7 @@
    "turnedPro": 1987,
    "majors": 2,
    "pgaWins": 5,
-   "fame": 69.9,
+   "fame": 67.5,
    "tier": 1
   },
   {
@@ -11897,7 +11897,7 @@
    "turnedPro": 1983,
    "majors": 0,
    "pgaWins": 7,
-   "fame": 33.1,
+   "fame": 32.0,
    "tier": 1
   },
   {
@@ -11927,7 +11927,7 @@
    "turnedPro": 1971,
    "majors": 1,
    "pgaWins": 10,
-   "fame": 53.8,
+   "fame": 52.0,
    "tier": 1
   },
   {
@@ -12057,7 +12057,7 @@
    "turnedPro": 1922,
    "majors": 1,
    "pgaWins": 20,
-   "fame": 99.6,
+   "fame": 90.5,
    "tier": 1
   },
   {
@@ -12077,7 +12077,7 @@
    "turnedPro": 1969,
    "majors": 2,
    "pgaWins": 25,
-   "fame": 149.5,
+   "fame": 130.0,
    "tier": 1
   },
   {
@@ -12087,7 +12087,7 @@
    "turnedPro": 1938,
    "majors": 0,
    "pgaWins": 7,
-   "fame": 34.2,
+   "fame": 33.0,
    "tier": 1
   },
   {
@@ -12097,7 +12097,7 @@
    "turnedPro": 1956,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 19.1,
+   "fame": 18.5,
    "tier": 1
   },
   {
@@ -12107,7 +12107,7 @@
    "turnedPro": 1929,
    "majors": 1,
    "pgaWins": 20,
-   "fame": 97.4,
+   "fame": 88.5,
    "tier": 1
   },
   {
@@ -12157,7 +12157,7 @@
    "turnedPro": 2016,
    "majors": 2,
    "pgaWins": 11,
-   "fame": 68.8,
+   "fame": 62.5,
    "tier": 1
   },
   {
@@ -12177,7 +12177,7 @@
    "turnedPro": 2000,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 25.4,
+   "fame": 24.5,
    "tier": 1
   },
   {
@@ -12247,7 +12247,7 @@
    "turnedPro": 2012,
    "majors": 3,
    "pgaWins": 13,
-   "fame": 122.1,
+   "fame": 111.0,
    "tier": 1
   },
   {
@@ -12307,7 +12307,7 @@
    "turnedPro": 1985,
    "majors": 2,
    "pgaWins": 6,
-   "fame": 80.7,
+   "fame": 78.0,
    "tier": 1
   },
   {
@@ -12487,7 +12487,7 @@
    "turnedPro": 1926,
    "majors": 0,
    "pgaWins": 17,
-   "fame": 74.8,
+   "fame": 68.0,
    "tier": 1
   },
   {
@@ -12607,7 +12607,7 @@
    "turnedPro": 1949,
    "majors": 3,
    "pgaWins": 18,
-   "fame": 127.1,
+   "fame": 115.5,
    "tier": 1
   },
   {
@@ -12687,7 +12687,7 @@
    "turnedPro": 1994,
    "majors": 1,
    "pgaWins": 12,
-   "fame": 77.6,
+   "fame": 70.5,
    "tier": 1
   },
   {
@@ -12697,7 +12697,7 @@
    "turnedPro": 1998,
    "majors": 1,
    "pgaWins": 11,
-   "fame": 55.6,
+   "fame": 50.5,
    "tier": 1
   },
   {
@@ -12707,7 +12707,7 @@
    "turnedPro": 2013,
    "majors": 2,
    "pgaWins": 15,
-   "fame": 103.4,
+   "fame": 94.0,
    "tier": 1
   },
   {
@@ -12747,7 +12747,7 @@
    "turnedPro": 1994,
    "majors": 0,
    "pgaWins": 8,
-   "fame": 53.3,
+   "fame": 51.5,
    "tier": 1
   },
   {
@@ -13077,7 +13077,7 @@
    "turnedPro": 2008,
    "majors": 1,
    "pgaWins": 8,
-   "fame": 55.9,
+   "fame": 54.0,
    "tier": 1
   },
   {
@@ -13237,7 +13237,7 @@
    "turnedPro": 1979,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 26.4,
+   "fame": 25.5,
    "tier": 1
   },
   {
@@ -13247,7 +13247,7 @@
    "turnedPro": 1956,
    "majors": 1,
    "pgaWins": 14,
-   "fame": 83.1,
+   "fame": 75.5,
    "tier": 1
   },
   {
@@ -13287,7 +13287,7 @@
    "turnedPro": 1982,
    "majors": 0,
    "pgaWins": 14,
-   "fame": 75.4,
+   "fame": 68.5,
    "tier": 1
   },
   {
@@ -13357,7 +13357,7 @@
    "turnedPro": 2006,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 23.8,
+   "fame": 23.0,
    "tier": 1
   },
   {
@@ -13367,7 +13367,7 @@
    "turnedPro": 2001,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 28.5,
+   "fame": 27.5,
    "tier": 1
   },
   {
@@ -13647,7 +13647,7 @@
    "turnedPro": 2012,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 23.3,
+   "fame": 22.5,
    "tier": 1
   },
   {
@@ -13927,7 +13927,7 @@
    "turnedPro": 1930,
    "majors": 0,
    "pgaWins": 9,
-   "fame": 36.2,
+   "fame": 35.0,
    "tier": 1
   },
   {
@@ -14037,7 +14037,7 @@
    "turnedPro": 1971,
    "majors": 1,
    "pgaWins": 21,
-   "fame": 113.3,
+   "fame": 98.5,
    "tier": 1
   },
   {
@@ -14067,7 +14067,7 @@
    "turnedPro": 1980,
    "majors": 1,
    "pgaWins": 4,
-   "fame": 39.3,
+   "fame": 38.0,
    "tier": 1
   },
   {
@@ -14087,7 +14087,7 @@
    "turnedPro": 1971,
    "majors": 3,
    "pgaWins": 10,
-   "fame": 99.9,
+   "fame": 96.5,
    "tier": 1
   },
   {
@@ -14247,7 +14247,7 @@
    "turnedPro": 1936,
    "majors": 5,
    "pgaWins": 8,
-   "fame": 95.7,
+   "fame": 92.5,
    "tier": 1
   },
   {
@@ -14277,7 +14277,7 @@
    "turnedPro": 1959,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 26.9,
+   "fame": 26.0,
    "tier": 1
   },
   {
@@ -14307,7 +14307,7 @@
    "turnedPro": 1986,
    "majors": 2,
    "pgaWins": 8,
-   "fame": 70.4,
+   "fame": 68.0,
    "tier": 1
   },
   {
@@ -14397,7 +14397,7 @@
    "turnedPro": 1960,
    "majors": 6,
    "pgaWins": 29,
-   "fame": 199.5,
+   "fame": 173.5,
    "tier": 1
   },
   {
@@ -14687,7 +14687,7 @@
    "turnedPro": 1950,
    "majors": 1,
    "pgaWins": 5,
-   "fame": 34.7,
+   "fame": 33.5,
    "tier": 1
   },
   {
@@ -14827,7 +14827,7 @@
    "turnedPro": 1975,
    "majors": 0,
    "pgaWins": 8,
-   "fame": 44.5,
+   "fame": 43.0,
    "tier": 1
   },
   {
@@ -14887,7 +14887,7 @@
    "turnedPro": 1964,
    "majors": 1,
    "pgaWins": 6,
-   "fame": 41.9,
+   "fame": 40.5,
    "tier": 1
   },
   {
@@ -14977,7 +14977,7 @@
    "turnedPro": 2001,
    "majors": 1,
    "pgaWins": 6,
-   "fame": 53.3,
+   "fame": 51.5,
    "tier": 1
   },
   {
@@ -15087,7 +15087,7 @@
    "turnedPro": 2001,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 18.1,
+   "fame": 17.5,
    "tier": 1
   },
   {
@@ -15407,7 +15407,7 @@
    "turnedPro": 2005,
    "majors": 0,
    "pgaWins": 6,
-   "fame": 33.6,
+   "fame": 32.5,
    "tier": 1
   },
   {
@@ -15707,7 +15707,7 @@
    "turnedPro": 1983,
    "majors": 1,
    "pgaWins": 7,
-   "fame": 45.5,
+   "fame": 44.0,
    "tier": 1
   },
   {
@@ -15727,7 +15727,7 @@
    "turnedPro": 1981,
    "majors": 1,
    "pgaWins": 13,
-   "fame": 84.2,
+   "fame": 76.5,
    "tier": 1
   },
   {
@@ -15817,7 +15817,7 @@
    "turnedPro": 1974,
    "majors": 0,
    "pgaWins": 10,
-   "fame": 38.8,
+   "fame": 37.5,
    "tier": 1
   },
   {
@@ -15847,7 +15847,7 @@
    "turnedPro": 1980,
    "majors": 2,
    "pgaWins": 16,
-   "fame": 114.4,
+   "fame": 104.0,
    "tier": 1
   },
   {
@@ -15897,7 +15897,7 @@
    "turnedPro": 1997,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 24.3,
+   "fame": 23.5,
    "tier": 1
   },
   {
@@ -16007,7 +16007,7 @@
    "turnedPro": 2004,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 20.7,
+   "fame": 20.0,
    "tier": 1
   },
   {
@@ -16077,7 +16077,7 @@
    "turnedPro": 1937,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 20.7,
+   "fame": 20.0,
    "tier": 1
   },
   {
@@ -16157,7 +16157,7 @@
    "turnedPro": 1958,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 25.4,
+   "fame": 24.5,
    "tier": 1
   },
   {
@@ -16317,7 +16317,7 @@
    "turnedPro": 2000,
    "majors": 0,
    "pgaWins": 9,
-   "fame": 56.4,
+   "fame": 54.5,
    "tier": 1
   },
   {
@@ -16387,7 +16387,7 @@
    "turnedPro": 2014,
    "majors": 1,
    "pgaWins": 5,
-   "fame": 48.6,
+   "fame": 47.0,
    "tier": 1
   },
   {
@@ -16567,7 +16567,7 @@
    "turnedPro": 2013,
    "majors": 0,
    "pgaWins": 6,
-   "fame": 31.6,
+   "fame": 30.5,
    "tier": 1
   },
   {
@@ -16727,7 +16727,7 @@
    "turnedPro": 1988,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 18.6,
+   "fame": 18.0,
    "tier": 1
   },
   {
@@ -17157,7 +17157,7 @@
    "turnedPro": 1952,
    "majors": 0,
    "pgaWins": 15,
-   "fame": 62.2,
+   "fame": 56.5,
    "tier": 1
   },
   {
@@ -17187,7 +17187,7 @@
    "turnedPro": 1992,
    "majors": 1,
    "pgaWins": 8,
-   "fame": 61.1,
+   "fame": 59.0,
    "tier": 1
   },
   {
@@ -17227,7 +17227,7 @@
    "turnedPro": 1958,
    "majors": 0,
    "pgaWins": 11,
-   "fame": 67.7,
+   "fame": 61.5,
    "tier": 1
   },
   {
@@ -17867,7 +17867,7 @@
    "turnedPro": 1976,
    "majors": 6,
    "pgaWins": 9,
-   "fame": 107.1,
+   "fame": 103.5,
    "tier": 1
   },
   {
@@ -17927,7 +17927,7 @@
    "turnedPro": 1977,
    "majors": 3,
    "pgaWins": 18,
-   "fame": 145.2,
+   "fame": 132.0,
    "tier": 1
   },
   {
@@ -17937,7 +17937,7 @@
    "turnedPro": 2010,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 24.8,
+   "fame": 24.0,
    "tier": 1
   },
   {
@@ -17947,7 +17947,7 @@
    "turnedPro": 2003,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 27.4,
+   "fame": 26.5,
    "tier": 1
   },
   {
@@ -18237,7 +18237,7 @@
    "turnedPro": 1995,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 16.0,
+   "fame": 15.5,
    "tier": 1
   },
   {
@@ -18277,7 +18277,7 @@
    "turnedPro": 1924,
    "majors": 2,
    "pgaWins": 10,
-   "fame": 69.3,
+   "fame": 67.0,
    "tier": 1
   },
   {
@@ -18447,7 +18447,7 @@
    "turnedPro": 1995,
    "majors": 3,
    "pgaWins": 6,
-   "fame": 100.4,
+   "fame": 97.0,
    "tier": 1
   },
   {
@@ -18667,7 +18667,7 @@
    "turnedPro": 2012,
    "majors": 0,
    "pgaWins": 8,
-   "fame": 38.8,
+   "fame": 37.5,
    "tier": 1
   },
   {
@@ -18687,7 +18687,7 @@
    "turnedPro": 2011,
    "majors": 1,
    "pgaWins": 9,
-   "fame": 63.7,
+   "fame": 61.5,
    "tier": 1
   },
   {
@@ -18767,7 +18767,7 @@
    "turnedPro": 1981,
    "majors": 1,
    "pgaWins": 12,
-   "fame": 75.9,
+   "fame": 69.0,
    "tier": 1
   },
   {
@@ -18897,7 +18897,7 @@
    "turnedPro": 1925,
    "majors": 2,
    "pgaWins": 29,
-   "fame": 152.4,
+   "fame": 132.5,
    "tier": 1
   },
   {
@@ -18987,7 +18987,7 @@
    "turnedPro": 1979,
    "majors": 3,
    "pgaWins": 11,
-   "fame": 113.3,
+   "fame": 103.0,
    "tier": 1
   },
   {
@@ -19137,7 +19137,7 @@
    "turnedPro": 1938,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 28.5,
+   "fame": 27.5,
    "tier": 1
   },
   {
@@ -19247,7 +19247,7 @@
    "turnedPro": 1976,
    "majors": 0,
    "pgaWins": 7,
-   "fame": 39.3,
+   "fame": 38.0,
    "tier": 1
   },
   {
@@ -19357,7 +19357,7 @@
    "turnedPro": 1949,
    "majors": 5,
    "pgaWins": 6,
-   "fame": 151.6,
+   "fame": 146.5,
    "tier": 1
   },
   {
@@ -19407,7 +19407,7 @@
    "turnedPro": 1992,
    "majors": 6,
    "pgaWins": 45,
-   "fame": 307.6,
+   "fame": 267.5,
    "tier": 1
   },
   {
@@ -19417,7 +19417,7 @@
    "turnedPro": 1961,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 20.7,
+   "fame": 20.0,
    "tier": 1
   },
   {
@@ -19727,7 +19727,7 @@
    "turnedPro": 1931,
    "majors": 3,
    "pgaWins": 16,
-   "fame": 111.1,
+   "fame": 101.0,
    "tier": 1
   },
   {
@@ -19807,7 +19807,7 @@
    "turnedPro": 1961,
    "majors": 4,
    "pgaWins": 22,
-   "fame": 143.8,
+   "fame": 125.0,
    "tier": 1
   },
   {
@@ -19917,7 +19917,7 @@
    "turnedPro": 1990,
    "majors": 2,
    "pgaWins": 7,
-   "fame": 83.3,
+   "fame": 80.5,
    "tier": 1
   },
   {
@@ -20217,7 +20217,7 @@
    "turnedPro": 2009,
    "majors": 0,
    "pgaWins": 6,
-   "fame": 39.3,
+   "fame": 38.0,
    "tier": 1
   },
   {
@@ -20307,7 +20307,7 @@
    "turnedPro": 1991,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 33.1,
+   "fame": 32.0,
    "tier": 1
   },
   {
@@ -20427,7 +20427,7 @@
    "turnedPro": 1938,
    "majors": 1,
    "pgaWins": 5,
-   "fame": 156.8,
+   "fame": 151.5,
    "tier": 1
   },
   {
@@ -20467,7 +20467,7 @@
    "turnedPro": 1985,
    "majors": 0,
    "pgaWins": 6,
-   "fame": 34.2,
+   "fame": 33.0,
    "tier": 1
   },
   {
@@ -20567,7 +20567,7 @@
    "turnedPro": 1973,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 23.8,
+   "fame": 23.0,
    "tier": 1
   },
   {
@@ -20697,7 +20697,7 @@
    "turnedPro": 2007,
    "majors": 4,
    "pgaWins": 27,
-   "fame": 163.9,
+   "fame": 142.5,
    "tier": 1
   },
   {
@@ -20707,7 +20707,7 @@
    "turnedPro": 1998,
    "majors": 0,
    "pgaWins": 6,
-   "fame": 39.8,
+   "fame": 38.5,
    "tier": 1
   },
   {
@@ -20827,7 +20827,7 @@
    "turnedPro": 2011,
    "majors": 0,
    "pgaWins": 6,
-   "fame": 33.6,
+   "fame": 32.5,
    "tier": 1
   },
   {
@@ -20917,7 +20917,7 @@
    "turnedPro": 2005,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 23.3,
+   "fame": 22.5,
    "tier": 1
   },
   {
@@ -20927,7 +20927,7 @@
    "turnedPro": 2000,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 22.3,
+   "fame": 21.5,
    "tier": 1
   },
   {
@@ -21167,7 +21167,7 @@
    "turnedPro": 2017,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 27.9,
+   "fame": 27.0,
    "tier": 1
   },
   {
@@ -21227,7 +21227,7 @@
    "turnedPro": 1934,
    "majors": 7,
    "pgaWins": 82,
-   "fame": 497.6,
+   "fame": 423.5,
    "tier": 1
   },
   {
@@ -21277,7 +21277,7 @@
    "turnedPro": 1933,
    "majors": 0,
    "pgaWins": 6,
-   "fame": 27.4,
+   "fame": 26.5,
    "tier": 1
   },
   {
@@ -21337,7 +21337,7 @@
    "turnedPro": 1977,
    "majors": 2,
    "pgaWins": 6,
-   "fame": 75.6,
+   "fame": 73.0,
    "tier": 1
   },
   {
@@ -21507,7 +21507,7 @@
    "turnedPro": 1979,
    "majors": 0,
    "pgaWins": 11,
-   "fame": 54.5,
+   "fame": 49.5,
    "tier": 1
   },
   {
@@ -21567,7 +21567,7 @@
    "turnedPro": 2001,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 19.1,
+   "fame": 18.5,
    "tier": 1
   },
   {
@@ -21587,7 +21587,7 @@
    "turnedPro": 1977,
    "majors": 1,
    "pgaWins": 7,
-   "fame": 50.7,
+   "fame": 49.0,
    "tier": 1
   },
   {
@@ -21627,7 +21627,7 @@
    "turnedPro": 1986,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 26.9,
+   "fame": 26.0,
    "tier": 1
   },
   {
@@ -21647,7 +21647,7 @@
    "turnedPro": 2018,
    "majors": 2,
    "pgaWins": 12,
-   "fame": 106.2,
+   "fame": 96.5,
    "tier": 1
   },
   {
@@ -21687,7 +21687,7 @@
    "turnedPro": 1999,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 21.2,
+   "fame": 20.5,
    "tier": 1
   },
   {
@@ -21807,7 +21807,7 @@
    "turnedPro": 2016,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 23.3,
+   "fame": 22.5,
    "tier": 1
   },
   {
@@ -21817,7 +21817,7 @@
    "turnedPro": 1999,
    "majors": 1,
    "pgaWins": 11,
-   "fame": 55.6,
+   "fame": 50.5,
    "tier": 1
   },
   {
@@ -21827,7 +21827,7 @@
    "turnedPro": 1999,
    "majors": 1,
    "pgaWins": 11,
-   "fame": 103.4,
+   "fame": 94.0,
    "tier": 1
   },
   {
@@ -21837,7 +21837,7 @@
    "turnedPro": 1974,
    "majors": 5,
    "pgaWins": 9,
-   "fame": 174.9,
+   "fame": 169.0,
    "tier": 1
   },
   {
@@ -22557,7 +22557,7 @@
    "turnedPro": 1987,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 32.1,
+   "fame": 31.0,
    "tier": 1
   },
   {
@@ -22627,7 +22627,7 @@
    "turnedPro": 1985,
    "majors": 1,
    "pgaWins": 10,
-   "fame": 61.6,
+   "fame": 59.5,
    "tier": 1
   },
   {
@@ -22637,7 +22637,7 @@
    "turnedPro": 1990,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 23.3,
+   "fame": 22.5,
    "tier": 1
   },
   {
@@ -22657,7 +22657,7 @@
    "turnedPro": 1981,
    "majors": 1,
    "pgaWins": 8,
-   "fame": 49.7,
+   "fame": 48.0,
    "tier": 1
   },
   {
@@ -22707,7 +22707,7 @@
    "turnedPro": 1983,
    "majors": 0,
    "pgaWins": 6,
-   "fame": 24.8,
+   "fame": 24.0,
    "tier": 1
   },
   {
@@ -22867,7 +22867,7 @@
    "turnedPro": 1995,
    "majors": 1,
    "pgaWins": 8,
-   "fame": 68.3,
+   "fame": 66.0,
    "tier": 1
   },
   {
@@ -23227,7 +23227,7 @@
    "turnedPro": 1939,
    "majors": 0,
    "pgaWins": 8,
-   "fame": 33.6,
+   "fame": 32.5,
    "tier": 1
   },
   {
@@ -23497,7 +23497,7 @@
    "turnedPro": 1996,
    "majors": 15,
    "pgaWins": 82,
-   "fame": 548.7,
+   "fame": 467.0,
    "tier": 1
   },
   {
@@ -23537,7 +23537,7 @@
    "turnedPro": 1993,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 19.7,
+   "fame": 19.0,
    "tier": 1
   },
   {
@@ -23757,7 +23757,7 @@
    "turnedPro": 2018,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 26.4,
+   "fame": 25.5,
    "tier": 1
   },
   {
@@ -23767,7 +23767,7 @@
    "turnedPro": 1972,
    "majors": 1,
    "pgaWins": 19,
-   "fame": 111.7,
+   "fame": 101.5,
    "tier": 1
   },
   {
@@ -23777,7 +23777,7 @@
    "turnedPro": 1982,
    "majors": 1,
    "pgaWins": 5,
-   "fame": 60.5,
+   "fame": 58.5,
    "tier": 1
   },
   {
@@ -23807,7 +23807,7 @@
    "turnedPro": 1973,
    "majors": 0,
    "pgaWins": 5,
-   "fame": 24.3,
+   "fame": 23.5,
    "tier": 1
   },
   {
@@ -23817,7 +23817,7 @@
    "turnedPro": 1962,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 18.6,
+   "fame": 18.0,
    "tier": 1
   },
   {
@@ -23847,7 +23847,7 @@
    "turnedPro": 1971,
    "majors": 8,
    "pgaWins": 39,
-   "fame": 307.0,
+   "fame": 267.0,
    "tier": 1
   },
   {
@@ -23857,7 +23857,7 @@
    "turnedPro": 1964,
    "majors": 1,
    "pgaWins": 16,
-   "fame": 91.3,
+   "fame": 83.0,
    "tier": 1
   },
   {
@@ -23907,7 +23907,7 @@
    "turnedPro": 1946,
    "majors": 1,
    "pgaWins": 15,
-   "fame": 83.6,
+   "fame": 76.0,
    "tier": 1
   },
   {
@@ -23947,7 +23947,7 @@
    "turnedPro": 1956,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 21.2,
+   "fame": 20.5,
    "tier": 1
   },
   {
@@ -24017,7 +24017,7 @@
    "turnedPro": 2007,
    "majors": 0,
    "pgaWins": 6,
-   "fame": 30.5,
+   "fame": 29.5,
    "tier": 1
   },
   {
@@ -24037,7 +24037,7 @@
    "turnedPro": 1962,
    "majors": 2,
    "pgaWins": 4,
-   "fame": 61.6,
+   "fame": 59.5,
    "tier": 1
   },
   {
@@ -24057,7 +24057,7 @@
    "turnedPro": 1955,
    "majors": 1,
    "pgaWins": 11,
-   "fame": 69.3,
+   "fame": 63.0,
    "tier": 1
   },
   {
@@ -24067,7 +24067,7 @@
    "turnedPro": 1929,
    "majors": 1,
    "pgaWins": 8,
-   "fame": 48.6,
+   "fame": 47.0,
    "tier": 1
   },
   {
@@ -24487,7 +24487,7 @@
    "turnedPro": 1932,
    "majors": 1,
    "pgaWins": 10,
-   "fame": 54.3,
+   "fame": 52.5,
    "tier": 1
   },
   {
@@ -24577,7 +24577,7 @@
    "turnedPro": 1982,
    "majors": 3,
    "pgaWins": 34,
-   "fame": 178.2,
+   "fame": 155.0,
    "tier": 1
   },
   {
@@ -24587,7 +24587,7 @@
    "turnedPro": 2019,
    "majors": 0,
    "pgaWins": 6,
-   "fame": 21.7,
+   "fame": 21.0,
    "tier": 1
   },
   {
@@ -24757,7 +24757,7 @@
    "turnedPro": 1973,
    "majors": 0,
    "pgaWins": 12,
-   "fame": 52.8,
+   "fame": 48.0,
    "tier": 1
   },
   {
@@ -24797,7 +24797,7 @@
    "turnedPro": 2008,
    "majors": 1,
    "pgaWins": 7,
-   "fame": 49.2,
+   "fame": 47.5,
    "tier": 1
   },
   {
@@ -24977,7 +24977,7 @@
    "turnedPro": 1986,
    "majors": 0,
    "pgaWins": 4,
-   "fame": 22.3,
+   "fame": 21.5,
    "tier": 1
   },
   {
@@ -25017,7 +25017,7 @@
    "turnedPro": 2015,
    "majors": 2,
    "pgaWins": 8,
-   "fame": 76.1,
+   "fame": 73.5,
    "tier": 1
   },
   {
@@ -25257,7 +25257,7 @@
    "turnedPro": 1998,
    "majors": 2,
    "pgaWins": 12,
-   "fame": 105.6,
+   "fame": 96.0,
    "tier": 1
   },
   {
@@ -25425,23 +25425,202 @@
   "United Kingdom": [
    "Ireland"
   ],
-  "Spain": [
-   "France",
-   "Morocco",
-   "Portugal"
+  "Czechia": [
+   "Austria",
+   "Germany",
+   "Slovakia"
+  ],
+  "England": [
+   "Ireland",
+   "Northern Ireland",
+   "Scotland",
+   "Wales"
+  ],
+  "Austria": [
+   "Czechia",
+   "Czechoslovakia",
+   "Germany",
+   "Hungary",
+   "Italy",
+   "Slovakia",
+   "Slovenia",
+   "Switzerland"
   ],
   "Hungary": [
    "Austria",
    "Slovakia",
    "Slovenia"
   ],
+  "Norway": [
+   "Finland",
+   "Russia",
+   "Sweden"
+  ],
+  "Eswatini": [
+   "South Africa"
+  ],
+  "Canada": [
+   "USA"
+  ],
+  "Chile": [
+   "Argentina"
+  ],
+  "Colombia": [
+   "Brazil",
+   "Ecuador"
+  ],
+  "Paraguay": [
+   "Argentina",
+   "Brazil"
+  ],
+  "India": [
+   "Bangladesh",
+   "China",
+   "Myanmar"
+  ],
+  "Finland": [
+   "Norway",
+   "Russia",
+   "Sweden"
+  ],
+  "Indonesia": [
+   "Malaysia"
+  ],
+  "Northern Ireland": [
+   "England",
+   "Ireland",
+   "Scotland",
+   "Wales"
+  ],
   "Morocco": [
    "Spain"
+  ],
+  "France": [
+   "Belgium",
+   "Germany",
+   "Italy",
+   "Spain",
+   "Switzerland"
+  ],
+  "Namibia": [
+   "South Africa"
   ],
   "South Africa": [
    "Eswatini",
    "Namibia",
    "Zimbabwe"
+  ],
+  "Sweden": [
+   "Finland",
+   "Norway"
+  ],
+  "Zimbabwe": [
+   "South Africa"
+  ],
+  "Ecuador": [
+   "Colombia"
+  ],
+  "Uruguay": [
+   "Argentina",
+   "Brazil"
+  ],
+  "Slovenia": [
+   "Austria",
+   "Hungary",
+   "Italy"
+  ],
+  "Italy": [
+   "Austria",
+   "France",
+   "Slovenia",
+   "Switzerland"
+  ],
+  "Spain": [
+   "France",
+   "Morocco",
+   "Portugal"
+  ],
+  "Malaysia": [
+   "Indonesia",
+   "Thailand"
+  ],
+  "Czechoslovakia": [
+   "Austria",
+   "Germany",
+   "Slovakia"
+  ],
+  "Slovakia": [
+   "Austria",
+   "Czechia",
+   "Czechoslovakia",
+   "Hungary"
+  ],
+  "Belgium": [
+   "France",
+   "Germany",
+   "Netherlands"
+  ],
+  "Scotland": [
+   "England",
+   "Ireland",
+   "Northern Ireland",
+   "Wales"
+  ],
+  "Bangladesh": [
+   "India",
+   "Myanmar"
+  ],
+  "Portugal": [
+   "Spain"
+  ],
+  "Brazil": [
+   "Argentina",
+   "Colombia",
+   "Paraguay",
+   "Uruguay"
+  ],
+  "Denmark": [
+   "Germany"
+  ],
+  "Argentina": [
+   "Brazil",
+   "Chile",
+   "Paraguay",
+   "Uruguay"
+  ],
+  "Mexico": [
+   "USA"
+  ],
+  "USA": [
+   "Canada",
+   "Mexico"
+  ],
+  "Germany": [
+   "Austria",
+   "Belgium",
+   "Czechia",
+   "Czechoslovakia",
+   "Denmark",
+   "France",
+   "Netherlands",
+   "Switzerland"
+  ],
+  "China": [
+   "Hong Kong",
+   "India",
+   "Myanmar",
+   "Russia"
+  ],
+  "Netherlands": [
+   "Belgium",
+   "Germany"
+  ],
+  "Ireland": [
+   "England",
+   "Northern Ireland",
+   "Scotland",
+   "United Kingdom",
+   "Wales"
   ],
   "Switzerland": [
    "Austria",
@@ -25455,267 +25634,88 @@
    "India",
    "Thailand"
   ],
-  "Ecuador": [
-   "Colombia"
+  "Thailand": [
+   "Malaysia",
+   "Myanmar"
   ],
-  "Northern Ireland": [
-   "England",
-   "Ireland",
-   "Scotland",
-   "Wales"
-  ],
-  "Scotland": [
-   "England",
-   "Ireland",
-   "Northern Ireland",
-   "Wales"
-  ],
-  "Belgium": [
-   "France",
-   "Germany",
-   "Netherlands"
-  ],
-  "Finland": [
-   "Norway",
-   "Russia",
-   "Sweden"
-  ],
-  "Malaysia": [
-   "Indonesia",
-   "Thailand"
-  ],
-  "Chile": [
-   "Argentina"
-  ],
-  "Germany": [
-   "Austria",
-   "Belgium",
-   "Czechia",
-   "Czechoslovakia",
-   "Denmark",
-   "France",
-   "Netherlands",
-   "Switzerland"
-  ],
-  "Colombia": [
-   "Brazil",
-   "Ecuador"
-  ],
-  "Uruguay": [
-   "Argentina",
-   "Brazil"
-  ],
-  "Czechia": [
-   "Austria",
-   "Germany",
-   "Slovakia"
-  ],
-  "Indonesia": [
-   "Malaysia"
-  ],
-  "Eswatini": [
-   "South Africa"
-  ],
-  "Canada": [
-   "USA"
-  ],
-  "Austria": [
-   "Czechia",
-   "Czechoslovakia",
-   "Germany",
-   "Hungary",
-   "Italy",
-   "Slovakia",
-   "Slovenia",
-   "Switzerland"
-  ],
-  "England": [
-   "Ireland",
-   "Northern Ireland",
-   "Scotland",
-   "Wales"
-  ],
-  "Italy": [
-   "Austria",
-   "France",
-   "Slovenia",
-   "Switzerland"
-  ],
-  "France": [
-   "Belgium",
-   "Germany",
-   "Italy",
-   "Spain",
-   "Switzerland"
-  ],
-  "Denmark": [
-   "Germany"
-  ],
-  "Sweden": [
-   "Finland",
-   "Norway"
-  ],
-  "China": [
-   "Hong Kong",
-   "India",
-   "Myanmar",
-   "Russia"
+  "Hong Kong": [
+   "China"
   ],
   "Russia": [
    "China",
    "Finland",
    "Norway"
   ],
-  "Mexico": [
-   "USA"
-  ],
-  "Namibia": [
-   "South Africa"
-  ],
-  "Norway": [
-   "Finland",
-   "Russia",
-   "Sweden"
-  ],
-  "Ireland": [
-   "England",
-   "Northern Ireland",
-   "Scotland",
-   "United Kingdom",
-   "Wales"
-  ],
-  "Hong Kong": [
-   "China"
-  ],
-  "Paraguay": [
-   "Argentina",
-   "Brazil"
-  ],
-  "Slovenia": [
-   "Austria",
-   "Hungary",
-   "Italy"
-  ],
-  "Slovakia": [
-   "Austria",
-   "Czechia",
-   "Czechoslovakia",
-   "Hungary"
-  ],
-  "Czechoslovakia": [
-   "Austria",
-   "Germany",
-   "Slovakia"
-  ],
-  "Portugal": [
-   "Spain"
-  ],
-  "Brazil": [
-   "Argentina",
-   "Colombia",
-   "Paraguay",
-   "Uruguay"
-  ],
-  "Thailand": [
-   "Malaysia",
-   "Myanmar"
-  ],
-  "Netherlands": [
-   "Belgium",
-   "Germany"
-  ],
-  "Zimbabwe": [
-   "South Africa"
-  ],
-  "India": [
-   "Bangladesh",
-   "China",
-   "Myanmar"
-  ],
-  "USA": [
-   "Canada",
-   "Mexico"
-  ],
-  "Argentina": [
-   "Brazil",
-   "Chile",
-   "Paraguay",
-   "Uruguay"
-  ],
   "Wales": [
    "England",
    "Ireland",
    "Northern Ireland",
    "Scotland"
-  ],
-  "Bangladesh": [
-   "India",
-   "Myanmar"
   ]
  },
  "continents": {
   "United Kingdom": "EU",
-  "Spain": "EU",
-  "Fiji": "OC",
-  "Hungary": "EU",
-  "Morocco": "AF",
-  "Sri Lanka": "AS",
-  "South Africa": "AF",
-  "Taiwan": "AS",
-  "Switzerland": "EU",
-  "Myanmar": "AS",
-  "Ecuador": "SA",
-  "Northern Ireland": "EU",
-  "Scotland": "EU",
-  "Belgium": "EU",
-  "Finland": "EU",
-  "Malaysia": "AS",
-  "Chile": "SA",
-  "Iceland": "EU",
-  "Singapore": "AS",
-  "Germany": "EU",
-  "Japan": "AS",
-  "Isle of Man": "EU",
-  "Colombia": "SA",
-  "Uruguay": "SA",
   "Czechia": "EU",
-  "Philippines": "AS",
-  "Indonesia": "AS",
+  "England": "EU",
+  "Austria": "EU",
+  "Taiwan": "AS",
+  "New Zealand": "OC",
+  "Hungary": "EU",
+  "Norway": "EU",
+  "Uganda": "AF",
   "Eswatini": "AF",
   "Canada": "NA",
-  "Austria": "EU",
-  "England": "EU",
-  "Italy": "EU",
-  "France": "EU",
-  "Denmark": "EU",
-  "Sweden": "EU",
-  "China": "AS",
-  "Puerto Rico": "NA",
-  "Russia": "EU",
-  "Mexico": "NA",
-  "Uganda": "AF",
-  "Namibia": "AF",
-  "Norway": "EU",
-  "Ireland": "EU",
-  "Hong Kong": "AS",
+  "Chile": "SA",
+  "Colombia": "SA",
   "Paraguay": "SA",
-  "Costa Rica": "NA",
+  "Iceland": "EU",
+  "India": "AS",
+  "Finland": "EU",
+  "Indonesia": "AS",
+  "Fiji": "OC",
+  "Philippines": "AS",
+  "Northern Ireland": "EU",
+  "Morocco": "AF",
+  "France": "EU",
+  "Namibia": "AF",
+  "South Africa": "AF",
+  "Sweden": "EU",
+  "Zimbabwe": "AF",
+  "Ecuador": "SA",
+  "Uruguay": "SA",
   "Slovenia": "EU",
-  "Slovakia": "EU",
+  "Italy": "EU",
+  "Japan": "AS",
+  "Spain": "EU",
+  "Malaysia": "AS",
   "Czechoslovakia": "EU",
+  "Puerto Rico": "NA",
+  "Slovakia": "EU",
+  "Belgium": "EU",
+  "Scotland": "EU",
+  "Bangladesh": "AS",
   "Portugal": "EU",
   "Brazil": "SA",
-  "Thailand": "AS",
-  "Israel": "AS",
-  "Netherlands": "EU",
-  "New Zealand": "OC",
-  "Zimbabwe": "AF",
-  "South Korea": "AS",
-  "Australia": "OC",
-  "India": "AS",
-  "USA": "NA",
+  "Isle of Man": "EU",
+  "Sri Lanka": "AS",
+  "Denmark": "EU",
   "Argentina": "SA",
-  "Wales": "EU",
-  "Bangladesh": "AS"
+  "Mexico": "NA",
+  "USA": "NA",
+  "Germany": "EU",
+  "China": "AS",
+  "Netherlands": "EU",
+  "Ireland": "EU",
+  "Australia": "OC",
+  "Singapore": "AS",
+  "Switzerland": "EU",
+  "Myanmar": "AS",
+  "Thailand": "AS",
+  "Hong Kong": "AS",
+  "South Korea": "AS",
+  "Israel": "AS",
+  "Russia": "EU",
+  "Costa Rica": "NA",
+  "Wales": "EU"
  }
 }

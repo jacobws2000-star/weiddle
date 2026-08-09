@@ -83,6 +83,32 @@ function poolFor(m){
 }
 function maxAttempts(){ return TIERS[mode].guesses; }
 
+// ---------- target selection ----------
+// A golfer's chance of being the mystery target ramps with their PGA Tour wins:
+// more wins => picked more often. This is a pure selection weight, entirely
+// separate from the fame/tier ranking. Bands are thresholds (one weight each).
+function pgaWeight(pga){
+  pga = pga || 0;
+  if (pga >= 51) return 1.175;   // 51+   wins -> +17.5%
+  if (pga >= 21) return 1.15;    // 21-50 wins -> +15%
+  if (pga >= 11) return 1.10;    // 11-20 wins -> +10%
+  if (pga >= 4)  return 1.035;   // 4-10  wins -> +3.5%
+  return 1.0;                    // 0-3   wins -> no boost
+}
+// Weighted pick from `pool` using rng() (a function returning [0,1)). Used for
+// both the seeded daily and the Math.random endless draws, so both honor the
+// PGA-win boost identically.
+function pickWeighted(pool, rng){
+  let total = 0;
+  for (const g of pool) total += pgaWeight(g.pgaWins);
+  let r = rng() * total;
+  for (const g of pool){
+    r -= pgaWeight(g.pgaWins);
+    if (r < 0) return g;
+  }
+  return pool[pool.length - 1];  // float-rounding fallback
+}
+
 // ---------- boot ----------
 async function boot(){
   const res = await fetch("../golfers.json", { cache: "no-cache" });
@@ -204,7 +230,7 @@ function showGiveUp(on){ el("giveup-btn").classList.toggle("hidden", !on); }
 
 function newGame(){
   const pool = poolFor(mode);
-  target = pool[Math.floor(Math.random() * pool.length)];
+  target = pickWeighted(pool, Math.random);
   resetBoard();
   el("guess-input").disabled = false;
   el("guess-input").focus();
@@ -215,7 +241,7 @@ function newGame(){
 function startDaily(){
   const pool = poolFor("daily").slice().sort((a, b) => a.name < b.name ? -1 : 1); // stable order
   const rng = mulberry32(hashStr(dailyKey() + "-puttle"));
-  target = pool[Math.floor(rng() * pool.length)];
+  target = pickWeighted(pool, rng);
   resetBoard();
 
   const rec = getDailyRecord();
