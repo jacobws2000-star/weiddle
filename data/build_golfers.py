@@ -49,6 +49,7 @@ from golfers_seed import GOLFERS
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT_PATH = os.path.join(HERE, "..", "public", "golfers.json")
 STATS_PATH = os.path.join(HERE, ".cache_golf", "stats.json")
+GENDER_PATH = os.path.join(HERE, ".cache_golf", "gender.json")
 
 # Target tier sizes (cumulative pools). Rank cutoffs, so sizes are guaranteed
 # regardless of how lumpy the fame distribution is.
@@ -108,16 +109,33 @@ def load_bulk():
     return json.load(open(STATS_PATH))
 
 
+def load_genders():
+    """qid -> "male"/"female"/"other" from golf_gender.py; {} if not built yet."""
+    if not os.path.exists(GENDER_PATH):
+        print(f"[warn] {GENDER_PATH} missing — run golf_gender.py to drop women's "
+              f"golfers (building with everyone for now)", file=sys.stderr)
+        return {}
+    return json.load(open(GENDER_PATH))
+
+
 def playable_year(y):
     return isinstance(y, int) and 1900 <= y <= 2026
 
 
 def build(report=False):
     bulk = load_bulk()
+    genders = load_genders()
     by_name = {}  # normalized name -> record
+    dropped_women = 0
 
     # 1) Bulk pool first (lower priority; seed overwrites below).
     for r in bulk:
+        # Puttle is a men's-golf game; the gender-neutral infobox lets women in,
+        # so drop anyone Wikidata (P21, via golf_gender.py) marks female. Missing
+        # gender is treated as not-female so a man with sparse Wikidata survives.
+        if genders.get(r.get("qid")) == "female":
+            dropped_women += 1
+            continue
         y = r.get("turnedPro")
         if not playable_year(y):
             continue  # keep the Turned Pro column honest
@@ -222,7 +240,8 @@ def build(report=False):
     print(f"[done] {len(out_golfers)} golfers -> {OUT_PATH} "
           f"(Normal {sum(1 for g in out_golfers if g['tier']==1)}, "
           f"Hard {sum(1 for g in out_golfers if g['tier']<=2)}, "
-          f"Extreme {len(out_golfers)}; {len(borders)} countries with borders)",
+          f"Extreme {len(out_golfers)}; {len(borders)} countries with borders; "
+          f"dropped {dropped_women} women's golfers)",
           file=sys.stderr)
 
 

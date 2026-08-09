@@ -1,25 +1,15 @@
 {
  "meta": {
-  "generatedAt": "2026-08-09T03:05:03.556904+00:00",
-  "count": 2541,
+  "generatedAt": "2026-08-09T03:09:55.939153+00:00",
+  "count": 1942,
   "tiers": {
    "normal": 650,
    "hard": 1250,
-   "extreme": 2541
+   "extreme": 1942
   },
   "source": "curated seed (majors/wins/turned-pro) + Wikipedia infobox bulk pool"
  },
  "golfers": [
-  {
-   "name": "A Lim Kim",
-   "country": "South Korea",
-   "dob": "1995-10-04",
-   "turnedPro": 2013,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 18.0,
-   "tier": 1
-  },
   {
    "name": "A.S. Lehal",
    "country": "India",
@@ -98,7 +88,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Adam Gee",
@@ -118,7 +108,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Adam Hunter",
@@ -128,7 +118,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Adam Long",
@@ -138,7 +128,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Adam Mitchell",
@@ -178,7 +168,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Adilson da Silva",
@@ -188,16 +178,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 14.0,
-   "tier": 2
-  },
-  {
-   "name": "Aditi Ashok",
-   "country": "India",
-   "dob": "1998-03-29",
-   "turnedPro": 2016,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 26.5,
    "tier": 1
   },
   {
@@ -218,7 +198,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Adrien Saddier",
@@ -241,16 +221,6 @@
    "tier": 3
   },
   {
-   "name": "Agathe Sauzon",
-   "country": "France",
-   "dob": "1992-01-25",
-   "turnedPro": 2016,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.0,
-   "tier": 3
-  },
-  {
    "name": "Ahmad Bateman",
    "country": "USA",
    "dob": "1961-08-06",
@@ -261,46 +231,6 @@
    "tier": 3
   },
   {
-   "name": "Ahn Shi-hyun",
-   "country": "South Korea",
-   "dob": "1984-09-15",
-   "turnedPro": 2002,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Ahn Shin-ae",
-   "country": "South Korea",
-   "dob": "1990-12-18",
-   "turnedPro": 2008,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Ahn Sun-ju",
-   "country": "South Korea",
-   "dob": "1987-08-31",
-   "turnedPro": 2006,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 20.5,
-   "tier": 1
-  },
-  {
-   "name": "Ai Miyazato",
-   "country": "Japan",
-   "dob": "1985-06-19",
-   "turnedPro": 2004,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 24.5,
-   "tier": 1
-  },
-  {
    "name": "Airil Rizman",
    "country": "Malaysia",
    "dob": "1978-04-22",
@@ -308,17 +238,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Akiko Fukushima",
-   "country": "Japan",
-   "dob": "1973-06-29",
-   "turnedPro": 1992,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 17.0,
-   "tier": 1
+   "tier": 2
   },
   {
    "name": "Akshay Bhatia",
@@ -388,7 +308,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Alastair Forsyth",
@@ -401,16 +321,6 @@
    "tier": 2
   },
   {
-   "name": "Albane Valenzuela",
-   "country": "Switzerland",
-   "dob": "1997-12-17",
-   "turnedPro": 2019,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
-  },
-  {
    "name": "Aldrich Potgieter",
    "country": "South Africa",
    "dob": "2004-09-13",
@@ -418,17 +328,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Alejandra Llaneza",
-   "country": "Mexico",
-   "dob": "1988-05-31",
-   "turnedPro": 2012,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Alejandro Cañizares",
@@ -438,7 +338,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Alejandro Tosti",
@@ -451,26 +351,6 @@
    "tier": 3
   },
   {
-   "name": "Alena Sharp",
-   "country": "Canada",
-   "dob": "1981-03-07",
-   "turnedPro": 2003,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 9.5,
-   "tier": 2
-  },
-  {
-   "name": "Alessandra Fanali",
-   "country": "Italy",
-   "dob": "1999-07-30",
-   "turnedPro": 2022,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
    "name": "Alessandro Tadini",
    "country": "Italy",
    "dob": "1971-01-30",
@@ -479,16 +359,6 @@
    "pgaWins": 0,
    "fame": 7.5,
    "tier": 2
-  },
-  {
-   "name": "Alessia Nobilio",
-   "country": "Italy",
-   "dob": "2001-09-07",
-   "turnedPro": 2024,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
   },
   {
    "name": "Alex Čejka",
@@ -508,7 +378,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Alexander Knappe",
@@ -518,7 +388,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Alexander Norén",
@@ -528,7 +398,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Alexandre Kaleka",
@@ -558,36 +428,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.0,
-   "tier": 2
-  },
-  {
-   "name": "Alice Miller",
-   "country": "USA",
-   "dob": "1956-05-15",
-   "turnedPro": 1978,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 19.5,
-   "tier": 1
-  },
-  {
-   "name": "Alison Lee",
-   "country": "USA",
-   "dob": "1995-02-26",
-   "turnedPro": 2014,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Alison Nicholas",
-   "country": "United Kingdom",
-   "dob": "1962-03-06",
-   "turnedPro": 1984,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 32.0,
    "tier": 1
   },
   {
@@ -608,7 +448,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Allen John",
@@ -628,27 +468,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 5.5,
-   "tier": 3
-  },
-  {
-   "name": "Amaia Latorre",
-   "country": "Spain",
-   "dob": "1998-06-04",
-   "turnedPro": 2022,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Amalie Leth-Nissen",
-   "country": "Denmark",
-   "dob": "2004-09-15",
-   "turnedPro": 2023,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Aman Raj",
@@ -661,76 +481,6 @@
    "tier": 3
   },
   {
-   "name": "Amanda Blumenherst",
-   "country": "USA",
-   "dob": "1986-11-04",
-   "turnedPro": 2009,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.0,
-   "tier": 3
-  },
-  {
-   "name": "Amelia Lewis",
-   "country": "USA",
-   "dob": "1991-02-23",
-   "turnedPro": 2010,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Amiyu Ozeki",
-   "country": "Japan",
-   "dob": "2003-06-16",
-   "turnedPro": 2022,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
-   "name": "Amy Alcott",
-   "country": "USA",
-   "dob": "1956-02-22",
-   "turnedPro": 1975,
-   "majors": 5,
-   "pgaWins": 0,
-   "fame": 88.0,
-   "tier": 1
-  },
-  {
-   "name": "Amy Hung",
-   "country": "China",
-   "dob": "1980-03-07",
-   "turnedPro": 2003,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Amy Olson",
-   "country": "USA",
-   "dob": "1992-07-10",
-   "turnedPro": 2013,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
-   "name": "Amy Yang",
-   "country": "South Korea",
-   "dob": "1989-07-28",
-   "turnedPro": 2006,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 25.5,
-   "tier": 1
-  },
-  {
    "name": "An Byeong-hun",
    "country": "South Korea",
    "dob": "1991-09-17",
@@ -738,37 +488,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 11.5,
-   "tier": 2
-  },
-  {
-   "name": "Ana Dawson",
-   "country": "Isle of Man",
-   "dob": "2000-01-01",
-   "turnedPro": 2022,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.5,
-   "tier": 3
-  },
-  {
-   "name": "Ana Peláez",
-   "country": "Spain",
-   "dob": "1998-01-01",
-   "turnedPro": 2021,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Ana Sánchez",
-   "country": "Spain",
-   "dob": "1976-02-16",
-   "turnedPro": 1997,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
+   "tier": 1
   },
   {
    "name": "Anders Forsbrand",
@@ -778,7 +498,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Anders Hansen",
@@ -821,16 +541,6 @@
    "tier": 1
   },
   {
-   "name": "Andrea Lee",
-   "country": "USA",
-   "dob": "1998-08-15",
-   "turnedPro": 2019,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
    "name": "Andrea Pavan",
    "country": "Italy",
    "dob": "1989-04-27",
@@ -868,7 +578,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Andrew Chandler",
@@ -888,7 +598,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Andrew Dodt",
@@ -978,7 +688,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Andrew Novak",
@@ -988,7 +698,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Andrew Oldcorn",
@@ -1131,36 +841,6 @@
    "tier": 1
   },
   {
-   "name": "Angel Yin",
-   "country": "USA",
-   "dob": "1998-10-03",
-   "turnedPro": 2016,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
-  },
-  {
-   "name": "Angela Park",
-   "country": "USA",
-   "dob": "1988-08-25",
-   "turnedPro": 2006,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Angela Stanford",
-   "country": "USA",
-   "dob": "1977-11-28",
-   "turnedPro": 2000,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 23.5,
-   "tier": 1
-  },
-  {
    "name": "Angelo Que",
    "country": "Philippines",
    "dob": "1978-12-03",
@@ -1168,7 +848,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Anirban Lahiri",
@@ -1178,66 +858,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 22.0,
-   "tier": 1
-  },
-  {
-   "name": "Anja Monke",
-   "country": "Germany",
-   "dob": "1977-05-28",
-   "turnedPro": 2003,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.5,
-   "tier": 2
-  },
-  {
-   "name": "Anna Oxenstierna",
-   "country": "Sweden",
-   "dob": "1963-06-13",
-   "turnedPro": 1987,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
-  },
-  {
-   "name": "Anna Rawson",
-   "country": "Australia",
-   "dob": "1981-08-05",
-   "turnedPro": 2004,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Anne van Dam",
-   "country": "Netherlands",
-   "dob": "1995-10-02",
-   "turnedPro": 2015,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 8.5,
-   "tier": 2
-  },
-  {
-   "name": "Anne-Lise Caudal",
-   "country": "France",
-   "dob": "1984-06-26",
-   "turnedPro": 2006,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.0,
-   "tier": 2
-  },
-  {
-   "name": "Annika Sörenstam",
-   "country": "Sweden",
-   "dob": "1970-10-09",
-   "turnedPro": 1992,
-   "majors": 10,
-   "pgaWins": 0,
-   "fame": 211.5,
    "tier": 1
   },
   {
@@ -1258,7 +878,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Anthony Kim",
@@ -1318,7 +938,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Anton Haig",
@@ -1378,7 +998,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Anura Rohana",
@@ -1388,17 +1008,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
-  },
-  {
-   "name": "Aree Song",
-   "country": "South Korea",
-   "dob": "1986-05-01",
-   "turnedPro": 2003,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Arie Irawan",
@@ -1408,7 +1018,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Ariel Cañete",
@@ -1419,16 +1029,6 @@
    "pgaWins": 0,
    "fame": 5.0,
    "tier": 3
-  },
-  {
-   "name": "Ariya Jutanugarn",
-   "country": "Thailand",
-   "dob": "1995-11-23",
-   "turnedPro": 2012,
-   "majors": 2,
-   "pgaWins": 0,
-   "fame": 42.5,
-   "tier": 1
   },
   {
    "name": "Arjun Atwal",
@@ -1511,16 +1111,6 @@
    "tier": 3
   },
   {
-   "name": "Ashleigh Simon",
-   "country": "South Africa",
-   "dob": "1989-05-11",
-   "turnedPro": 2007,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 32.0,
-   "tier": 1
-  },
-  {
    "name": "Ashley Chesters",
    "country": "United Kingdom",
    "dob": "1989-08-25",
@@ -1541,16 +1131,6 @@
    "tier": 3
   },
   {
-   "name": "Ashley Lau",
-   "country": "Malaysia",
-   "dob": "2000-03-18",
-   "turnedPro": 2022,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
    "name": "Ashley Roestoff",
    "country": "South Africa",
    "dob": "1963-08-27",
@@ -1568,7 +1148,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Atiwit Janewattananond",
@@ -1579,26 +1159,6 @@
    "pgaWins": 0,
    "fame": 9.5,
    "tier": 2
-  },
-  {
-   "name": "Atthaya Thitikul",
-   "country": "Thailand",
-   "dob": "2003-02-20",
-   "turnedPro": 2020,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 18.0,
-   "tier": 1
-  },
-  {
-   "name": "Aubrey McCormick",
-   "country": "USA",
-   "dob": "1982-06-24",
-   "turnedPro": 2007,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
   },
   {
    "name": "Austin Connelly",
@@ -1618,7 +1178,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Austin Eckroat",
@@ -1631,56 +1191,6 @@
    "tier": 2
   },
   {
-   "name": "Austin Ernst",
-   "country": "USA",
-   "dob": "1992-01-31",
-   "turnedPro": 2012,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
-  },
-  {
-   "name": "Avani Prashanth",
-   "country": "India",
-   "dob": "2006-01-01",
-   "turnedPro": 2024,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
-  },
-  {
-   "name": "Ayaka Furue",
-   "country": "Japan",
-   "dob": "2000-05-27",
-   "turnedPro": 2019,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 23.0,
-   "tier": 1
-  },
-  {
-   "name": "Ayako Okamoto",
-   "country": "Japan",
-   "dob": "1951-04-02",
-   "turnedPro": 1975,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 38.0,
-   "tier": 1
-  },
-  {
-   "name": "Ayako Uehara",
-   "country": "Japan",
-   "dob": "1983-12-22",
-   "turnedPro": 2004,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
-  },
-  {
    "name": "Azuma Yano",
    "country": "Japan",
    "dob": "1977-07-06",
@@ -1688,17 +1198,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Babe Didrikson Zaharias",
-   "country": "USA",
-   "dob": "1911-06-26",
-   "turnedPro": 1947,
-   "majors": 10,
-   "pgaWins": 0,
-   "fame": 189.0,
-   "tier": 1
+   "tier": 2
   },
   {
    "name": "Bae Sang-moon",
@@ -1711,16 +1211,6 @@
    "tier": 1
   },
   {
-   "name": "Baek Kyu-jung",
-   "country": "South Korea",
-   "dob": "1995-10-15",
-   "turnedPro": 2012,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
-  },
-  {
    "name": "Baldovino Dassù",
    "country": "Italy",
    "dob": "1952-11-03",
@@ -1729,36 +1219,6 @@
    "pgaWins": 0,
    "fame": 9.0,
    "tier": 2
-  },
-  {
-   "name": "Barbara Barrow",
-   "country": "USA",
-   "dob": "1955-04-15",
-   "turnedPro": 1977,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
-   "name": "Barbara Helbig",
-   "country": "Germany",
-   "dob": "1958-06-14",
-   "turnedPro": 1975,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Barbara Romack",
-   "country": "USA",
-   "dob": "1932-11-16",
-   "turnedPro": 1958,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
   },
   {
    "name": "Barry Cheesman",
@@ -1778,7 +1238,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Barry Lane",
@@ -1801,60 +1261,10 @@
    "tier": 1
   },
   {
-   "name": "Beatriz Recari",
-   "country": "Spain",
-   "dob": "1987-04-21",
-   "turnedPro": 2005,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 9.0,
-   "tier": 2
-  },
-  {
    "name": "Beau Hossler",
    "country": "USA",
    "dob": "1995-03-16",
    "turnedPro": 2016,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
-   "name": "Becky Brewerton",
-   "country": "Wales",
-   "dob": "1982-10-20",
-   "turnedPro": 2003,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 9.0,
-   "tier": 2
-  },
-  {
-   "name": "Becky Iverson",
-   "country": "USA",
-   "dob": "1967-10-12",
-   "turnedPro": 1989,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
-   "name": "Becky Morgan",
-   "country": "Wales",
-   "dob": "1974-09-05",
-   "turnedPro": 2000,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Belén Mozo",
-   "country": "Spain",
-   "dob": "1988-09-25",
-   "turnedPro": 2010,
    "majors": 0,
    "pgaWins": 0,
    "fame": 2.0,
@@ -2078,7 +1488,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Bert Yancey",
@@ -2089,156 +1499,6 @@
    "pgaWins": 7,
    "fame": 28.0,
    "tier": 1
-  },
-  {
-   "name": "Beth Allen",
-   "country": "USA",
-   "dob": "1981-12-06",
-   "turnedPro": 2005,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Beth Bader",
-   "country": "USA",
-   "dob": "1973-08-30",
-   "turnedPro": 1997,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
-   "name": "Beth Bauer",
-   "country": "USA",
-   "dob": "1980-03-15",
-   "turnedPro": 2000,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
-   "name": "Beth Daniel",
-   "country": "USA",
-   "dob": "1956-10-14",
-   "turnedPro": 1978,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 41.5,
-   "tier": 1
-  },
-  {
-   "name": "Betsy Cullen",
-   "country": "USA",
-   "dob": "1938-08-14",
-   "turnedPro": 1962,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Betsy King",
-   "country": "USA",
-   "dob": "1955-08-13",
-   "turnedPro": 1977,
-   "majors": 6,
-   "pgaWins": 0,
-   "fame": 101.5,
-   "tier": 1
-  },
-  {
-   "name": "Betsy Rawls",
-   "country": "USA",
-   "dob": "1928-05-04",
-   "turnedPro": 1951,
-   "majors": 8,
-   "pgaWins": 0,
-   "fame": 132.0,
-   "tier": 1
-  },
-  {
-   "name": "Bettina Hauert",
-   "country": "Germany",
-   "dob": "1982-06-18",
-   "turnedPro": 2003,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 8.0,
-   "tier": 2
-  },
-  {
-   "name": "Betty Burfeindt",
-   "country": "USA",
-   "dob": "1945-07-20",
-   "turnedPro": 1969,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 19.0,
-   "tier": 1
-  },
-  {
-   "name": "Betty Hicks",
-   "country": "USA",
-   "dob": "1920-11-16",
-   "turnedPro": 1941,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
-  },
-  {
-   "name": "Betty Jameson",
-   "country": "USA",
-   "dob": "1919-05-09",
-   "turnedPro": 1945,
-   "majors": 3,
-   "pgaWins": 0,
-   "fame": 51.0,
-   "tier": 1
-  },
-  {
-   "name": "Beverley Davis",
-   "country": "USA",
-   "dob": "1957-01-01",
-   "turnedPro": 1980,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
-   "name": "Beverly Hanson",
-   "country": "USA",
-   "dob": "1924-12-05",
-   "turnedPro": 1951,
-   "majors": 3,
-   "pgaWins": 0,
-   "fame": 50.5,
-   "tier": 1
-  },
-  {
-   "name": "Beverly Klass",
-   "country": "USA",
-   "dob": "1956-11-08",
-   "turnedPro": 1965,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
-   "name": "Bianca Pagdanganan",
-   "country": "Philippines",
-   "dob": "1997-10-28",
-   "turnedPro": 2020,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
   },
   {
    "name": "Bill Britton",
@@ -2258,7 +1518,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Bill Glasson",
@@ -2308,7 +1568,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Bill Porter",
@@ -2318,7 +1578,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Bill Rogers",
@@ -2381,16 +1641,6 @@
    "tier": 1
   },
   {
-   "name": "Birdie Kim",
-   "country": "South Korea",
-   "dob": "1981-08-26",
-   "turnedPro": 2000,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 19.0,
-   "tier": 1
-  },
-  {
    "name": "Birgir Leifur Hafþórsson",
    "country": "Iceland",
    "dob": "1976-05-16",
@@ -2408,7 +1658,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Blaine McCallister",
@@ -2478,7 +1728,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Bob Burns",
@@ -2658,7 +1908,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Bob Tway",
@@ -2688,7 +1938,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Bobby Cole",
@@ -2698,7 +1948,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Bobby Gates",
@@ -2738,7 +1988,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Bobby Locke",
@@ -2778,7 +2028,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 11.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Bobby Wadkins",
@@ -2788,7 +2038,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Bobby Wyatt",
@@ -2798,16 +2048,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 1.0,
-   "tier": 3
-  },
-  {
-   "name": "Bonnie Lauer",
-   "country": "USA",
-   "dob": "1951-02-20",
-   "turnedPro": 1975,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
    "tier": 3
   },
   {
@@ -2828,7 +2068,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 11.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Borja Virto",
@@ -2938,7 +2178,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 11.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Bradley Hughes",
@@ -3048,7 +2288,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 14.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Brendan Steele",
@@ -3118,7 +2358,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Brett Ogle",
@@ -3198,7 +2438,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Brian Gaffney",
@@ -3248,7 +2488,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Brian Marchbank",
@@ -3288,67 +2528,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 12.5,
-   "tier": 2
-  },
-  {
-   "name": "Brittany Altomare",
-   "country": "USA",
-   "dob": "1990-11-19",
-   "turnedPro": 2013,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
-   "name": "Brittany Johnston",
-   "country": "USA",
-   "dob": "1986-01-06",
-   "turnedPro": 2008,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
-   "name": "Brittany Lang",
-   "country": "USA",
-   "dob": "1985-08-22",
-   "turnedPro": 2005,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 20.0,
    "tier": 1
-  },
-  {
-   "name": "Brittany Lincicome",
-   "country": "USA",
-   "dob": "1985-09-19",
-   "turnedPro": 2004,
-   "majors": 2,
-   "pgaWins": 0,
-   "fame": 35.0,
-   "tier": 1
-  },
-  {
-   "name": "Brooke Henderson",
-   "country": "Canada",
-   "dob": "1997-09-10",
-   "turnedPro": 2014,
-   "majors": 2,
-   "pgaWins": 0,
-   "fame": 42.0,
-   "tier": 1
-  },
-  {
-   "name": "Brooke Pancake",
-   "country": "USA",
-   "dob": "1990-06-06",
-   "turnedPro": 2012,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
   },
   {
    "name": "Brooks Koepka",
@@ -3398,7 +2578,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Bryce Easton",
@@ -3418,7 +2598,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Bryson DeChambeau",
@@ -3479,16 +2659,6 @@
    "pgaWins": 0,
    "fame": 2.5,
    "tier": 3
-  },
-  {
-   "name": "Budsabakorn Sukapan",
-   "country": "Thailand",
-   "dob": "1997-01-01",
-   "turnedPro": 2014,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 8.0,
-   "tier": 2
   },
   {
    "name": "Butch Baird",
@@ -3558,7 +2728,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 11.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Cameron Beckman",
@@ -3568,7 +2738,7 @@
    "majors": 0,
    "pgaWins": 3,
    "fame": 13.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Cameron Champ",
@@ -3578,7 +2748,7 @@
    "majors": 0,
    "pgaWins": 3,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Cameron Percy",
@@ -3608,27 +2778,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
-  },
-  {
-   "name": "Camilla Lennarth",
-   "country": "Sweden",
-   "dob": "1988-06-16",
-   "turnedPro": 2012,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
-  },
-  {
-   "name": "Camille Chevalier",
-   "country": "France",
-   "dob": "1993-12-19",
-   "turnedPro": 2017,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Camilo Villegas",
@@ -3639,26 +2789,6 @@
    "pgaWins": 5,
    "fame": 30.0,
    "tier": 1
-  },
-  {
-   "name": "Candie Kung",
-   "country": "USA",
-   "dob": "1981-08-08",
-   "turnedPro": 2001,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Carin Koch",
-   "country": "Sweden",
-   "dob": "1971-02-23",
-   "turnedPro": 1992,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 12.0,
-   "tier": 2
   },
   {
    "name": "Carl Mason",
@@ -3701,26 +2831,6 @@
    "tier": 2
   },
   {
-   "name": "Carla Bernat",
-   "country": "Spain",
-   "dob": "2004-01-01",
-   "turnedPro": 2025,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.5,
-   "tier": 3
-  },
-  {
-   "name": "Carla Tejedo Mulet",
-   "country": "Spain",
-   "dob": "2002-01-01",
-   "turnedPro": 2024,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.0,
-   "tier": 3
-  },
-  {
    "name": "Carlos Franco",
    "country": "Paraguay",
    "dob": "1965-05-24",
@@ -3738,7 +2848,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Carlos Pigem",
@@ -3761,106 +2871,6 @@
    "tier": 3
   },
   {
-   "name": "Carlota Ciganda",
-   "country": "Spain",
-   "dob": "1990-06-01",
-   "turnedPro": 2011,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 19.0,
-   "tier": 1
-  },
-  {
-   "name": "Carly Booth",
-   "country": "United Kingdom",
-   "dob": "1992-06-21",
-   "turnedPro": 2009,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.0,
-   "tier": 2
-  },
-  {
-   "name": "Carmen Alonso",
-   "country": "Spain",
-   "dob": "1984-01-01",
-   "turnedPro": 2004,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Carol Mann",
-   "country": "USA",
-   "dob": "1941-02-03",
-   "turnedPro": 1960,
-   "majors": 2,
-   "pgaWins": 0,
-   "fame": 52.0,
-   "tier": 1
-  },
-  {
-   "name": "Carole Jo Kabler",
-   "country": "USA",
-   "dob": "1938-06-13",
-   "turnedPro": 1970,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Carolina López-Chacarra",
-   "country": "Spain",
-   "dob": "2003-01-01",
-   "turnedPro": 2025,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.5,
-   "tier": 3
-  },
-  {
-   "name": "Caroline Afonso",
-   "country": "France",
-   "dob": "1985-02-20",
-   "turnedPro": 2007,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Caroline Hedwall",
-   "country": "Sweden",
-   "dob": "1989-05-13",
-   "turnedPro": 2010,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 14.0,
-   "tier": 2
-  },
-  {
-   "name": "Caroline Inglis",
-   "country": "USA",
-   "dob": "1994-03-02",
-   "turnedPro": 2016,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.5,
-   "tier": 3
-  },
-  {
-   "name": "Caroline Masson",
-   "country": "Germany",
-   "dob": "1989-05-14",
-   "turnedPro": 2009,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 11.0,
-   "tier": 2
-  },
-  {
    "name": "Cary Middlecoff",
    "country": "USA",
    "dob": "1921-01-06",
@@ -3869,16 +2879,6 @@
    "pgaWins": 39,
    "fame": 185.0,
    "tier": 1
-  },
-  {
-   "name": "Casey Grice",
-   "country": "USA",
-   "dob": "1991-10-16",
-   "turnedPro": 2013,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.0,
-   "tier": 3
   },
   {
    "name": "Casey Martin",
@@ -3898,106 +2898,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.0,
-   "tier": 3
-  },
-  {
-   "name": "Cassandra Kirkland",
-   "country": "France",
-   "dob": "1984-10-13",
-   "turnedPro": 2006,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Catherine Panton-Lewis",
-   "country": "United Kingdom",
-   "dob": "1955-06-14",
-   "turnedPro": 1978,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 10.0,
-   "tier": 2
-  },
-  {
-   "name": "Cathryn Bristow",
-   "country": "New Zealand",
-   "dob": "1984-11-14",
-   "turnedPro": 2009,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
-   "name": "Cathy Sherk",
-   "country": "Canada",
-   "dob": "1950-06-17",
-   "turnedPro": 1979,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
-   "name": "Catrin Nilsmark",
-   "country": "Sweden",
-   "dob": "1967-08-30",
-   "turnedPro": 1987,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 9.0,
-   "tier": 2
-  },
-  {
-   "name": "Catriona Matthew",
-   "country": "United Kingdom",
-   "dob": "1969-08-25",
-   "turnedPro": 1995,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 28.5,
-   "tier": 1
-  },
-  {
-   "name": "Cecilia Ekelundh",
-   "country": "Sweden",
-   "dob": "1978-02-19",
-   "turnedPro": 2000,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
-  },
-  {
-   "name": "Cecilie Finne-Ipsen",
-   "country": "Denmark",
-   "dob": "1998-03-14",
-   "turnedPro": 2023,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
-   "name": "Cecilie Lundgreen",
-   "country": "Norway",
-   "dob": "1973-02-06",
-   "turnedPro": 1998,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
-   "name": "Celeste Troche",
-   "country": "Paraguay",
-   "dob": "1981-02-13",
-   "turnedPro": 2003,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
    "tier": 3
   },
   {
@@ -4028,7 +2928,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Chan Kim",
@@ -4039,16 +2939,6 @@
    "pgaWins": 0,
    "fame": 8.0,
    "tier": 2
-  },
-  {
-   "name": "Chan Tsz Ching Tiffany",
-   "country": "Hong Kong",
-   "dob": "1993-09-12",
-   "turnedPro": 2017,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.0,
-   "tier": 3
   },
   {
    "name": "Chandler Harper",
@@ -4151,16 +3041,6 @@
    "tier": 1
   },
   {
-   "name": "Charley Hull",
-   "country": "United Kingdom",
-   "dob": "1996-03-20",
-   "turnedPro": 2013,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 18.5,
-   "tier": 1
-  },
-  {
    "name": "Charlie Bolling",
    "country": "USA",
    "dob": "1957-12-15",
@@ -4201,16 +3081,6 @@
    "tier": 2
   },
   {
-   "name": "Charlotta Sörenstam",
-   "country": "Sweden",
-   "dob": "1973-04-16",
-   "turnedPro": 1994,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
-  },
-  {
    "name": "Chase Parker",
    "country": "USA",
    "dob": "1991-04-03",
@@ -4241,16 +3111,6 @@
    "tier": 2
   },
   {
-   "name": "Chella Choi",
-   "country": "South Korea",
-   "dob": "1990-08-25",
-   "turnedPro": 2008,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
    "name": "Chen Tze-Ming",
    "country": "Taiwan",
    "dob": "1952-09-28",
@@ -4258,7 +3118,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 11.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Chen Tze-chung",
@@ -4268,7 +3128,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 14.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Chesson Hadley",
@@ -4278,16 +3138,6 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 10.0,
-   "tier": 2
-  },
-  {
-   "name": "Cheyenne Woods",
-   "country": "USA",
-   "dob": "1990-07-25",
-   "turnedPro": 2012,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 9.0,
    "tier": 2
   },
   {
@@ -4348,37 +3198,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
-  },
-  {
-   "name": "Chirapat Jao-Javanil",
-   "country": "Thailand",
-   "dob": "1993-02-14",
-   "turnedPro": 2014,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Chloé Leurquin",
-   "country": "Belgium",
-   "dob": "1990-08-09",
-   "turnedPro": 2013,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
-  },
-  {
-   "name": "Cho Jeong-min",
-   "country": "South Korea",
-   "dob": "1994-11-26",
-   "turnedPro": 2012,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Cho Min-gyu",
@@ -4398,16 +3218,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Choi Hye-jin",
-   "country": "South Korea",
-   "dob": "1999-08-23",
-   "turnedPro": 2017,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 10.5,
    "tier": 2
   },
   {
@@ -4419,16 +3229,6 @@
    "pgaWins": 0,
    "fame": 7.0,
    "tier": 2
-  },
-  {
-   "name": "Choi Na-yeon",
-   "country": "South Korea",
-   "dob": "1987-10-28",
-   "turnedPro": 2004,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 29.5,
-   "tier": 1
   },
   {
    "name": "Chris Anderson",
@@ -4498,7 +3298,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Chris Gane",
@@ -4548,7 +3348,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Chris Patton",
@@ -4641,26 +3441,6 @@
    "tier": 2
   },
   {
-   "name": "Christa Johnson",
-   "country": "USA",
-   "dob": "1958-04-25",
-   "turnedPro": 1980,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 22.5,
-   "tier": 1
-  },
-  {
-   "name": "Christel Boeljon",
-   "country": "Netherlands",
-   "dob": "1987-07-30",
-   "turnedPro": 2009,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.0,
-   "tier": 3
-  },
-  {
    "name": "Christiaan Basson",
    "country": "South Africa",
    "dob": "1982-04-30",
@@ -4701,36 +3481,6 @@
    "tier": 2
   },
   {
-   "name": "Christina Kim",
-   "country": "USA",
-   "dob": "1984-03-15",
-   "turnedPro": 2002,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 8.5,
-   "tier": 2
-  },
-  {
-   "name": "Christine Song",
-   "country": "USA",
-   "dob": "1991-06-14",
-   "turnedPro": 2009,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
-  },
-  {
-   "name": "Christine Wolf",
-   "country": "Austria",
-   "dob": "1989-05-03",
-   "turnedPro": 2012,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.0,
-   "tier": 2
-  },
-  {
    "name": "Christoffer Bring",
    "country": "Denmark",
    "dob": "1998-11-17",
@@ -4748,7 +3498,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Christy O'Connor Jr.",
@@ -4758,7 +3508,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 14.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Christy O'Connor Sr.",
@@ -4771,16 +3521,6 @@
    "tier": 1
   },
   {
-   "name": "Chua Tze Jean",
-   "country": "Malaysia",
-   "dob": "1987-08-29",
-   "turnedPro": 2009,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
    "name": "Chuck Courtney",
    "country": "USA",
    "dob": "1940-10-11",
@@ -4791,56 +3531,6 @@
    "tier": 2
   },
   {
-   "name": "Chun In-gee",
-   "country": "South Korea",
-   "dob": "1994-08-10",
-   "turnedPro": 2012,
-   "majors": 3,
-   "pgaWins": 0,
-   "fame": 52.5,
-   "tier": 1
-  },
-  {
-   "name": "Chung Il-mi",
-   "country": "South Korea",
-   "dob": "1972-01-15",
-   "turnedPro": 1995,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.5,
-   "tier": 2
-  },
-  {
-   "name": "Cindy Figg-Currier",
-   "country": "USA",
-   "dob": "1960-02-23",
-   "turnedPro": 1983,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
-  },
-  {
-   "name": "Cindy Hill",
-   "country": "USA",
-   "dob": "1948-02-12",
-   "turnedPro": 1979,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Cindy LaCrosse",
-   "country": "USA",
-   "dob": "1987-04-21",
-   "turnedPro": 2009,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
    "name": "Clarence Rose",
    "country": "USA",
    "dob": "1957-12-08",
@@ -4848,7 +3538,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Clark Dennis",
@@ -4858,16 +3548,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Clifford Ann Creed",
-   "country": "USA",
-   "dob": "1938-09-23",
-   "turnedPro": 1962,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 8.0,
    "tier": 2
   },
   {
@@ -4918,7 +3598,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Cody Gribble",
@@ -4928,7 +3608,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Colin Montgomerie",
@@ -4938,16 +3618,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 45.0,
-   "tier": 1
-  },
-  {
-   "name": "Colleen Walker",
-   "country": "USA",
-   "dob": "1956-08-16",
-   "turnedPro": 1982,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 22.0,
    "tier": 1
   },
   {
@@ -4981,16 +3651,6 @@
    "tier": 3
   },
   {
-   "name": "Connie Chen",
-   "country": "South Africa",
-   "dob": "1992-10-26",
-   "turnedPro": 2010,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
-   "tier": 3
-  },
-  {
    "name": "Conrad Shindler",
    "country": "USA",
    "dob": "1988-07-20",
@@ -5019,16 +3679,6 @@
    "pgaWins": 15,
    "fame": 82.0,
    "tier": 1
-  },
-  {
-   "name": "Corinne Dibnah",
-   "country": "Australia",
-   "dob": "1962-07-29",
-   "turnedPro": 1984,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 12.0,
-   "tier": 2
   },
   {
    "name": "Costantino Rocca",
@@ -5098,7 +3748,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Craig Parry",
@@ -5151,26 +3801,6 @@
    "tier": 1
   },
   {
-   "name": "Cristie Kerr",
-   "country": "USA",
-   "dob": "1977-10-12",
-   "turnedPro": 1996,
-   "majors": 2,
-   "pgaWins": 0,
-   "fame": 49.5,
-   "tier": 1
-  },
-  {
-   "name": "Csilla Rózsa",
-   "country": "Hungary",
-   "dob": "1997-01-14",
-   "turnedPro": 2014,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
    "name": "Curt Byrum",
    "country": "USA",
    "dob": "1958-12-28",
@@ -5199,36 +3829,6 @@
    "pgaWins": 17,
    "fame": 101.5,
    "tier": 1
-  },
-  {
-   "name": "Cydney Clanton",
-   "country": "USA",
-   "dob": "1989-07-18",
-   "turnedPro": 2011,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Céline Boutier",
-   "country": "France",
-   "dob": "1993-11-10",
-   "turnedPro": 2016,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 31.0,
-   "tier": 1
-  },
-  {
-   "name": "Céline Herbin",
-   "country": "France",
-   "dob": "1982-10-30",
-   "turnedPro": 2009,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
   },
   {
    "name": "César Monasterio",
@@ -5298,7 +3898,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Dale Douglass",
@@ -5318,16 +3918,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 14.5,
-   "tier": 1
-  },
-  {
-   "name": "Dale Reid",
-   "country": "United Kingdom",
-   "dob": "1959-03-20",
-   "turnedPro": 1979,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 16.0,
    "tier": 1
   },
   {
@@ -5378,7 +3968,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Danie van Tonder",
@@ -5408,7 +3998,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Daniel Chopra",
@@ -5491,56 +4081,6 @@
    "tier": 2
   },
   {
-   "name": "Daniela Darquea",
-   "country": "Ecuador",
-   "dob": "1995-07-26",
-   "turnedPro": 2016,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Daniela Holmqvist",
-   "country": "Sweden",
-   "dob": "1988-05-03",
-   "turnedPro": 2012,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
-  },
-  {
-   "name": "Daniela Iacobelli",
-   "country": "USA",
-   "dob": "1987-11-27",
-   "turnedPro": 2010,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Danielle Downey",
-   "country": "USA",
-   "dob": "1980-12-06",
-   "turnedPro": 2003,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
-  },
-  {
-   "name": "Danielle Kang",
-   "country": "USA",
-   "dob": "1992-10-20",
-   "turnedPro": 2011,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 26.0,
-   "tier": 1
-  },
-  {
    "name": "Danny Briggs",
    "country": "USA",
    "dob": "1960-11-30",
@@ -5578,7 +4118,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Danny Willett",
@@ -5598,7 +4138,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Daren Lee",
@@ -5618,7 +4158,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Darren Beck",
@@ -5628,7 +4168,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Darren Clarke",
@@ -5718,7 +4258,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "David A. Russell",
@@ -5748,7 +4288,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "David Chung",
@@ -5828,7 +4368,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 11.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "David Frost",
@@ -5848,7 +4388,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "David Gilford",
@@ -5878,7 +4418,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "David Gossett",
@@ -5888,7 +4428,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "David Graham",
@@ -5918,7 +4458,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "David Higgins",
@@ -5948,7 +4488,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "David Ishii",
@@ -6018,7 +4558,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 11.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "David Lipsky",
@@ -6048,7 +4588,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "David McKenzie",
@@ -6058,7 +4598,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "David Oakley",
@@ -6108,7 +4648,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "David Skinns",
@@ -6118,7 +4658,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "David Smail",
@@ -6128,7 +4668,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "David Sutherland",
@@ -6158,7 +4698,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "David Whelan",
@@ -6208,17 +4748,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Dawn Coe-Jones",
-   "country": "Canada",
-   "dob": "1960-10-19",
-   "turnedPro": 1983,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "DeWitt Weaver",
@@ -6238,7 +4768,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Dean Robertson",
@@ -6258,7 +4788,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Deane Pappas",
@@ -6271,16 +4801,6 @@
    "tier": 3
   },
   {
-   "name": "Deb Richard",
-   "country": "USA",
-   "dob": "1963-06-13",
-   "turnedPro": 1986,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
-  },
-  {
    "name": "Delroy Cambridge",
    "country": "USA",
    "dob": "1949-11-12",
@@ -6288,17 +4808,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Demi Runas",
-   "country": "USA",
-   "dob": "1991-01-01",
-   "turnedPro": 2014,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Denis Durnian",
@@ -6328,7 +4838,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Denis Watson",
@@ -6451,36 +4961,6 @@
    "tier": 2
   },
   {
-   "name": "Dewi Claire Schreefel",
-   "country": "Netherlands",
-   "dob": "1985-11-12",
-   "turnedPro": 2008,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Dewi Weber",
-   "country": "Netherlands",
-   "dob": "1996-06-12",
-   "turnedPro": 2019,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Diana Luna",
-   "country": "Italy",
-   "dob": "1982-09-03",
-   "turnedPro": 2001,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 10.5,
-   "tier": 2
-  },
-  {
    "name": "Dick Burton",
    "country": "United Kingdom",
    "dob": "1907-10-11",
@@ -6541,16 +5021,6 @@
    "tier": 2
   },
   {
-   "name": "Diksha Dagar",
-   "country": "India",
-   "dob": "2000-12-14",
-   "turnedPro": 2019,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 12.5,
-   "tier": 2
-  },
-  {
    "name": "Dinesh Chand",
    "country": "Fiji",
    "dob": "1972-02-06",
@@ -6598,7 +5068,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Don January",
@@ -6618,7 +5088,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 14.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Don Reese",
@@ -6631,26 +5101,6 @@
    "tier": 3
   },
   {
-   "name": "Donna Andrews",
-   "country": "USA",
-   "dob": "1967-04-12",
-   "turnedPro": 1989,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 18.5,
-   "tier": 1
-  },
-  {
-   "name": "Donna Caponi",
-   "country": "USA",
-   "dob": "1945-01-29",
-   "turnedPro": 1965,
-   "majors": 4,
-   "pgaWins": 0,
-   "fame": 69.5,
-   "tier": 1
-  },
-  {
    "name": "Donnie Hammond",
    "country": "USA",
    "dob": "1957-04-01",
@@ -6658,26 +5108,6 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 11.5,
-   "tier": 2
-  },
-  {
-   "name": "Dottie Ardina",
-   "country": "Philippines",
-   "dob": "1993-12-02",
-   "turnedPro": 2013,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
-  },
-  {
-   "name": "Dottie Pepper",
-   "country": "USA",
-   "dob": "1965-08-17",
-   "turnedPro": 1988,
-   "majors": 2,
-   "pgaWins": 0,
-   "fame": 41.5,
    "tier": 1
   },
   {
@@ -6718,7 +5148,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Doug Sanders",
@@ -6748,7 +5178,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Dudley Hart",
@@ -6758,7 +5188,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Duffy Waldorf",
@@ -6828,7 +5258,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Earl Stewart",
@@ -6838,7 +5268,7 @@
    "majors": 0,
    "pgaWins": 3,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Ed Cuff, Jr.",
@@ -7008,7 +5438,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Eirik Tage Johansen",
@@ -7018,47 +5448,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
-  },
-  {
-   "name": "Eleanor Pilgrim",
-   "country": "Wales",
-   "dob": "1977-02-15",
-   "turnedPro": 2002,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
-   "name": "Elina Nummenpää",
-   "country": "Finland",
-   "dob": "1983-01-01",
-   "turnedPro": 2011,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
-   "name": "Elisa Serramià",
-   "country": "Spain",
-   "dob": "1984-09-07",
-   "turnedPro": 2004,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.5,
-   "tier": 3
-  },
-  {
-   "name": "Elisabeth Esterl",
-   "country": "Germany",
-   "dob": "1976-08-29",
-   "turnedPro": 1997,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Elliot Saltman",
@@ -7101,16 +5491,6 @@
    "tier": 2
   },
   {
-   "name": "Emilee Klein",
-   "country": "USA",
-   "dob": "1974-06-11",
-   "turnedPro": 1994,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
    "name": "Emlyn Aubrey",
    "country": "USA",
    "dob": "1964-01-28",
@@ -7121,46 +5501,6 @@
    "tier": 3
   },
   {
-   "name": "Emma Cabrera Bello",
-   "country": "Spain",
-   "dob": "1985-11-22",
-   "turnedPro": 2008,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
-   "name": "Emma Spitz",
-   "country": "Austria",
-   "dob": "2000-04-10",
-   "turnedPro": 2022,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
-   "name": "Emma Westin",
-   "country": "Sweden",
-   "dob": "1991-07-27",
-   "turnedPro": 2012,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Emma Zackrisson",
-   "country": "Sweden",
-   "dob": "1979-01-26",
-   "turnedPro": 2002,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
    "name": "Enrique Bertolino",
    "country": "Argentina",
    "dob": "1912-11-03",
@@ -7168,7 +5508,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 11.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Eric Axley",
@@ -7178,7 +5518,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Eric Booker",
@@ -7208,7 +5548,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Eric Monti",
@@ -7248,7 +5588,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Erik van Rooyen",
@@ -7258,7 +5598,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Ernie Els",
@@ -7278,7 +5618,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Ernie Vossler",
@@ -7288,7 +5628,7 @@
    "majors": 0,
    "pgaWins": 3,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Estanislao Goya",
@@ -7298,7 +5638,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Esteban Toledo",
@@ -7308,26 +5648,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Estefania Knuth",
-   "country": "Spain",
-   "dob": "1973-05-04",
-   "turnedPro": 1993,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.5,
-   "tier": 3
-  },
-  {
-   "name": "Esther Henseleit",
-   "country": "Germany",
-   "dob": "1999-01-14",
-   "turnedPro": 2019,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 13.5,
    "tier": 2
   },
   {
@@ -7358,17 +5678,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
-  },
-  {
-   "name": "Evelyn Orley",
-   "country": "Switzerland",
-   "dob": "1966-07-10",
-   "turnedPro": 1990,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Ewan Porter",
@@ -7391,16 +5701,6 @@
    "tier": 3
   },
   {
-   "name": "Fabienne In-Albon",
-   "country": "Switzerland",
-   "dob": "1986-09-05",
-   "turnedPro": 2012,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
-  },
-  {
    "name": "Fabián Gómez",
    "country": "Argentina",
    "dob": "1978-10-27",
@@ -7418,37 +5718,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 11.5,
-   "tier": 2
-  },
-  {
-   "name": "Fay Crocker",
-   "country": "Uruguay",
-   "dob": "1914-08-02",
-   "turnedPro": 1954,
-   "majors": 2,
-   "pgaWins": 0,
-   "fame": 36.0,
    "tier": 1
-  },
-  {
-   "name": "Federica Dassù",
-   "country": "Italy",
-   "dob": "1957-02-17",
-   "turnedPro": 1983,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Federica Piovano",
-   "country": "Italy",
-   "dob": "1981-10-14",
-   "turnedPro": 2003,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
   },
   {
    "name": "Federico Colombo",
@@ -7458,16 +5728,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 4.0,
-   "tier": 3
-  },
-  {
-   "name": "Felicity Johnson",
-   "country": "United Kingdom",
-   "dob": "1987-02-26",
-   "turnedPro": 2006,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
    "tier": 3
   },
   {
@@ -7501,16 +5761,6 @@
    "tier": 3
   },
   {
-   "name": "Flavia Namakula",
-   "country": "Uganda",
-   "dob": "1986-12-17",
-   "turnedPro": 2016,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
    "name": "Florentino Molina",
    "country": "Argentina",
    "dob": "1938-12-30",
@@ -7519,16 +5769,6 @@
    "pgaWins": 0,
    "fame": 33.5,
    "tier": 1
-  },
-  {
-   "name": "Florentyna Parker",
-   "country": "United Kingdom",
-   "dob": "1989-06-20",
-   "turnedPro": 2009,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
-   "tier": 3
   },
   {
    "name": "Florian Fritsch",
@@ -7578,17 +5818,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
-  },
-  {
-   "name": "Frances Bondad",
-   "country": "Australia",
-   "dob": "1988-01-21",
-   "turnedPro": 2007,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Francesco Molinari",
@@ -7638,7 +5868,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Frank Nobilo",
@@ -7648,7 +5878,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Frank Stranahan",
@@ -7768,7 +5998,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Fulton Allem",
@@ -7801,26 +6031,6 @@
    "tier": 2
   },
   {
-   "name": "Gabriela Ruffels",
-   "country": "Australia",
-   "dob": "2000-04-01",
-   "turnedPro": 2021,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
-   "name": "Gaby López",
-   "country": "Mexico",
-   "dob": "1993-11-09",
-   "turnedPro": 2015,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.5,
-   "tier": 2
-  },
-  {
    "name": "Gaganjeet Bhullar",
    "country": "India",
    "dob": "1988-04-27",
@@ -7829,16 +6039,6 @@
    "pgaWins": 0,
    "fame": 18.5,
    "tier": 1
-  },
-  {
-   "name": "Gail Graham",
-   "country": "Canada",
-   "dob": "1964-01-16",
-   "turnedPro": 1988,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
   },
   {
    "name": "Gardner Dickinson",
@@ -7908,7 +6108,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Gary Boyd",
@@ -8028,7 +6228,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Gary Player",
@@ -8068,7 +6268,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Gary Woodland",
@@ -8098,7 +6298,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Gavin Green",
@@ -8128,7 +6328,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Gene Littler",
@@ -8198,7 +6398,7 @@
    "majors": 0,
    "pgaWins": 3,
    "fame": 14.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "George Burns",
@@ -8218,7 +6418,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "George Knudson",
@@ -8238,7 +6438,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "George Murray",
@@ -8271,26 +6471,6 @@
    "tier": 1
   },
   {
-   "name": "Georgia Hall",
-   "country": "United Kingdom",
-   "dob": "1996-04-12",
-   "turnedPro": 2014,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 22.5,
-   "tier": 1
-  },
-  {
-   "name": "Gerina Piller",
-   "country": "USA",
-   "dob": "1985-03-29",
-   "turnedPro": 2007,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.0,
-   "tier": 3
-  },
-  {
    "name": "German Garrido",
    "country": "Spain",
    "dob": "1948-06-15",
@@ -8321,46 +6501,6 @@
    "tier": 1
   },
   {
-   "name": "Gina Kim",
-   "country": "USA",
-   "dob": "2000-05-04",
-   "turnedPro": 2022,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Ginger Howard",
-   "country": "USA",
-   "dob": "1994-03-15",
-   "turnedPro": 2012,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
-   "name": "Giulia Molinaro",
-   "country": "Italy",
-   "dob": "1990-07-23",
-   "turnedPro": 2012,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
-  },
-  {
-   "name": "Giulia Sergas",
-   "country": "Italy",
-   "dob": "1979-12-26",
-   "turnedPro": 1999,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
-  },
-  {
    "name": "Giuseppe Calì",
    "country": "Italy",
    "dob": "1952-09-28",
@@ -8368,7 +6508,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 11.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Glen Day",
@@ -8378,7 +6518,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Glenn Ralph",
@@ -8389,16 +6529,6 @@
    "pgaWins": 0,
    "fame": 4.5,
    "tier": 3
-  },
-  {
-   "name": "Gloria Ehret",
-   "country": "USA",
-   "dob": "1941-08-23",
-   "turnedPro": 1965,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 17.5,
-   "tier": 1
   },
   {
    "name": "Gonzalo Fernández-Castaño",
@@ -8418,7 +6548,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 11.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Gordon J. Brand",
@@ -8428,7 +6558,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Gordon Manson",
@@ -8449,26 +6579,6 @@
    "pgaWins": 0,
    "fame": 1.5,
    "tier": 3
-  },
-  {
-   "name": "Grace Kim",
-   "country": "Australia",
-   "dob": "2000-12-13",
-   "turnedPro": 2021,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 19.5,
-   "tier": 1
-  },
-  {
-   "name": "Grace Park",
-   "country": "South Korea",
-   "dob": "1979-03-06",
-   "turnedPro": 1999,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 26.5,
-   "tier": 1
   },
   {
    "name": "Graeme McDowell",
@@ -8498,7 +6608,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Graham Marsh",
@@ -8538,7 +6648,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Grayson Murray",
@@ -8568,7 +6678,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 11.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Greg Kraft",
@@ -8578,7 +6688,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Greg Norman",
@@ -8598,7 +6708,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 11.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Greg Turner",
@@ -8628,7 +6738,7 @@
    "majors": 0,
    "pgaWins": 3,
    "fame": 14.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Grégory Bourdy",
@@ -8638,7 +6748,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Grégory Havret",
@@ -8668,7 +6778,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Guido van der Valk",
@@ -8678,7 +6788,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Guillermo Encina",
@@ -8738,27 +6848,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 11.5,
-   "tier": 2
-  },
-  {
-   "name": "Gwladys Nocera",
-   "country": "France",
-   "dob": "1975-05-22",
-   "turnedPro": 2002,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 14.5,
    "tier": 1
-  },
-  {
-   "name": "Haeji Kang",
-   "country": "South Korea",
-   "dob": "1990-11-14",
-   "turnedPro": 2007,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
   },
   {
    "name": "Hajime Meshiai",
@@ -8791,26 +6881,6 @@
    "tier": 1
   },
   {
-   "name": "Haley Moore",
-   "country": "USA",
-   "dob": "1998-11-25",
-   "turnedPro": 2019,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Han Hee-Won",
-   "country": "South Korea",
-   "dob": "1978-06-10",
-   "turnedPro": 1998,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 8.0,
-   "tier": 2
-  },
-  {
    "name": "Han Lee",
    "country": "USA",
    "dob": "1977-09-02",
@@ -8829,26 +6899,6 @@
    "pgaWins": 0,
    "fame": 2.0,
    "tier": 3
-  },
-  {
-   "name": "Hannah Burke",
-   "country": "United Kingdom",
-   "dob": "1988-03-28",
-   "turnedPro": 2011,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Hannah Green",
-   "country": "Australia",
-   "dob": "1996-12-20",
-   "turnedPro": 2016,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 28.5,
-   "tier": 1
   },
   {
    "name": "Harold Eidsvig",
@@ -8898,7 +6948,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Harry Bannerman",
@@ -8938,7 +6988,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Harry Todd",
@@ -8948,17 +6998,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 7.0,
-   "tier": 3
-  },
-  {
-   "name": "Haru Nomura",
-   "country": "Japan",
-   "dob": "1992-11-25",
-   "turnedPro": 2010,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 19.0,
-   "tier": 1
+   "tier": 2
   },
   {
    "name": "Harvie Ward",
@@ -8978,27 +7018,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Heather Bowie Young",
-   "country": "USA",
-   "dob": "1975-03-23",
-   "turnedPro": 1997,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
-  },
-  {
-   "name": "Heather Farr",
-   "country": "USA",
-   "dob": "1965-03-10",
-   "turnedPro": 1985,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Hedley Muscroft",
@@ -9011,16 +7031,6 @@
    "tier": 3
   },
   {
-   "name": "Hee Kyung Seo",
-   "country": "South Korea",
-   "dob": "1986-07-08",
-   "turnedPro": 2006,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 11.0,
-   "tier": 2
-  },
-  {
    "name": "Heinz Peter Thuel",
    "country": "Germany",
    "dob": "1963-07-23",
@@ -9028,57 +7038,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Helen Alfredsson",
-   "country": "Sweden",
-   "dob": "1965-04-09",
-   "turnedPro": 1989,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 35.5,
-   "tier": 1
-  },
-  {
-   "name": "Helen Dettweiler",
-   "country": "USA",
-   "dob": "1914-12-05",
-   "turnedPro": 1939,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 19.0,
-   "tier": 1
-  },
-  {
-   "name": "Helen Hicks",
-   "country": "USA",
-   "dob": "1911-02-11",
-   "turnedPro": 1934,
-   "majors": 2,
-   "pgaWins": 0,
-   "fame": 29.0,
-   "tier": 1
-  },
-  {
-   "name": "Helen Wadsworth",
-   "country": "USA",
-   "dob": "1964-07-04",
-   "turnedPro": 1991,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
-  },
-  {
-   "name": "Helene Koch",
-   "country": "Sweden",
-   "dob": "1967-05-09",
-   "turnedPro": 1989,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Hendrik Buhrmann",
@@ -9091,16 +7051,6 @@
    "tier": 2
   },
   {
-   "name": "Henni Zuël",
-   "country": "United Kingdom",
-   "dob": "1990-01-06",
-   "turnedPro": 2008,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
-  },
-  {
    "name": "Hennie Otto",
    "country": "South Africa",
    "dob": "1976-06-25",
@@ -9108,7 +7058,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 11.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Henrik Norlander",
@@ -9178,7 +7128,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Hideki Matsuyama",
@@ -9231,16 +7181,6 @@
    "tier": 2
   },
   {
-   "name": "Hilary Lunke",
-   "country": "USA",
-   "dob": "1979-06-07",
-   "turnedPro": 2002,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 15.5,
-   "tier": 1
-  },
-  {
    "name": "Hillman Robbins",
    "country": "USA",
    "dob": "1932-04-22",
@@ -9261,16 +7201,6 @@
    "tier": 3
   },
   {
-   "name": "Hinako Shibuno",
-   "country": "Japan",
-   "dob": "1998-11-15",
-   "turnedPro": 2018,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 21.5,
-   "tier": 1
-  },
-  {
    "name": "Hirofumi Miyase",
    "country": "Japan",
    "dob": "1971-04-11",
@@ -9278,16 +7208,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Hiromi Kobayashi",
-   "country": "Japan",
-   "dob": "1963-01-08",
-   "turnedPro": 1985,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 11.5,
    "tier": 2
   },
   {
@@ -9318,16 +7238,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.5,
-   "tier": 2
-  },
-  {
-   "name": "Hisako Higuchi",
-   "country": "Japan",
-   "dob": "1945-10-13",
-   "turnedPro": 1967,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 55.5,
    "tier": 1
   },
   {
@@ -9338,27 +7248,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Hollis Stacy",
-   "country": "USA",
-   "dob": "1954-03-16",
-   "turnedPro": 1974,
-   "majors": 4,
-   "pgaWins": 0,
-   "fame": 64.5,
-   "tier": 1
-  },
-  {
-   "name": "Holly Clyburn",
-   "country": "United Kingdom",
-   "dob": "1991-02-07",
-   "turnedPro": 2012,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Homero Blancas",
@@ -9369,16 +7259,6 @@
    "pgaWins": 4,
    "fame": 17.5,
    "tier": 1
-  },
-  {
-   "name": "Hong Jin-joo",
-   "country": "South Korea",
-   "dob": "1983-02-28",
-   "turnedPro": 2003,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
   },
   {
    "name": "Horacio Carbonetti",
@@ -9408,7 +7288,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Howard Twitty",
@@ -9418,7 +7298,7 @@
    "majors": 0,
    "pgaWins": 3,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Howie Johnson",
@@ -9538,7 +7418,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Hur Suk-ho",
@@ -9548,7 +7428,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 11.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Hwang Inn-choon",
@@ -9568,7 +7448,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Iain Steel",
@@ -9578,7 +7458,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Ian Baker-Finch",
@@ -9598,7 +7478,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Ian Leggatt",
@@ -9618,7 +7498,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Ian Palmer",
@@ -9661,16 +7541,6 @@
    "tier": 1
   },
   {
-   "name": "Iben Tinning",
-   "country": "Denmark",
-   "dob": "1974-02-04",
-   "turnedPro": 1994,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 9.0,
-   "tier": 2
-  },
-  {
    "name": "Ignacio Garrido",
    "country": "Spain",
    "dob": "1972-03-27",
@@ -9691,16 +7561,6 @@
    "tier": 3
   },
   {
-   "name": "Ilhee Lee",
-   "country": "South Korea",
-   "dob": "1988-12-13",
-   "turnedPro": 2006,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
    "name": "Im Sung-jae",
    "country": "South Korea",
    "dob": "1998-03-30",
@@ -9708,37 +7568,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 13.5,
-   "tier": 2
-  },
-  {
-   "name": "Inbee Park",
-   "country": "South Korea",
-   "dob": "1988-07-12",
-   "turnedPro": 2006,
-   "majors": 7,
-   "pgaWins": 0,
-   "fame": 119.5,
    "tier": 1
-  },
-  {
-   "name": "Ines Laklalech",
-   "country": "Morocco",
-   "dob": "1997-10-30",
-   "turnedPro": 2022,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Isabelle Beisiegel",
-   "country": "Canada",
-   "dob": "1979-02-06",
-   "turnedPro": 2001,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
   },
   {
    "name": "Isao Aoki",
@@ -9878,7 +7708,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Jack McGowan",
@@ -9898,7 +7728,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Jack Nicklaus",
@@ -9918,7 +7748,7 @@
    "majors": 0,
    "pgaWins": 3,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Jack Rule, Jr.",
@@ -9928,7 +7758,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 11.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Jackson Suber",
@@ -9968,17 +7798,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.0,
-   "tier": 2
-  },
-  {
-   "name": "Jade Schaeffer",
-   "country": "France",
-   "dob": "1986-07-01",
-   "turnedPro": 2006,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
+   "tier": 1
   },
   {
    "name": "Jaime Gomez",
@@ -10048,7 +7868,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "James Heath",
@@ -10088,7 +7908,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 14.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "James Mason",
@@ -10118,7 +7938,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "James Nitties",
@@ -10198,7 +8018,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Jan Dorrestein",
@@ -10211,76 +8031,6 @@
    "tier": 3
   },
   {
-   "name": "Jan Stephenson",
-   "country": "Australia",
-   "dob": "1951-12-22",
-   "turnedPro": 1973,
-   "majors": 3,
-   "pgaWins": 0,
-   "fame": 54.5,
-   "tier": 1
-  },
-  {
-   "name": "Jana Melichová",
-   "country": "Czechia",
-   "dob": "1997-10-22",
-   "turnedPro": 2022,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
-   "name": "Jane Blalock",
-   "country": "USA",
-   "dob": "1945-09-19",
-   "turnedPro": 1969,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 20.5,
-   "tier": 1
-  },
-  {
-   "name": "Jane Crafter",
-   "country": "USA",
-   "dob": "1955-12-14",
-   "turnedPro": 1980,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
-  },
-  {
-   "name": "Jane Geddes",
-   "country": "USA",
-   "dob": "1960-02-05",
-   "turnedPro": 1983,
-   "majors": 2,
-   "pgaWins": 0,
-   "fame": 36.5,
-   "tier": 1
-  },
-  {
-   "name": "Jane Park",
-   "country": "USA",
-   "dob": "1986-12-15",
-   "turnedPro": 2006,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
-   "name": "Janet Anderson",
-   "country": "USA",
-   "dob": "1956-03-10",
-   "turnedPro": 1978,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 15.5,
-   "tier": 1
-  },
-  {
    "name": "Jang Dong-kyu",
    "country": "South Korea",
    "dob": "1988-10-22",
@@ -10291,16 +8041,6 @@
    "tier": 3
   },
   {
-   "name": "Jang Ha-na",
-   "country": "South Korea",
-   "dob": "1992-05-02",
-   "turnedPro": 2010,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 14.5,
-   "tier": 1
-  },
-  {
    "name": "Jang Ik-jae",
    "country": "South Korea",
    "dob": "1973-02-14",
@@ -10308,27 +8048,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Jang Jeong",
-   "country": "South Korea",
-   "dob": "1980-06-11",
-   "turnedPro": 2000,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 19.0,
-   "tier": 1
-  },
-  {
-   "name": "Janice Moodie",
-   "country": "United Kingdom",
-   "dob": "1973-05-31",
-   "turnedPro": 1997,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Jared Wolfe",
@@ -10348,7 +8068,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Jarrod Lyle",
@@ -10358,7 +8078,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Jarrod Moseley",
@@ -10378,7 +8098,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 13.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Jason Day",
@@ -10408,7 +8128,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 14.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Jason Hill",
@@ -10528,7 +8248,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Jay Williamson",
@@ -10578,7 +8298,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Jean-Baptiste Gonnet",
@@ -10609,16 +8329,6 @@
    "pgaWins": 0,
    "fame": 10.5,
    "tier": 2
-  },
-  {
-   "name": "Jeanne-Marie Busuttil",
-   "country": "France",
-   "dob": "1976-06-29",
-   "turnedPro": 1998,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
   },
   {
    "name": "Jeev Milkha Singh",
@@ -10708,7 +8418,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Jeff Overton",
@@ -10718,7 +8428,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Jeff Sluman",
@@ -10758,96 +8468,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 4.0,
-   "tier": 3
-  },
-  {
-   "name": "Jennifer Johnson",
-   "country": "USA",
-   "dob": "1991-08-02",
-   "turnedPro": 2010,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Jennifer Kupcho",
-   "country": "USA",
-   "dob": "1997-05-14",
-   "turnedPro": 2019,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 21.5,
-   "tier": 1
-  },
-  {
-   "name": "Jennifer Rosales",
-   "country": "USA",
-   "dob": "1978-09-17",
-   "turnedPro": 2000,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.5,
-   "tier": 2
-  },
-  {
-   "name": "Jennifer Song",
-   "country": "USA",
-   "dob": "1989-12-20",
-   "turnedPro": 2010,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
-   "name": "Jenny Chuasiriporn",
-   "country": "USA",
-   "dob": "1977-07-09",
-   "turnedPro": 1999,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
-   "name": "Jenny Haglund",
-   "country": "Sweden",
-   "dob": "1993-06-26",
-   "turnedPro": 2016,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Jenny Lee Smith",
-   "country": "United Kingdom",
-   "dob": "1948-12-02",
-   "turnedPro": 1977,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 10.0,
-   "tier": 2
-  },
-  {
-   "name": "Jenny Lidback",
-   "country": "USA",
-   "dob": "1963-03-30",
-   "turnedPro": 1986,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 19.5,
-   "tier": 1
-  },
-  {
-   "name": "Jenny Shin",
-   "country": "South Korea",
-   "dob": "1992-10-07",
-   "turnedPro": 2010,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
    "tier": 3
   },
   {
@@ -10928,7 +8548,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Jerry Heard",
@@ -10988,7 +8608,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Jesper Parnevik",
@@ -10999,26 +8619,6 @@
    "pgaWins": 5,
    "fame": 33.5,
    "tier": 1
-  },
-  {
-   "name": "Jessica Korda",
-   "country": "USA",
-   "dob": "1993-02-27",
-   "turnedPro": 2010,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 13.0,
-   "tier": 2
-  },
-  {
-   "name": "Jessica Shepley",
-   "country": "Canada",
-   "dob": "1983-04-04",
-   "turnedPro": 2005,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.5,
-   "tier": 3
   },
   {
    "name": "Jesús Amaya",
@@ -11039,26 +8639,6 @@
    "pgaWins": 4,
    "fame": 21.0,
    "tier": 1
-  },
-  {
-   "name": "Ji Eun-hee",
-   "country": "South Korea",
-   "dob": "1986-05-13",
-   "turnedPro": 2004,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 25.0,
-   "tier": 1
-  },
-  {
-   "name": "Jill McGill",
-   "country": "USA",
-   "dob": "1972-01-30",
-   "turnedPro": 1994,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
   },
   {
    "name": "Jim Ahern",
@@ -11088,7 +8668,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 11.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Jim Colbert",
@@ -11168,7 +8748,7 @@
    "majors": 0,
    "pgaWins": 3,
    "fame": 14.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Jim Jamieson",
@@ -11218,7 +8798,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Jim Rhodes",
@@ -11248,7 +8828,7 @@
    "majors": 0,
    "pgaWins": 3,
    "fame": 13.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Jim Thorpe",
@@ -11269,16 +8849,6 @@
    "pgaWins": 2,
    "fame": 27.5,
    "tier": 1
-  },
-  {
-   "name": "Jimin Kang",
-   "country": "USA",
-   "dob": "1980-01-28",
-   "turnedPro": 2002,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.5,
-   "tier": 2
   },
   {
    "name": "Jimmy Demaret",
@@ -11361,16 +8931,6 @@
    "tier": 3
   },
   {
-   "name": "Jin Hee Im",
-   "country": "South Korea",
-   "dob": "1998-05-24",
-   "turnedPro": 2016,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
-  },
-  {
    "name": "Jin Jeong",
    "country": "South Korea",
    "dob": "1990-02-02",
@@ -11389,46 +8949,6 @@
    "pgaWins": 0,
    "fame": 5.5,
    "tier": 3
-  },
-  {
-   "name": "Jiwon Jeon",
-   "country": "South Korea",
-   "dob": "1997-05-26",
-   "turnedPro": 2020,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Jiyai Shin",
-   "country": "South Korea",
-   "dob": "1988-04-28",
-   "turnedPro": 2005,
-   "majors": 2,
-   "pgaWins": 0,
-   "fame": 67.0,
-   "tier": 1
-  },
-  {
-   "name": "Jo Ann Prentice",
-   "country": "USA",
-   "dob": "1933-02-09",
-   "turnedPro": 1956,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "JoAnne Carner",
-   "country": "USA",
-   "dob": "1939-04-04",
-   "turnedPro": 1970,
-   "majors": 2,
-   "pgaWins": 0,
-   "fame": 55.5,
-   "tier": 1
   },
   {
    "name": "Joachim B Hansen",
@@ -11468,37 +8988,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Joanna Klatten",
-   "country": "France",
-   "dob": "1985-03-02",
-   "turnedPro": 2010,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.0,
-   "tier": 3
-  },
-  {
-   "name": "Joanne Mills",
-   "country": "Australia",
-   "dob": "1969-12-18",
-   "turnedPro": 1993,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Joanne Morley",
-   "country": "United Kingdom",
-   "dob": "1966-12-30",
-   "turnedPro": 1993,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Joaquín Estévez",
@@ -11511,26 +9001,6 @@
    "tier": 3
   },
   {
-   "name": "Jocelyne Bourassa",
-   "country": "Canada",
-   "dob": "1947-05-30",
-   "turnedPro": 1972,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Jodi Ewart Shadoff",
-   "country": "USA",
-   "dob": "1988-01-07",
-   "turnedPro": 2010,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
-  },
-  {
    "name": "Jodie Mudd",
    "country": "USA",
    "dob": "1960-04-23",
@@ -11538,16 +9008,6 @@
    "majors": 0,
    "pgaWins": 4,
    "fame": 16.0,
-   "tier": 1
-  },
-  {
-   "name": "Jody Anschutz",
-   "country": "USA",
-   "dob": "1962-10-10",
-   "turnedPro": 1985,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 15.5,
    "tier": 1
   },
   {
@@ -11628,7 +9088,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Joel Girrbach",
@@ -11698,7 +9158,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 11.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Johan Ryström",
@@ -11708,17 +9168,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
-  },
-  {
-   "name": "Johanna Johansson",
-   "country": "Sweden",
-   "dob": "1977-11-24",
-   "turnedPro": 2000,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "John Axelsen",
@@ -11738,7 +9188,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "John Bland",
@@ -11818,7 +9268,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "John Fought",
@@ -11988,7 +9438,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "John Paul Cain",
@@ -12038,7 +9488,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "John Wilson",
@@ -12188,7 +9638,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Jonathan Lomas",
@@ -12268,7 +9718,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 11.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Jorge Campillo",
@@ -12368,7 +9818,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "José Maria Cañizares",
@@ -12378,7 +9828,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "José Rivero",
@@ -12411,26 +9861,6 @@
    "tier": 2
   },
   {
-   "name": "Joyce Kazmierski",
-   "country": "USA",
-   "dob": "1945-08-14",
-   "turnedPro": 1968,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.0,
-   "tier": 3
-  },
-  {
-   "name": "Joyce Ziske",
-   "country": "USA",
-   "dob": "1934-01-01",
-   "turnedPro": 1955,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 19.5,
-   "tier": 1
-  },
-  {
    "name": "Joël Stalter",
    "country": "France",
    "dob": "1992-07-08",
@@ -12448,36 +9878,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.5,
-   "tier": 2
-  },
-  {
-   "name": "Judy Dickinson",
-   "country": "USA",
-   "dob": "1950-03-04",
-   "turnedPro": 1977,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
-  },
-  {
-   "name": "Judy Kimball",
-   "country": "USA",
-   "dob": "1938-06-17",
-   "turnedPro": 1961,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 18.5,
-   "tier": 1
-  },
-  {
-   "name": "Judy Rankin",
-   "country": "USA",
-   "dob": "1945-02-18",
-   "turnedPro": 1962,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 21.0,
    "tier": 1
   },
   {
@@ -12491,26 +9891,6 @@
    "tier": 1
   },
   {
-   "name": "Juli Inkster",
-   "country": "USA",
-   "dob": "1960-06-24",
-   "turnedPro": 1983,
-   "majors": 7,
-   "pgaWins": 0,
-   "fame": 117.5,
-   "tier": 1
-  },
-  {
-   "name": "Julia López Ramirez",
-   "country": "Spain",
-   "dob": "2003-01-01",
-   "turnedPro": 2024,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.0,
-   "tier": 3
-  },
-  {
    "name": "Julian Suri",
    "country": "USA",
    "dob": "1991-04-06",
@@ -12521,26 +9901,6 @@
    "tier": 3
   },
   {
-   "name": "Julie Greciet",
-   "country": "France",
-   "dob": "1986-11-27",
-   "turnedPro": 2007,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Julie Tvede",
-   "country": "Denmark",
-   "dob": "1980-05-21",
-   "turnedPro": 2004,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
    "name": "Julien Brun",
    "country": "France",
    "dob": "1992-04-01",
@@ -12548,7 +9908,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Julien Foret",
@@ -12578,17 +9938,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.0,
-   "tier": 2
-  },
-  {
-   "name": "Julieta Granada",
-   "country": "Paraguay",
-   "dob": "1986-11-17",
-   "turnedPro": 2005,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 9.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Julio Zapata",
@@ -12598,7 +9948,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Julius Boros",
@@ -12619,26 +9969,6 @@
    "pgaWins": 0,
    "fame": 7.5,
    "tier": 2
-  },
-  {
-   "name": "Junko Omote",
-   "country": "Japan",
-   "dob": "1974-02-02",
-   "turnedPro": 1996,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Justice Bosio",
-   "country": "Australia",
-   "dob": "2004-01-01",
-   "turnedPro": 2024,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.0,
-   "tier": 3
   },
   {
    "name": "Justin Harding",
@@ -12751,16 +10081,6 @@
    "tier": 1
   },
   {
-   "name": "Kaisa Ruuttila",
-   "country": "Finland",
-   "dob": "1983-10-14",
-   "turnedPro": 2006,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
-  },
-  {
    "name": "Kalle Brink",
    "country": "Sweden",
    "dob": "1975-08-12",
@@ -12811,16 +10131,6 @@
    "tier": 3
   },
   {
-   "name": "Kang Soo-Yun",
-   "country": "South Korea",
-   "dob": "1976-03-15",
-   "turnedPro": 1997,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 10.0,
-   "tier": 2
-  },
-  {
    "name": "Kang Sung-hoon",
    "country": "South Korea",
    "dob": "1987-06-04",
@@ -12841,166 +10151,6 @@
    "tier": 2
   },
   {
-   "name": "Karen Davies",
-   "country": "Wales",
-   "dob": "1965-06-19",
-   "turnedPro": 1989,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Karen Lunn",
-   "country": "Australia",
-   "dob": "1966-03-21",
-   "turnedPro": 1985,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 12.0,
-   "tier": 2
-  },
-  {
-   "name": "Karen Margrethe Juul",
-   "country": "Denmark",
-   "dob": "1975-12-23",
-   "turnedPro": 2001,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
-   "name": "Karen Stupples",
-   "country": "USA",
-   "dob": "1973-06-24",
-   "turnedPro": 1998,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 19.5,
-   "tier": 1
-  },
-  {
-   "name": "Karin Sjödin",
-   "country": "Sweden",
-   "dob": "1983-08-08",
-   "turnedPro": 2005,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
-   "name": "Karina Ørum",
-   "country": "Denmark",
-   "dob": "1967-05-29",
-   "turnedPro": 1991,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.0,
-   "tier": 3
-  },
-  {
-   "name": "Karine Icher",
-   "country": "France",
-   "dob": "1979-01-26",
-   "turnedPro": 2000,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 8.5,
-   "tier": 2
-  },
-  {
-   "name": "Karl Vilips",
-   "country": "Australia",
-   "dob": "2001-08-16",
-   "turnedPro": 2024,
-   "majors": 0,
-   "pgaWins": 1,
-   "fame": 8.0,
-   "tier": 2
-  },
-  {
-   "name": "Karolin Lampert",
-   "country": "Germany",
-   "dob": "1995-01-01",
-   "turnedPro": 2013,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
-   "name": "Karrie Webb",
-   "country": "Australia",
-   "dob": "1974-12-21",
-   "turnedPro": 1994,
-   "majors": 7,
-   "pgaWins": 0,
-   "fame": 130.0,
-   "tier": 1
-  },
-  {
-   "name": "Kate Golden",
-   "country": "USA",
-   "dob": "1967-02-09",
-   "turnedPro": 1989,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
-   "name": "Katherine Kirk",
-   "country": "Australia",
-   "dob": "1982-02-26",
-   "turnedPro": 2003,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 10.5,
-   "tier": 2
-  },
-  {
-   "name": "Kathryn Imrie",
-   "country": "United Kingdom",
-   "dob": "1967-06-08",
-   "turnedPro": 1990,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Kathy Ahern",
-   "country": "USA",
-   "dob": "1949-05-07",
-   "turnedPro": 1967,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 20.5,
-   "tier": 1
-  },
-  {
-   "name": "Kathy Cornelius",
-   "country": "USA",
-   "dob": "1932-10-27",
-   "turnedPro": 1953,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 22.0,
-   "tier": 1
-  },
-  {
-   "name": "Kathy Postlewait",
-   "country": "USA",
-   "dob": "1949-11-11",
-   "turnedPro": 1972,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
    "name": "Katsumasa Miyamoto",
    "country": "Japan",
    "dob": "1972-08-28",
@@ -13008,7 +10158,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Katsunari Takahashi",
@@ -13029,16 +10179,6 @@
    "pgaWins": 0,
    "fame": 9.0,
    "tier": 2
-  },
-  {
-   "name": "Kay McMahon",
-   "country": "USA",
-   "dob": "1948-10-27",
-   "turnedPro": 1976,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
   },
   {
    "name": "Kazuhiko Hosokawa",
@@ -13098,7 +10238,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Keith Clearwater",
@@ -13161,16 +10301,6 @@
    "tier": 1
   },
   {
-   "name": "Kelli Shean",
-   "country": "South Africa",
-   "dob": "1987-09-10",
-   "turnedPro": 2011,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
    "name": "Kelly Gibson",
    "country": "USA",
    "dob": "1964-05-02",
@@ -13189,16 +10319,6 @@
    "pgaWins": 0,
    "fame": 3.5,
    "tier": 3
-  },
-  {
-   "name": "Kelly Robbins",
-   "country": "USA",
-   "dob": "1969-09-29",
-   "turnedPro": 1992,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 23.0,
-   "tier": 1
   },
   {
    "name": "Ken Bousfield",
@@ -13278,7 +10398,7 @@
    "majors": 0,
    "pgaWins": 3,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Kenny Perry",
@@ -13318,7 +10438,7 @@
    "majors": 0,
    "pgaWins": 3,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Kevin Chappell",
@@ -13348,7 +10468,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Kevin Kisner",
@@ -13388,7 +10508,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Kevin Streelman",
@@ -13398,7 +10518,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 14.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Kevin Sutherland",
@@ -13408,7 +10528,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Kevin Yu",
@@ -13431,16 +10551,6 @@
    "tier": 3
   },
   {
-   "name": "Kiira Riihijärvi",
-   "country": "Finland",
-   "dob": "1997-04-29",
-   "turnedPro": 2021,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.5,
-   "tier": 3
-  },
-  {
    "name": "Kim Bi-o",
    "country": "South Korea",
    "dob": "1990-08-21",
@@ -13458,7 +10568,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Kim Do-hoon",
@@ -13481,36 +10591,6 @@
    "tier": 2
   },
   {
-   "name": "Kim Ha-neul",
-   "country": "South Korea",
-   "dob": "1988-12-17",
-   "turnedPro": 2007,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 10.5,
-   "tier": 2
-  },
-  {
-   "name": "Kim Hae-rym",
-   "country": "South Korea",
-   "dob": "1989-09-08",
-   "turnedPro": 2008,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.5,
-   "tier": 2
-  },
-  {
-   "name": "Kim Hyo-joo",
-   "country": "South Korea",
-   "dob": "1995-07-14",
-   "turnedPro": 2012,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 36.5,
-   "tier": 1
-  },
-  {
    "name": "Kim Hyung-sung",
    "country": "South Korea",
    "dob": "1980-05-12",
@@ -13518,27 +10598,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Kim In-kyung",
-   "country": "South Korea",
-   "dob": "1988-06-13",
-   "turnedPro": 2006,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 25.0,
-   "tier": 1
-  },
-  {
-   "name": "Kim Ja-yeong",
-   "country": "South Korea",
-   "dob": "1991-03-18",
-   "turnedPro": 2009,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Kim Jong-duck",
@@ -13549,26 +10609,6 @@
    "pgaWins": 0,
    "fame": 11.0,
    "tier": 2
-  },
-  {
-   "name": "Kim Joo-Mi",
-   "country": "South Korea",
-   "dob": "1984-07-16",
-   "turnedPro": 2002,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
-   "name": "Kim Kaufman",
-   "country": "USA",
-   "dob": "1991-08-16",
-   "turnedPro": 2013,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
   },
   {
    "name": "Kim Kyung-tae",
@@ -13599,26 +10639,6 @@
    "pgaWins": 0,
    "fame": 5.5,
    "tier": 3
-  },
-  {
-   "name": "Kim Métraux",
-   "country": "Switzerland",
-   "dob": "1995-05-21",
-   "turnedPro": 2018,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Kim Sei-young",
-   "country": "South Korea",
-   "dob": "1993-01-21",
-   "turnedPro": 2010,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 31.0,
-   "tier": 1
   },
   {
    "name": "Kim Seong-hyeon",
@@ -13671,16 +10691,6 @@
    "tier": 3
   },
   {
-   "name": "Kimberly Kim",
-   "country": "USA",
-   "dob": "1991-08-23",
-   "turnedPro": 2010,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
    "name": "Kiradech Aphibarnrat",
    "country": "Thailand",
    "dob": "1989-07-23",
@@ -13688,7 +10698,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Kirk Triplett",
@@ -13701,26 +10711,6 @@
    "tier": 1
   },
   {
-   "name": "Kirsty Taylor",
-   "country": "United Kingdom",
-   "dob": "1971-06-18",
-   "turnedPro": 1994,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
-   "name": "Kitrina Douglas",
-   "country": "United Kingdom",
-   "dob": "1960-01-01",
-   "turnedPro": 1984,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.0,
-   "tier": 3
-  },
-  {
    "name": "Kiyoshi Maita",
    "country": "Japan",
    "dob": "1959-12-17",
@@ -13728,7 +10718,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Kiyoshi Miyazato",
@@ -13761,16 +10751,6 @@
    "tier": 3
   },
   {
-   "name": "Klára Spilková",
-   "country": "Czechia",
-   "dob": "1994-12-15",
-   "turnedPro": 2011,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 9.0,
-   "tier": 2
-  },
-  {
    "name": "Knud Storgaard",
    "country": "Denmark",
    "dob": "1972-08-10",
@@ -13779,16 +10759,6 @@
    "pgaWins": 0,
    "fame": 4.5,
    "tier": 3
-  },
-  {
-   "name": "Ko Jin-young",
-   "country": "South Korea",
-   "dob": "1995-07-07",
-   "turnedPro": 2013,
-   "majors": 2,
-   "pgaWins": 0,
-   "fame": 47.0,
-   "tier": 1
   },
   {
    "name": "Kodai Ichihara",
@@ -13818,7 +10788,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Kramer Hickok",
@@ -13841,36 +10811,6 @@
    "tier": 3
   },
   {
-   "name": "Kris Tamulis",
-   "country": "USA",
-   "dob": "1980-12-29",
-   "turnedPro": 2003,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
-   "name": "Krista Bakker",
-   "country": "Finland",
-   "dob": "1993-01-01",
-   "turnedPro": 2014,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.5,
-   "tier": 3
-  },
-  {
-   "name": "Kristie Smith",
-   "country": "Australia",
-   "dob": "1988-08-07",
-   "turnedPro": 2008,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
-  },
-  {
    "name": "Kristoffer Broberg",
    "country": "Sweden",
    "dob": "1986-08-01",
@@ -13879,16 +10819,6 @@
    "pgaWins": 0,
    "fame": 9.5,
    "tier": 2
-  },
-  {
-   "name": "Kristýna Napoleaová",
-   "country": "Czechia",
-   "dob": "1996-04-12",
-   "turnedPro": 2020,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
   },
   {
    "name": "Kurt Barnes",
@@ -13958,7 +10888,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Kyle Thompson",
@@ -13968,17 +10898,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Kylie Walker",
-   "country": "Scotland",
-   "dob": "1986-08-30",
-   "turnedPro": 2010,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Kyron Sullivan",
@@ -13999,16 +10919,6 @@
    "pgaWins": 1,
    "fame": 5.0,
    "tier": 3
-  },
-  {
-   "name": "Laetitia Beck",
-   "country": "Israel",
-   "dob": "1992-02-05",
-   "turnedPro": 2014,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 9.5,
-   "tier": 2
   },
   {
    "name": "Lam Chih Bing",
@@ -14058,7 +10968,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Larry Mize",
@@ -14138,86 +11048,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
-  },
-  {
-   "name": "Laura Baugh",
-   "country": "USA",
-   "dob": "1955-05-31",
-   "turnedPro": 1973,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Laura Davies",
-   "country": "England",
-   "dob": "1963-10-05",
-   "turnedPro": 1985,
-   "majors": 4,
-   "pgaWins": 0,
-   "fame": 108.0,
-   "tier": 1
-  },
-  {
-   "name": "Laura Diaz",
-   "country": "USA",
-   "dob": "1975-04-27",
-   "turnedPro": 1997,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 8.0,
-   "tier": 2
-  },
-  {
-   "name": "Laura Gonzales-Escallon",
-   "country": "Belgium",
-   "dob": "1990-10-06",
-   "turnedPro": 2014,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Laura Navarro",
-   "country": "Spain",
-   "dob": "1974-12-13",
-   "turnedPro": 1993,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.5,
-   "tier": 3
-  },
-  {
-   "name": "Laurel Kean",
-   "country": "USA",
-   "dob": "1963-06-14",
-   "turnedPro": 1987,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.5,
-   "tier": 2
-  },
-  {
-   "name": "Lauren Taylor",
-   "country": "United Kingdom",
-   "dob": "1994-08-26",
-   "turnedPro": 2013,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
-  },
-  {
-   "name": "Laurette Maritz",
-   "country": "South Africa",
-   "dob": "1964-01-13",
-   "turnedPro": 1987,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 8.0,
    "tier": 2
   },
   {
@@ -14228,7 +11058,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Laurie Canter",
@@ -14248,16 +11078,6 @@
    "majors": 5,
    "pgaWins": 8,
    "fame": 92.5,
-   "tier": 1
-  },
-  {
-   "name": "Lee Bo-mee",
-   "country": "South Korea",
-   "dob": "1988-08-21",
-   "turnedPro": 2007,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 16.5,
    "tier": 1
   },
   {
@@ -14288,17 +11108,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Lee Hyo-Song",
-   "country": "South Korea",
-   "dob": "2008-11-11",
-   "turnedPro": 2024,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Lee Janzen",
@@ -14311,26 +11121,6 @@
    "tier": 1
   },
   {
-   "name": "Lee Jee-young",
-   "country": "South Korea",
-   "dob": "1985-12-02",
-   "turnedPro": 2004,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
-  },
-  {
-   "name": "Lee Jeong-eun",
-   "country": "South Korea",
-   "dob": "1996-05-28",
-   "turnedPro": 2015,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 20.5,
-   "tier": 1
-  },
-  {
    "name": "Lee Kyoung-Hoon",
    "country": "South Korea",
    "dob": "1991-08-24",
@@ -14338,7 +11128,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Lee S. James",
@@ -14348,16 +11138,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 9.0,
-   "tier": 2
-  },
-  {
-   "name": "Lee Seon-hwa",
-   "country": "South Korea",
-   "dob": "1986-02-10",
-   "turnedPro": 2000,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 8.0,
    "tier": 2
   },
   {
@@ -14378,7 +11158,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Lee Sung",
@@ -14421,16 +11201,6 @@
    "tier": 3
   },
   {
-   "name": "Lee-Anne Pace",
-   "country": "South Africa",
-   "dob": "1981-02-15",
-   "turnedPro": 2005,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 17.5,
-   "tier": 1
-  },
-  {
    "name": "Leif Olson",
    "country": "USA",
    "dob": "1981-07-17",
@@ -14471,16 +11241,6 @@
    "tier": 3
   },
   {
-   "name": "Leona Maguire",
-   "country": "Ireland",
-   "dob": "1994-11-30",
-   "turnedPro": 2018,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 9.5,
-   "tier": 2
-  },
-  {
    "name": "Leonard Thompson",
    "country": "USA",
    "dob": "1947-01-01",
@@ -14489,16 +11249,6 @@
    "pgaWins": 3,
    "fame": 15.0,
    "tier": 1
-  },
-  {
-   "name": "Leonie Harm",
-   "country": "Germany",
-   "dob": "1997-01-01",
-   "turnedPro": 2020,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
   },
   {
    "name": "Leopoldo Ruiz",
@@ -14511,16 +11261,6 @@
    "tier": 1
   },
   {
-   "name": "Lexi Thompson",
-   "country": "USA",
-   "dob": "1995-02-10",
-   "turnedPro": 2010,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 30.5,
-   "tier": 1
-  },
-  {
    "name": "Li Chao",
    "country": "China",
    "dob": "1980-04-19",
@@ -14528,7 +11268,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Li Haotong",
@@ -14548,7 +11288,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Liam Higgins",
@@ -14558,7 +11298,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Liam Johnston",
@@ -14581,26 +11321,6 @@
    "tier": 1
   },
   {
-   "name": "Lilia Vu",
-   "country": "USA",
-   "dob": "1997-10-14",
-   "turnedPro": 2019,
-   "majors": 2,
-   "pgaWins": 0,
-   "fame": 32.0,
-   "tier": 1
-  },
-  {
-   "name": "Lill-Kristin Sæther",
-   "country": "Norway",
-   "dob": "1983-10-07",
-   "turnedPro": 2004,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
    "name": "Lin Yuxin",
    "country": "China",
    "dob": "2000-10-10",
@@ -14611,16 +11331,6 @@
    "tier": 3
   },
   {
-   "name": "Linda Wessberg",
-   "country": "Sweden",
-   "dob": "1980-06-13",
-   "turnedPro": 2003,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 9.0,
-   "tier": 2
-  },
-  {
    "name": "Lindani Ndwandwe",
    "country": "South Africa",
    "dob": "1975-02-26",
@@ -14628,16 +11338,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 4.0,
-   "tier": 3
-  },
-  {
-   "name": "Lindsey Wright",
-   "country": "USA",
-   "dob": "1979-12-31",
-   "turnedPro": 2003,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
    "tier": 3
   },
   {
@@ -14651,36 +11351,6 @@
    "tier": 3
   },
   {
-   "name": "Line Toft Hansen",
-   "country": "Denmark",
-   "dob": "1999-07-31",
-   "turnedPro": 2019,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.5,
-   "tier": 3
-  },
-  {
-   "name": "Line Vedel Hansen",
-   "country": "Denmark",
-   "dob": "1989-03-04",
-   "turnedPro": 2011,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
-  },
-  {
-   "name": "Linn Grant",
-   "country": "Sweden",
-   "dob": "1999-06-20",
-   "turnedPro": 2021,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 11.5,
-   "tier": 2
-  },
-  {
    "name": "Lionel Hebert",
    "country": "USA",
    "dob": "1928-01-20",
@@ -14689,106 +11359,6 @@
    "pgaWins": 5,
    "fame": 33.5,
    "tier": 1
-  },
-  {
-   "name": "Lisa Ferrero",
-   "country": "USA",
-   "dob": "1982-11-03",
-   "turnedPro": 2005,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Lisa Hall",
-   "country": "USA",
-   "dob": "1967-09-24",
-   "turnedPro": 1991,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Lisa Holm Sørensen",
-   "country": "Denmark",
-   "dob": "1982-09-29",
-   "turnedPro": 2003,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Lisa Maguire",
-   "country": "Ireland",
-   "dob": "1994-11-30",
-   "turnedPro": 2018,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
-  },
-  {
-   "name": "Lisa Pettersson",
-   "country": "Sweden",
-   "dob": "1995-07-31",
-   "turnedPro": 2018,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
-   "name": "Liselotte Neumann",
-   "country": "Sweden",
-   "dob": "1966-05-20",
-   "turnedPro": 1985,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 38.5,
-   "tier": 1
-  },
-  {
-   "name": "Liu Yan",
-   "country": "China",
-   "dob": "1997-07-07",
-   "turnedPro": 2017,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
-   "name": "Liv Wollin",
-   "country": "Sweden",
-   "dob": "1945-04-17",
-   "turnedPro": 1983,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
-   "name": "Liz Weima",
-   "country": "Netherlands",
-   "dob": "1969-11-19",
-   "turnedPro": 1992,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Lizette Salas",
-   "country": "USA",
-   "dob": "1989-07-17",
-   "turnedPro": 2011,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
   },
   {
    "name": "Lloyd Saltman",
@@ -14808,17 +11378,7 @@
    "majors": 0,
    "pgaWins": 3,
    "fame": 12.5,
-   "tier": 2
-  },
-  {
-   "name": "Lora Fairclough",
-   "country": "United Kingdom",
-   "dob": "1970-01-17",
-   "turnedPro": 1991,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.0,
-   "tier": 3
+   "tier": 1
   },
   {
    "name": "Loren Roberts",
@@ -14831,50 +11391,10 @@
    "tier": 1
   },
   {
-   "name": "Lorena Ochoa",
-   "country": "Mexico",
-   "dob": "1981-11-15",
-   "turnedPro": 2002,
-   "majors": 2,
-   "pgaWins": 0,
-   "fame": 61.0,
-   "tier": 1
-  },
-  {
    "name": "Lorenzo Gagli",
    "country": "Italy",
    "dob": "1985-10-14",
    "turnedPro": 2006,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
-  },
-  {
-   "name": "Lorie Kane",
-   "country": "Canada",
-   "dob": "1964-12-19",
-   "turnedPro": 1993,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.5,
-   "tier": 2
-  },
-  {
-   "name": "Lotta Wahlin",
-   "country": "Sweden",
-   "dob": "1983-12-13",
-   "turnedPro": 2004,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Lottie Woad",
-   "country": "United Kingdom",
-   "dob": "2004-01-01",
-   "turnedPro": 2025,
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
@@ -14908,57 +11428,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Louise Friberg",
-   "country": "Sweden",
-   "dob": "1980-06-24",
-   "turnedPro": 2003,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Louise Larsson",
-   "country": "Sweden",
-   "dob": "1990-07-30",
-   "turnedPro": 2010,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Louise Ridderström",
-   "country": "Sweden",
-   "dob": "1993-12-24",
-   "turnedPro": 2016,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
-   "name": "Louise Stahle",
-   "country": "Sweden",
-   "dob": "1985-03-19",
-   "turnedPro": 2005,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
-  },
-  {
-   "name": "Louise Suggs",
-   "country": "USA",
-   "dob": "1923-09-07",
-   "turnedPro": 1948,
-   "majors": 11,
-   "pgaWins": 0,
-   "fame": 173.5,
-   "tier": 1
+   "tier": 2
   },
   {
    "name": "Lucas Bjerregaard",
@@ -14968,7 +11438,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Lucas Glover",
@@ -14998,47 +11468,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Lucie Malchirand",
-   "country": "France",
-   "dob": "2003-02-21",
-   "turnedPro": 2021,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
-   "name": "Lucrezia Colombotto Rosso",
-   "country": "Italy",
-   "dob": "1996-03-07",
-   "turnedPro": 2016,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
-   "name": "Lucy Li",
-   "country": "USA",
-   "dob": "2002-10-01",
-   "turnedPro": 2019,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
-  },
-  {
-   "name": "Ludivine Kreutz",
-   "country": "France",
-   "dob": "1973-09-24",
-   "turnedPro": 1997,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Ludvig Åberg",
@@ -15108,17 +11538,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 13.0,
-   "tier": 2
-  },
-  {
-   "name": "Lydia Hall",
-   "country": "Wales",
-   "dob": "1987-12-14",
-   "turnedPro": 2007,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
-   "tier": 3
+   "tier": 1
   },
   {
    "name": "Lyle Rowe",
@@ -15131,26 +11551,6 @@
    "tier": 3
   },
   {
-   "name": "Lynnette Brooky",
-   "country": "New Zealand",
-   "dob": "1968-01-25",
-   "turnedPro": 1994,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
-  },
-  {
-   "name": "M. J. Hur",
-   "country": "South Korea",
-   "dob": "1989-12-05",
-   "turnedPro": 2007,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
-   "tier": 3
-  },
-  {
    "name": "Maarten Lafeber",
    "country": "Netherlands",
    "dob": "1974-12-11",
@@ -15158,7 +11558,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Mac O'Grady",
@@ -15181,16 +11581,6 @@
    "tier": 2
   },
   {
-   "name": "Madelene Sagström",
-   "country": "Sweden",
-   "dob": "1992-11-13",
-   "turnedPro": 2015,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.5,
-   "tier": 2
-  },
-  {
    "name": "Mads Vibe-Hastrup",
    "country": "Denmark",
    "dob": "1978-11-20",
@@ -15198,26 +11588,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
-  },
-  {
-   "name": "Magdalena Simmermacher",
-   "country": "Argentina",
-   "dob": "1996-03-23",
-   "turnedPro": 2019,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Maggie Will",
-   "country": "USA",
-   "dob": "1964-11-22",
-   "turnedPro": 1987,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
    "tier": 3
   },
   {
@@ -15241,16 +11611,6 @@
    "tier": 2
   },
   {
-   "name": "Maha Haddioui",
-   "country": "Morocco",
-   "dob": "1988-05-15",
-   "turnedPro": 2011,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.0,
-   "tier": 3
-  },
-  {
    "name": "Mahal Pearce",
    "country": "New Zealand",
    "dob": "1977-11-03",
@@ -15259,16 +11619,6 @@
    "pgaWins": 0,
    "fame": 2.0,
    "tier": 3
-  },
-  {
-   "name": "Maja Stark",
-   "country": "Sweden",
-   "dob": "1999-12-10",
-   "turnedPro": 2021,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 21.5,
-   "tier": 1
   },
   {
    "name": "Makoto Inoue",
@@ -15288,7 +11638,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Malcolm MacKenzie",
@@ -15301,26 +11651,6 @@
    "tier": 3
   },
   {
-   "name": "Malene Jørgensen",
-   "country": "Denmark",
-   "dob": "1986-07-30",
-   "turnedPro": 2009,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.0,
-   "tier": 3
-  },
-  {
-   "name": "Malene Krølbøll Hansen",
-   "country": "Denmark",
-   "dob": "1995-01-01",
-   "turnedPro": 2018,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.5,
-   "tier": 3
-  },
-  {
    "name": "Mamo Osanai",
    "country": "Japan",
    "dob": "1970-06-19",
@@ -15329,16 +11659,6 @@
    "pgaWins": 0,
    "fame": 4.0,
    "tier": 3
-  },
-  {
-   "name": "Manon De Roey",
-   "country": "Belgium",
-   "dob": "1991-12-12",
-   "turnedPro": 2015,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.5,
-   "tier": 2
   },
   {
    "name": "Manuel Ballesteros Sota",
@@ -15398,7 +11718,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Marc Leishman",
@@ -15438,7 +11758,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Marcelo Rozo",
@@ -15448,7 +11768,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Marco Crespi",
@@ -15478,7 +11798,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Marcus Both",
@@ -15498,7 +11818,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Marcus Helligkilde",
@@ -15539,156 +11859,6 @@
    "pgaWins": 0,
    "fame": 10.5,
    "tier": 2
-  },
-  {
-   "name": "Mardi Lunn",
-   "country": "Australia",
-   "dob": "1968-01-09",
-   "turnedPro": 1988,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Margie Masters",
-   "country": "Australia",
-   "dob": "1934-10-24",
-   "turnedPro": 1965,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Maria Fassi",
-   "country": "Mexico",
-   "dob": "1998-03-25",
-   "turnedPro": 2019,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
-  },
-  {
-   "name": "Maria Hjorth",
-   "country": "Sweden",
-   "dob": "1973-10-15",
-   "turnedPro": 1996,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 15.5,
-   "tier": 1
-  },
-  {
-   "name": "Maria Verchenova",
-   "country": "Russia",
-   "dob": "1986-03-27",
-   "turnedPro": 2006,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 8.0,
-   "tier": 2
-  },
-  {
-   "name": "Mariah Stackhouse",
-   "country": "USA",
-   "dob": "1994-03-04",
-   "turnedPro": 2017,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
-   "name": "Mariajo Uribe",
-   "country": "Colombia",
-   "dob": "1990-02-27",
-   "turnedPro": 2009,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
-  },
-  {
-   "name": "Marie-Laure de Lorenzi",
-   "country": "France",
-   "dob": "1961-01-21",
-   "turnedPro": 1986,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 15.5,
-   "tier": 1
-  },
-  {
-   "name": "Marieke Nivard",
-   "country": "Netherlands",
-   "dob": "1990-06-14",
-   "turnedPro": 2011,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Marilynn Smith",
-   "country": "USA",
-   "dob": "1929-04-13",
-   "turnedPro": 1950,
-   "majors": 2,
-   "pgaWins": 0,
-   "fame": 43.5,
-   "tier": 1
-  },
-  {
-   "name": "Marina Alex",
-   "country": "USA",
-   "dob": "1990-08-02",
-   "turnedPro": 2012,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
-   "name": "Marina Arruti",
-   "country": "Spain",
-   "dob": "1972-05-23",
-   "turnedPro": 1995,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Marion Ricordeau",
-   "country": "France",
-   "dob": "1986-08-21",
-   "turnedPro": 2011,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Marisa Baena",
-   "country": "USA",
-   "dob": "1977-06-01",
-   "turnedPro": 1998,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Marjet van der Graaff",
-   "country": "Netherlands",
-   "dob": "1982-07-22",
-   "turnedPro": 2008,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
   },
   {
    "name": "Mark Anderson",
@@ -15808,7 +11978,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Mark McCumber",
@@ -15838,7 +12008,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Mark O'Meara",
@@ -15888,7 +12058,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Mark Wilson",
@@ -15909,56 +12079,6 @@
    "pgaWins": 0,
    "fame": 11.0,
    "tier": 2
-  },
-  {
-   "name": "Marlene Hagge",
-   "country": "USA",
-   "dob": "1934-02-16",
-   "turnedPro": 1950,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 34.0,
-   "tier": 1
-  },
-  {
-   "name": "Marlene Hedblom",
-   "country": "Sweden",
-   "dob": "1972-11-13",
-   "turnedPro": 1998,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Marnie McGuire",
-   "country": "New Zealand",
-   "dob": "1969-02-22",
-   "turnedPro": 1992,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
-   "name": "Marta Figueras-Dotti",
-   "country": "Spain",
-   "dob": "1957-11-12",
-   "turnedPro": 1982,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Martha Nause",
-   "country": "USA",
-   "dob": "1954-09-10",
-   "turnedPro": 1978,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 17.0,
-   "tier": 1
   },
   {
    "name": "Martin Erlandsson",
@@ -16051,16 +12171,6 @@
    "tier": 3
   },
   {
-   "name": "Martina Eberl",
-   "country": "Germany",
-   "dob": "1981-06-29",
-   "turnedPro": 2002,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
-  },
-  {
    "name": "Marty Fleckman",
    "country": "USA",
    "dob": "1944-04-23",
@@ -16079,36 +12189,6 @@
    "pgaWins": 5,
    "fame": 20.0,
    "tier": 1
-  },
-  {
-   "name": "Mary Lena Faulk",
-   "country": "USA",
-   "dob": "1926-04-15",
-   "turnedPro": 1955,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 23.5,
-   "tier": 1
-  },
-  {
-   "name": "Mary Mills",
-   "country": "USA",
-   "dob": "1940-01-19",
-   "turnedPro": 1962,
-   "majors": 3,
-   "pgaWins": 0,
-   "fame": 45.5,
-   "tier": 1
-  },
-  {
-   "name": "María Hernández",
-   "country": "Spain",
-   "dob": "1986-03-24",
-   "turnedPro": 2009,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
   },
   {
    "name": "Masahiro Kawamura",
@@ -16138,7 +12218,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Masashi Ozaki",
@@ -16168,7 +12248,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Mathew Goggin",
@@ -16178,7 +12258,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Mathias Grönberg",
@@ -16189,16 +12269,6 @@
    "pgaWins": 0,
    "fame": 9.0,
    "tier": 2
-  },
-  {
-   "name": "Matilda Castren",
-   "country": "Finland",
-   "dob": "1995-01-18",
-   "turnedPro": 2017,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
-   "tier": 3
   },
   {
    "name": "Mats Hallberg",
@@ -16218,7 +12288,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Matt Bettencourt",
@@ -16238,7 +12308,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Matt Fitzpatrick",
@@ -16308,7 +12378,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 14.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Matt Kuchar",
@@ -16398,7 +12468,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Matthew Jordan",
@@ -16511,16 +12581,6 @@
    "tier": 3
   },
   {
-   "name": "Maureen Madill",
-   "country": "United Kingdom",
-   "dob": "1958-02-01",
-   "turnedPro": 1986,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.0,
-   "tier": 3
-  },
-  {
    "name": "Maurice Bembridge",
    "country": "United Kingdom",
    "dob": "1945-02-21",
@@ -16538,7 +12598,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 14.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Max Faulkner",
@@ -16581,76 +12641,6 @@
    "tier": 2
   },
   {
-   "name": "Meena Lee",
-   "country": "South Korea",
-   "dob": "1981-12-25",
-   "turnedPro": 2002,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 8.0,
-   "tier": 2
-  },
-  {
-   "name": "Meg Mallon",
-   "country": "USA",
-   "dob": "1963-04-14",
-   "turnedPro": 1987,
-   "majors": 4,
-   "pgaWins": 0,
-   "fame": 63.0,
-   "tier": 1
-  },
-  {
-   "name": "Megan Khang",
-   "country": "USA",
-   "dob": "1997-10-23",
-   "turnedPro": 2015,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Mei-Chi Cheng",
-   "country": "China",
-   "dob": "1959-11-01",
-   "turnedPro": 1984,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Melissa McNamara",
-   "country": "USA",
-   "dob": "1966-05-25",
-   "turnedPro": 1988,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Melissa Reid",
-   "country": "United Kingdom",
-   "dob": "1987-09-19",
-   "turnedPro": 2007,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 14.5,
-   "tier": 1
-  },
-  {
-   "name": "Meredith Duncan",
-   "country": "USA",
-   "dob": "1980-03-25",
-   "turnedPro": 2002,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
    "name": "Merrick Bremner",
    "country": "South Africa",
    "dob": "1986-12-07",
@@ -16661,46 +12651,6 @@
    "tier": 2
   },
   {
-   "name": "Mette Hageman",
-   "country": "Netherlands",
-   "dob": "1966-01-01",
-   "turnedPro": 1992,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
-  },
-  {
-   "name": "Mhairi McKay",
-   "country": "USA",
-   "dob": "1975-04-18",
-   "turnedPro": 1997,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
-  },
-  {
-   "name": "Mi Hyang Lee",
-   "country": "South Korea",
-   "dob": "1993-03-30",
-   "turnedPro": 2011,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 8.5,
-   "tier": 2
-  },
-  {
-   "name": "Mi-Hyun Kim",
-   "country": "South Korea",
-   "dob": "1977-01-13",
-   "turnedPro": 1996,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 16.5,
-   "tier": 1
-  },
-  {
    "name": "Mianne Bagger",
    "country": "Australia",
    "dob": "1966-12-25",
@@ -16708,7 +12658,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Michael Allen",
@@ -16778,7 +12728,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Michael Hoey",
@@ -16788,7 +12738,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Michael Jonzon",
@@ -16868,7 +12818,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Michael Weaver",
@@ -16891,16 +12841,6 @@
    "tier": 3
   },
   {
-   "name": "Michelle Wie West",
-   "country": "USA",
-   "dob": "1989-10-11",
-   "turnedPro": 2005,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 40.5,
-   "tier": 1
-  },
-  {
    "name": "Michiel Bothma",
    "country": "South Africa",
    "dob": "1973-03-13",
@@ -16909,16 +12849,6 @@
    "pgaWins": 0,
    "fame": 5.0,
    "tier": 3
-  },
-  {
-   "name": "Michiko Hattori",
-   "country": "Japan",
-   "dob": "1968-09-08",
-   "turnedPro": 1992,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 12.0,
-   "tier": 2
   },
   {
    "name": "Michio Matsumura",
@@ -16968,7 +12898,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Miguel Tabuena",
@@ -17001,16 +12931,6 @@
    "tier": 1
   },
   {
-   "name": "Mika Miyazato",
-   "country": "Japan",
-   "dob": "1989-10-10",
-   "turnedPro": 2008,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
-  },
-  {
    "name": "Mikael Lundberg",
    "country": "Sweden",
    "dob": "1973-08-13",
@@ -17031,16 +12951,6 @@
    "tier": 3
   },
   {
-   "name": "Mikaela Parmlid",
-   "country": "Sweden",
-   "dob": "1980-09-22",
-   "turnedPro": 2003,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
-  },
-  {
    "name": "Mike Brannan",
    "country": "USA",
    "dob": "1955-12-27",
@@ -17058,7 +12968,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Mike Ferguson",
@@ -17098,7 +13008,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Mike Hulbert",
@@ -17138,7 +13048,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Mike Reid",
@@ -17148,7 +13058,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 14.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Mike Souchak",
@@ -17178,7 +13088,7 @@
    "majors": 0,
    "pgaWins": 3,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Mike Weir",
@@ -17198,7 +13108,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Mikko Korhonen",
@@ -17208,7 +13118,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Miles Tunnicliff",
@@ -17231,16 +13141,6 @@
    "tier": 1
   },
   {
-   "name": "Min Lee",
-   "country": "Taiwan",
-   "dob": "1995-06-03",
-   "turnedPro": 2012,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 8.0,
-   "tier": 2
-  },
-  {
    "name": "Min Woo Lee",
    "country": "Australia",
    "dob": "1998-07-27",
@@ -17249,76 +13149,6 @@
    "pgaWins": 1,
    "fame": 9.5,
    "tier": 2
-  },
-  {
-   "name": "Minami Katsu",
-   "country": "Japan",
-   "dob": "1998-07-01",
-   "turnedPro": 2017,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 9.0,
-   "tier": 2
-  },
-  {
-   "name": "Minea Blomqvist",
-   "country": "Finland",
-   "dob": "1985-03-12",
-   "turnedPro": 2003,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 9.5,
-   "tier": 2
-  },
-  {
-   "name": "Minjee Lee",
-   "country": "Australia",
-   "dob": "1996-05-27",
-   "turnedPro": 2014,
-   "majors": 3,
-   "pgaWins": 0,
-   "fame": 55.0,
-   "tier": 1
-  },
-  {
-   "name": "Mirabel Ting",
-   "country": "Malaysia",
-   "dob": "2005-09-24",
-   "turnedPro": 2025,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.5,
-   "tier": 3
-  },
-  {
-   "name": "Mireia Prat",
-   "country": "Spain",
-   "dob": "1989-10-14",
-   "turnedPro": 2012,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Miriam Nagl",
-   "country": "Brazil",
-   "dob": "1981-01-22",
-   "turnedPro": 2001,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
-  },
-  {
-   "name": "Mirim Lee",
-   "country": "South Korea",
-   "dob": "1990-10-25",
-   "turnedPro": 2009,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 21.0,
-   "tier": 1
   },
   {
    "name": "Mithun Perera",
@@ -17351,16 +13181,6 @@
    "tier": 3
   },
   {
-   "name": "Mo Martin",
-   "country": "USA",
-   "dob": "1982-10-08",
-   "turnedPro": 2005,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.0,
-   "tier": 3
-  },
-  {
    "name": "Moe Norman",
    "country": "Canada",
    "dob": "1929-07-10",
@@ -17369,66 +13189,6 @@
    "pgaWins": 0,
    "fame": 30.5,
    "tier": 1
-  },
-  {
-   "name": "Moira Dunn",
-   "country": "USA",
-   "dob": "1971-08-03",
-   "turnedPro": 1994,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Momoka Kobori",
-   "country": "New Zealand",
-   "dob": "1999-01-01",
-   "turnedPro": 2021,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Momoko Osato",
-   "country": "Japan",
-   "dob": "1998-01-01",
-   "turnedPro": 2018,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Momoko Ueda",
-   "country": "Japan",
-   "dob": "1986-06-15",
-   "turnedPro": 2005,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 14.5,
-   "tier": 1
-  },
-  {
-   "name": "Mone Inami",
-   "country": "Japan",
-   "dob": "1999-07-29",
-   "turnedPro": 2018,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 19.5,
-   "tier": 1
-  },
-  {
-   "name": "Monique Smit",
-   "country": "South Africa",
-   "dob": "1991-02-26",
-   "turnedPro": 2012,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
   },
   {
    "name": "Morgan Hoffmann",
@@ -17441,39 +13201,9 @@
    "tier": 3
   },
   {
-   "name": "Morgan Pressel",
-   "country": "USA",
-   "dob": "1988-05-23",
-   "turnedPro": 2005,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 26.0,
-   "tier": 1
-  },
-  {
-   "name": "Morgane Metraux",
-   "country": "Switzerland",
-   "dob": "1997-03-18",
-   "turnedPro": 2018,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
-  },
-  {
    "name": "Moritz Lampert",
    "country": "Germany",
    "dob": "1992-05-14",
-   "turnedPro": 2012,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
-  },
-  {
-   "name": "Moriya Jutanugarn",
-   "country": "Thailand",
-   "dob": "1994-07-28",
    "turnedPro": 2012,
    "majors": 0,
    "pgaWins": 0,
@@ -17488,7 +13218,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Morten Ørum Madsen",
@@ -17511,36 +13241,6 @@
    "tier": 1
   },
   {
-   "name": "Muni He",
-   "country": "China",
-   "dob": "1999-06-17",
-   "turnedPro": 2017,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Muriel Thomson",
-   "country": "United Kingdom",
-   "dob": "1954-12-12",
-   "turnedPro": 1979,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
-   "name": "Murle Breer",
-   "country": "USA",
-   "dob": "1939-01-20",
-   "turnedPro": 1958,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 17.5,
-   "tier": 1
-  },
-  {
    "name": "Murray Crafter",
    "country": "Australia",
    "dob": "1930-12-01",
@@ -17549,16 +13249,6 @@
    "pgaWins": 0,
    "fame": 15.0,
    "tier": 1
-  },
-  {
-   "name": "Myra VanHoose Blackwelder",
-   "country": "USA",
-   "dob": "1955-05-09",
-   "turnedPro": 1980,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.0,
-   "tier": 3
   },
   {
    "name": "Mårten Olander",
@@ -17571,16 +13261,6 @@
    "tier": 3
   },
   {
-   "name": "Na-On Min",
-   "country": "South Korea",
-   "dob": "1988-11-05",
-   "turnedPro": 2007,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
    "name": "Nacho Elvira",
    "country": "USA",
    "dob": "1987-02-17",
@@ -17588,56 +13268,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Nana Suganuma",
-   "country": "Japan",
-   "dob": "2000-01-01",
-   "turnedPro": 2018,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
-   "name": "Nanci Bowen",
-   "country": "USA",
-   "dob": "1967-03-31",
-   "turnedPro": 1991,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 17.0,
-   "tier": 1
-  },
-  {
-   "name": "Nancy Lopez",
-   "country": "USA",
-   "dob": "1957-01-06",
-   "turnedPro": 1977,
-   "majors": 3,
-   "pgaWins": 0,
-   "fame": 75.5,
-   "tier": 1
-  },
-  {
-   "name": "Nancy Scranton",
-   "country": "USA",
-   "dob": "1961-04-26",
-   "turnedPro": 1985,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 19.5,
-   "tier": 1
-  },
-  {
-   "name": "Nanna Koerstz Madsen",
-   "country": "Denmark",
-   "dob": "1994-10-23",
-   "turnedPro": 2015,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 9.0,
    "tier": 2
   },
   {
@@ -17651,46 +13281,6 @@
    "tier": 1
   },
   {
-   "name": "Naree Song",
-   "country": "South Korea",
-   "dob": "1986-05-01",
-   "turnedPro": 2004,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
-   "name": "Nasa Hataoka",
-   "country": "Japan",
-   "dob": "1999-01-13",
-   "turnedPro": 2016,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 11.0,
-   "tier": 2
-  },
-  {
-   "name": "Natalia Ghilzon",
-   "country": "Canada",
-   "dob": "1990-05-18",
-   "turnedPro": 2011,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.0,
-   "tier": 3
-  },
-  {
-   "name": "Natasha Andrea Oon",
-   "country": "Malaysia",
-   "dob": "2001-09-11",
-   "turnedPro": 2022,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.5,
-   "tier": 3
-  },
-  {
    "name": "Nate Lashley",
    "country": "USA",
    "dob": "1982-12-12",
@@ -17698,7 +13288,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 13.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Nate Smith",
@@ -17781,16 +13371,6 @@
    "tier": 1
   },
   {
-   "name": "Nelly Korda",
-   "country": "USA",
-   "dob": "1998-07-28",
-   "turnedPro": 2016,
-   "majors": 4,
-   "pgaWins": 0,
-   "fame": 82.0,
-   "tier": 1
-  },
-  {
    "name": "Niall Kearney",
    "country": "Ireland",
    "dob": "1988-03-10",
@@ -17818,7 +13398,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Nicholas Thompson",
@@ -17878,7 +13458,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Nick Gilliam",
@@ -17898,7 +13478,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Nick Job",
@@ -17958,7 +13538,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Nico Echavarría",
@@ -17978,7 +13558,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Nicolai Højgaard",
@@ -17988,7 +13568,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Nicolas Colsaerts",
@@ -17998,7 +13578,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Nicolas Meitinger",
@@ -18021,66 +13601,6 @@
    "tier": 3
   },
   {
-   "name": "Nicole Broch Estrup",
-   "country": "Denmark",
-   "dob": "1993-05-14",
-   "turnedPro": 2013,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.5,
-   "tier": 2
-  },
-  {
-   "name": "Nicole Castrale",
-   "country": "USA",
-   "dob": "1979-03-24",
-   "turnedPro": 2001,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
-  },
-  {
-   "name": "Nicole Gergely",
-   "country": "Austria",
-   "dob": "1984-11-12",
-   "turnedPro": 2005,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
-  },
-  {
-   "name": "Nicole Perrot",
-   "country": "Chile",
-   "dob": "1983-12-26",
-   "turnedPro": 2002,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
-  },
-  {
-   "name": "Nikki Campbell",
-   "country": "Australia",
-   "dob": "1980-09-09",
-   "turnedPro": 2002,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Nikki Garrett",
-   "country": "Australia",
-   "dob": "1984-01-08",
-   "turnedPro": 2005,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
    "name": "Niklas Nørgaard Møller",
    "country": "Denmark",
    "dob": "1992-05-31",
@@ -18099,16 +13619,6 @@
    "pgaWins": 0,
    "fame": 9.0,
    "tier": 2
-  },
-  {
-   "name": "Nobhule Dlamini",
-   "country": "Eswatini",
-   "dob": "1991-11-06",
-   "turnedPro": 2014,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
   },
   {
    "name": "Noboru Sugai",
@@ -18138,7 +13648,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Nobuo Serizawa",
@@ -18158,7 +13668,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Noh Seung-yul",
@@ -18178,17 +13688,7 @@
    "majors": 0,
    "pgaWins": 3,
    "fame": 13.0,
-   "tier": 2
-  },
-  {
-   "name": "Noora Komulainen",
-   "country": "Finland",
-   "dob": "1990-10-30",
-   "turnedPro": 2013,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Norio Shinozaki",
@@ -18241,26 +13741,6 @@
    "tier": 1
   },
   {
-   "name": "Nuria Iturrioz",
-   "country": "Spain",
-   "dob": "1995-12-16",
-   "turnedPro": 2015,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Oh Ji-young",
-   "country": "South Korea",
-   "dob": "1988-07-03",
-   "turnedPro": 2006,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
-  },
-  {
    "name": "Olin Browne",
    "country": "USA",
    "dob": "1959-05-22",
@@ -18298,7 +13778,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Oliver Fisher",
@@ -18408,7 +13888,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "PH McIntyre",
@@ -18428,7 +13908,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Pablo Martín",
@@ -18451,46 +13931,6 @@
    "tier": 1
   },
   {
-   "name": "Paige Mackenzie",
-   "country": "USA",
-   "dob": "1983-02-08",
-   "turnedPro": 2006,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Pam Barnett",
-   "country": "USA",
-   "dob": "1944-03-02",
-   "turnedPro": 1966,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.5,
-   "tier": 3
-  },
-  {
-   "name": "Pam Higgins",
-   "country": "USA",
-   "dob": "1945-12-05",
-   "turnedPro": 1969,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Pamela Wright",
-   "country": "USA",
-   "dob": "1964-06-26",
-   "turnedPro": 1988,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
    "name": "Panuphol Pittayarat",
    "country": "Thailand",
    "dob": "1993-01-01",
@@ -18498,16 +13938,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 4.5,
-   "tier": 3
-  },
-  {
-   "name": "Paola Moreno",
-   "country": "Colombia",
-   "dob": "1985-08-22",
-   "turnedPro": 2009,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
    "tier": 3
   },
   {
@@ -18519,26 +13949,6 @@
    "pgaWins": 0,
    "fame": 4.0,
    "tier": 3
-  },
-  {
-   "name": "Park Hee-jung",
-   "country": "South Korea",
-   "dob": "1980-02-27",
-   "turnedPro": 1998,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
-   "name": "Park Hee-young",
-   "country": "South Korea",
-   "dob": "1987-05-24",
-   "turnedPro": 2004,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 9.0,
-   "tier": 2
   },
   {
    "name": "Park Jae-bum",
@@ -18571,16 +13981,6 @@
    "tier": 3
   },
   {
-   "name": "Park Sung-hyun",
-   "country": "South Korea",
-   "dob": "1993-09-21",
-   "turnedPro": 2012,
-   "majors": 2,
-   "pgaWins": 0,
-   "fame": 40.0,
-   "tier": 1
-  },
-  {
    "name": "Pascal Edmond",
    "country": "France",
    "dob": "1971-11-19",
@@ -18599,26 +13999,6 @@
    "pgaWins": 0,
    "fame": 4.0,
    "tier": 3
-  },
-  {
-   "name": "Pat Bradley",
-   "country": "USA",
-   "dob": "1951-03-24",
-   "turnedPro": 1974,
-   "majors": 6,
-   "pgaWins": 0,
-   "fame": 100.0,
-   "tier": 1
-  },
-  {
-   "name": "Pat Hurst",
-   "country": "USA",
-   "dob": "1969-05-23",
-   "turnedPro": 1991,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 22.5,
-   "tier": 1
   },
   {
    "name": "Pat Lindsey",
@@ -18648,16 +14028,6 @@
    "majors": 0,
    "pgaWins": 3,
    "fame": 16.0,
-   "tier": 1
-  },
-  {
-   "name": "Patricia Meunier-Lebouc",
-   "country": "France",
-   "dob": "1972-11-16",
-   "turnedPro": 1994,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 19.5,
    "tier": 1
   },
   {
@@ -18718,36 +14088,6 @@
    "majors": 0,
    "pgaWins": 3,
    "fame": 16.0,
-   "tier": 1
-  },
-  {
-   "name": "Patty Berg",
-   "country": "USA",
-   "dob": "1918-02-13",
-   "turnedPro": 1940,
-   "majors": 15,
-   "pgaWins": 0,
-   "fame": 225.5,
-   "tier": 1
-  },
-  {
-   "name": "Patty Sheehan",
-   "country": "USA",
-   "dob": "1956-10-27",
-   "turnedPro": 1980,
-   "majors": 6,
-   "pgaWins": 0,
-   "fame": 109.5,
-   "tier": 1
-  },
-  {
-   "name": "Patty Tavatanakit",
-   "country": "Thailand",
-   "dob": "1999-10-11",
-   "turnedPro": 2020,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 19.5,
    "tier": 1
   },
   {
@@ -18858,7 +14198,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Paul Haley II",
@@ -18908,7 +14248,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Paul Waring",
@@ -18941,46 +14281,6 @@
    "tier": 2
   },
   {
-   "name": "Paula Creamer",
-   "country": "USA",
-   "dob": "1986-08-05",
-   "turnedPro": 2004,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 35.0,
-   "tier": 1
-  },
-  {
-   "name": "Paula Martí",
-   "country": "Spain",
-   "dob": "1980-01-29",
-   "turnedPro": 2000,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.5,
-   "tier": 2
-  },
-  {
-   "name": "Paula Reto",
-   "country": "South Africa",
-   "dob": "1990-05-03",
-   "turnedPro": 2013,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 8.0,
-   "tier": 2
-  },
-  {
-   "name": "Pauline Roussin",
-   "country": "France",
-   "dob": "2000-07-05",
-   "turnedPro": 2021,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
    "name": "Payne Stewart",
    "country": "USA",
    "dob": "1957-01-30",
@@ -18989,26 +14289,6 @@
    "pgaWins": 11,
    "fame": 103.0,
    "tier": 1
-  },
-  {
-   "name": "Paz Echeverria",
-   "country": "Chile",
-   "dob": "1985-05-07",
-   "turnedPro": 2011,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.0,
-   "tier": 3
-  },
-  {
-   "name": "Pearl Sinn",
-   "country": "USA",
-   "dob": "1967-07-17",
-   "turnedPro": 1989,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
   },
   {
    "name": "Pedro Figueiredo",
@@ -19038,26 +14318,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.5,
-   "tier": 2
-  },
-  {
-   "name": "Peggy Conley",
-   "country": "USA",
-   "dob": "1947-01-01",
-   "turnedPro": 1976,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
-   "name": "Peggy Kirk Bell",
-   "country": "USA",
-   "dob": "1921-10-28",
-   "turnedPro": 1950,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 17.0,
    "tier": 1
   },
   {
@@ -19068,16 +14328,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.0,
-   "tier": 3
-  },
-  {
-   "name": "Penny Grice-Whittaker",
-   "country": "United Kingdom",
-   "dob": "1964-01-01",
-   "turnedPro": 1985,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
    "tier": 3
   },
   {
@@ -19099,26 +14349,6 @@
    "pgaWins": 0,
    "fame": 10.5,
    "tier": 2
-  },
-  {
-   "name": "Pernilla Lindberg",
-   "country": "Sweden",
-   "dob": "1986-07-13",
-   "turnedPro": 2009,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 19.5,
-   "tier": 1
-  },
-  {
-   "name": "Perrine Delacour",
-   "country": "France",
-   "dob": "1994-04-05",
-   "turnedPro": 2012,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
   },
   {
    "name": "Perry Moss",
@@ -19148,7 +14378,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Peter Alliss",
@@ -19168,7 +14398,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Peter Butler",
@@ -19258,7 +14488,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Peter Lawrie",
@@ -19298,7 +14528,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Peter Mitchell",
@@ -19348,7 +14578,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Peter Thomson",
@@ -19368,7 +14598,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Peter Uihlein",
@@ -19398,7 +14628,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Phil Mickelson",
@@ -19438,7 +14668,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Philip Golding",
@@ -19478,7 +14708,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Philippe Toussaint",
@@ -19508,17 +14738,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Pia Babnik",
-   "country": "Slovenia",
-   "dob": "2004-01-02",
-   "turnedPro": 2020,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Pierre Fulke",
@@ -19561,16 +14781,6 @@
    "tier": 3
   },
   {
-   "name": "Pornanong Phatlum",
-   "country": "Thailand",
-   "dob": "1989-12-04",
-   "turnedPro": 2006,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 15.0,
-   "tier": 1
-  },
-  {
    "name": "Prayad Marksaeng",
    "country": "Thailand",
    "dob": "1966-01-30",
@@ -19601,16 +14811,6 @@
    "tier": 2
   },
   {
-   "name": "Puk Lyng Thomsen",
-   "country": "Denmark",
-   "dob": "1998-04-15",
-   "turnedPro": 2022,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.5,
-   "tier": 3
-  },
-  {
    "name": "R. H. Sikes",
    "country": "USA",
    "dob": "1940-03-06",
@@ -19628,27 +14828,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Rachel Hetherington",
-   "country": "Australia",
-   "dob": "1972-04-23",
-   "turnedPro": 1994,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.5,
    "tier": 2
-  },
-  {
-   "name": "Radius Kalyanamit",
-   "country": "Thailand",
-   "dob": "1976-01-01",
-   "turnedPro": 2001,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
   },
   {
    "name": "Rafael Becker",
@@ -19658,7 +14838,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Rafael Cabrera-Bello",
@@ -19668,7 +14848,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Rafael Campos",
@@ -19678,7 +14858,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Rafael Echenique",
@@ -19688,7 +14868,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Rafael Gómez",
@@ -19718,7 +14898,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Ralph Guldahl",
@@ -19758,16 +14938,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 11.0,
-   "tier": 2
-  },
-  {
-   "name": "Raquel Carriedo-Tomas",
-   "country": "Spain",
-   "dob": "1971-02-08",
-   "turnedPro": 1995,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.5,
    "tier": 2
   },
   {
@@ -19831,46 +15001,6 @@
    "tier": 2
   },
   {
-   "name": "Rebecca Artis",
-   "country": "Australia",
-   "dob": "1988-11-28",
-   "turnedPro": 2010,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Rebecca Codd",
-   "country": "Ireland",
-   "dob": "1981-04-25",
-   "turnedPro": 2002,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
-   "name": "Rebecca Hudson",
-   "country": "United Kingdom",
-   "dob": "1979-06-13",
-   "turnedPro": 2002,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 8.5,
-   "tier": 2
-  },
-  {
-   "name": "Reika Usui",
-   "country": "Japan",
-   "dob": "1998-01-01",
-   "turnedPro": 2018,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
    "name": "Reinier Saxton",
    "country": "Netherlands",
    "dob": "1988-02-10",
@@ -19878,16 +15008,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 3
-  },
-  {
-   "name": "Renate Grimstad",
-   "country": "Norway",
-   "dob": "1997-01-24",
-   "turnedPro": 2022,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.5,
    "tier": 3
   },
   {
@@ -19899,16 +15019,6 @@
    "pgaWins": 0,
    "fame": 9.0,
    "tier": 2
-  },
-  {
-   "name": "Renee Powell",
-   "country": "USA",
-   "dob": "1946-05-04",
-   "turnedPro": 1967,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
   },
   {
    "name": "Retief Goosen",
@@ -19928,7 +15038,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Rhein Gibson",
@@ -19948,7 +15058,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Ricardo González",
@@ -19978,7 +15088,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Rich Beem",
@@ -19998,7 +15108,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Richard Boxall",
@@ -20118,7 +15228,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Richie Coughlan",
@@ -20198,7 +15308,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Rick Todd",
@@ -20228,17 +15338,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Rikako Morita",
-   "country": "Japan",
-   "dob": "1990-01-08",
-   "turnedPro": 2008,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Rikard Karlberg",
@@ -20248,17 +15348,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Riko Higashio",
-   "country": "Japan",
-   "dob": "1975-11-18",
-   "turnedPro": 1998,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Rikuya Hoshino",
@@ -20268,17 +15358,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
-  },
-  {
-   "name": "Rio Takeda",
-   "country": "Japan",
-   "dob": "2003-04-02",
-   "turnedPro": 2022,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Rob Oppenheim",
@@ -20288,7 +15368,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Robby Shelton",
@@ -20318,7 +15398,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Robert Damron",
@@ -20348,7 +15428,7 @@
    "majors": 0,
    "pgaWins": 3,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Robert Karlsson",
@@ -20368,7 +15448,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Robert MacIntyre",
@@ -20388,7 +15468,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Robert Streb",
@@ -20408,7 +15488,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Roberto Castro",
@@ -20488,7 +15568,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Rod Pampling",
@@ -20528,7 +15608,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Rodolfo Cazaubon",
@@ -20538,7 +15618,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Rodolfo González",
@@ -20711,26 +15791,6 @@
    "tier": 1
   },
   {
-   "name": "Rose Zhang",
-   "country": "USA",
-   "dob": "2003-05-24",
-   "turnedPro": 2023,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Rosie Jones",
-   "country": "USA",
-   "dob": "1959-11-13",
-   "turnedPro": 1982,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 18.5,
-   "tier": 1
-  },
-  {
    "name": "Ross Bain",
    "country": "United Kingdom",
    "dob": "1975-11-25",
@@ -20758,7 +15818,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Ross McFarlane",
@@ -20789,16 +15849,6 @@
    "pgaWins": 0,
    "fame": 10.5,
    "tier": 2
-  },
-  {
-   "name": "Ruixin Liu",
-   "country": "China",
-   "dob": "1998-11-13",
-   "turnedPro": 2017,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
   },
   {
    "name": "Russ Cochran",
@@ -20838,7 +15888,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 13.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Russell Weir",
@@ -20848,16 +15898,6 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 10.5,
-   "tier": 2
-  },
-  {
-   "name": "Ruth Jessen",
-   "country": "USA",
-   "dob": "1936-11-12",
-   "turnedPro": 1956,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.5,
    "tier": 2
   },
   {
@@ -20998,7 +16038,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Ryosuke Kinoshita",
@@ -21011,16 +16051,6 @@
    "tier": 3
   },
   {
-   "name": "Ryu Hae-ran",
-   "country": "South Korea",
-   "dob": "2001-03-23",
-   "turnedPro": 2019,
-   "majors": 2,
-   "pgaWins": 0,
-   "fame": 32.0,
-   "tier": 1
-  },
-  {
    "name": "Ryu Hyun-woo",
    "country": "South Korea",
    "dob": "1981-09-08",
@@ -21029,16 +16059,6 @@
    "pgaWins": 0,
    "fame": 4.0,
    "tier": 3
-  },
-  {
-   "name": "Ryu So-yeon",
-   "country": "South Korea",
-   "dob": "1990-06-29",
-   "turnedPro": 2007,
-   "majors": 2,
-   "pgaWins": 0,
-   "fame": 45.5,
-   "tier": 1
   },
   {
    "name": "Ryuichi Oda",
@@ -21071,16 +16091,6 @@
    "tier": 3
   },
   {
-   "name": "Sadena Parks",
-   "country": "USA",
-   "dob": "1990-04-05",
-   "turnedPro": 2013,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
    "name": "Sadom Kaewkanjana",
    "country": "Thailand",
    "dob": "1998-07-06",
@@ -21099,56 +16109,6 @@
    "pgaWins": 1,
    "fame": 8.0,
    "tier": 2
-  },
-  {
-   "name": "Saki Baba",
-   "country": "Japan",
-   "dob": "2005-04-25",
-   "turnedPro": 2023,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
-   "name": "Saki Nagamine",
-   "country": "Japan",
-   "dob": "1995-04-28",
-   "turnedPro": 2014,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
-   "name": "Sakura Yokomine",
-   "country": "Japan",
-   "dob": "1985-12-13",
-   "turnedPro": 2004,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 15.5,
-   "tier": 1
-  },
-  {
-   "name": "Sally Little",
-   "country": "USA",
-   "dob": "1951-10-12",
-   "turnedPro": 1971,
-   "majors": 2,
-   "pgaWins": 0,
-   "fame": 38.5,
-   "tier": 1
-  },
-  {
-   "name": "Sally Sessions",
-   "country": "USA",
-   "dob": "1923-02-22",
-   "turnedPro": 1948,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
   },
   {
    "name": "Sam Adams",
@@ -21251,16 +16211,6 @@
    "tier": 3
   },
   {
-   "name": "Samantha Giles",
-   "country": "England",
-   "dob": "1994-10-28",
-   "turnedPro": 2017,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
    "name": "Sami Välimäki",
    "country": "Finland",
    "dob": "1998-07-16",
@@ -21281,56 +16231,6 @@
    "tier": 1
   },
   {
-   "name": "Sandra Haynie",
-   "country": "USA",
-   "dob": "1943-06-04",
-   "turnedPro": 1961,
-   "majors": 4,
-   "pgaWins": 0,
-   "fame": 77.0,
-   "tier": 1
-  },
-  {
-   "name": "Sandra Palmer",
-   "country": "USA",
-   "dob": "1943-03-10",
-   "turnedPro": 1964,
-   "majors": 2,
-   "pgaWins": 0,
-   "fame": 43.0,
-   "tier": 1
-  },
-  {
-   "name": "Sandra Post",
-   "country": "Canada",
-   "dob": "1948-06-04",
-   "turnedPro": 1968,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 23.0,
-   "tier": 1
-  },
-  {
-   "name": "Sandra Spuzich",
-   "country": "USA",
-   "dob": "1937-04-03",
-   "turnedPro": 1962,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 19.0,
-   "tier": 1
-  },
-  {
-   "name": "Sandrine Mendiburu",
-   "country": "France",
-   "dob": "1972-10-15",
-   "turnedPro": 1991,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
-  },
-  {
    "name": "Sandy Lyle",
    "country": "Scotland",
    "dob": "1958-02-09",
@@ -21341,16 +16241,6 @@
    "tier": 1
   },
   {
-   "name": "Sanna Nuutinen",
-   "country": "Finland",
-   "dob": "1991-04-08",
-   "turnedPro": 2014,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
-  },
-  {
    "name": "Santiago Luna",
    "country": "Spain",
    "dob": "1962-11-29",
@@ -21358,37 +16248,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.0,
-   "tier": 2
-  },
-  {
-   "name": "Sarah Lee",
-   "country": "South Korea",
-   "dob": "1979-02-16",
-   "turnedPro": 1998,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Sarah Schober",
-   "country": "Austria",
-   "dob": "1992-04-15",
-   "turnedPro": 2015,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
-   "name": "Saranporn Langkulgasettrin",
-   "country": "Thailand",
-   "dob": "1999-01-01",
-   "turnedPro": 2015,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 10.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Satoshi Higashi",
@@ -21438,7 +16298,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Scott Dunlap",
@@ -21478,7 +16338,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Scott Henderson",
@@ -21618,7 +16478,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Scott Verplank",
@@ -21648,16 +16508,6 @@
    "majors": 2,
    "pgaWins": 12,
    "fame": 96.5,
-   "tier": 1
-  },
-  {
-   "name": "Se-ri Pak",
-   "country": "South Korea",
-   "dob": "1977-09-28",
-   "turnedPro": 1996,
-   "majors": 5,
-   "pgaWins": 0,
-   "fame": 97.5,
    "tier": 1
   },
   {
@@ -21728,7 +16578,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Sebastian Vazquez",
@@ -21748,7 +16598,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Sebastián García Rodríguez",
@@ -21768,7 +16618,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Seiji Ebihara",
@@ -21778,7 +16628,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Seiki Okuda",
@@ -21788,17 +16638,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Seong Eun-jeong",
-   "country": "South Korea",
-   "dob": "1999-10-31",
-   "turnedPro": 2017,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Sepp Straka",
@@ -21848,7 +16688,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Shane Lowry",
@@ -21859,56 +16699,6 @@
    "pgaWins": 2,
    "fame": 37.5,
    "tier": 1
-  },
-  {
-   "name": "Shannon Tan",
-   "country": "Singapore",
-   "dob": "2004-04-09",
-   "turnedPro": 2024,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
-  },
-  {
-   "name": "Shanshan Feng",
-   "country": "China",
-   "dob": "1989-08-05",
-   "turnedPro": 2007,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 41.5,
-   "tier": 1
-  },
-  {
-   "name": "Sharmila Nicollet",
-   "country": "India",
-   "dob": "1991-03-12",
-   "turnedPro": 2009,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 12.5,
-   "tier": 2
-  },
-  {
-   "name": "Sharon Barrett",
-   "country": "USA",
-   "dob": "1961-09-18",
-   "turnedPro": 1980,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
-   "name": "Sharon Miller",
-   "country": "USA",
-   "dob": "1941-01-31",
-   "turnedPro": 1966,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
   },
   {
    "name": "Shaun Micheel",
@@ -21928,7 +16718,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Shawn Stefani",
@@ -21939,36 +16729,6 @@
    "pgaWins": 0,
    "fame": 4.0,
    "tier": 3
-  },
-  {
-   "name": "Shelley Hamlin",
-   "country": "USA",
-   "dob": "1949-05-28",
-   "turnedPro": 1972,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Sherri Steinhauer",
-   "country": "USA",
-   "dob": "1962-12-27",
-   "turnedPro": 1985,
-   "majors": 2,
-   "pgaWins": 0,
-   "fame": 36.0,
-   "tier": 1
-  },
-  {
-   "name": "Sherri Turner",
-   "country": "USA",
-   "dob": "1956-10-04",
-   "turnedPro": 1979,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 22.0,
-   "tier": 1
   },
   {
    "name": "Shigeki Maruyama",
@@ -21991,16 +16751,6 @@
    "tier": 3
   },
   {
-   "name": "Shiho Oyama",
-   "country": "Japan",
-   "dob": "1977-05-25",
-   "turnedPro": 2000,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 15.0,
-   "tier": 1
-  },
-  {
    "name": "Shingo Katayama",
    "country": "Japan",
    "dob": "1973-01-31",
@@ -22009,26 +16759,6 @@
    "pgaWins": 0,
    "fame": 28.0,
    "tier": 1
-  },
-  {
-   "name": "Shirley Englehorn",
-   "country": "USA",
-   "dob": "1940-12-12",
-   "turnedPro": 1959,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 22.0,
-   "tier": 1
-  },
-  {
-   "name": "Shirley Spork",
-   "country": "USA",
-   "dob": "1927-05-14",
-   "turnedPro": 1950,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
   },
   {
    "name": "Shiv Chowrasia",
@@ -22049,16 +16779,6 @@
    "pgaWins": 0,
    "fame": 8.5,
    "tier": 2
-  },
-  {
-   "name": "Shoko Sasaki",
-   "country": "Japan",
-   "dob": "1996-06-08",
-   "turnedPro": 2015,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
   },
   {
    "name": "Shubhankar Sharma",
@@ -22108,37 +16828,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
-  },
-  {
-   "name": "Silvia Bañón",
-   "country": "Spain",
-   "dob": "1992-10-21",
-   "turnedPro": 2016,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
-   "name": "Silvia Bertolaccini",
-   "country": "Argentina",
-   "dob": "1950-01-30",
-   "turnedPro": 1975,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
-  },
-  {
-   "name": "Silvia Cavalleri",
-   "country": "Italy",
-   "dob": "1972-10-10",
-   "turnedPro": 1997,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Silvio Grappasonni",
@@ -22178,7 +16868,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Simon Griffiths",
@@ -22208,7 +16898,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Simon P. Brown",
@@ -22238,7 +16928,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Simon Wakefield",
@@ -22308,133 +16998,13 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 7.0,
-   "tier": 3
-  },
-  {
-   "name": "Smilla Tarning Sønderby",
-   "country": "Denmark",
-   "dob": "2000-07-22",
-   "turnedPro": 2021,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
-   "name": "Smriti Mehra",
-   "country": "India",
-   "dob": "1972-05-12",
-   "turnedPro": 1994,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 10.0,
    "tier": 2
-  },
-  {
-   "name": "Sofia García",
-   "country": "Paraguay",
-   "dob": "1998-06-22",
-   "turnedPro": 2021,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.0,
-   "tier": 3
-  },
-  {
-   "name": "Sofia Grönberg-Whitmore",
-   "country": "USA",
-   "dob": "1965-05-25",
-   "turnedPro": 1988,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.0,
-   "tier": 3
-  },
-  {
-   "name": "Sofie Andersson",
-   "country": "Sweden",
-   "dob": "1983-06-06",
-   "turnedPro": 2007,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.5,
-   "tier": 3
-  },
-  {
-   "name": "Sofie Kibsgaard Nielsen",
-   "country": "Denmark",
-   "dob": "1999-05-05",
-   "turnedPro": 2022,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
-   "name": "Song Bo-bae",
-   "country": "South Korea",
-   "dob": "1986-02-22",
-   "turnedPro": 2004,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.5,
-   "tier": 2
-  },
-  {
-   "name": "Song-Hee Kim",
-   "country": "South Korea",
-   "dob": "1988-07-16",
-   "turnedPro": 2006,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
-   "tier": 3
   },
   {
    "name": "Sonny Skinner",
    "country": "USA",
    "dob": "1960-08-18",
    "turnedPro": 1982,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
-   "name": "Sophia Schubert",
-   "country": "USA",
-   "dob": "1996-01-31",
-   "turnedPro": 2018,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
-   "name": "Sophie Gustafson",
-   "country": "Sweden",
-   "dob": "1973-12-27",
-   "turnedPro": 1992,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 22.0,
-   "tier": 1
-  },
-  {
-   "name": "Sophie Sandolo",
-   "country": "Italy",
-   "dob": "1976-07-20",
-   "turnedPro": 1999,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.5,
-   "tier": 2
-  },
-  {
-   "name": "Sophie Walker",
-   "country": "United Kingdom",
-   "dob": "1984-08-09",
-   "turnedPro": 2006,
    "majors": 0,
    "pgaWins": 0,
    "fame": 4.0,
@@ -22449,46 +17019,6 @@
    "pgaWins": 0,
    "fame": 5.0,
    "tier": 3
-  },
-  {
-   "name": "Stacey Keating",
-   "country": "Australia",
-   "dob": "1986-06-21",
-   "turnedPro": 2010,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.5,
-   "tier": 2
-  },
-  {
-   "name": "Stacy Lee Bregman",
-   "country": "South Africa",
-   "dob": "1986-10-07",
-   "turnedPro": 2006,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Stacy Lewis",
-   "country": "USA",
-   "dob": "1985-02-16",
-   "turnedPro": 2008,
-   "majors": 2,
-   "pgaWins": 0,
-   "fame": 45.0,
-   "tier": 1
-  },
-  {
-   "name": "Stacy Prammanasudh",
-   "country": "USA",
-   "dob": "1979-09-23",
-   "turnedPro": 2002,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 8.0,
-   "tier": 2
   },
   {
    "name": "Stan Leonard",
@@ -22511,16 +17041,6 @@
    "tier": 3
   },
   {
-   "name": "Stefania Croce",
-   "country": "Italy",
-   "dob": "1970-05-17",
-   "turnedPro": 1989,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
-  },
-  {
    "name": "Stephan Jäger",
    "country": "Germany",
    "dob": "1989-05-30",
@@ -22531,16 +17051,6 @@
    "tier": 2
   },
   {
-   "name": "Stephanie Meadow",
-   "country": "United Kingdom",
-   "dob": "1992-01-20",
-   "turnedPro": 2014,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
    "name": "Stephen Allan",
    "country": "Australia",
    "dob": "1973-10-18",
@@ -22548,7 +17058,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Stephen Ames",
@@ -22648,7 +17158,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Steve Jones",
@@ -22768,7 +17278,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Steven Bottomley",
@@ -22788,7 +17298,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Steven Brown",
@@ -22858,7 +17368,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Stewart Cink",
@@ -22908,37 +17418,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Stéphanie Arricau",
-   "country": "France",
-   "dob": "1973-06-14",
-   "turnedPro": 1999,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Su-Hyun Oh",
-   "country": "Australia",
-   "dob": "1996-05-23",
-   "turnedPro": 2014,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.5,
    "tier": 2
-  },
-  {
-   "name": "Sue Roberts",
-   "country": "USA",
-   "dob": "1948-06-22",
-   "turnedPro": 1969,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
   },
   {
    "name": "Sujjan Singh",
@@ -22961,36 +17441,6 @@
    "tier": 3
   },
   {
-   "name": "Sun-Young Yoo",
-   "country": "South Korea",
-   "dob": "1986-12-13",
-   "turnedPro": 2004,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 17.5,
-   "tier": 1
-  },
-  {
-   "name": "Susie Berning",
-   "country": "USA",
-   "dob": "1941-07-22",
-   "turnedPro": 1964,
-   "majors": 4,
-   "pgaWins": 0,
-   "fame": 60.5,
-   "tier": 1
-  },
-  {
-   "name": "Susie McAllister",
-   "country": "USA",
-   "dob": "1947-08-27",
-   "turnedPro": 1971,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
    "name": "Sven Strüver",
    "country": "Germany",
    "dob": "1967-08-09",
@@ -22998,17 +17448,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Sára Kousková",
-   "country": "Czechia",
-   "dob": "1999-07-02",
-   "turnedPro": 2022,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Séamus Power",
@@ -23018,7 +17458,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Sébastien Delagrange",
@@ -23028,7 +17468,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Sébastien Gros",
@@ -23038,7 +17478,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Søren Hansen",
@@ -23058,7 +17498,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Taco Remkes",
@@ -23068,7 +17508,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Tadahiro Takayama",
@@ -23128,7 +17568,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Takenori Hiraishi",
@@ -23171,26 +17611,6 @@
    "tier": 2
   },
   {
-   "name": "Tandi von Ruben",
-   "country": "South Africa",
-   "dob": "1986-04-17",
-   "turnedPro": 2008,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
-  },
-  {
-   "name": "Tania Elosegui",
-   "country": "Spain",
-   "dob": "1981-12-13",
-   "turnedPro": 2005,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
-   "tier": 3
-  },
-  {
    "name": "Tateo Ozaki",
    "country": "Japan",
    "dob": "1954-01-09",
@@ -23198,7 +17618,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Taylor Moore",
@@ -23208,7 +17628,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Taylor Pendrith",
@@ -23238,16 +17658,6 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 18.5,
-   "tier": 1
-  },
-  {
-   "name": "Teresa Lu",
-   "country": "China",
-   "dob": "1987-10-13",
-   "turnedPro": 2005,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 18.0,
    "tier": 1
   },
   {
@@ -23348,7 +17758,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Thaworn Wiratchant",
@@ -23369,16 +17779,6 @@
    "pgaWins": 0,
    "fame": 2.5,
    "tier": 3
-  },
-  {
-   "name": "Thidapa Suwannapura",
-   "country": "Thailand",
-   "dob": "1992-11-20",
-   "turnedPro": 2011,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 9.5,
-   "tier": 2
   },
   {
    "name": "Thitiphun Chuayprakong",
@@ -23418,7 +17818,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Thomas Gögele",
@@ -23458,7 +17858,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 12.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Thongchai Jaidee",
@@ -23481,16 +17881,6 @@
    "tier": 3
   },
   {
-   "name": "Tiffany Joh",
-   "country": "USA",
-   "dob": "1986-12-08",
-   "turnedPro": 2009,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
    "name": "Tiger Woods",
    "country": "USA",
    "dob": "1975-12-30",
@@ -23499,16 +17889,6 @@
    "pgaWins": 82,
    "fame": 467.0,
    "tier": 1
-  },
-  {
-   "name": "Tiia Koivisto",
-   "country": "Finland",
-   "dob": "1994-02-06",
-   "turnedPro": 2016,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
   },
   {
    "name": "Tim Clark",
@@ -23528,7 +17908,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Tim Herron",
@@ -23548,7 +17928,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Tim Petrovic",
@@ -23598,27 +17978,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Tina Fischer",
-   "country": "Germany",
-   "dob": "1970-09-29",
-   "turnedPro": 1995,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Tina Tombs",
-   "country": "USA",
-   "dob": "1962-04-04",
-   "turnedPro": 1985,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Titch Moore",
@@ -23629,16 +17989,6 @@
    "pgaWins": 0,
    "fame": 8.5,
    "tier": 2
-  },
-  {
-   "name": "Titiya Plucksataporn",
-   "country": "Thailand",
-   "dob": "1982-12-24",
-   "turnedPro": 2005,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.0,
-   "tier": 3
   },
   {
    "name": "Tjaart van der Walt",
@@ -23728,7 +18078,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Tom Jenkins",
@@ -23788,7 +18138,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Tom Pernice, Jr.",
@@ -23838,7 +18188,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Tom Watson",
@@ -23868,7 +18218,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Tom Whitney",
@@ -23898,7 +18248,7 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 14.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Tommy Bolt",
@@ -23978,7 +18328,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Tongoona Charamba",
@@ -24008,7 +18358,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Tony Finau",
@@ -24028,7 +18378,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Tony Jacklin",
@@ -24108,7 +18458,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 14.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Toshiaki Odate",
@@ -24138,7 +18488,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Toto Gana",
@@ -24168,7 +18518,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 13.0,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Trevor Fisher Jnr",
@@ -24178,7 +18528,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Trevor Immelman",
@@ -24189,16 +18539,6 @@
    "pgaWins": 2,
    "fame": 39.5,
    "tier": 1
-  },
-  {
-   "name": "Trichat Cheenglab",
-   "country": "Thailand",
-   "dob": "1995-08-12",
-   "turnedPro": 2016,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
   },
   {
    "name": "Troy Kelly",
@@ -24238,7 +18578,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Tsuneyuki Nakajima",
@@ -24259,26 +18599,6 @@
    "pgaWins": 0,
    "fame": 5.0,
    "tier": 3
-  },
-  {
-   "name": "Tu Ai-yu",
-   "country": "China",
-   "dob": "1954-09-29",
-   "turnedPro": 1974,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 40.0,
-   "tier": 1
-  },
-  {
-   "name": "Tvesa Malik",
-   "country": "India",
-   "dob": "1995-01-01",
-   "turnedPro": 2017,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 10.0,
-   "tier": 2
   },
   {
    "name": "Ty Capps",
@@ -24378,57 +18698,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
-  },
-  {
-   "name": "Ursula Wikström",
-   "country": "Finland",
-   "dob": "1980-07-03",
-   "turnedPro": 2003,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 8.5,
    "tier": 2
-  },
-  {
-   "name": "Val Skinner",
-   "country": "USA",
-   "dob": "1960-10-16",
-   "turnedPro": 1982,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.0,
-   "tier": 3
-  },
-  {
-   "name": "Valentine Derrey",
-   "country": "France",
-   "dob": "1987-06-13",
-   "turnedPro": 2010,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
-  },
-  {
-   "name": "Valérie Michaud",
-   "country": "France",
-   "dob": "1970-01-12",
-   "turnedPro": 1992,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
-  },
-  {
-   "name": "Valérie Van Ryckeghem",
-   "country": "Belgium",
-   "dob": "1975-08-21",
-   "turnedPro": 1995,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.5,
-   "tier": 3
   },
   {
    "name": "Van Phillips",
@@ -24461,26 +18731,6 @@
    "tier": 1
   },
   {
-   "name": "Veronica Zorzi",
-   "country": "Italy",
-   "dob": "1980-10-20",
-   "turnedPro": 2000,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
-  },
-  {
-   "name": "Vibeke Stensrud",
-   "country": "Norway",
-   "dob": "1973-09-29",
-   "turnedPro": 1996,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.0,
-   "tier": 3
-  },
-  {
    "name": "Vic Ghezzi",
    "country": "USA",
    "dob": "1910-10-19",
@@ -24511,26 +18761,6 @@
    "tier": 1
   },
   {
-   "name": "Vicki Fergon",
-   "country": "USA",
-   "dob": "1955-09-29",
-   "turnedPro": 1977,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
-  },
-  {
-   "name": "Vicky Hurst",
-   "country": "USA",
-   "dob": "1990-06-19",
-   "turnedPro": 2008,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 8.0,
-   "tier": 2
-  },
-  {
    "name": "Victor Dubuisson",
    "country": "France",
    "dob": "1990-04-22",
@@ -24548,7 +18778,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Victor Regalado",
@@ -24598,7 +18828,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Vincent Tshabalala",
@@ -24611,36 +18841,6 @@
    "tier": 2
   },
   {
-   "name": "Violeta Retamoza",
-   "country": "Mexico",
-   "dob": "1983-07-20",
-   "turnedPro": 2006,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.5,
-   "tier": 3
-  },
-  {
-   "name": "Virada Nirapathpongporn",
-   "country": "Thailand",
-   "dob": "1982-04-21",
-   "turnedPro": 2004,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
-   "name": "Virginie Lagoutte-Clément",
-   "country": "France",
-   "dob": "1979-02-02",
-   "turnedPro": 2003,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.5,
-   "tier": 3
-  },
-  {
    "name": "Wade Ormsby",
    "country": "Australia",
    "dob": "1980-03-31",
@@ -24648,7 +18848,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Wallie Coetsee",
@@ -24698,27 +18898,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
-  },
-  {
-   "name": "Wang Xinying",
-   "country": "China",
-   "dob": "1999-02-11",
-   "turnedPro": 2020,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
-   "name": "Wanyao Lu",
-   "country": "China",
-   "dob": "1996-07-19",
-   "turnedPro": 2015,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Warren Abery",
@@ -24728,7 +18908,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Warren Bennett",
@@ -24778,7 +18958,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Wayne Westner",
@@ -24799,26 +18979,6 @@
    "pgaWins": 7,
    "fame": 47.5,
    "tier": 1
-  },
-  {
-   "name": "Wendy Doolan",
-   "country": "Australia",
-   "dob": "1968-12-16",
-   "turnedPro": 1991,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.5,
-   "tier": 3
-  },
-  {
-   "name": "Wendy Ward",
-   "country": "USA",
-   "dob": "1973-05-06",
-   "turnedPro": 1995,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 6.0,
-   "tier": 3
   },
   {
    "name": "Wes Ellis",
@@ -24848,7 +19008,7 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Wesley Bryan",
@@ -24859,26 +19019,6 @@
    "pgaWins": 1,
    "fame": 11.0,
    "tier": 2
-  },
-  {
-   "name": "Whitney Hillier",
-   "country": "Australia",
-   "dob": "1990-12-01",
-   "turnedPro": 2012,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 1.5,
-   "tier": 3
-  },
-  {
-   "name": "Wiffi Smith",
-   "country": "USA",
-   "dob": "1936-09-28",
-   "turnedPro": 1957,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 5.0,
-   "tier": 3
   },
   {
    "name": "Wil Besseling",
@@ -24961,16 +19101,6 @@
    "tier": 3
   },
   {
-   "name": "Woo-Soon Ko",
-   "country": "South Korea",
-   "dob": "1964-04-21",
-   "turnedPro": 1993,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.5,
-   "tier": 2
-  },
-  {
    "name": "Woody Austin",
    "country": "USA",
    "dob": "1964-01-27",
@@ -25021,16 +19151,6 @@
    "tier": 1
   },
   {
-   "name": "Xonia Wunsch-Ruiz",
-   "country": "Spain",
-   "dob": "2000-01-01",
-   "turnedPro": 1987,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
    "name": "Yang Yong-eun",
    "country": "South Korea",
    "dob": "1972-01-15",
@@ -25041,16 +19161,6 @@
    "tier": 1
   },
   {
-   "name": "Yani Tseng",
-   "country": "Taiwan",
-   "dob": "1989-01-23",
-   "turnedPro": 2007,
-   "majors": 5,
-   "pgaWins": 0,
-   "fame": 93.0,
-   "tier": 1
-  },
-  {
    "name": "Yasuharu Imano",
    "country": "Japan",
    "dob": "1973-05-28",
@@ -25058,47 +19168,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
-  },
-  {
-   "name": "Yi Eun-jung",
-   "country": "South Korea",
-   "dob": "1988-01-11",
-   "turnedPro": 2006,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
-   "name": "Yim Sung-Ah",
-   "country": "South Korea",
-   "dob": "1984-03-20",
-   "turnedPro": 2002,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
-  },
-  {
-   "name": "Yin Ruoning",
-   "country": "China",
-   "dob": "2002-09-28",
-   "turnedPro": 2020,
-   "majors": 1,
-   "pgaWins": 0,
-   "fame": 23.0,
-   "tier": 1
-  },
-  {
-   "name": "Yoo Hyun-jo",
-   "country": "South Korea",
-   "dob": "2005-03-02",
-   "turnedPro": 2023,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 2.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Yoshi Mizumaki",
@@ -25191,36 +19261,6 @@
    "tier": 3
   },
   {
-   "name": "Yui Kawamoto",
-   "country": "Japan",
-   "dob": "1998-08-29",
-   "turnedPro": 2018,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.0,
-   "tier": 3
-  },
-  {
-   "name": "Yuka Saso",
-   "country": "Japan",
-   "dob": "2001-06-20",
-   "turnedPro": 2019,
-   "majors": 2,
-   "pgaWins": 0,
-   "fame": 36.0,
-   "tier": 1
-  },
-  {
-   "name": "Yuri Fudoh",
-   "country": "Japan",
-   "dob": "1976-10-14",
-   "turnedPro": 1996,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 28.0,
-   "tier": 1
-  },
-  {
    "name": "Yuta Ikeda",
    "country": "Japan",
    "dob": "1985-12-22",
@@ -25238,7 +19278,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Zac Blair",
@@ -25311,16 +19351,6 @@
    "tier": 1
   },
   {
-   "name": "Zhang Weiwei",
-   "country": "China",
-   "dob": "1997-03-15",
-   "turnedPro": 2017,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 4.0,
-   "tier": 3
-  },
-  {
    "name": "Zhang Xinjun",
    "country": "China",
    "dob": "1987-06-10",
@@ -25341,16 +19371,6 @@
    "tier": 3
   },
   {
-   "name": "Zuzana Kamasová",
-   "country": "Czechoslovakia",
-   "dob": "1978-05-14",
-   "turnedPro": 2004,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 3.0,
-   "tier": 3
-  },
-  {
    "name": "Álvaro Quirós",
    "country": "Spain",
    "dob": "1983-01-21",
@@ -25358,7 +19378,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.5,
-   "tier": 2
+   "tier": 1
   },
   {
    "name": "Álvaro Salto",
@@ -25378,7 +19398,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   },
   {
    "name": "Ángel Franco",
@@ -25401,16 +19421,6 @@
    "tier": 3
   },
   {
-   "name": "Åsa Gottmo",
-   "country": "Sweden",
-   "dob": "1971-06-22",
-   "turnedPro": 1993,
-   "majors": 0,
-   "pgaWins": 0,
-   "fame": 7.0,
-   "tier": 3
-  },
-  {
    "name": "Óscar David Álvarez",
    "country": "Colombia",
    "dob": "1983-03-29",
@@ -25418,17 +19428,149 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 3
+   "tier": 2
   }
  ],
  "borders": {
-  "United Kingdom": [
-   "Ireland"
+  "Chile": [
+   "Argentina"
+  ],
+  "Switzerland": [
+   "Austria",
+   "France",
+   "Germany",
+   "Italy"
+  ],
+  "Norway": [
+   "Finland",
+   "Sweden"
+  ],
+  "Malaysia": [
+   "Indonesia",
+   "Thailand"
+  ],
+  "Belgium": [
+   "France",
+   "Germany",
+   "Netherlands"
+  ],
+  "USA": [
+   "Canada",
+   "Mexico"
+  ],
+  "Bangladesh": [
+   "India",
+   "Myanmar"
+  ],
+  "Sweden": [
+   "Finland",
+   "Norway"
+  ],
+  "Namibia": [
+   "South Africa"
+  ],
+  "China": [
+   "India",
+   "Myanmar"
+  ],
+  "Brazil": [
+   "Argentina",
+   "Colombia",
+   "Paraguay"
+  ],
+  "Ecuador": [
+   "Colombia"
+  ],
+  "Finland": [
+   "Norway",
+   "Sweden"
+  ],
+  "Indonesia": [
+   "Malaysia"
+  ],
+  "Netherlands": [
+   "Belgium",
+   "Germany"
+  ],
+  "Argentina": [
+   "Brazil",
+   "Chile",
+   "Paraguay"
+  ],
+  "Mexico": [
+   "USA"
+  ],
+  "Canada": [
+   "USA"
+  ],
+  "Austria": [
+   "Czechia",
+   "Germany",
+   "Italy",
+   "Slovakia",
+   "Switzerland"
+  ],
+  "Ireland": [
+   "England",
+   "Northern Ireland",
+   "Scotland",
+   "United Kingdom",
+   "Wales"
+  ],
+  "Myanmar": [
+   "Bangladesh",
+   "China",
+   "India",
+   "Thailand"
+  ],
+  "South Africa": [
+   "Namibia",
+   "Zimbabwe"
+  ],
+  "Wales": [
+   "England",
+   "Ireland",
+   "Northern Ireland",
+   "Scotland"
+  ],
+  "Italy": [
+   "Austria",
+   "France",
+   "Switzerland"
   ],
   "Czechia": [
    "Austria",
    "Germany",
    "Slovakia"
+  ],
+  "Slovakia": [
+   "Austria",
+   "Czechia"
+  ],
+  "Northern Ireland": [
+   "England",
+   "Ireland",
+   "Scotland",
+   "Wales"
+  ],
+  "France": [
+   "Belgium",
+   "Germany",
+   "Italy",
+   "Spain",
+   "Switzerland"
+  ],
+  "Zimbabwe": [
+   "South Africa"
+  ],
+  "Germany": [
+   "Austria",
+   "Belgium",
+   "Czechia",
+   "Denmark",
+   "France",
+   "Netherlands",
+   "Switzerland"
   ],
   "England": [
    "Ireland",
@@ -25436,34 +19578,9 @@
    "Scotland",
    "Wales"
   ],
-  "Austria": [
-   "Czechia",
-   "Czechoslovakia",
-   "Germany",
-   "Hungary",
-   "Italy",
-   "Slovakia",
-   "Slovenia",
-   "Switzerland"
-  ],
-  "Hungary": [
-   "Austria",
-   "Slovakia",
-   "Slovenia"
-  ],
-  "Norway": [
-   "Finland",
-   "Russia",
-   "Sweden"
-  ],
-  "Eswatini": [
-   "South Africa"
-  ],
-  "Canada": [
-   "USA"
-  ],
-  "Chile": [
-   "Argentina"
+  "Thailand": [
+   "Malaysia",
+   "Myanmar"
   ],
   "Colombia": [
    "Brazil",
@@ -25473,92 +19590,19 @@
    "Argentina",
    "Brazil"
   ],
+  "United Kingdom": [
+   "Ireland"
+  ],
+  "Denmark": [
+   "Germany"
+  ],
   "India": [
    "Bangladesh",
    "China",
    "Myanmar"
   ],
-  "Finland": [
-   "Norway",
-   "Russia",
-   "Sweden"
-  ],
-  "Indonesia": [
-   "Malaysia"
-  ],
-  "Northern Ireland": [
-   "England",
-   "Ireland",
-   "Scotland",
-   "Wales"
-  ],
-  "Morocco": [
+  "Portugal": [
    "Spain"
-  ],
-  "France": [
-   "Belgium",
-   "Germany",
-   "Italy",
-   "Spain",
-   "Switzerland"
-  ],
-  "Namibia": [
-   "South Africa"
-  ],
-  "South Africa": [
-   "Eswatini",
-   "Namibia",
-   "Zimbabwe"
-  ],
-  "Sweden": [
-   "Finland",
-   "Norway"
-  ],
-  "Zimbabwe": [
-   "South Africa"
-  ],
-  "Ecuador": [
-   "Colombia"
-  ],
-  "Uruguay": [
-   "Argentina",
-   "Brazil"
-  ],
-  "Slovenia": [
-   "Austria",
-   "Hungary",
-   "Italy"
-  ],
-  "Italy": [
-   "Austria",
-   "France",
-   "Slovenia",
-   "Switzerland"
-  ],
-  "Spain": [
-   "France",
-   "Morocco",
-   "Portugal"
-  ],
-  "Malaysia": [
-   "Indonesia",
-   "Thailand"
-  ],
-  "Czechoslovakia": [
-   "Austria",
-   "Germany",
-   "Slovakia"
-  ],
-  "Slovakia": [
-   "Austria",
-   "Czechia",
-   "Czechoslovakia",
-   "Hungary"
-  ],
-  "Belgium": [
-   "France",
-   "Germany",
-   "Netherlands"
   ],
   "Scotland": [
    "England",
@@ -25566,156 +19610,63 @@
    "Northern Ireland",
    "Wales"
   ],
-  "Bangladesh": [
-   "India",
-   "Myanmar"
-  ],
-  "Portugal": [
-   "Spain"
-  ],
-  "Brazil": [
-   "Argentina",
-   "Colombia",
-   "Paraguay",
-   "Uruguay"
-  ],
-  "Denmark": [
-   "Germany"
-  ],
-  "Argentina": [
-   "Brazil",
-   "Chile",
-   "Paraguay",
-   "Uruguay"
-  ],
-  "Mexico": [
-   "USA"
-  ],
-  "USA": [
-   "Canada",
-   "Mexico"
-  ],
-  "Germany": [
-   "Austria",
-   "Belgium",
-   "Czechia",
-   "Czechoslovakia",
-   "Denmark",
+  "Spain": [
    "France",
-   "Netherlands",
-   "Switzerland"
-  ],
-  "China": [
-   "Hong Kong",
-   "India",
-   "Myanmar",
-   "Russia"
-  ],
-  "Netherlands": [
-   "Belgium",
-   "Germany"
-  ],
-  "Ireland": [
-   "England",
-   "Northern Ireland",
-   "Scotland",
-   "United Kingdom",
-   "Wales"
-  ],
-  "Switzerland": [
-   "Austria",
-   "France",
-   "Germany",
-   "Italy"
-  ],
-  "Myanmar": [
-   "Bangladesh",
-   "China",
-   "India",
-   "Thailand"
-  ],
-  "Thailand": [
-   "Malaysia",
-   "Myanmar"
-  ],
-  "Hong Kong": [
-   "China"
-  ],
-  "Russia": [
-   "China",
-   "Finland",
-   "Norway"
-  ],
-  "Wales": [
-   "England",
-   "Ireland",
-   "Northern Ireland",
-   "Scotland"
+   "Portugal"
   ]
  },
  "continents": {
-  "United Kingdom": "EU",
-  "Czechia": "EU",
-  "England": "EU",
-  "Austria": "EU",
-  "Taiwan": "AS",
   "New Zealand": "OC",
-  "Hungary": "EU",
-  "Norway": "EU",
-  "Uganda": "AF",
-  "Eswatini": "AF",
-  "Canada": "NA",
   "Chile": "SA",
-  "Colombia": "SA",
-  "Paraguay": "SA",
+  "Switzerland": "EU",
+  "Norway": "EU",
+  "Japan": "AS",
+  "Malaysia": "AS",
   "Iceland": "EU",
-  "India": "AS",
+  "Belgium": "EU",
+  "South Korea": "AS",
+  "USA": "NA",
+  "Taiwan": "AS",
+  "Bangladesh": "AS",
+  "Philippines": "AS",
+  "Costa Rica": "NA",
+  "Sweden": "EU",
+  "Namibia": "AF",
+  "China": "AS",
+  "Brazil": "SA",
+  "Ecuador": "SA",
+  "Singapore": "AS",
   "Finland": "EU",
   "Indonesia": "AS",
-  "Fiji": "OC",
-  "Philippines": "AS",
-  "Northern Ireland": "EU",
-  "Morocco": "AF",
-  "France": "EU",
-  "Namibia": "AF",
-  "South Africa": "AF",
-  "Sweden": "EU",
-  "Zimbabwe": "AF",
-  "Ecuador": "SA",
-  "Uruguay": "SA",
-  "Slovenia": "EU",
-  "Italy": "EU",
-  "Japan": "AS",
-  "Spain": "EU",
-  "Malaysia": "AS",
-  "Czechoslovakia": "EU",
-  "Puerto Rico": "NA",
-  "Slovakia": "EU",
-  "Belgium": "EU",
-  "Scotland": "EU",
-  "Bangladesh": "AS",
-  "Portugal": "EU",
-  "Brazil": "SA",
-  "Isle of Man": "EU",
-  "Sri Lanka": "AS",
-  "Denmark": "EU",
+  "Netherlands": "EU",
   "Argentina": "SA",
   "Mexico": "NA",
-  "USA": "NA",
-  "Germany": "EU",
-  "China": "AS",
-  "Netherlands": "EU",
+  "Canada": "NA",
+  "Austria": "EU",
   "Ireland": "EU",
-  "Australia": "OC",
-  "Singapore": "AS",
-  "Switzerland": "EU",
+  "Fiji": "OC",
   "Myanmar": "AS",
+  "South Africa": "AF",
+  "Wales": "EU",
+  "Italy": "EU",
+  "Czechia": "EU",
+  "Slovakia": "EU",
+  "Northern Ireland": "EU",
+  "France": "EU",
+  "Zimbabwe": "AF",
+  "Germany": "EU",
+  "England": "EU",
+  "Australia": "OC",
   "Thailand": "AS",
-  "Hong Kong": "AS",
-  "South Korea": "AS",
-  "Israel": "AS",
-  "Russia": "EU",
-  "Costa Rica": "NA",
-  "Wales": "EU"
+  "Colombia": "SA",
+  "Paraguay": "SA",
+  "United Kingdom": "EU",
+  "Denmark": "EU",
+  "Puerto Rico": "NA",
+  "India": "AS",
+  "Sri Lanka": "AS",
+  "Portugal": "EU",
+  "Scotland": "EU",
+  "Spain": "EU"
  }
 }

@@ -33,18 +33,20 @@ The site hosts three sibling guessing games, each self-contained under `public/`
 - **Weiddle** (`/`) — guess the UFC fighter (this README's main subject).
 - **Cindle** (`public/movies/`) — guess the movie. Data: `data/build_movies.py` →
   `public/movies.json` (TMDB + OMDb + Wikidata).
-- **Puttle** (`public/golf/`) — guess the golfer. Data: `public/golfers.json`
-  (~2,500 golfers). Two sources merge in `data/build_golfers.py`: the curated
+- **Puttle** (`public/golf/`) — guess the (men's) golfer. Data: `public/golfers.json`
+  (~1,940 golfers). Two sources merge in `data/build_golfers.py`: the curated
   `data/golfers_seed.py` (~90 marquee names, hand-verified majors / PGA wins /
   turned-pro year — authoritative), plus a bulk pool scraped from Wikipedia
   `{{Infobox golfer}}` via `data/golf_universe.py` (Wikidata roster) →
-  `data/golf_stats.py` (infobox stats). Clue columns: Country, Age, Turned Pro,
-  Majors, PGA Wins (handedness was dropped — not sourceable at scale). Difficulty
-  tiers (Normal ~650 ⊂ Hard ~1,250 ⊂ Extreme all) are assigned by **rank** on a
-  fame score (majors, PGA wins, worldwide wins, Wikipedia footprint), so pool
-  sizes are stable. Border adjacency reuses `data/borders.py`. Rebuild:
-  `python3 data/golf_universe.py && python3 data/golf_stats.py && python3 data/build_golfers.py`
-  (first two are cheap on a warm `data/.cache_golf/`).
+  `data/golf_stats.py` (infobox stats). The infobox is gender-neutral, so
+  `data/golf_gender.py` looks up Wikidata P21 and `build_golfers.py` drops anyone
+  marked female (men's game). Clue columns: Country, Age, Turned Pro, Majors,
+  PGA Wins (handedness was dropped — not sourceable at scale). Difficulty tiers
+  (Normal ~650 ⊂ Hard ~1,250 ⊂ Extreme all) are assigned by **rank** on a fame
+  score (majors, PGA wins, worldwide wins, Wikipedia footprint), so pool sizes
+  are stable. Border adjacency reuses `data/borders.py`. Rebuild:
+  `python3 data/golf_universe.py && python3 data/golf_gender.py && python3 data/golf_stats.py && python3 data/build_golfers.py`
+  (all but the last are cheap on a warm `data/.cache_golf/`).
 
 Cross-game navigation is a single shared switcher: `public/games.js` (loaded as
 `/games.js` on every page) holds the game registry and injects a "🎮 Games" button
