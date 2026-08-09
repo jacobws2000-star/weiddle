@@ -2,7 +2,7 @@
 
 // Puttle — golfer-guessing game.
 //   Modes: Daily (one shared seeded puzzle per UTC day, one-and-done) + three
-//   endless difficulty tiers gated on fame (majors*5 + PGA Tour wins). Scoring/
+//   endless difficulty tiers gated on a fame rank (see build_golfers.py). Scoring/
 //   streak in localStorage under a puttle_ prefix (kept fully separate from the
 //   UFC game's octagonle_ and Cindle's cindle_ keys, which share the same origin).
 
@@ -11,22 +11,24 @@
 // small drift in the curated PGA-win snapshot (see data/golfers_seed.py).
 const NUM_CLOSE = { age: 3, turnedPro: 3, majors: 1, pgaWins: 2 };
 
-// Difficulty tiers gate the pool by fame; Daily draws from the Normal (most-
-// accomplished) pool so the shared puzzle stays fair. Guess limits grow as the
-// pool deepens. Fame = majors*5 + pgaWins (see build_golfers.py).
+// Difficulty tiers gate the pool by tier level (1 Normal ⊂ 2 Hard ⊂ 3 Extreme),
+// assigned in build_golfers.py by ranking every golfer on a fame score (majors,
+// PGA wins, worldwide wins, Wikipedia footprint). Daily draws from the Normal
+// head so the shared puzzle stays fair. Guess limits grow as the pool deepens.
 const TIERS = {
-  daily:   { label: "Daily",   minFame: 15, guesses: 8,  endless: false,
+  daily:   { label: "Daily",   level: 1, guesses: 8,  endless: false,
              desc: "One golfer a day, same for everyone. Drawn from the big names." },
-  normal:  { label: "Normal",  minFame: 15, guesses: 8,  endless: true,
-             desc: "The biggest, most-accomplished names. 8 guesses." },
-  hard:    { label: "Hard",    minFame: 6,  guesses: 9,  endless: true,
-             desc: "Broader — multiple-time tour winners and classics. 9 guesses." },
-  extreme: { label: "Extreme", minFame: 0,  guesses: 10, endless: true,
-             desc: "The whole pool, including the one-win wonders. 10 guesses." },
+  normal:  { label: "Normal",  level: 1, guesses: 8,  endless: true,
+             desc: "The ~650 biggest names in golf. 8 guesses." },
+  hard:    { label: "Hard",    level: 2, guesses: 9,  endless: true,
+             desc: "~1,250 golfers — tour winners and classics, deeper cuts. 9 guesses." },
+  extreme: { label: "Extreme", level: 3, guesses: 10, endless: true,
+             desc: "The whole pool — every pro we could find. 10 guesses." },
 };
 
 let DATA = [];
 let BORDERS = {};
+let CONTINENTS = {};
 let mode = localStorage.getItem("puttle_mode") || "daily";
 if (!TIERS[mode]) mode = "daily";
 let target = null;
@@ -69,7 +71,7 @@ function ageOf(dob){
 }
 
 // ---------- pools ----------
-function poolFor(m){ return DATA.filter(x => (x.fame || 0) >= TIERS[m].minFame); }
+function poolFor(m){ return DATA.filter(x => (x.tier || 3) <= TIERS[m].level); }
 function maxAttempts(){ return TIERS[mode].guesses; }
 
 // ---------- boot ----------
@@ -78,6 +80,7 @@ async function boot(){
   const j = await res.json();
   DATA = (j.golfers || []).map(g => ({ ...g, age: ageOf(g.dob) }));
   BORDERS = j.borders || {};
+  CONTINENTS = j.continents || {};
   wireUI();
   renderStats();
   selectMode(mode);
@@ -235,34 +238,32 @@ function numCompare(g, t, key){
   const arrow = t > g ? "↑" : "↓";
   return { status: Math.abs(t - g) <= NUM_CLOSE[key] ? "close" : "none", arrow };
 }
-// Country: green if same, orange if the guess borders the answer's country.
+// Country: green if same, orange if the guess borders the answer's country,
+// yellow if it's merely on the same continent.
 function countryCompare(g, t){
   if (g === t) return "exact";
-  return (BORDERS[t] || []).includes(g) ? "border" : "none";
+  if ((BORDERS[t] || []).includes(g)) return "border";
+  if (CONTINENTS[g] && CONTINENTS[g] === CONTINENTS[t]) return "continent";
+  return "none";
 }
-// Handedness is exact-or-nothing (only R/L exist, so "close" is meaningless).
-function handCompare(g, t){ return g === t ? "exact" : "none"; }
-
 function cell(display, status, arrow, label){
   const arr = arrow ? ` <span class="arrow">${arrow}</span>` : "";
   const l = label ? ` data-label="${label}"` : "";
   if (status === "exact")  return `<div class="cell"${l}><span class="chip green">${display} ✓</span></div>`;
   if (status === "close")  return `<div class="cell"${l}><span class="chip yellow">${display}${arr || " ≈"}</span></div>`;
   if (status === "border") return `<div class="cell"${l}><span class="chip orange">${display}</span></div>`;
+  if (status === "continent") return `<div class="cell"${l}><span class="chip yellow">${display}</span></div>`;
   return `<div class="cell"${l}><span class="val">${display}${arr}</span></div>`;
 }
 
-const HAND_LABEL = { R: "Right", L: "Left" };
-
-// Returns the 6 column statuses so the same call renders a row and records the
-// share grid (order: Country Age TurnedPro Majors PGAWins Hand).
+// Returns the 5 column statuses so the same call renders a row and records the
+// share grid (order: Country Age TurnedPro Majors PGAWins).
 function renderGuess(g){
   const country = countryCompare(g.country, target.country);
   const age     = numCompare(g.age, target.age, "age");
   const tp      = numCompare(g.turnedPro, target.turnedPro, "turnedPro");
   const majors  = numCompare(g.majors, target.majors, "majors");
   const wins    = numCompare(g.pgaWins, target.pgaWins, "pgaWins");
-  const hand    = handCompare(g.hand, target.hand);
 
   const row = document.createElement("div");
   row.className = "guess-row";
@@ -272,11 +273,10 @@ function renderGuess(g){
     cell(g.age != null ? g.age : "—", age.status, age.arrow, "Age") +
     cell(g.turnedPro, tp.status, tp.arrow, "Turned Pro") +
     cell(g.majors, majors.status, majors.arrow, "Majors") +
-    cell(g.pgaWins, wins.status, wins.arrow, "PGA Wins") +
-    cell(HAND_LABEL[g.hand] || g.hand, hand, "", "Hand");
+    cell(g.pgaWins, wins.status, wins.arrow, "PGA Wins");
   el("rows").appendChild(row);
 
-  return [country, age.status, tp.status, majors.status, wins.status, hand];
+  return [country, age.status, tp.status, majors.status, wins.status];
 }
 
 // ---------- guess handling ----------
@@ -412,7 +412,7 @@ function shareText(){
   const rec = getDailyRecord();
   const grid = (rec && rec.grid) || guessRows;
   const emoji = s => s === "exact" ? "🟩" : s === "border" ? "🟧"
-                   : s === "close" ? "🟨" : "⬜";
+                   : (s === "close" || s === "continent") ? "🟨" : "⬜";
   const head = `Puttle ${dailyKey()} — ${rec && !rec.won ? "X" : (rec ? rec.guesses : guessCount)}/${TIERS.daily.guesses}`;
   const body = grid.map(row => row.map(emoji).join("")).join("\n");
   return `${head}\n${body}\nhttps://weiddle.com/golf`;

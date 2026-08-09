@@ -31,7 +31,7 @@
     <p class="puttle-sub">Guess the mystery golfer. Each guess grades you on Country, Age,
       the year they Turned Pro, Major championships won, and PGA Tour wins — green is exact,
       yellow is close, ↑/↓ points toward the answer. Country turns 🟧 orange when it borders
-      the answer's country, and Handedness is green only when it matches.</p>
+      the answer's country, and 🟨 yellow when it's on the same continent.</p>
 
     <!-- Mode bar: Daily is one-and-done; the three tiers are endless. -->
     <div class="mode-bar" id="mode-bar">
@@ -49,7 +49,6 @@
       <div class="col">Turned Pro</div>
       <div class="col">Majors</div>
       <div class="col">PGA Wins</div>
-      <div class="col">Hand</div>
     </div>
     <div id="rows"></div>
 
@@ -84,9 +83,9 @@
   </div>
 
   <footer class="puttle-foot">
-    Golf-specific stats (majors, PGA Tour wins, turned-pro year) are curated; player
-    bios via <a href="https://www.espn.com/golf/" target="_blank" rel="noopener">ESPN</a>'s
-    public data. PGA Tour win totals are a periodic snapshot.
+    Marquee stats are curated; the wider pool (majors, PGA Tour wins, turned-pro year,
+    nationality) is drawn from <a href="https://en.wikipedia.org/wiki/Category:Golfers" target="_blank" rel="noopener">Wikipedia</a>
+    and <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a>. Win totals are a periodic snapshot.
   </footer>
 
   <script src="game.js"></script>

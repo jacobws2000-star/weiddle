@@ -68,6 +68,12 @@ NATIONALITY_TO_ISO2 = {
     # Golfer nationalities (Puttle) not already covered above. Fiji is an island
     # nation with no land borders, so it just needs a code to avoid the warning.
     "Fiji": "FJ",
+    # Bulk golfer pool nationalities. "United Kingdom" is the fallback for British
+    # golfers whose home nation (England/Scotland/Wales/NI) Wikidata didn't tag;
+    # GeoNames folds them all into GB either way. Czechoslovakia -> modern CZ.
+    "United Kingdom": "GB", "Malaysia": "MY", "Bangladesh": "BD",
+    "Namibia": "NA", "Slovenia": "SI", "Sri Lanka": "LK", "Eswatini": "SZ",
+    "Isle of Man": "IM", "Czechoslovakia": "CZ",
 }
 
 # Manual adjacencies GeoNames can't express, added on top of the raw neighbours.
@@ -114,6 +120,55 @@ def fetch_neighbours(refresh=False):
         raw = cols[17].strip()  # column 18 (0-indexed 17) = neighbours
         neighbours[iso2] = {c for c in raw.split(",") if c}
     return neighbours
+
+
+def fetch_continents(refresh=False):
+    """Download+cache GeoNames countryInfo.txt; return {iso2: continent code}.
+
+    Continent codes are GeoNames' two-letter codes (AF, AS, EU, NA, SA, OC, AN),
+    taken from column 9 (0-indexed 8) of countryInfo.txt.
+    """
+    os.makedirs(CACHE_DIR, exist_ok=True)
+    cp = os.path.join(CACHE_DIR, "geonames_countryInfo.txt")
+    if refresh or not os.path.exists(cp):
+        req = urllib.request.Request(GEONAMES_URL, headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            text = r.read().decode("utf-8")
+        with open(cp, "w", encoding="utf-8") as f:
+            f.write(text)
+    else:
+        with open(cp, encoding="utf-8") as f:
+            text = f.read()
+
+    continents = {}
+    for line in text.splitlines():
+        if not line or line.startswith("#"):
+            continue
+        cols = line.split("\t")
+        if len(cols) < 9:
+            continue
+        iso2 = cols[0].strip()
+        cont = cols[8].strip()  # column 9 (0-indexed 8) = continent code
+        if iso2 and cont:
+            continents[iso2] = cont
+    return continents
+
+
+def build_continents(nationalities, refresh=False):
+    """Map each present nationality -> its GeoNames continent code.
+
+    Used for the yellow "same continent" color on the country column. Reuses the
+    same ISO2 vocabulary as build_borders; nationalities without a mapping (or
+    whose ISO2 GeoNames doesn't list) are simply omitted.
+    """
+    present = set(nationalities)
+    iso_continents = fetch_continents(refresh=refresh)
+    out = {}
+    for n in present:
+        iso2 = NATIONALITY_TO_ISO2.get(n)
+        if iso2 and iso2 in iso_continents:
+            out[n] = iso_continents[iso2]
+    return out
 
 
 def build_borders(nationalities, refresh=False):
