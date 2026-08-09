@@ -89,10 +89,10 @@ function maxAttempts(){ return TIERS[mode].guesses; }
 // separate from the fame/tier ranking. Bands are thresholds (one weight each).
 function pgaWeight(pga){
   pga = pga || 0;
-  if (pga >= 51) return 1.175;   // 51+   wins -> +17.5%
-  if (pga >= 21) return 1.15;    // 21-50 wins -> +15%
-  if (pga >= 11) return 1.10;    // 11-20 wins -> +10%
-  if (pga >= 4)  return 1.035;   // 4-10  wins -> +3.5%
+  if (pga >= 51) return 1.70;    // 51+   wins -> +70%
+  if (pga >= 21) return 1.60;    // 21-50 wins -> +60%
+  if (pga >= 11) return 1.40;    // 11-20 wins -> +40%
+  if (pga >= 4)  return 1.14;    // 4-10  wins -> +14%
   return 1.0;                    // 0-3   wins -> no boost
 }
 // Weighted pick from `pool` using rng() (a function returning [0,1)). Used for
