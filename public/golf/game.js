@@ -184,11 +184,24 @@ function attachAutocomplete(input, getNames, onPick, opts = {}){
     place();
     menu.classList.remove("hidden");
   };
+  // Mobile tap-through guard. We pick on pointer/mouse *down* (below) and close
+  // the menu immediately, but touch browsers then synthesize a `click` at those
+  // coordinates — and since the menu is already gone, that click lands on
+  // whatever is now underneath (a button or the mode/give-up modal) and fires
+  // it. Arm a one-shot capture-phase listener that eats exactly that ghost
+  // click; a short timeout disarms it so a genuine later tap is never swallowed.
+  const swallowGhostClick = () => {
+    const onClick = (ev) => { ev.preventDefault(); ev.stopPropagation(); disarm(); };
+    const disarm = () => { document.removeEventListener("click", onClick, true); clearTimeout(t); };
+    const t = setTimeout(disarm, 400);
+    document.addEventListener("click", onClick, true);
+  };
   const pick = (i) => {
     if (i < 0 || i >= items.length) return;
     const name = items[i];
     input.value = name;
     close();
+    swallowGhostClick();
     onPick(name);
   };
 
