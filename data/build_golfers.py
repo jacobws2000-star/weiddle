@@ -45,6 +45,7 @@ from datetime import datetime, timezone
 
 from build_dataset import norm_name
 from golfers_seed import GOLFERS
+from tour_2026 import TOUR_PRESENT, TOUR_ADD
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT_PATH = os.path.join(HERE, "..", "public", "golfers.json")
@@ -170,7 +171,44 @@ def build(report=False):
             "seed": True,
         }
 
+    # 3) Current PGA Tour players missing from the Wikipedia bulk pool (rookies
+    #    and less-decorated regulars the roster scrape never caught). Added like
+    #    the seed but never overriding an existing (seed/bulk) record. All are
+    #    post-1987 with a known turned-pro year, so they stay "playable". These
+    #    plus TOUR_PRESENT are what the Tour '26 game mode draws from.
+    for name, country, dob, turned_pro, majors, pga_wins in TOUR_ADD:
+        key = norm_name(name)
+        if key in by_name:
+            continue
+        by_name[key] = {
+            "name": name,
+            "country": norm_country(country),
+            "dob": str(dob)[:10],
+            "turnedPro": turned_pro,
+            "majors": majors,
+            "pgaWins": pga_wins,
+            "proWins": pga_wins,
+            "sitelinks": 0,
+            "seed": True,
+        }
+
     golfers = list(by_name.values())
+
+    # Flag the 2026 PGA Tour membership (the Tour '26 mode's pool). A curated
+    # list of current-tour names (TOUR_PRESENT already in the dataset + TOUR_ADD
+    # injected above); anything not on it is left unflagged. Warn on names that
+    # match nothing so roster drift is visible on the next rebuild.
+    tour_keys = {norm_name(n) for n in TOUR_PRESENT} | {norm_name(r[0]) for r in TOUR_ADD}
+    matched_keys = set()
+    for g in golfers:
+        k = norm_name(g["name"])
+        if k in tour_keys:
+            g["tour2026"] = True
+            matched_keys.add(k)
+    missing = tour_keys - matched_keys
+    if missing:
+        print(f"[tour] {len(missing)} tour names matched no golfer (check spelling): "
+              f"{sorted(missing)}", file=sys.stderr)
 
     # Fame + rank-based tiers (1 Normal, 2 Hard, 3 Extreme).
     for g in golfers:
@@ -201,7 +239,7 @@ def build(report=False):
     # Strip internal-only fields, sort alphabetically for the shipped file.
     out_golfers = []
     for g in sorted(golfers, key=lambda g: g["name"]):
-        out_golfers.append({
+        rec = {
             "name": g["name"],
             "country": g["country"],
             "dob": g["dob"],
@@ -210,7 +248,10 @@ def build(report=False):
             "pgaWins": g["pgaWins"],
             "fame": g["fame"],
             "tier": g["tier"],
-        })
+        }
+        if g.get("tour2026"):
+            rec["tour2026"] = True  # only present when true, to keep the file lean
+        out_golfers.append(rec)
 
     try:
         from borders import build_borders, build_continents
@@ -227,6 +268,7 @@ def build(report=False):
             "generatedAt": datetime.now(timezone.utc).isoformat(),
             "count": len(out_golfers),
             "tiers": {"normal": NORMAL_N, "hard": HARD_N, "extreme": len(out_golfers)},
+            "tour2026": sum(1 for g in out_golfers if g.get("tour2026")),
             "source": "curated seed (majors/wins/turned-pro) + Wikipedia infobox bulk pool",
         },
         "golfers": out_golfers,

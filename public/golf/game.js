@@ -19,17 +19,25 @@ const TIERS = {
   daily:   { label: "Daily",   level: 1, guesses: 8,  endless: false,
              desc: "One golfer a day, same for everyone. Drawn from the big names." },
   normal:  { label: "Normal",  level: 1, guesses: 8,  endless: true,
-             desc: "The ~650 biggest names in golf. 8 guesses." },
+             desc: "The ~290 biggest names of the modern era. 8 guesses." },
   hard:    { label: "Hard",    level: 2, guesses: 9,  endless: true,
-             desc: "~1,250 golfers — tour winners and classics, deeper cuts. 9 guesses." },
+             desc: "~700 modern golfers — tour winners and classics, deeper cuts. 9 guesses." },
   extreme: { label: "Extreme", level: 3, guesses: 10, endless: true,
-             desc: "The whole pool — every pro we could find. 10 guesses." },
+             desc: "The whole modern pool — every pro since 1987. 10 guesses." },
   // Themed mode: champions only. `filter` (not `level`) defines the pool — every
   // major winner already ranks tier 1, but level:3 keeps it robust if the fame
   // ranking ever shifts. ~300 golfers, all recognizable, so guesses are tight.
   majors:  { label: "Majors",  level: 3, guesses: 6, endless: true,
              filter: g => (g.majors || 0) >= 1,
              desc: "Major champions only — the ~300 golfers with at least one major. 6 guesses." },
+  // Themed mode: the current PGA Tour. Pool is the golfers who hold a 2026 Tour
+  // card (2025 FedEx Cup top 125 + Korn Ferry graduates), flagged `tour2026` in
+  // build_golfers.py. level:3 + the flag define the pool; the modern-era cutoff
+  // in poolFor is waived for it (the flag is the authority). Aimed at fans who
+  // watch every week, so every answer is a name you've seen on a leaderboard.
+  tour:    { label: "Tour",    level: 3, guesses: 8, endless: true,
+             filter: g => g.tour2026,
+             desc: "On the PGA Tour right now — the golfers with a 2026 card. For fans who watch every week. 8 guesses." },
 };
 
 let DATA = [];
@@ -77,9 +85,16 @@ function ageOf(dob){
 }
 
 // ---------- pools ----------
+// Every mode except Majors is restricted to the modern era: golfers who turned
+// pro in 1987 or later (John Daly, class of '87, is the earliest that qualifies).
+// Majors keeps its full historical set of champions.
+const MODERN_TURNED_PRO = 1987;
 function poolFor(m){
   const t = TIERS[m];
-  return DATA.filter(x => (x.tier || 3) <= t.level && (!t.filter || t.filter(x)));
+  return DATA.filter(x =>
+    (x.tier || 3) <= t.level &&
+    (!t.filter || t.filter(x)) &&
+    (m === "majors" || m === "tour" || (x.turnedPro || 0) >= MODERN_TURNED_PRO));
 }
 function maxAttempts(){ return TIERS[mode].guesses; }
 
@@ -370,7 +385,7 @@ function endGame(won, gaveUp = false){
 
 function scoreFor(){
   // Base by tier, bonus for solving with guesses to spare.
-  const base = { normal: 60, hard: 100, extreme: 150, majors: 90 }[mode] || 60;
+  const base = { normal: 60, hard: 100, extreme: 150, majors: 90, tour: 80 }[mode] || 60;
   return Math.round(base * (1 + (maxAttempts() - guessCount) / maxAttempts()));
 }
 

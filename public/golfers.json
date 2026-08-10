@@ -1,12 +1,13 @@
 {
  "meta": {
-  "generatedAt": "2026-08-09T03:09:55.939153+00:00",
-  "count": 1942,
+  "generatedAt": "2026-08-10T01:34:40.469050+00:00",
+  "count": 1977,
   "tiers": {
    "normal": 650,
    "hard": 1250,
-   "extreme": 1942
+   "extreme": 1977
   },
+  "tour2026": 125,
   "source": "curated seed (majors/wins/turned-pro) + Wikipedia infobox bulk pool"
  },
  "golfers": [
@@ -59,6 +60,17 @@
    "pgaWins": 0,
    "fame": 2.5,
    "tier": 3
+  },
+  {
+   "name": "Aaron Rai",
+   "country": "United Kingdom",
+   "dob": "1995-03-03",
+   "turnedPro": 2012,
+   "majors": 1,
+   "pgaWins": 2,
+   "fame": 19.0,
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Aaron Townsend",
@@ -148,7 +160,8 @@
    "majors": 1,
    "pgaWins": 14,
    "fame": 61.0,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Adam Svensson",
@@ -248,7 +261,8 @@
    "majors": 0,
    "pgaWins": 3,
    "fame": 16.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Al Balding",
@@ -328,7 +342,8 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.0,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Alejandro Cañizares",
@@ -348,7 +363,8 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 4.5,
-   "tier": 3
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Alessandro Tadini",
@@ -359,6 +375,17 @@
    "pgaWins": 0,
    "fame": 7.5,
    "tier": 2
+  },
+  {
+   "name": "Alex Smalley",
+   "country": "USA",
+   "dob": "1996-10-21",
+   "turnedPro": 2019,
+   "majors": 0,
+   "pgaWins": 0,
+   "fame": 0.0,
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Alex Čejka",
@@ -398,7 +425,8 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 13.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Alexandre Kaleka",
@@ -488,7 +516,8 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 11.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Anders Forsbrand",
@@ -698,7 +727,8 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.5,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Andrew Oldcorn",
@@ -709,6 +739,17 @@
    "pgaWins": 0,
    "fame": 7.0,
    "tier": 2
+  },
+  {
+   "name": "Andrew Putnam",
+   "country": "USA",
+   "dob": "1989-01-25",
+   "turnedPro": 2011,
+   "majors": 0,
+   "pgaWins": 1,
+   "fame": 3.5,
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Andrew Sherborne",
@@ -1188,7 +1229,8 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 11.0,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Azuma Yano",
@@ -1268,7 +1310,8 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 2.0,
-   "tier": 3
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Ben Bates",
@@ -1338,7 +1381,8 @@
    "majors": 0,
    "pgaWins": 3,
    "fame": 15.0,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Ben Hogan",
@@ -1608,7 +1652,8 @@
    "majors": 0,
    "pgaWins": 8,
    "fame": 38.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Billy Hurley III",
@@ -2418,7 +2463,8 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 11.0,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Brian Claar",
@@ -2468,7 +2514,8 @@
    "majors": 1,
    "pgaWins": 4,
    "fame": 36.0,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Brian Henninger",
@@ -2631,6 +2678,17 @@
    "tier": 1
   },
   {
+   "name": "Bud Cauley",
+   "country": "USA",
+   "dob": "1990-03-16",
+   "turnedPro": 2011,
+   "majors": 0,
+   "pgaWins": 1,
+   "fame": 3.5,
+   "tier": 3,
+   "tour2026": true
+  },
+  {
    "name": "Bud Ward",
    "country": "USA",
    "dob": "1913-05-01",
@@ -2728,7 +2786,8 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 11.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Cameron Beckman",
@@ -2779,6 +2838,17 @@
    "pgaWins": 0,
    "fame": 5.5,
    "tier": 2
+  },
+  {
+   "name": "Cameron Young",
+   "country": "USA",
+   "dob": "1997-05-07",
+   "turnedPro": 2019,
+   "majors": 0,
+   "pgaWins": 3,
+   "fame": 10.5,
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Camilo Villegas",
@@ -2928,7 +2998,8 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.0,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Chan Kim",
@@ -2938,7 +3009,8 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 8.0,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Chandler Harper",
@@ -2949,6 +3021,17 @@
    "pgaWins": 7,
    "fame": 47.5,
    "tier": 1
+  },
+  {
+   "name": "Chandler Phillips",
+   "country": "USA",
+   "dob": "1996-02-12",
+   "turnedPro": 2019,
+   "majors": 0,
+   "pgaWins": 0,
+   "fame": 0.0,
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Chapchai Nirat",
@@ -3318,7 +3401,8 @@
    "majors": 0,
    "pgaWins": 5,
    "fame": 24.0,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Chris Kirk",
@@ -3328,7 +3412,8 @@
    "majors": 0,
    "pgaWins": 6,
    "fame": 27.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Chris Moody",
@@ -3458,7 +3543,8 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Christian Cévaër",
@@ -3628,7 +3714,8 @@
    "majors": 2,
    "pgaWins": 6,
    "fame": 62.0,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Colm Moriarty",
@@ -3668,7 +3755,8 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 9.0,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Corey Pavin",
@@ -3988,7 +4076,8 @@
    "majors": 0,
    "pgaWins": 4,
    "fame": 20.0,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Daniel Brooks",
@@ -4119,6 +4208,17 @@
    "pgaWins": 1,
    "fame": 12.0,
    "tier": 1
+  },
+  {
+   "name": "Danny Walker",
+   "country": "USA",
+   "dob": "1995-10-04",
+   "turnedPro": 2018,
+   "majors": 0,
+   "pgaWins": 0,
+   "fame": 0.0,
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Danny Willett",
@@ -4568,7 +4668,8 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "David Llewellyn",
@@ -4728,7 +4829,8 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 10.0,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Davis Thompson",
@@ -4738,7 +4840,8 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 7.0,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Dawie van der Walt",
@@ -4868,7 +4971,8 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.0,
-   "tier": 3
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Denny Shute",
@@ -5491,6 +5595,17 @@
    "tier": 2
   },
   {
+   "name": "Emiliano Grillo",
+   "country": "Argentina",
+   "dob": "1992-09-14",
+   "turnedPro": 2011,
+   "majors": 0,
+   "pgaWins": 2,
+   "fame": 7.0,
+   "tier": 2,
+   "tour2026": true
+  },
+  {
    "name": "Emlyn Aubrey",
    "country": "USA",
    "dob": "1964-01-28",
@@ -5541,6 +5656,17 @@
    "tier": 1
   },
   {
+   "name": "Eric Cole",
+   "country": "USA",
+   "dob": "1988-06-12",
+   "turnedPro": 2009,
+   "majors": 0,
+   "pgaWins": 0,
+   "fame": 0.0,
+   "tier": 3,
+   "tour2026": true
+  },
+  {
    "name": "Eric Johnson",
    "country": "USA",
    "dob": "1962-10-11",
@@ -5548,7 +5674,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 2
+   "tier": 3
   },
   {
    "name": "Eric Monti",
@@ -5598,7 +5724,8 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 12.0,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Ernie Els",
@@ -5868,7 +5995,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 2
+   "tier": 3
   },
   {
    "name": "Frank Nobilo",
@@ -6081,6 +6208,17 @@
    "tier": 2
   },
   {
+   "name": "Garrick Higgo",
+   "country": "South Africa",
+   "dob": "1999-05-12",
+   "turnedPro": 2019,
+   "majors": 0,
+   "pgaWins": 2,
+   "fame": 7.0,
+   "tier": 2,
+   "tour2026": true
+  },
+  {
    "name": "Garrick Porteous",
    "country": "United Kingdom",
    "dob": "1990-01-17",
@@ -6228,7 +6366,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 2
+   "tier": 3
   },
   {
    "name": "Gary Player",
@@ -6268,7 +6406,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 5.5,
-   "tier": 2
+   "tier": 3
   },
   {
    "name": "Gary Woodland",
@@ -6278,7 +6416,8 @@
    "majors": 1,
    "pgaWins": 4,
    "fame": 41.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Gaurav Ghei",
@@ -6938,7 +7077,8 @@
    "majors": 0,
    "pgaWins": 5,
    "fame": 26.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Harrison Frazar",
@@ -6988,7 +7128,19 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.5,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
+  },
+  {
+   "name": "Harry Higgs",
+   "country": "USA",
+   "dob": "1991-12-04",
+   "turnedPro": 2014,
+   "majors": 0,
+   "pgaWins": 0,
+   "fame": 0.0,
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Harry Todd",
@@ -7009,6 +7161,17 @@
    "pgaWins": 0,
    "fame": 39.0,
    "tier": 1
+  },
+  {
+   "name": "Hayden Springer",
+   "country": "USA",
+   "dob": "1997-09-01",
+   "turnedPro": 2019,
+   "majors": 0,
+   "pgaWins": 0,
+   "fame": 0.0,
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Haydn Porteous",
@@ -7068,7 +7231,8 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 3.5,
-   "tier": 3
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Henrik Nyström",
@@ -7138,7 +7302,8 @@
    "majors": 1,
    "pgaWins": 10,
    "fame": 73.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Hidemichi Tanaka",
@@ -7568,7 +7733,19 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 13.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
+  },
+  {
+   "name": "Isaiah Salinda",
+   "country": "USA",
+   "dob": "1997-03-13",
+   "turnedPro": 2019,
+   "majors": 0,
+   "pgaWins": 0,
+   "fame": 0.0,
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Isao Aoki",
@@ -7628,7 +7805,8 @@
    "majors": 1,
    "pgaWins": 3,
    "fame": 31.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "J. P. Hayes",
@@ -7648,7 +7826,8 @@
    "majors": 0,
    "pgaWins": 4,
    "fame": 18.0,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Jace Bugg",
@@ -7768,7 +7947,8 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 3.0,
-   "tier": 3
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Jacky Cupit",
@@ -7801,6 +7981,17 @@
    "tier": 1
   },
   {
+   "name": "Jacob Bridgeman",
+   "country": "USA",
+   "dob": "1999-12-06",
+   "turnedPro": 2022,
+   "majors": 0,
+   "pgaWins": 1,
+   "fame": 3.5,
+   "tier": 3,
+   "tour2026": true
+  },
+  {
    "name": "Jaime Gomez",
    "country": "USA",
    "dob": "1967-05-18",
@@ -7828,7 +8019,8 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 7.5,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Jake McLeod",
@@ -8108,7 +8300,8 @@
    "majors": 1,
    "pgaWins": 13,
    "fame": 77.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Jason Dufner",
@@ -8621,6 +8814,17 @@
    "tier": 1
   },
   {
+   "name": "Jesper Svensson",
+   "country": "Sweden",
+   "dob": "1996-03-14",
+   "turnedPro": 2019,
+   "majors": 0,
+   "pgaWins": 0,
+   "fame": 0.0,
+   "tier": 3,
+   "tour2026": true
+  },
+  {
    "name": "Jesús Amaya",
    "country": "Colombia",
    "dob": "1969-08-24",
@@ -8638,7 +8842,8 @@
    "majors": 0,
    "pgaWins": 4,
    "fame": 21.0,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Jim Ahern",
@@ -9041,6 +9246,17 @@
    "tier": 1
   },
   {
+   "name": "Joe Highsmith",
+   "country": "USA",
+   "dob": "2000-04-19",
+   "turnedPro": 2022,
+   "majors": 0,
+   "pgaWins": 1,
+   "fame": 3.5,
+   "tier": 3,
+   "tour2026": true
+  },
+  {
    "name": "Joe Inman",
    "country": "USA",
    "dob": "1947-11-29",
@@ -9078,7 +9294,8 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 8.0,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Joel Edwards",
@@ -9698,7 +9915,8 @@
    "majors": 3,
    "pgaWins": 13,
    "fame": 111.0,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Jordi García Pinto",
@@ -9718,7 +9936,7 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 11.5,
-   "tier": 1
+   "tier": 2
   },
   {
    "name": "Jorge Campillo",
@@ -10021,6 +10239,17 @@
    "tier": 1
   },
   {
+   "name": "Justin Lower",
+   "country": "USA",
+   "dob": "1989-04-04",
+   "turnedPro": 2011,
+   "majors": 0,
+   "pgaWins": 0,
+   "fame": 0.0,
+   "tier": 3,
+   "tour2026": true
+  },
+  {
    "name": "Justin Rose",
    "country": "England",
    "dob": "1980-07-30",
@@ -10028,7 +10257,8 @@
    "majors": 1,
    "pgaWins": 11,
    "fame": 50.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Justin Thomas",
@@ -10038,7 +10268,8 @@
    "majors": 2,
    "pgaWins": 15,
    "fame": 94.0,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Justin Walters",
@@ -10151,6 +10382,17 @@
    "tier": 2
   },
   {
+   "name": "Karl Vilips",
+   "country": "Australia",
+   "dob": "2001-08-16",
+   "turnedPro": 2024,
+   "majors": 0,
+   "pgaWins": 1,
+   "fame": 3.5,
+   "tier": 3,
+   "tour2026": true
+  },
+  {
    "name": "Katsumasa Miyamoto",
    "country": "Japan",
    "dob": "1972-08-28",
@@ -10218,7 +10460,8 @@
    "majors": 1,
    "pgaWins": 8,
    "fame": 54.0,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Keiichiro Fukabori",
@@ -10278,7 +10521,8 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 5.5,
-   "tier": 3
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Keith Nolan",
@@ -10501,6 +10745,17 @@
    "tier": 3
   },
   {
+   "name": "Kevin Roy",
+   "country": "USA",
+   "dob": "1990-03-15",
+   "turnedPro": 2012,
+   "majors": 0,
+   "pgaWins": 0,
+   "fame": 0.0,
+   "tier": 3,
+   "tour2026": true
+  },
+  {
    "name": "Kevin Stadler",
    "country": "USA",
    "dob": "1980-02-05",
@@ -10538,7 +10793,8 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 7.5,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Kieran Pratt",
@@ -10668,7 +10924,8 @@
    "majors": 0,
    "pgaWins": 4,
    "fame": 22.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Kim Tae-hoon",
@@ -10821,6 +11078,17 @@
    "tier": 2
   },
   {
+   "name": "Kristoffer Ventura",
+   "country": "Norway",
+   "dob": "1995-02-24",
+   "turnedPro": 2018,
+   "majors": 0,
+   "pgaWins": 0,
+   "fame": 0.0,
+   "tier": 3,
+   "tour2026": true
+  },
+  {
    "name": "Kurt Barnes",
    "country": "Australia",
    "dob": "1981-05-25",
@@ -10848,7 +11116,8 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 10.5,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Ky Laffoon",
@@ -11108,7 +11377,8 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.0,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Lee Janzen",
@@ -11448,7 +11718,8 @@
    "majors": 1,
    "pgaWins": 6,
    "fame": 51.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Lucas Herbert",
@@ -11478,7 +11749,8 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 18.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Luis Carbonetti",
@@ -11561,6 +11833,17 @@
    "tier": 2
   },
   {
+   "name": "Mac Meissner",
+   "country": "USA",
+   "dob": "1999-02-18",
+   "turnedPro": 2021,
+   "majors": 0,
+   "pgaWins": 0,
+   "fame": 0.0,
+   "tier": 3,
+   "tour2026": true
+  },
+  {
    "name": "Mac O'Grady",
    "country": "USA",
    "dob": "1951-04-26",
@@ -11578,7 +11861,8 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 11.0,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Mads Vibe-Hastrup",
@@ -11951,6 +12235,17 @@
    "tier": 2
   },
   {
+   "name": "Mark Hubbard",
+   "country": "USA",
+   "dob": "1989-05-24",
+   "turnedPro": 2012,
+   "majors": 0,
+   "pgaWins": 0,
+   "fame": 0.0,
+   "tier": 3,
+   "tour2026": true
+  },
+  {
    "name": "Mark James",
    "country": "United Kingdom",
    "dob": "1953-10-28",
@@ -12318,7 +12613,8 @@
    "majors": 1,
    "pgaWins": 2,
    "fame": 19.0,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Matt Ford",
@@ -12398,7 +12694,8 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 8.5,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Matt Parziale",
@@ -12419,6 +12716,17 @@
    "pgaWins": 0,
    "fame": 5.5,
    "tier": 3
+  },
+  {
+   "name": "Matt Wallace",
+   "country": "United Kingdom",
+   "dob": "1990-04-12",
+   "turnedPro": 2012,
+   "majors": 0,
+   "pgaWins": 1,
+   "fame": 3.5,
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Matteo Delpodio",
@@ -12561,6 +12869,17 @@
    "tier": 2
   },
   {
+   "name": "Matti Schmid",
+   "country": "Germany",
+   "dob": "1997-11-18",
+   "turnedPro": 2021,
+   "majors": 0,
+   "pgaWins": 0,
+   "fame": 0.0,
+   "tier": 3,
+   "tour2026": true
+  },
+  {
    "name": "Mattias Eliasson",
    "country": "Sweden",
    "dob": "1975-04-02",
@@ -12601,6 +12920,17 @@
    "tier": 1
   },
   {
+   "name": "Maverick McNealy",
+   "country": "USA",
+   "dob": "1995-11-07",
+   "turnedPro": 2017,
+   "majors": 0,
+   "pgaWins": 1,
+   "fame": 3.5,
+   "tier": 3,
+   "tour2026": true
+  },
+  {
    "name": "Max Faulkner",
    "country": "United Kingdom",
    "dob": "1916-07-27",
@@ -12609,6 +12939,17 @@
    "pgaWins": 0,
    "fame": 24.5,
    "tier": 1
+  },
+  {
+   "name": "Max Greyserman",
+   "country": "USA",
+   "dob": "1995-05-31",
+   "turnedPro": 2017,
+   "majors": 0,
+   "pgaWins": 0,
+   "fame": 0.0,
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Max Harris",
@@ -12628,7 +12969,19 @@
    "majors": 0,
    "pgaWins": 6,
    "fame": 30.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
+  },
+  {
+   "name": "Max McGreevy",
+   "country": "USA",
+   "dob": "1995-05-03",
+   "turnedPro": 2017,
+   "majors": 0,
+   "pgaWins": 0,
+   "fame": 0.0,
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Maximilian Kieffer",
@@ -12758,7 +13111,8 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 9.0,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Michael King",
@@ -12819,6 +13173,17 @@
    "pgaWins": 0,
    "fame": 6.5,
    "tier": 2
+  },
+  {
+   "name": "Michael Thorbjornsen",
+   "country": "USA",
+   "dob": "2001-09-16",
+   "turnedPro": 2024,
+   "majors": 0,
+   "pgaWins": 1,
+   "fame": 3.5,
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Michael Weaver",
@@ -13148,7 +13513,8 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 9.5,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Mithun Perera",
@@ -13518,7 +13884,8 @@
    "majors": 0,
    "pgaWins": 5,
    "fame": 24.0,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Nick Watney",
@@ -13548,7 +13915,8 @@
    "majors": 0,
    "pgaWins": 3,
    "fame": 15.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Nico van Rensburg",
@@ -13568,7 +13936,8 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 7.0,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Nicolas Colsaerts",
@@ -14038,7 +14407,19 @@
    "majors": 0,
    "pgaWins": 8,
    "fame": 37.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
+  },
+  {
+   "name": "Patrick Fishburn",
+   "country": "USA",
+   "dob": "1992-07-21",
+   "turnedPro": 2018,
+   "majors": 0,
+   "pgaWins": 0,
+   "fame": 0.0,
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Patrick Moore",
@@ -14068,7 +14449,8 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 3.5,
-   "tier": 3
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Patrik Sjöland",
@@ -14228,7 +14610,8 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 3.5,
-   "tier": 3
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Paul Runyan",
@@ -14958,7 +15341,8 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 8.5,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Raymond Burns",
@@ -15328,7 +15712,8 @@
    "majors": 0,
    "pgaWins": 6,
    "fame": 38.0,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Ricky Barnes",
@@ -15339,6 +15724,28 @@
    "pgaWins": 0,
    "fame": 6.5,
    "tier": 2
+  },
+  {
+   "name": "Ricky Castillo",
+   "country": "USA",
+   "dob": "2001-08-28",
+   "turnedPro": 2023,
+   "majors": 0,
+   "pgaWins": 1,
+   "fame": 3.5,
+   "tier": 3,
+   "tour2026": true
+  },
+  {
+   "name": "Rico Hoey",
+   "country": "Philippines",
+   "dob": "1995-09-19",
+   "turnedPro": 2017,
+   "majors": 0,
+   "pgaWins": 0,
+   "fame": 0.0,
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Rikard Karlberg",
@@ -15458,7 +15865,8 @@
    "majors": 0,
    "pgaWins": 2,
    "fame": 16.0,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Robert Rock",
@@ -15778,7 +16186,8 @@
    "majors": 4,
    "pgaWins": 27,
    "fame": 142.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Rory Sabbatini",
@@ -15878,7 +16287,8 @@
    "majors": 0,
    "pgaWins": 6,
    "fame": 32.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Russell Knox",
@@ -15928,7 +16338,8 @@
    "majors": 1,
    "pgaWins": 3,
    "fame": 39.0,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Ryan Gerard",
@@ -15938,7 +16349,8 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 7.5,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Ryan McCormick",
@@ -16018,7 +16430,8 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 4.0,
-   "tier": 3
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Ryo Ishikawa",
@@ -16128,7 +16541,8 @@
    "majors": 0,
    "pgaWins": 5,
    "fame": 27.0,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Sam Hutsby",
@@ -16171,6 +16585,17 @@
    "tier": 3
   },
   {
+   "name": "Sam Ryder",
+   "country": "USA",
+   "dob": "1989-12-15",
+   "turnedPro": 2012,
+   "majors": 0,
+   "pgaWins": 0,
+   "fame": 0.0,
+   "tier": 3,
+   "tour2026": true
+  },
+  {
    "name": "Sam Saunders",
    "country": "USA",
    "dob": "1987-07-25",
@@ -16189,6 +16614,17 @@
    "pgaWins": 82,
    "fame": 423.5,
    "tier": 1
+  },
+  {
+   "name": "Sam Stevens",
+   "country": "USA",
+   "dob": "1996-07-04",
+   "turnedPro": 2018,
+   "majors": 0,
+   "pgaWins": 0,
+   "fame": 0.0,
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Sam Torrance",
@@ -16218,7 +16654,8 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 11.5,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Sammy Byrd",
@@ -16508,7 +16945,8 @@
    "majors": 2,
    "pgaWins": 12,
    "fame": 96.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Sean Crocker",
@@ -16648,7 +17086,8 @@
    "majors": 0,
    "pgaWins": 4,
    "fame": 22.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Sergio Garcia",
@@ -16698,7 +17137,8 @@
    "majors": 1,
    "pgaWins": 2,
    "fame": 37.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Shaun Micheel",
@@ -17048,7 +17488,8 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 10.5,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Stephen Allan",
@@ -17628,7 +18069,8 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 6.5,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Taylor Pendrith",
@@ -17638,7 +18080,8 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 7.5,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Ted Kroll",
@@ -17818,7 +18261,8 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 12.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Thomas Gögele",
@@ -17869,6 +18313,17 @@
    "pgaWins": 0,
    "fame": 21.0,
    "tier": 1
+  },
+  {
+   "name": "Thorbjørn Olesen",
+   "country": "Denmark",
+   "dob": "1989-12-21",
+   "turnedPro": 2008,
+   "majors": 0,
+   "pgaWins": 0,
+   "fame": 0.0,
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Tienie Britz",
@@ -18078,7 +18533,8 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 7.0,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Tom Jenkins",
@@ -18108,7 +18564,8 @@
    "majors": 0,
    "pgaWins": 4,
    "fame": 25.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Tom Kite",
@@ -18268,7 +18725,8 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 23.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Tommy Gainey",
@@ -18368,7 +18826,8 @@
    "majors": 0,
    "pgaWins": 6,
    "fame": 29.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Tony Holguin",
@@ -18778,7 +19237,8 @@
    "majors": 0,
    "pgaWins": 0,
    "fame": 6.5,
-   "tier": 2
+   "tier": 2,
+   "tour2026": true
   },
   {
    "name": "Victor Regalado",
@@ -18818,7 +19278,19 @@
    "majors": 0,
    "pgaWins": 6,
    "fame": 21.0,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
+  },
+  {
+   "name": "Vince Whaley",
+   "country": "USA",
+   "dob": "1995-03-14",
+   "turnedPro": 2017,
+   "majors": 0,
+   "pgaWins": 0,
+   "fame": 0.0,
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Vincent Norrman",
@@ -19078,7 +19550,8 @@
    "majors": 0,
    "pgaWins": 1,
    "fame": 5.5,
-   "tier": 3
+   "tier": 3,
+   "tour2026": true
   },
   {
    "name": "Willie Wood",
@@ -19138,7 +19611,8 @@
    "majors": 1,
    "pgaWins": 3,
    "fame": 37.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Xander Schauffele",
@@ -19148,7 +19622,8 @@
    "majors": 2,
    "pgaWins": 8,
    "fame": 73.5,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Yang Yong-eun",
@@ -19298,7 +19773,8 @@
    "majors": 2,
    "pgaWins": 12,
    "fame": 96.0,
-   "tier": 1
+   "tier": 1,
+   "tour2026": true
   },
   {
    "name": "Zack Miller",
@@ -19432,8 +19908,19 @@
   }
  ],
  "borders": {
-  "Chile": [
-   "Argentina"
+  "France": [
+   "Belgium",
+   "Germany",
+   "Italy",
+   "Spain",
+   "Switzerland"
+  ],
+  "Sweden": [
+   "Finland",
+   "Norway"
+  ],
+  "Portugal": [
+   "Spain"
   ],
   "Switzerland": [
    "Austria",
@@ -19441,12 +19928,10 @@
    "Germany",
    "Italy"
   ],
-  "Norway": [
-   "Finland",
-   "Sweden"
-  ],
-  "Malaysia": [
-   "Indonesia",
+  "Myanmar": [
+   "Bangladesh",
+   "China",
+   "India",
    "Thailand"
   ],
   "Belgium": [
@@ -19454,54 +19939,50 @@
    "Germany",
    "Netherlands"
   ],
-  "USA": [
-   "Canada",
-   "Mexico"
+  "Denmark": [
+   "Germany"
   ],
-  "Bangladesh": [
-   "India",
+  "Thailand": [
+   "Malaysia",
    "Myanmar"
-  ],
-  "Sweden": [
-   "Finland",
-   "Norway"
-  ],
-  "Namibia": [
-   "South Africa"
-  ],
-  "China": [
-   "India",
-   "Myanmar"
-  ],
-  "Brazil": [
-   "Argentina",
-   "Colombia",
-   "Paraguay"
-  ],
-  "Ecuador": [
-   "Colombia"
-  ],
-  "Finland": [
-   "Norway",
-   "Sweden"
   ],
   "Indonesia": [
    "Malaysia"
   ],
-  "Netherlands": [
-   "Belgium",
-   "Germany"
+  "United Kingdom": [
+   "Ireland"
   ],
   "Argentina": [
    "Brazil",
    "Chile",
    "Paraguay"
   ],
+  "China": [
+   "India",
+   "Myanmar"
+  ],
+  "Spain": [
+   "France",
+   "Portugal"
+  ],
+  "Scotland": [
+   "England",
+   "Ireland",
+   "Northern Ireland",
+   "Wales"
+  ],
   "Mexico": [
    "USA"
   ],
-  "Canada": [
-   "USA"
+  "Malaysia": [
+   "Indonesia",
+   "Thailand"
+  ],
+  "Zimbabwe": [
+   "South Africa"
+  ],
+  "Chile": [
+   "Argentina"
   ],
   "Austria": [
    "Czechia",
@@ -19510,22 +19991,41 @@
    "Slovakia",
    "Switzerland"
   ],
-  "Ireland": [
-   "England",
-   "Northern Ireland",
-   "Scotland",
-   "United Kingdom",
-   "Wales"
-  ],
-  "Myanmar": [
-   "Bangladesh",
-   "China",
-   "India",
-   "Thailand"
-  ],
   "South Africa": [
    "Namibia",
    "Zimbabwe"
+  ],
+  "Italy": [
+   "Austria",
+   "France",
+   "Switzerland"
+  ],
+  "Brazil": [
+   "Argentina",
+   "Colombia",
+   "Paraguay"
+  ],
+  "Norway": [
+   "Finland",
+   "Sweden"
+  ],
+  "Bangladesh": [
+   "India",
+   "Myanmar"
+  ],
+  "Slovakia": [
+   "Austria",
+   "Czechia"
+  ],
+  "India": [
+   "Bangladesh",
+   "China",
+   "Myanmar"
+  ],
+  "Czechia": [
+   "Austria",
+   "Germany",
+   "Slovakia"
   ],
   "Wales": [
    "England",
@@ -19533,35 +20033,41 @@
    "Northern Ireland",
    "Scotland"
   ],
-  "Italy": [
-   "Austria",
-   "France",
-   "Switzerland"
+  "Paraguay": [
+   "Argentina",
+   "Brazil"
   ],
-  "Czechia": [
-   "Austria",
-   "Germany",
-   "Slovakia"
+  "Finland": [
+   "Norway",
+   "Sweden"
   ],
-  "Slovakia": [
-   "Austria",
-   "Czechia"
+  "Canada": [
+   "USA"
   ],
-  "Northern Ireland": [
+  "Colombia": [
+   "Brazil",
+   "Ecuador"
+  ],
+  "Netherlands": [
+   "Belgium",
+   "Germany"
+  ],
+  "USA": [
+   "Canada",
+   "Mexico"
+  ],
+  "Ireland": [
    "England",
-   "Ireland",
+   "Northern Ireland",
    "Scotland",
+   "United Kingdom",
    "Wales"
   ],
-  "France": [
-   "Belgium",
-   "Germany",
-   "Italy",
-   "Spain",
-   "Switzerland"
-  ],
-  "Zimbabwe": [
+  "Namibia": [
    "South Africa"
+  ],
+  "Ecuador": [
+   "Colombia"
   ],
   "Germany": [
    "Austria",
@@ -19578,95 +20084,65 @@
    "Scotland",
    "Wales"
   ],
-  "Thailand": [
-   "Malaysia",
-   "Myanmar"
-  ],
-  "Colombia": [
-   "Brazil",
-   "Ecuador"
-  ],
-  "Paraguay": [
-   "Argentina",
-   "Brazil"
-  ],
-  "United Kingdom": [
-   "Ireland"
-  ],
-  "Denmark": [
-   "Germany"
-  ],
-  "India": [
-   "Bangladesh",
-   "China",
-   "Myanmar"
-  ],
-  "Portugal": [
-   "Spain"
-  ],
-  "Scotland": [
+  "Northern Ireland": [
    "England",
    "Ireland",
-   "Northern Ireland",
+   "Scotland",
    "Wales"
-  ],
-  "Spain": [
-   "France",
-   "Portugal"
   ]
  },
  "continents": {
-  "New Zealand": "OC",
-  "Chile": "SA",
-  "Switzerland": "EU",
-  "Norway": "EU",
-  "Japan": "AS",
-  "Malaysia": "AS",
-  "Iceland": "EU",
-  "Belgium": "EU",
   "South Korea": "AS",
-  "USA": "NA",
-  "Taiwan": "AS",
-  "Bangladesh": "AS",
-  "Philippines": "AS",
-  "Costa Rica": "NA",
-  "Sweden": "EU",
-  "Namibia": "AF",
-  "China": "AS",
-  "Brazil": "SA",
-  "Ecuador": "SA",
-  "Singapore": "AS",
-  "Finland": "EU",
-  "Indonesia": "AS",
-  "Netherlands": "EU",
-  "Argentina": "SA",
-  "Mexico": "NA",
-  "Canada": "NA",
-  "Austria": "EU",
-  "Ireland": "EU",
-  "Fiji": "OC",
-  "Myanmar": "AS",
-  "South Africa": "AF",
-  "Wales": "EU",
-  "Italy": "EU",
-  "Czechia": "EU",
-  "Slovakia": "EU",
-  "Northern Ireland": "EU",
   "France": "EU",
-  "Zimbabwe": "AF",
-  "Germany": "EU",
-  "England": "EU",
-  "Australia": "OC",
-  "Thailand": "AS",
-  "Colombia": "SA",
-  "Paraguay": "SA",
-  "United Kingdom": "EU",
+  "Sweden": "EU",
+  "Portugal": "EU",
+  "Switzerland": "EU",
+  "Myanmar": "AS",
+  "Japan": "AS",
+  "Belgium": "EU",
   "Denmark": "EU",
+  "Philippines": "AS",
+  "Thailand": "AS",
+  "Indonesia": "AS",
+  "United Kingdom": "EU",
   "Puerto Rico": "NA",
+  "Argentina": "SA",
+  "China": "AS",
+  "Costa Rica": "NA",
+  "Australia": "OC",
+  "Spain": "EU",
+  "Scotland": "EU",
+  "Mexico": "NA",
+  "Malaysia": "AS",
+  "Zimbabwe": "AF",
+  "Singapore": "AS",
+  "Iceland": "EU",
+  "Chile": "SA",
+  "Austria": "EU",
+  "South Africa": "AF",
+  "Italy": "EU",
+  "Brazil": "SA",
+  "Norway": "EU",
+  "Bangladesh": "AS",
+  "Slovakia": "EU",
   "India": "AS",
   "Sri Lanka": "AS",
-  "Portugal": "EU",
-  "Scotland": "EU",
-  "Spain": "EU"
+  "Czechia": "EU",
+  "Wales": "EU",
+  "Paraguay": "SA",
+  "Taiwan": "AS",
+  "Finland": "EU",
+  "Canada": "NA",
+  "Colombia": "SA",
+  "New Zealand": "OC",
+  "Netherlands": "EU",
+  "USA": "NA",
+  "Ireland": "EU",
+  "Namibia": "AF",
+  "Ecuador": "SA",
+  "Fiji": "OC",
+  "Germany": "EU",
+  "England": "EU",
+  "Northern Ireland": "EU"
  }
 }
