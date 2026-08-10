@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generatedAt": "2026-08-10T01:34:40.469050+00:00",
+  "generatedAt": "2026-08-10T03:43:49.755690+00:00",
   "count": 1977,
   "tiers": {
    "normal": 650,
@@ -8836,7 +8836,7 @@
   },
   {
    "name": "Jhonattan Vegas",
-   "country": "USA",
+   "country": "Venezuela",
    "dob": "1984-08-19",
    "turnedPro": 2008,
    "majors": 0,
@@ -19908,6 +19908,35 @@
   }
  ],
  "borders": {
+  "Switzerland": [
+   "Austria",
+   "France",
+   "Germany",
+   "Italy"
+  ],
+  "Namibia": [
+   "South Africa"
+  ],
+  "Slovakia": [
+   "Austria",
+   "Czechia"
+  ],
+  "Denmark": [
+   "Germany"
+  ],
+  "Italy": [
+   "Austria",
+   "France",
+   "Switzerland"
+  ],
+  "China": [
+   "India",
+   "Myanmar"
+  ],
+  "USA": [
+   "Canada",
+   "Mexico"
+  ],
   "France": [
    "Belgium",
    "Germany",
@@ -19915,146 +19944,38 @@
    "Spain",
    "Switzerland"
   ],
-  "Sweden": [
-   "Finland",
-   "Norway"
-  ],
-  "Portugal": [
-   "Spain"
-  ],
-  "Switzerland": [
-   "Austria",
-   "France",
-   "Germany",
-   "Italy"
-  ],
-  "Myanmar": [
-   "Bangladesh",
-   "China",
-   "India",
-   "Thailand"
+  "Northern Ireland": [
+   "England",
+   "Ireland",
+   "Scotland",
+   "Wales"
   ],
   "Belgium": [
    "France",
    "Germany",
    "Netherlands"
   ],
-  "Denmark": [
-   "Germany"
-  ],
-  "Thailand": [
-   "Malaysia",
-   "Myanmar"
-  ],
-  "Indonesia": [
-   "Malaysia"
-  ],
-  "United Kingdom": [
-   "Ireland"
-  ],
-  "Argentina": [
-   "Brazil",
-   "Chile",
-   "Paraguay"
-  ],
-  "China": [
-   "India",
-   "Myanmar"
-  ],
-  "Spain": [
-   "France",
-   "Portugal"
-  ],
-  "Scotland": [
-   "England",
-   "Ireland",
-   "Northern Ireland",
-   "Wales"
-  ],
-  "Mexico": [
-   "USA"
-  ],
-  "Malaysia": [
-   "Indonesia",
-   "Thailand"
-  ],
-  "Zimbabwe": [
-   "South Africa"
-  ],
-  "Chile": [
-   "Argentina"
-  ],
-  "Austria": [
-   "Czechia",
-   "Germany",
-   "Italy",
-   "Slovakia",
-   "Switzerland"
-  ],
-  "South Africa": [
-   "Namibia",
-   "Zimbabwe"
-  ],
-  "Italy": [
-   "Austria",
-   "France",
-   "Switzerland"
-  ],
-  "Brazil": [
-   "Argentina",
-   "Colombia",
-   "Paraguay"
-  ],
-  "Norway": [
-   "Finland",
-   "Sweden"
-  ],
-  "Bangladesh": [
-   "India",
-   "Myanmar"
-  ],
-  "Slovakia": [
-   "Austria",
-   "Czechia"
-  ],
   "India": [
    "Bangladesh",
    "China",
    "Myanmar"
   ],
-  "Czechia": [
-   "Austria",
-   "Germany",
-   "Slovakia"
+  "Netherlands": [
+   "Belgium",
+   "Germany"
+  ],
+  "Norway": [
+   "Finland",
+   "Sweden"
+  ],
+  "Mexico": [
+   "USA"
   ],
   "Wales": [
    "England",
    "Ireland",
    "Northern Ireland",
    "Scotland"
-  ],
-  "Paraguay": [
-   "Argentina",
-   "Brazil"
-  ],
-  "Finland": [
-   "Norway",
-   "Sweden"
-  ],
-  "Canada": [
-   "USA"
-  ],
-  "Colombia": [
-   "Brazil",
-   "Ecuador"
-  ],
-  "Netherlands": [
-   "Belgium",
-   "Germany"
-  ],
-  "USA": [
-   "Canada",
-   "Mexico"
   ],
   "Ireland": [
    "England",
@@ -20063,11 +19984,55 @@
    "United Kingdom",
    "Wales"
   ],
-  "Namibia": [
+  "Chile": [
+   "Argentina"
+  ],
+  "Indonesia": [
+   "Malaysia"
+  ],
+  "Zimbabwe": [
    "South Africa"
   ],
   "Ecuador": [
    "Colombia"
+  ],
+  "Paraguay": [
+   "Argentina",
+   "Brazil"
+  ],
+  "Brazil": [
+   "Argentina",
+   "Colombia",
+   "Paraguay",
+   "Venezuela"
+  ],
+  "Colombia": [
+   "Brazil",
+   "Ecuador",
+   "Venezuela"
+  ],
+  "Portugal": [
+   "Spain"
+  ],
+  "Venezuela": [
+   "Brazil",
+   "Colombia"
+  ],
+  "South Africa": [
+   "Namibia",
+   "Zimbabwe"
+  ],
+  "Finland": [
+   "Norway",
+   "Sweden"
+  ],
+  "Bangladesh": [
+   "India",
+   "Myanmar"
+  ],
+  "Sweden": [
+   "Finland",
+   "Norway"
   ],
   "Germany": [
    "Austria",
@@ -20078,71 +20043,113 @@
    "Netherlands",
    "Switzerland"
   ],
+  "Canada": [
+   "USA"
+  ],
+  "Thailand": [
+   "Malaysia",
+   "Myanmar"
+  ],
+  "Austria": [
+   "Czechia",
+   "Germany",
+   "Italy",
+   "Slovakia",
+   "Switzerland"
+  ],
   "England": [
    "Ireland",
    "Northern Ireland",
    "Scotland",
    "Wales"
   ],
-  "Northern Ireland": [
+  "Malaysia": [
+   "Indonesia",
+   "Thailand"
+  ],
+  "Spain": [
+   "France",
+   "Portugal"
+  ],
+  "Myanmar": [
+   "Bangladesh",
+   "China",
+   "India",
+   "Thailand"
+  ],
+  "Scotland": [
    "England",
    "Ireland",
-   "Scotland",
+   "Northern Ireland",
    "Wales"
+  ],
+  "United Kingdom": [
+   "Ireland"
+  ],
+  "Czechia": [
+   "Austria",
+   "Germany",
+   "Slovakia"
+  ],
+  "Argentina": [
+   "Brazil",
+   "Chile",
+   "Paraguay"
   ]
  },
  "continents": {
-  "South Korea": "AS",
-  "France": "EU",
-  "Sweden": "EU",
-  "Portugal": "EU",
   "Switzerland": "EU",
-  "Myanmar": "AS",
-  "Japan": "AS",
-  "Belgium": "EU",
-  "Denmark": "EU",
-  "Philippines": "AS",
-  "Thailand": "AS",
-  "Indonesia": "AS",
-  "United Kingdom": "EU",
-  "Puerto Rico": "NA",
-  "Argentina": "SA",
-  "China": "AS",
-  "Costa Rica": "NA",
-  "Australia": "OC",
-  "Spain": "EU",
-  "Scotland": "EU",
-  "Mexico": "NA",
-  "Malaysia": "AS",
-  "Zimbabwe": "AF",
-  "Singapore": "AS",
-  "Iceland": "EU",
-  "Chile": "SA",
-  "Austria": "EU",
-  "South Africa": "AF",
-  "Italy": "EU",
-  "Brazil": "SA",
-  "Norway": "EU",
-  "Bangladesh": "AS",
-  "Slovakia": "EU",
-  "India": "AS",
-  "Sri Lanka": "AS",
-  "Czechia": "EU",
-  "Wales": "EU",
-  "Paraguay": "SA",
-  "Taiwan": "AS",
-  "Finland": "EU",
-  "Canada": "NA",
-  "Colombia": "SA",
-  "New Zealand": "OC",
-  "Netherlands": "EU",
-  "USA": "NA",
-  "Ireland": "EU",
   "Namibia": "AF",
+  "Slovakia": "EU",
+  "Denmark": "EU",
+  "Italy": "EU",
+  "Puerto Rico": "NA",
+  "South Korea": "AS",
+  "China": "AS",
+  "USA": "NA",
+  "France": "EU",
+  "Northern Ireland": "EU",
+  "Taiwan": "AS",
+  "Belgium": "EU",
+  "India": "AS",
+  "Netherlands": "EU",
+  "Norway": "EU",
+  "Mexico": "NA",
+  "Wales": "EU",
+  "Ireland": "EU",
+  "Costa Rica": "NA",
+  "Chile": "SA",
+  "Indonesia": "AS",
+  "Japan": "AS",
+  "Zimbabwe": "AF",
   "Ecuador": "SA",
-  "Fiji": "OC",
+  "Paraguay": "SA",
+  "Brazil": "SA",
+  "Colombia": "SA",
+  "Portugal": "EU",
+  "Philippines": "AS",
+  "Venezuela": "SA",
+  "South Africa": "AF",
+  "Sri Lanka": "AS",
+  "Finland": "EU",
+  "Singapore": "AS",
+  "Bangladesh": "AS",
+  "Sweden": "EU",
   "Germany": "EU",
+  "Canada": "NA",
+  "Thailand": "AS",
+  "Australia": "OC",
+  "Austria": "EU",
+  "Iceland": "EU",
   "England": "EU",
-  "Northern Ireland": "EU"
+  "New Zealand": "OC",
+  "Malaysia": "AS",
+  "Spain": "EU",
+  "Fiji": "OC",
+  "Myanmar": "AS",
+  "Scotland": "EU",
+  "United Kingdom": "EU",
+  "Czechia": "EU",
+  "Argentina": "SA"
  }
 }

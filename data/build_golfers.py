@@ -91,6 +91,16 @@ def norm_country(c):
     return COUNTRY_NORM.get(c, c)
 
 
+# Curated nationality corrections, keyed by norm_name. Wikidata's "country for
+# sport" (P1532) sometimes reports where a player is based rather than the nation
+# they represent — e.g. it lists Jhonattan Vegas (Q2408862) as United States, but
+# he is Venezuelan (the first Venezuelan on the PGA Tour). Applied last so it wins
+# over both the bulk pool and the seed. Values must be border-vocabulary names.
+COUNTRY_OVERRIDE = {
+    "jhonattan vegas": "Venezuela",
+}
+
+
 def fame(majors, pga, pro, sitelinks):
     """Composite recognizability+accomplishment score used only for tier ranking.
 
@@ -193,6 +203,12 @@ def build(report=False):
         }
 
     golfers = list(by_name.values())
+
+    # Curated nationality corrections win over every source.
+    for g in golfers:
+        ov = COUNTRY_OVERRIDE.get(norm_name(g["name"]))
+        if ov:
+            g["country"] = ov
 
     # Flag the 2026 PGA Tour membership (the Tour '26 mode's pool). A curated
     # list of current-tour names (TOUR_PRESENT already in the dataset + TOUR_ADD
