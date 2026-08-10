@@ -2,10 +2,10 @@
    then overrides only the 7-column grid and a little Footle chrome. @import leads. */
 @import url("../styles.css");
 
-/* Footle's backdrop: Premier League purple, distinct from Puttle's fairway green
-   (#2f6d3b), Cindle's emerald (#15633a), and the UFC game's cobalt. Dark enough
-   that the bright-green "exact" chips (--green) still pop. */
-:root{ --bg:#3d195b; }
+/* Footle's backdrop: a soft light peach, distinct from Puttle's fairway green
+   (#2f6d3b), Cindle's emerald (#15633a), and the UFC game's cobalt. Light, so the
+   header/footer chrome below flips from --cream to --ink to stay readable. */
+:root{ --bg:#ffe1d0; }
 
 /* Player | Nationality | Club | Position | Age | Goals | Shirt.
    Player names, nationality, and club run long; Position/Age/Goals/Shirt are a
@@ -22,12 +22,12 @@
 }
 
 .footle-title{
-  text-align:center;color:var(--cream);
+  text-align:center;color:var(--ink);
   font-weight:700;letter-spacing:4px;margin:4px 0 6px;
   font-size:clamp(28px,5vw,52px);
 }
 .footle-sub{
-  text-align:center;color:var(--cream);opacity:.9;
+  text-align:center;color:var(--ink);opacity:.9;
   max-width:760px;margin:0 auto 22px;line-height:1.5;
   font-size:clamp(12px,1.3vw,15px);
 }
@@ -48,7 +48,7 @@
   box-shadow:3px 4px 0 #555;padding:8px 16px;
 }
 .mode-tab.active{background:var(--yellow);}
-.mode-desc{text-align:center;color:var(--cream);opacity:.85;margin:0 0 20px;
+.mode-desc{text-align:center;color:var(--ink);opacity:.85;margin:0 0 20px;
   font-size:clamp(11px,1.1vw,14px);min-height:1.2em;}
 
 .daily-meta{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin:12px 0;
@@ -65,9 +65,9 @@
 .reveal .reveal-title{font-weight:700;font-size:20px;margin-bottom:6px;}
 
 .footle-foot{
-  text-align:center;color:var(--cream);opacity:.7;
+  text-align:center;color:var(--ink);opacity:.7;
   font-size:11px;margin-top:40px;
 }
-.footle-foot a{color:var(--cream);}
+.footle-foot a{color:var(--ink);}
 
 .hidden{display:none;}
