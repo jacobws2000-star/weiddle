@@ -200,57 +200,77 @@
     return new File([arr], name, { type: "image/png" });
   }
 
+  // Overlay showing the rendered card so the user can save/share it manually.
+  // This is the universal path: it works on every iOS version and on desktop,
+  // regardless of whether navigator.share supports files. On touch devices the
+  // user press-and-holds the image → "Share…"/"Save to Photos" → Messages.
+  function showOverlay(dataURL, opts) {
+    const touch = matchMedia("(pointer: coarse)").matches || "ontouchstart" in window;
+    const ov = document.createElement("div");
+    ov.style.cssText =
+      "position:fixed;inset:0;z-index:9999;background:rgba(22,19,39,.72);" +
+      "display:flex;align-items:center;justify-content:center;padding:18px;";
+    const hint = touch
+      ? "Press &amp; hold the image, then choose <b>Share…</b> or <b>Save to Photos</b> to send it in Messages."
+      : "Right-click the image to copy it, or use <b>Save image</b> below.";
+    ov.innerHTML =
+      '<div style="background:' + CARD + ';border:4px solid ' + INK + ';border-radius:14px;' +
+      'box-shadow:6px 8px 0 ' + INK + ';max-width:min(460px,92vw);max-height:92vh;overflow:auto;' +
+      'padding:16px;text-align:center;font-family:system-ui,-apple-system,sans-serif;">' +
+      '<img src="' + dataURL + '" style="max-width:100%;height:auto;border-radius:8px;display:block;">' +
+      '<p style="color:' + INK + ';font-size:14px;line-height:1.4;margin:12px 4px;">' + hint + "</p>" +
+      '<div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">' +
+      '<a id="ws-save" download="weiddle.png" href="' + dataURL + '" ' +
+      'style="background:' + INK + ';color:' + CARD + ';text-decoration:none;font-weight:700;' +
+      'border-radius:8px;padding:9px 14px;font-size:15px;">⬇ Save image</a>' +
+      '<button id="ws-close" style="background:' + CARD + ';color:' + INK + ';border:2px solid ' + INK + ';' +
+      'font-weight:700;border-radius:8px;padding:9px 14px;font-size:15px;cursor:pointer;">Close</button>' +
+      "</div></div>";
+    const close = () => ov.remove();
+    ov.addEventListener("click", (e) => { if (e.target === ov) close(); });
+    document.body.appendChild(ov);
+    ov.querySelector("#ws-close").addEventListener("click", close);
+  }
+
   // Public entry point. opts:
-  //   text     full text (clipboard + text-share fallback)
-  //   url      canonical link
+  //   text     full text (clipboard copy for anyone who wants the emoji grid)
+  //   url      canonical link (printed on the card art)
   //   headline big title on the card, e.g. "🎬 Cindle"
   //   subtitle score/date line, e.g. "2026-08-09 · 3/6"
   //   grid     optional rows of emoji strings (colored squares); omit for none
-  //   onCopied optional callback fired only when we fall back to clipboard
+  //   onCopied optional callback fired when we also copy the text to clipboard
   window.weiddleShare = function (opts) {
     const footer = (opts.url || "").replace(/^https?:\/\//, "");
 
-    let file = null, buildErr = "";
+    let file = null, dataURL = "";
     try {
       const canvas = renderCard({
         headline: opts.headline, subtitle: opts.subtitle,
         footer: footer, grid: opts.grid,
       });
-      file = dataURLToFile(canvas.toDataURL("image/png"), "weiddle.png");
-    } catch (e) { buildErr = (e && e.message) || String(e); }
+      dataURL = canvas.toDataURL("image/png");
+      file = dataURLToFile(dataURL, "weiddle.png");
+    } catch (e) { /* fall through to text-only paths */ }
 
-    // TEMP diagnostic: visit any game with ?sharedebug=1 and tap Share to see
-    // which branch runs and why. Remove once share-on-iOS is confirmed working.
-    if (/[?&]sharedebug/.test(location.search)) {
-      let canShareFiles = false, canErr = "";
-      try { canShareFiles = !!(file && navigator.canShare && navigator.canShare({ files: [file] })); }
-      catch (e) { canErr = (e && e.message) || String(e); }
-      alert(JSON.stringify({
-        hasFile: !!file, buildErr,
-        hasShare: !!navigator.share,
-        hasCanShare: !!navigator.canShare,
-        canShareFiles, canErr,
-        standalone: !!(navigator.standalone || (window.matchMedia && matchMedia("(display-mode: standalone)").matches)),
-        ua: navigator.userAgent,
-      }, null, 1));
-    }
-
-    // 1) Native share sheet with the image file (iOS Messages shows it inline).
-    // Share ONLY the file — no text/URL. On iOS, a share carrying both a file
-    // and a URL makes Messages unfurl the link into a preview card and drop the
-    // image. The card art already prints the score and the weiddle.com link, so
-    // the file alone is all we need.
-    if (file && navigator.canShare && navigator.canShare({ files: [file] })) {
-      navigator.share({ files: [file] }).catch(() => {});
-      return;
-    }
-    // 2) Native share sheet, text only (mobile browsers without file share).
-    if (navigator.share) {
-      navigator.share({ text: opts.text }).catch(() => {});
-      return;
-    }
-    // 3) Desktop / no Web Share: copy to clipboard and let the caller toast.
-    if (navigator.clipboard) navigator.clipboard.writeText(opts.text);
+    // Copy the text grid too, so it's on the clipboard either way.
+    if (navigator.clipboard) navigator.clipboard.writeText(opts.text).catch(() => {});
     if (opts.onCopied) opts.onCopied();
+
+    // 1) One-tap native share of the image FILE (best case: iOS Messages inline).
+    // Share ONLY the file — a share carrying a URL makes Messages unfurl a link
+    // preview and drop the image. If the native share fails for any reason other
+    // than the user cancelling, fall back to the on-screen overlay.
+    if (file && navigator.canShare && navigator.canShare({ files: [file] })) {
+      navigator.share({ files: [file] }).catch((err) => {
+        if (err && err.name === "AbortError") return;   // user dismissed the sheet
+        if (dataURL) showOverlay(dataURL, opts);
+      });
+      return;
+    }
+    // 2) No file sharing (older iOS, desktop, in-app browsers): show the image so
+    // the user can save/share it by hand. Guaranteed to surface the picture.
+    if (dataURL) { showOverlay(dataURL, opts); return; }
+    // 3) Image couldn't be built at all: last-ditch native text share.
+    if (navigator.share) navigator.share({ text: opts.text }).catch(() => {});
   };
 })();
