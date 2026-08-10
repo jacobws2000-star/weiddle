@@ -481,10 +481,21 @@ function shareText(){
   return `${head}\n${body}\nhttps://weiddle.com/golf`;
 }
 function doShare(){
-  const txt = shareText();
-  navigator.clipboard.writeText(txt).then(() => {
-    el("share-copied").classList.remove("hidden");
-    setTimeout(() => el("share-copied").classList.add("hidden"), 2000);
+  const rec = getDailyRecord();
+  const grid = (rec && rec.grid) || guessRows;
+  const emoji = s => s === "exact" ? "🟩" : s === "border" ? "🟧"
+                   : (s === "close" || s === "continent") ? "🟨" : "⬜";
+  const score = rec && !rec.won ? "X" : (rec ? rec.guesses : guessCount);
+  window.weiddleShare({
+    text: shareText(),
+    url: "https://weiddle.com/golf",
+    headline: "⛳ Puttle",
+    subtitle: `${dailyKey()} · ${score}/${TIERS.daily.guesses}`,
+    grid: grid.map(row => row.map(emoji)),
+    onCopied: () => {
+      el("share-copied").classList.remove("hidden");
+      setTimeout(() => el("share-copied").classList.add("hidden"), 2000);
+    },
   });
 }
 

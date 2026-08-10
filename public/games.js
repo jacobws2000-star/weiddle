@@ -93,3 +93,148 @@
     document.addEventListener("DOMContentLoaded", build);
   else build();
 })();
+
+// ---------------------------------------------------------------------------
+// Shared "Apple-friendly" share.  Old behaviour just copied text to the
+// clipboard; on iOS that means a bare text bubble in Messages. Here we render
+// the round to a PNG card and hand it to the native share sheet as a *file*, so
+// iMessage (and other apps) show the picture inline. Text-share and clipboard
+// are kept as graceful fallbacks for browsers without file sharing.
+//
+// iOS gotcha: navigator.share() must run inside the same synchronous turn as the
+// click, or it throws NotAllowedError ("user gesture required"). So the whole
+// card is drawn and turned into a File synchronously (toDataURL, not the async
+// toBlob) before share() is called — no awaits in the hot path.
+(function () {
+  const CARD = "#f4ecd6", INK = "#161327";
+  const CELL = { "🟩": "#3bd93b", "🟧": "#ff8c1a", "🟨": "#ffd23a",
+                 "🟥": "#ff6b6b", "⬜": "#d9d3e0" };
+
+  function roundRect(ctx, x, y, w, h, r) {
+    if (ctx.roundRect) { ctx.beginPath(); ctx.roundRect(x, y, w, h, r); return; }
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.arcTo(x + w, y, x + w, y + h, r);
+    ctx.arcTo(x + w, y + h, x, y + h, r);
+    ctx.arcTo(x, y + h, x, y, r);
+    ctx.arcTo(x, y, x + w, y, r);
+    ctx.closePath();
+  }
+
+  // opts: { headline, subtitle, footer, grid } — grid is rows of emoji strings.
+  function renderCard(opts) {
+    const grid = opts.grid || [];
+    const rows = grid.length;
+    const cols = rows ? Math.max.apply(null, grid.map((r) => r.length)) : 0;
+    const cell = 46, gap = 8, pad = 44;
+    const gridW = cols ? cols * cell + (cols - 1) * gap : 0;
+    const W = Math.max(gridW, 460) + pad * 2;
+
+    const F = 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif';
+    let y = pad;
+    // Measure height by walking the same cursor we draw with.
+    y += 54;                                  // headline
+    y += 18 + 30;                             // gap + subtitle
+    if (rows) y += 30 + rows * cell + (rows - 1) * gap; // gap + grid
+    y += 30 + 26;                             // gap + footer
+    const H = y + pad - 26;
+
+    const scale = 2;
+    const c = document.createElement("canvas");
+    c.width = W * scale; c.height = H * scale;
+    const ctx = c.getContext("2d");
+    ctx.scale(scale, scale);
+
+    // Card: cream fill + thick ink border + offset shadow, matching the site.
+    ctx.fillStyle = INK; ctx.fillRect(8, 10, W - 8, H - 10);   // drop shadow
+    ctx.fillStyle = CARD; ctx.fillRect(0, 0, W - 8, H - 10);
+    ctx.lineWidth = 6; ctx.strokeStyle = INK;
+    ctx.strokeRect(3, 3, W - 14, H - 16);
+
+    const cx = (W - 8) / 2;
+    ctx.textAlign = "center";
+    ctx.fillStyle = INK;
+
+    y = pad;
+    ctx.font = "800 44px " + F;
+    ctx.textBaseline = "top";
+    ctx.fillText(opts.headline, cx, y);
+    y += 54 + 18;
+
+    ctx.font = "700 26px " + F;
+    ctx.fillText(opts.subtitle, cx, y);
+    y += 30;
+
+    if (rows) {
+      y += 30;
+      for (let r = 0; r < rows; r++) {
+        const rowLen = grid[r].length;
+        let x = cx - (rowLen * cell + (rowLen - 1) * gap) / 2;
+        for (let col = 0; col < rowLen; col++) {
+          ctx.fillStyle = CELL[grid[r][col]] || CELL["⬜"];
+          roundRect(ctx, x, y, cell, cell, 9);
+          ctx.fill();
+          ctx.lineWidth = 2; ctx.strokeStyle = INK;
+          roundRect(ctx, x, y, cell, cell, 9);
+          ctx.stroke();
+          x += cell + gap;
+        }
+        y += cell + gap;
+      }
+      y -= gap;
+      y += 30;
+    }
+
+    ctx.fillStyle = INK;
+    ctx.font = "700 22px " + F;
+    ctx.fillText(opts.footer, cx, y);
+
+    return c;
+  }
+
+  function dataURLToFile(dataURL, name) {
+    const comma = dataURL.indexOf(",");
+    const bin = atob(dataURL.slice(comma + 1));
+    const arr = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) arr[i] = bin.charCodeAt(i);
+    return new File([arr], name, { type: "image/png" });
+  }
+
+  // Public entry point. opts:
+  //   text     full text (clipboard + text-share fallback)
+  //   url      canonical link
+  //   headline big title on the card, e.g. "🎬 Cindle"
+  //   subtitle score/date line, e.g. "2026-08-09 · 3/6"
+  //   grid     optional rows of emoji strings (colored squares); omit for none
+  //   onCopied optional callback fired only when we fall back to clipboard
+  window.weiddleShare = function (opts) {
+    const footer = (opts.url || "").replace(/^https?:\/\//, "");
+
+    let file = null;
+    try {
+      const canvas = renderCard({
+        headline: opts.headline, subtitle: opts.subtitle,
+        footer: footer, grid: opts.grid,
+      });
+      file = dataURLToFile(canvas.toDataURL("image/png"), "weiddle.png");
+    } catch (e) { /* fall through to text/clipboard */ }
+
+    // 1) Native share sheet with the image file (iOS Messages shows it inline).
+    // Share ONLY the file — no text/URL. On iOS, a share carrying both a file
+    // and a URL makes Messages unfurl the link into a preview card and drop the
+    // image. The card art already prints the score and the weiddle.com link, so
+    // the file alone is all we need.
+    if (file && navigator.canShare && navigator.canShare({ files: [file] })) {
+      navigator.share({ files: [file] }).catch(() => {});
+      return;
+    }
+    // 2) Native share sheet, text only (mobile browsers without file share).
+    if (navigator.share) {
+      navigator.share({ text: opts.text }).catch(() => {});
+      return;
+    }
+    // 3) Desktop / no Web Share: copy to clipboard and let the caller toast.
+    if (navigator.clipboard) navigator.clipboard.writeText(opts.text);
+    if (opts.onCopied) opts.onCopied();
+  };
+})();

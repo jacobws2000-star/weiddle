@@ -1029,9 +1029,16 @@ const SHARE_URL = "https://weiddle.com";   // canonical origin; points live in i
 el("share-btn").addEventListener("click", () => {
   const label = isTitleMode() ? "Weiddle Title Defense" : "Weiddle";
   const line = `${label} — solved in ${guessCount} guesses ⏱\n${SHARE_URL}`;
-  if (navigator.clipboard) navigator.clipboard.writeText(line);
-  el("share-btn").textContent = "Copied!";
-  setTimeout(() => el("share-btn").textContent = "↗ Share", 1500);
+  window.weiddleShare({
+    text: line,
+    url: SHARE_URL,
+    headline: "🥊 " + label,
+    subtitle: `Solved in ${guessCount} guesses`,
+    onCopied: () => {
+      el("share-btn").textContent = "Copied!";
+      setTimeout(() => el("share-btn").textContent = "↗ Share", 1500);
+    },
+  });
 });
 
 // ---------- Give-up modal ----------
@@ -1108,9 +1115,19 @@ el("daily-share").addEventListener("click", () => {
   const line = kind === "moments"
     ? `Weiddle Daily Moments — ${rec.score}/${rec.max} · streak ${streak} 🥊\n${SHARE_URL}`
     : `Weiddle Daily (${dailyKey()}) — ${rec.won ? rec.guesses + " guesses" : "X"} · streak ${streak} 🥊\n${SHARE_URL}`;
-  if (navigator.clipboard) navigator.clipboard.writeText(line);
-  el("daily-share").textContent = "Copied!";
-  setTimeout(() => el("daily-share").textContent = "↗ Share", 1500);
+  const subtitle = kind === "moments"
+    ? `Daily Moments · ${rec.score}/${rec.max} · streak ${streak}`
+    : `Daily ${dailyKey()} · ${rec.won ? rec.guesses + " guesses" : "X"} · streak ${streak}`;
+  window.weiddleShare({
+    text: line,
+    url: SHARE_URL,
+    headline: "🥊 Weiddle",
+    subtitle,
+    onCopied: () => {
+      el("daily-share").textContent = "Copied!";
+      setTimeout(() => el("daily-share").textContent = "↗ Share", 1500);
+    },
+  });
 });
 
 // ---------- Hint buttons ----------
