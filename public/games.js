@@ -210,14 +210,30 @@
   window.weiddleShare = function (opts) {
     const footer = (opts.url || "").replace(/^https?:\/\//, "");
 
-    let file = null;
+    let file = null, buildErr = "";
     try {
       const canvas = renderCard({
         headline: opts.headline, subtitle: opts.subtitle,
         footer: footer, grid: opts.grid,
       });
       file = dataURLToFile(canvas.toDataURL("image/png"), "weiddle.png");
-    } catch (e) { /* fall through to text/clipboard */ }
+    } catch (e) { buildErr = (e && e.message) || String(e); }
+
+    // TEMP diagnostic: visit any game with ?sharedebug=1 and tap Share to see
+    // which branch runs and why. Remove once share-on-iOS is confirmed working.
+    if (/[?&]sharedebug/.test(location.search)) {
+      let canShareFiles = false, canErr = "";
+      try { canShareFiles = !!(file && navigator.canShare && navigator.canShare({ files: [file] })); }
+      catch (e) { canErr = (e && e.message) || String(e); }
+      alert(JSON.stringify({
+        hasFile: !!file, buildErr,
+        hasShare: !!navigator.share,
+        hasCanShare: !!navigator.canShare,
+        canShareFiles, canErr,
+        standalone: !!(navigator.standalone || (window.matchMedia && matchMedia("(display-mode: standalone)").matches)),
+        ua: navigator.userAgent,
+      }, null, 1));
+    }
 
     // 1) Native share sheet with the image file (iOS Messages shows it inline).
     // Share ONLY the file — no text/URL. On iOS, a share carrying both a file
