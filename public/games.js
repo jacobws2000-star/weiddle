@@ -20,6 +20,8 @@
       blurb: "Guess the mystery movie." },
     { id: "puttle", emoji: "⛳", name: "Puttle", path: "/golf/",
       blurb: "Guess the mystery PGA Tour golfer." },
+    { id: "footle", emoji: "⚽", name: "Footle", path: "/footle/",
+      blurb: "Guess the Premier League starter." },
   ];
 
   // Which game is this page? Longest non-root path prefix wins; fall back to root.

@@ -2,6 +2,7 @@
 data/.cache/
 data/.cache_movies/
 data/.cache_golf/
+data/.cache_footle/
 
 # OS
 .DS_Store

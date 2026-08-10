@@ -74,6 +74,10 @@ NATIONALITY_TO_ISO2 = {
     "United Kingdom": "GB", "Malaysia": "MY", "Bangladesh": "BD",
     "Namibia": "NA", "Slovenia": "SI", "Sri Lanka": "LK", "Eswatini": "SZ",
     "Isle of Man": "IM", "Czechoslovakia": "CZ",
+    # Premier League (Footle) nationalities not already covered above.
+    "Ivory Coast": "CI", "Algeria": "DZ", "Burkina Faso": "BF", "Gambia": "GM",
+    "Guinea-Bissau": "GW", "Mozambique": "MZ", "Guinea": "GN", "Mali": "ML",
+    "Gabon": "GA", "Angola": "AO", "Zambia": "ZM", "Kosovo": "XK",
 }
 
 # Manual adjacencies GeoNames can't express, added on top of the raw neighbours.

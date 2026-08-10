@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footle — Guess the Premier League Starter</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <meta name="theme-color" content="#3d195b">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,700;1,500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="guess-box">
+      <span class="qmark">⚽</span>
+      <input id="guess-input" type="text" autocomplete="off" autocorrect="off"
+             autocapitalize="off" spellcheck="false" placeholder="Guess a player…">
+    </div>
+    <button id="new-btn" class="btn"><span class="ico">🔀</span> New Player</button>
+    <button id="giveup-btn" class="btn hidden"><span class="ico">🏳️</span> Give Up</button>
+    <div class="stat-box" title="Day streak">🔥 <span id="streak">0</span></div>
+    <div class="stat-box" title="Points">⭐ <span id="points">0</span></div>
+    <div id="status" class="timer">0 / 8</div>
+  </header>
+
+  <main>
+    <h1 class="footle-title">FOOTLE</h1>
+    <p class="footle-sub">Guess the mystery Premier League player — a starter from the
+      2025-26 season. Each guess grades you on Nationality, Club, Position, Age, league
+      Goals, and Shirt number — green is exact, yellow is close, ↑/↓ points toward the
+      answer. Nationality turns 🟧 orange when it borders the answer's country, 🟨 yellow
+      on the same continent; Club turns 🟧 when it finished within 3 places in the table,
+      🟨 within 7.</p>
+
+    <!-- Mode bar: Daily is one-and-done; Endless is unlimited. -->
+    <div class="mode-bar" id="mode-bar">
+      <button class="mode-tab" data-mode="daily">📅 Daily</button>
+      <button class="mode-tab" data-mode="endless">♾️ Endless</button>
+    </div>
+    <p class="mode-desc" id="mode-desc"></p>
+
+    <div class="grid-header" id="grid-header">
+      <div class="col col-name">Player</div>
+      <div class="col">Nationality</div>
+      <div class="col">Club</div>
+      <div class="col">Position</div>
+      <div class="col">Age</div>
+      <div class="col">Goals</div>
+      <div class="col">Shirt</div>
+    </div>
+    <div id="rows"></div>
+
+    <!-- End-of-game reveal (endless mode) -->
+    <div id="reveal" class="reveal hidden"></div>
+
+    <!-- Daily "come back tomorrow" panel -->
+    <div id="daily-panel" class="reveal hidden">
+      <div id="daily-title" class="reveal-title"></div>
+      <div id="daily-sub"></div>
+      <div class="daily-meta">
+        <span>🔥 Streak: <b id="daily-streak">0</b></span>
+        <span>Next Daily in <b id="daily-countdown">--:--:--</b></span>
+      </div>
+      <button id="share-btn" class="btn share-btn">↗ Share result</button>
+      <div id="share-copied" class="share-copied hidden">Copied to clipboard!</div>
+    </div>
+  </main>
+
+  <!-- Give-up confirmation. Reuses the shared .mode-modal/.mode-card chrome from
+       the parent stylesheet (@import'd by styles.css). -->
+  <div id="giveup-modal" class="mode-modal hidden">
+    <div class="mode-card">
+      <div class="mode-title">Give up?</div>
+      <hr>
+      <div class="giveup-note">The answer will be revealed and this round counts as a loss, so your streak resets to 0.</div>
+      <button id="giveup-confirm" class="giveup-option">
+        <div class="mode-name">🏳️ Reveal the answer</div>
+      </button>
+      <button id="giveup-cancel" class="btn">Keep playing</button>
+    </div>
+  </div>
+
+  <footer class="footle-foot">
+    Squads, appearances, goals, and shirt numbers are the 2025-26 season snapshot from the
+    <a href="https://www.premierleague.com/" target="_blank" rel="noopener">official Premier League</a> data.
+    Only players with 10+ league starts are included.
+  </footer>
+
+  <script src="game.js?v=1"></script>
+  <script src="/games.js?v=2"></script>
+</body>
+</html>
